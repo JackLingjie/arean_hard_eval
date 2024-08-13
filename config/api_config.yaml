@@ -8,20 +8,13 @@
 #     tokenizer: str optional (to optimize token limits)
 #     parallel: int
 
-gpt-3.5-turbo-0125:
-    model_name: gpt-3.5-turbo-0125
-    endpoints: null
-    api_type: openai
+
+
+Meta-Llama-3.1-8B-base:
+    model_name: /home/lidong1/jianglingjie/LLama-Factory/model_checkpoint/huggingface/Meta-Llama-3.1-8B
+    endpoints: null 
+    api_base: http://localhost:8000/v1
+    api_type: "token-abc123"
     parallel: 8
 
-gpt-4-0314:
-    model_name: gpt-4-0314
-    endpoints: null
-    api_type: openai
-    parallel: 8
 
-gpt-4-1106-preview:
-    model_name: gpt-4-1106-preview
-    endpoints: null
-    api_type: openai
-    parallel: 8
