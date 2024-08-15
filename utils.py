@@ -8,6 +8,7 @@ import requests
 from typing import Optional
 from glob import glob
 
+
 # API setting constants
 API_MAX_RETRY = 16
 API_RETRY_SLEEP = 10
@@ -131,29 +132,38 @@ def chat_completion_openai(model, messages, temperature, max_tokens, api_dict=No
 
 def chat_completion_openai_azure(model, messages, temperature, max_tokens, api_dict=None):
     import openai
-    from openai import AzureOpenAI
-
-    api_base = api_dict["api_base"]
-    client = AzureOpenAI(
-        azure_endpoint = api_base,
-        api_key= api_dict["api_key"],
-        api_version=api_dict["api_version"],
-        timeout=240,
-        max_retries=2
-    )
+    # from openai import AzureOpenAI
+    from gpt4 import Openai, API_INFOS
+    oai_client = Openai(apis=API_INFOS)
+    # api_base = api_dict["api_base"]
+    # client = AzureOpenAI(
+    #     azure_endpoint = api_base,
+    #     api_key= api_dict["api_key"],
+    #     api_version=api_dict["api_version"],
+    #     timeout=240,
+    #     max_retries=2
+    # )
 
     output = API_ERROR_OUTPUT
     for _ in range(API_MAX_RETRY):
         try:
-            response = client.chat.completions.create(
-                model=model,
+            # response = client.chat.completions.create(
+            #     model=model,
+            #     messages=messages,
+            #     n=1,
+            #     temperature=temperature,
+            #     max_tokens=max_tokens,
+            #     seed=42,
+            # )
+            # output = response.choices[0].message.content
+            # print(len(messages))
+            # print(messages)
+            print(f"max_tokens: {max_tokens}\n temperature:{temperature}")
+            output = oai_client.get_response(
                 messages=messages,
-                n=1,
                 temperature=temperature,
-                max_tokens=max_tokens,
-                seed=42,
-            )
-            output = response.choices[0].message.content
+                max_tokens=max_tokens
+                )            
             break
         except openai.RateLimitError as e:
             print(type(e), e)
