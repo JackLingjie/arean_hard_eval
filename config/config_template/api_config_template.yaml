@@ -17,7 +17,7 @@ gpt-4-1106-preview:
     parallel: 8
 
 {{MODEL_NAME}}:
-    model_name: /home/lidong1/jianglingjie/LLama-Factory/model_checkpoint/huggingface/{{MODEL_NAME}}
+    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/{{MODEL_NAME}}
     endpoints: 
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
