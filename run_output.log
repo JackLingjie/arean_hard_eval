@@ -1,0 +1,1621 @@
++ PARAMS=("tulu_lora_sft_base_template_8b" "tulu_lora_sft_default_template_8b" "tulu_v2_8b_bsz64_default_template_dpo" "tulu_v2_8b_base_template_dpo")
++ LOG_FILE=eval.log
++ for PARAM in "${PARAMS[@]}"
++ echo '执行参数: tulu_lora_sft_base_template_8b'
++ tee -a eval.log
+执行参数: tulu_lora_sft_base_template_8b
++ bash eval_script/arean_hard.sh tulu_lora_sft_base_template_8b
++ tee -a eval.log
++ DEFAULT_MODEL_NAME=Meta-Llama-3.1-8B-Instruct
++ MODEL_NAME=tulu_lora_sft_base_template_8b
++ TEMPLATE_FILES=("config/config_template/api_config_template.yaml" "config/config_template/gen_answer_config_template.yaml" "config/config_template/judge_config_template.yaml")
++ FILES=("config/api_config.yaml" "config/gen_answer_config.yaml" "config/judge_config.yaml")
++ for i in "${!TEMPLATE_FILES[@]}"
++ TEMPLATE_FILE=config/config_template/api_config_template.yaml
++ OUTPUT_FILE=config/api_config.yaml
++ cp config/config_template/api_config_template.yaml config/api_config.yaml
++ sed -i 's/{{MODEL_NAME}}/tulu_lora_sft_base_template_8b/g' config/api_config.yaml
++ for i in "${!TEMPLATE_FILES[@]}"
++ TEMPLATE_FILE=config/config_template/gen_answer_config_template.yaml
++ OUTPUT_FILE=config/gen_answer_config.yaml
++ cp config/config_template/gen_answer_config_template.yaml config/gen_answer_config.yaml
++ sed -i 's/{{MODEL_NAME}}/tulu_lora_sft_base_template_8b/g' config/gen_answer_config.yaml
++ for i in "${!TEMPLATE_FILES[@]}"
++ TEMPLATE_FILE=config/config_template/judge_config_template.yaml
++ OUTPUT_FILE=config/judge_config.yaml
++ cp config/config_template/judge_config_template.yaml config/judge_config.yaml
++ sed -i 's/{{MODEL_NAME}}/tulu_lora_sft_base_template_8b/g' config/judge_config.yaml
++ VLLM_PID=1672423
++ HOST=0.0.0.0
++ PORT=8000
++ TIMEOUT=600
++ INTERVAL=10
++ echo '等待 vllm 服务启动...'
+等待 vllm 服务启动...
++ (( i=0 ))
++ nohup vllm serve /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/tulu_lora_sft_base_template_8b --dtype auto --api-key token-abc123
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ echo 'vllm 服务已启动。'
++ break
++ ((  i >= TIMEOUT  ))
++ python gen_answer.py
+vllm 服务已启动。
+0it [00:00, ?it/s]{'name': 'config of answer generation for arena-hard-v0.1', 'bench_name': 'arena-hard-v0.1', 'temperature': 0.0, 'max_tokens': 2048, 'num_choices': 1, 'model_list': ['tulu_lora_sft_base_template_8b']}
+Output to data/arena-hard-v0.1/model_answer/tulu_lora_sft_base_template_8b.jsonl
+500 number of existing answers
+0it [00:00, ?it/s]
++ python gen_judgment.py
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4-1106-preview, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+500 number of existing judgments
+0it [00:00, ?it/s]0it [00:00, ?it/s]
++ python show_result.py
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4-1106-preview', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=False, first_game_only=False)
+Turning judgment results into battles...
+  0%|          | 0/64 [00:00<?, ?it/s]  2%|▏         | 1/64 [00:00<00:24,  2.52it/s]  3%|▎         | 2/64 [00:00<00:24,  2.51it/s]  5%|▍         | 3/64 [00:01<00:24,  2.48it/s]  6%|▋         | 4/64 [00:01<00:25,  2.39it/s]  8%|▊         | 5/64 [00:02<00:25,  2.32it/s]  9%|▉         | 6/64 [00:02<00:25,  2.25it/s] 11%|█         | 7/64 [00:03<00:26,  2.19it/s] 12%|█▎        | 8/64 [00:03<00:26,  2.11it/s] 14%|█▍        | 9/64 [00:04<00:27,  1.97it/s] 16%|█▌        | 10/64 [00:04<00:28,  1.91it/s] 17%|█▋        | 11/64 [00:05<00:28,  1.86it/s] 19%|█▉        | 12/64 [00:05<00:28,  1.81it/s] 20%|██        | 13/64 [00:06<00:28,  1.77it/s] 22%|██▏       | 14/64 [00:07<00:29,  1.67it/s] 23%|██▎       | 15/64 [00:07<00:29,  1.64it/s] 25%|██▌       | 16/64 [00:08<00:29,  1.60it/s] 27%|██▋       | 17/64 [00:09<00:30,  1.57it/s] 28%|██▊       | 18/64 [00:09<00:30,  1.53it/s] 30%|██▉       | 19/64 [00:10<00:30,  1.49it/s] 31%|███▏      | 20/64 [00:11<00:31,  1.42it/s] 33%|███▎      | 21/64 [00:12<00:30,  1.39it/s] 34%|███▍      | 22/64 [00:12<00:30,  1.36it/s] 36%|███▌      | 23/64 [00:13<00:30,  1.34it/s] 38%|███▊      | 24/64 [00:14<00:30,  1.32it/s] 39%|███▉      | 25/64 [00:15<00:30,  1.29it/s] 41%|████      | 26/64 [00:16<00:30,  1.26it/s] 42%|████▏     | 27/64 [00:16<00:29,  1.24it/s] 44%|████▍     | 28/64 [00:17<00:30,  1.18it/s] 45%|████▌     | 29/64 [00:18<00:30,  1.16it/s] 47%|████▋     | 30/64 [00:19<00:29,  1.14it/s] 48%|████▊     | 31/64 [00:20<00:29,  1.12it/s] 50%|█████     | 32/64 [00:21<00:29,  1.09it/s] 52%|█████▏    | 33/64 [00:22<00:29,  1.07it/s] 53%|█████▎    | 34/64 [00:23<00:28,  1.04it/s] 55%|█████▍    | 35/64 [00:24<00:28,  1.01it/s] 56%|█████▋    | 36/64 [00:25<00:28,  1.02s/it] 58%|█████▊    | 37/64 [00:26<00:28,  1.05s/it] 59%|█████▉    | 38/64 [00:27<00:27,  1.07s/it] 61%|██████    | 39/64 [00:29<00:27,  1.11s/it] 62%|██████▎   | 40/64 [00:30<00:27,  1.14s/it] 64%|██████▍   | 41/64 [00:31<00:27,  1.18s/it] 66%|██████▌   | 42/64 [00:32<00:26,  1.22s/it] 67%|██████▋   | 43/64 [00:34<00:26,  1.25s/it] 69%|██████▉   | 44/64 [00:35<00:26,  1.30s/it] 70%|███████   | 45/64 [00:37<00:25,  1.32s/it] 72%|███████▏  | 46/64 [00:38<00:24,  1.36s/it] 73%|███████▎  | 47/64 [00:39<00:23,  1.39s/it] 75%|███████▌  | 48/64 [00:41<00:22,  1.42s/it] 77%|███████▋  | 49/64 [00:42<00:21,  1.45s/it] 78%|███████▊  | 50/64 [00:44<00:20,  1.49s/it] 80%|███████▉  | 51/64 [00:46<00:19,  1.52s/it] 81%|████████▏ | 52/64 [00:47<00:18,  1.55s/it] 83%|████████▎ | 53/64 [00:49<00:17,  1.59s/it] 84%|████████▍ | 54/64 [00:51<00:16,  1.61s/it] 86%|████████▌ | 55/64 [00:52<00:15,  1.70s/it] 88%|████████▊ | 56/64 [00:54<00:12,  1.51s/it] 89%|████████▉ | 57/64 [00:55<00:11,  1.61s/it] 91%|█████████ | 58/64 [00:57<00:10,  1.70s/it] 92%|█████████▏| 59/64 [00:59<00:08,  1.77s/it] 94%|█████████▍| 60/64 [01:01<00:07,  1.85s/it] 95%|█████████▌| 61/64 [01:03<00:05,  1.93s/it] 97%|█████████▋| 62/64 [01:05<00:03,  1.98s/it] 98%|█████████▊| 63/64 [01:08<00:02,  2.01s/it]100%|██████████| 64/64 [01:10<00:00,  2.08s/it]100%|██████████| 64/64 [01:10<00:00,  1.10s/it]
+bootstrap:   0%|          | 0/100 [00:00<?, ?it/s]bootstrap:   1%|          | 1/100 [00:00<01:17,  1.27it/s]bootstrap:   2%|▏         | 2/100 [00:01<01:10,  1.38it/s]bootstrap:   3%|▎         | 3/100 [00:02<01:09,  1.39it/s]bootstrap:   4%|▍         | 4/100 [00:02<01:10,  1.36it/s]bootstrap:   5%|▌         | 5/100 [00:03<01:10,  1.36it/s]bootstrap:   6%|▌         | 6/100 [00:04<01:15,  1.24it/s]bootstrap:   7%|▋         | 7/100 [00:05<01:17,  1.20it/s]bootstrap:   8%|▊         | 8/100 [00:06<01:11,  1.29it/s]bootstrap:   9%|▉         | 9/100 [00:06<01:08,  1.34it/s]bootstrap:  10%|█         | 10/100 [00:07<01:07,  1.34it/s]bootstrap:  11%|█         | 11/100 [00:08<01:10,  1.27it/s]bootstrap:  12%|█▏        | 12/100 [00:09<01:06,  1.32it/s]bootstrap:  13%|█▎        | 13/100 [00:10<01:08,  1.28it/s]bootstrap:  14%|█▍        | 14/100 [00:10<01:04,  1.33it/s]bootstrap:  15%|█▌        | 15/100 [00:11<01:00,  1.40it/s]bootstrap:  16%|█▌        | 16/100 [00:12<01:01,  1.36it/s]bootstrap:  17%|█▋        | 17/100 [00:12<01:03,  1.31it/s]bootstrap:  18%|█▊        | 18/100 [00:13<01:00,  1.35it/s]bootstrap:  19%|█▉        | 19/100 [00:14<01:00,  1.34it/s]bootstrap:  20%|██        | 20/100 [00:15<01:00,  1.31it/s]bootstrap:  21%|██        | 21/100 [00:15<01:01,  1.28it/s]bootstrap:  22%|██▏       | 22/100 [00:16<01:01,  1.27it/s]bootstrap:  23%|██▎       | 23/100 [00:17<01:00,  1.27it/s]bootstrap:  24%|██▍       | 24/100 [00:18<00:58,  1.31it/s]bootstrap:  25%|██▌       | 25/100 [00:18<00:54,  1.37it/s]bootstrap:  26%|██▌       | 26/100 [00:19<00:52,  1.42it/s]bootstrap:  27%|██▋       | 27/100 [00:20<00:52,  1.39it/s]bootstrap:  28%|██▊       | 28/100 [00:21<00:51,  1.39it/s]bootstrap:  29%|██▉       | 29/100 [00:21<00:52,  1.34it/s]bootstrap:  30%|███       | 30/100 [00:22<00:51,  1.35it/s]bootstrap:  31%|███       | 31/100 [00:23<00:51,  1.34it/s]bootstrap:  32%|███▏      | 32/100 [00:24<00:52,  1.29it/s]bootstrap:  33%|███▎      | 33/100 [00:24<00:50,  1.31it/s]bootstrap:  34%|███▍      | 34/100 [00:25<00:50,  1.31it/s]bootstrap:  35%|███▌      | 35/100 [00:26<00:48,  1.34it/s]bootstrap:  36%|███▌      | 36/100 [00:27<00:48,  1.33it/s]bootstrap:  37%|███▋      | 37/100 [00:27<00:46,  1.37it/s]bootstrap:  38%|███▊      | 38/100 [00:28<00:44,  1.38it/s]bootstrap:  39%|███▉      | 39/100 [00:29<00:43,  1.40it/s]bootstrap:  40%|████      | 40/100 [00:29<00:43,  1.38it/s]bootstrap:  41%|████      | 41/100 [00:30<00:44,  1.32it/s]bootstrap:  42%|████▏     | 42/100 [00:31<00:42,  1.35it/s]bootstrap:  43%|████▎     | 43/100 [00:32<00:44,  1.27it/s]bootstrap:  44%|████▍     | 44/100 [00:33<00:43,  1.28it/s]bootstrap:  45%|████▌     | 45/100 [00:33<00:42,  1.28it/s]bootstrap:  46%|████▌     | 46/100 [00:34<00:43,  1.25it/s]bootstrap:  47%|████▋     | 47/100 [00:35<00:41,  1.27it/s]bootstrap:  48%|████▊     | 48/100 [00:36<00:40,  1.29it/s]bootstrap:  49%|████▉     | 49/100 [00:37<00:41,  1.23it/s]bootstrap:  50%|█████     | 50/100 [00:37<00:38,  1.29it/s]bootstrap:  51%|█████     | 51/100 [00:38<00:38,  1.29it/s]bootstrap:  52%|█████▏    | 52/100 [00:39<00:37,  1.27it/s]bootstrap:  53%|█████▎    | 53/100 [00:40<00:37,  1.25it/s]bootstrap:  54%|█████▍    | 54/100 [00:41<00:36,  1.27it/s]bootstrap:  55%|█████▌    | 55/100 [00:41<00:34,  1.30it/s]bootstrap:  56%|█████▌    | 56/100 [00:42<00:33,  1.31it/s]bootstrap:  57%|█████▋    | 57/100 [00:43<00:33,  1.29it/s]bootstrap:  58%|█████▊    | 58/100 [00:44<00:32,  1.28it/s]bootstrap:  59%|█████▉    | 59/100 [00:44<00:31,  1.30it/s]bootstrap:  60%|██████    | 60/100 [00:45<00:31,  1.28it/s]bootstrap:  61%|██████    | 61/100 [00:46<00:30,  1.28it/s]bootstrap:  62%|██████▏   | 62/100 [00:47<00:30,  1.25it/s]bootstrap:  63%|██████▎   | 63/100 [00:48<00:28,  1.29it/s]bootstrap:  64%|██████▍   | 64/100 [00:48<00:28,  1.26it/s]bootstrap:  65%|██████▌   | 65/100 [00:49<00:26,  1.32it/s]bootstrap:  66%|██████▌   | 66/100 [00:50<00:26,  1.30it/s]bootstrap:  67%|██████▋   | 67/100 [00:51<00:24,  1.33it/s]bootstrap:  68%|██████▊   | 68/100 [00:51<00:25,  1.27it/s]bootstrap:  69%|██████▉   | 69/100 [00:52<00:24,  1.29it/s]bootstrap:  70%|███████   | 70/100 [00:53<00:22,  1.34it/s]bootstrap:  71%|███████   | 71/100 [00:54<00:21,  1.34it/s]bootstrap:  72%|███████▏  | 72/100 [00:54<00:20,  1.35it/s]bootstrap:  73%|███████▎  | 73/100 [00:55<00:19,  1.37it/s]bootstrap:  74%|███████▍  | 74/100 [00:56<00:18,  1.37it/s]bootstrap:  75%|███████▌  | 75/100 [00:57<00:18,  1.36it/s]bootstrap:  76%|███████▌  | 76/100 [00:57<00:16,  1.43it/s]bootstrap:  77%|███████▋  | 77/100 [00:58<00:15,  1.50it/s]bootstrap:  78%|███████▊  | 78/100 [00:58<00:14,  1.48it/s]bootstrap:  79%|███████▉  | 79/100 [00:59<00:14,  1.43it/s]bootstrap:  80%|████████  | 80/100 [01:00<00:14,  1.34it/s]bootstrap:  81%|████████  | 81/100 [01:01<00:14,  1.33it/s]bootstrap:  82%|████████▏ | 82/100 [01:02<00:14,  1.29it/s]bootstrap:  83%|████████▎ | 83/100 [01:02<00:12,  1.31it/s]bootstrap:  84%|████████▍ | 84/100 [01:03<00:12,  1.33it/s]bootstrap:  85%|████████▌ | 85/100 [01:04<00:11,  1.27it/s]bootstrap:  86%|████████▌ | 86/100 [01:05<00:11,  1.21it/s]bootstrap:  87%|████████▋ | 87/100 [01:06<00:10,  1.24it/s]bootstrap:  88%|████████▊ | 88/100 [01:06<00:09,  1.27it/s]bootstrap:  89%|████████▉ | 89/100 [01:07<00:08,  1.33it/s]bootstrap:  90%|█████████ | 90/100 [01:08<00:07,  1.30it/s]bootstrap:  91%|█████████ | 91/100 [01:09<00:06,  1.32it/s]bootstrap:  92%|█████████▏| 92/100 [01:09<00:05,  1.36it/s]bootstrap:  93%|█████████▎| 93/100 [01:10<00:05,  1.33it/s]bootstrap:  94%|█████████▍| 94/100 [01:11<00:04,  1.30it/s]bootstrap:  95%|█████████▌| 95/100 [01:12<00:03,  1.35it/s]bootstrap:  96%|█████████▌| 96/100 [01:12<00:02,  1.37it/s]bootstrap:  97%|█████████▋| 97/100 [01:13<00:02,  1.42it/s]bootstrap:  98%|█████████▊| 98/100 [01:14<00:01,  1.40it/s]bootstrap:  99%|█████████▉| 99/100 [01:14<00:00,  1.35it/s]bootstrap: 100%|██████████| 100/100 [01:15<00:00,  1.27it/s]bootstrap: 100%|██████████| 100/100 [01:15<00:00,  1.32it/s]
+gpt-4-turbo-2024-04-09         | score: 82.6  | 95% CI: (-1.9, 1.9)  | average #tokens: 662
+claude-3-5-sonnet-20240620     | score: 79.3  | 95% CI: (-2.2, 1.9)  | average #tokens: 567
+gpt-4o-2024-05-13              | score: 79.2  | 95% CI: (-2.0, 2.4)  | average #tokens: 696
+gpt-4-0125-preview             | score: 78.0  | 95% CI: (-2.2, 2.0)  | average #tokens: 619
+athene-70b                     | score: 76.8  | 95% CI: (-2.1, 2.2)  | average #tokens: 683
+gpt-4o-mini                    | score: 74.9  | 95% CI: (-2.8, 2.3)  | average #tokens: 668
+gemini-1.5-pro-api-0514        | score: 72.0  | 95% CI: (-2.5, 2.5)  | average #tokens: 676
+yi-large-preview               | score: 71.5  | 95% CI: (-2.5, 2.1)  | average #tokens: 720
+mistral-large-2407             | score: 70.4  | 95% CI: (-2.2, 2.1)  | average #tokens: 623
+llama-3.1-405b-instruct        | score: 64.1  | 95% CI: (-2.4, 2.8)  | average #tokens: 633
+glm-4-0520                     | score: 63.8  | 95% CI: (-2.1, 2.0)  | average #tokens: 636
+yi-large                       | score: 63.7  | 95% CI: (-2.3, 2.5)  | average #tokens: 626
+deepseek-coder-v2              | score: 62.3  | 95% CI: (-2.1, 2.4)  | average #tokens: 578
+claude-3-opus-20240229         | score: 60.4  | 95% CI: (-2.4, 2.2)  | average #tokens: 541
+gemma-2-27b-it                 | score: 57.5  | 95% CI: (-2.1, 2.2)  | average #tokens: 577
+llama-3.1-70b-instruct         | score: 55.7  | 95% CI: (-3.2, 2.8)  | average #tokens: 628
+glm-4-0116                     | score: 55.7  | 95% CI: (-2.5, 2.2)  | average #tokens: 622
+gemini-1.5-pro-api-0409-preview | score: 53.4  | 95% CI: (-2.0, 2.6)  | average #tokens: 478
+glm-4-air                      | score: 50.9  | 95% CI: (-2.7, 2.5)  | average #tokens: 619
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+gemini-1.5-flash-api-0514      | score: 49.6  | 95% CI: (-2.2, 2.3)  | average #tokens: 642
+qwen2-72b-instruct             | score: 46.9  | 95% CI: (-3.0, 2.2)  | average #tokens: 515
+claude-3-sonnet-20240229       | score: 46.8  | 95% CI: (-2.3, 2.1)  | average #tokens: 552
+llama-3-70b-instruct           | score: 46.6  | 95% CI: (-2.3, 2.4)  | average #tokens: 591
+claude-3-haiku-20240307        | score: 41.5  | 95% CI: (-2.0, 2.1)  | average #tokens: 505
+gpt-4-0613                     | score: 37.9  | 95% CI: (-2.5, 2.9)  | average #tokens: 354
+mistral-large-2402             | score: 37.7  | 95% CI: (-2.1, 3.0)  | average #tokens: 400
+Meta-Llama-3.1-8B-Instruct     | score: 36.5  | 95% CI: (-2.2, 2.0)  | average #tokens: 731
+mixtral-8x22b-instruct-v0.1    | score: 36.4  | 95% CI: (-2.3, 2.4)  | average #tokens: 430
+qwen1.5-72b-chat               | score: 36.1  | 95% CI: (-1.8, 2.6)  | average #tokens: 474
+phi-3-medium-4k-instruct       | score: 33.4  | 95% CI: (-2.7, 1.8)  | average #tokens: 517
+command-r-plus                 | score: 33.1  | 95% CI: (-2.6, 2.2)  | average #tokens: 541
+mistral-medium                 | score: 31.9  | 95% CI: (-1.8, 2.7)  | average #tokens: 485
+phi-3-small-8k-instruct        | score: 29.8  | 95% CI: (-2.0, 1.8)  | average #tokens: 568
+mistral-next                   | score: 27.4  | 95% CI: (-2.0, 1.5)  | average #tokens: 297
+gpt-3.5-turbo-0613             | score: 24.8  | 95% CI: (-2.1, 1.9)  | average #tokens: 401
+dbrx-instruct-preview          | score: 24.6  | 95% CI: (-1.9, 2.6)  | average #tokens: 415
+claude-2.0                     | score: 24.0  | 95% CI: (-2.0, 2.0)  | average #tokens: 295
+mixtral-8x7b-instruct-v0.1     | score: 23.4  | 95% CI: (-1.8, 2.2)  | average #tokens: 457
+gpt-3.5-turbo-0125             | score: 23.3  | 95% CI: (-2.1, 1.8)  | average #tokens: 329
+yi-34b-chat                    | score: 23.1  | 95% CI: (-2.0, 2.2)  | average #tokens: 611
+starling-lm-7b-beta            | score: 23.0  | 95% CI: (-2.2, 1.6)  | average #tokens: 530
+claude-2.1                     | score: 22.8  | 95% CI: (-1.9, 1.8)  | average #tokens: 290
+llama-3.1-8b-instruct          | score: 21.3  | 95% CI: (-1.5, 1.8)  | average #tokens: 861
+snorkel-mistral-pairrm-dpo     | score: 20.7  | 95% CI: (-1.8, 1.9)  | average #tokens: 564
+llama-3-8b-instruct            | score: 20.6  | 95% CI: (-2.2, 1.6)  | average #tokens: 585
+gpt-3.5-turbo-1106             | score: 18.9  | 95% CI: (-2.0, 2.0)  | average #tokens: 285
+gpt-3.5-turbo-0314             | score: 18.1  | 95% CI: (-1.7, 1.8)  | average #tokens: 334
+gemini-pro                     | score: 17.8  | 95% CI: (-1.7, 1.7)  | average #tokens: 322
+snowflake-arctic-instruct      | score: 17.6  | 95% CI: (-1.8, 2.3)  | average #tokens: 365
+command-r                      | score: 17.0  | 95% CI: (-1.7, 1.7)  | average #tokens: 432
+phi-3-mini-128k-instruct       | score: 15.4  | 95% CI: (-1.9, 1.5)  | average #tokens: 609
+tulu-2-dpo-70b                 | score: 15.0  | 95% CI: (-1.7, 2.0)  | average #tokens: 550
+starling-lm-7b-alpha           | score: 12.8  | 95% CI: (-1.5, 1.4)  | average #tokens: 483
+mistral-7b-instruct            | score: 12.6  | 95% CI: (-1.5, 1.4)  | average #tokens: 541
+gemma-1.1-7b-it                | score: 12.1  | 95% CI: (-1.5, 1.1)  | average #tokens: 341
+llama-2-70b-chat               | score: 11.6  | 95% CI: (-1.2, 1.2)  | average #tokens: 595
+vicuna-33b                     | score:  8.6  | 95% CI: (-1.2, 1.2)  | average #tokens: 451
+tulu_v2_8b_base_template_dpo   | score:  7.9  | 95% CI: (-1.4, 1.4)  | average #tokens: 496
+gemma-7b-it                    | score:  7.5  | 95% CI: (-0.9, 1.2)  | average #tokens: 378
+tulu_v2_8b_bsz64_default_template_dpo | score:  7.0  | 95% CI: (-1.1, 1.0)  | average #tokens: 449
+tulu_lora_sft_default_template_8b | score:  4.3  | 95% CI: (-0.9, 0.6)  | average #tokens: 444
+tulu_lora_sft_base_template_8b | score:  4.3  | 95% CI: (-0.8, 0.7)  | average #tokens: 458
+gemma-1.1-2b-it                | score:  3.4  | 95% CI: (-0.7, 0.7)  | average #tokens: 316
+gemma-2b-it                    | score:  3.0  | 95% CI: (-0.6, 0.7)  | average #tokens: 369
++ kill 1672423
++ wait 1672423
++ echo '所有任务已完成，vllm 服务已关闭。'
+所有任务已完成，vllm 服务已关闭。
++ echo ----------------------------------------
++ tee -a eval.log
+----------------------------------------
++ sleep 60
++ for PARAM in "${PARAMS[@]}"
++ echo '执行参数: tulu_lora_sft_default_template_8b'
++ tee -a eval.log
+执行参数: tulu_lora_sft_default_template_8b
++ bash eval_script/arean_hard.sh tulu_lora_sft_default_template_8b
++ tee -a eval.log
++ DEFAULT_MODEL_NAME=Meta-Llama-3.1-8B-Instruct
++ MODEL_NAME=tulu_lora_sft_default_template_8b
++ TEMPLATE_FILES=("config/config_template/api_config_template.yaml" "config/config_template/gen_answer_config_template.yaml" "config/config_template/judge_config_template.yaml")
++ FILES=("config/api_config.yaml" "config/gen_answer_config.yaml" "config/judge_config.yaml")
++ for i in "${!TEMPLATE_FILES[@]}"
++ TEMPLATE_FILE=config/config_template/api_config_template.yaml
++ OUTPUT_FILE=config/api_config.yaml
++ cp config/config_template/api_config_template.yaml config/api_config.yaml
++ sed -i 's/{{MODEL_NAME}}/tulu_lora_sft_default_template_8b/g' config/api_config.yaml
++ for i in "${!TEMPLATE_FILES[@]}"
++ TEMPLATE_FILE=config/config_template/gen_answer_config_template.yaml
++ OUTPUT_FILE=config/gen_answer_config.yaml
++ cp config/config_template/gen_answer_config_template.yaml config/gen_answer_config.yaml
++ sed -i 's/{{MODEL_NAME}}/tulu_lora_sft_default_template_8b/g' config/gen_answer_config.yaml
++ for i in "${!TEMPLATE_FILES[@]}"
++ TEMPLATE_FILE=config/config_template/judge_config_template.yaml
++ OUTPUT_FILE=config/judge_config.yaml
++ cp config/config_template/judge_config_template.yaml config/judge_config.yaml
++ sed -i 's/{{MODEL_NAME}}/tulu_lora_sft_default_template_8b/g' config/judge_config.yaml
++ VLLM_PID=1673553
++ HOST=0.0.0.0
++ PORT=8000
++ TIMEOUT=600
++ INTERVAL=10
++ echo '等待 vllm 服务启动...'
++ (( i=0 ))
+等待 vllm 服务启动...
++ nohup vllm serve /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/tulu_lora_sft_default_template_8b --dtype auto --api-key token-abc123
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ echo 'vllm 服务已启动。'
++ break
+vllm 服务已启动。
++ ((  i >= TIMEOUT  ))
++ python gen_answer.py
+0it [00:00, ?it/s]{'name': 'config of answer generation for arena-hard-v0.1', 'bench_name': 'arena-hard-v0.1', 'temperature': 0.0, 'max_tokens': 2048, 'num_choices': 1, 'model_list': ['tulu_lora_sft_default_template_8b']}
+Output to data/arena-hard-v0.1/model_answer/tulu_lora_sft_default_template_8b.jsonl
+500 number of existing answers
+0it [00:00, ?it/s]
++ python gen_judgment.py
+0it [00:00, ?it/s]Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4-1106-preview, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+500 number of existing judgments
+0it [00:00, ?it/s]
++ python show_result.py
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4-1106-preview', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=False, first_game_only=False)
+Turning judgment results into battles...
+  0%|          | 0/64 [00:00<?, ?it/s]  2%|▏         | 1/64 [00:00<00:24,  2.56it/s]  3%|▎         | 2/64 [00:00<00:24,  2.52it/s]  5%|▍         | 3/64 [00:01<00:24,  2.50it/s]  6%|▋         | 4/64 [00:01<00:24,  2.42it/s]  8%|▊         | 5/64 [00:02<00:25,  2.33it/s]  9%|▉         | 6/64 [00:02<00:25,  2.25it/s] 11%|█         | 7/64 [00:03<00:26,  2.19it/s] 12%|█▎        | 8/64 [00:03<00:26,  2.12it/s] 14%|█▍        | 9/64 [00:04<00:27,  1.98it/s] 16%|█▌        | 10/64 [00:04<00:28,  1.91it/s] 17%|█▋        | 11/64 [00:05<00:28,  1.86it/s] 19%|█▉        | 12/64 [00:05<00:28,  1.82it/s] 20%|██        | 13/64 [00:06<00:28,  1.77it/s] 22%|██▏       | 14/64 [00:07<00:30,  1.66it/s] 23%|██▎       | 15/64 [00:07<00:29,  1.63it/s] 25%|██▌       | 16/64 [00:08<00:29,  1.60it/s] 27%|██▋       | 17/64 [00:09<00:30,  1.56it/s] 28%|██▊       | 18/64 [00:09<00:30,  1.53it/s] 30%|██▉       | 19/64 [00:10<00:30,  1.49it/s] 31%|███▏      | 20/64 [00:11<00:31,  1.42it/s] 33%|███▎      | 21/64 [00:12<00:30,  1.40it/s] 34%|███▍      | 22/64 [00:12<00:30,  1.37it/s] 36%|███▌      | 23/64 [00:13<00:30,  1.34it/s] 38%|███▊      | 24/64 [00:14<00:30,  1.31it/s] 39%|███▉      | 25/64 [00:15<00:30,  1.29it/s] 41%|████      | 26/64 [00:15<00:30,  1.26it/s] 42%|████▏     | 27/64 [00:16<00:30,  1.23it/s] 44%|████▍     | 28/64 [00:17<00:30,  1.18it/s] 45%|████▌     | 29/64 [00:18<00:30,  1.16it/s] 47%|████▋     | 30/64 [00:19<00:29,  1.13it/s] 48%|████▊     | 31/64 [00:20<00:29,  1.11it/s] 50%|█████     | 32/64 [00:21<00:29,  1.10it/s] 52%|█████▏    | 33/64 [00:22<00:28,  1.07it/s] 53%|█████▎    | 34/64 [00:23<00:28,  1.05it/s] 55%|█████▍    | 35/64 [00:24<00:28,  1.03it/s] 56%|█████▋    | 36/64 [00:25<00:28,  1.00s/it] 58%|█████▊    | 37/64 [00:26<00:27,  1.02s/it] 59%|█████▉    | 38/64 [00:27<00:26,  1.04s/it] 61%|██████    | 39/64 [00:28<00:26,  1.08s/it] 62%|██████▎   | 40/64 [00:30<00:26,  1.11s/it] 64%|██████▍   | 41/64 [00:31<00:26,  1.15s/it] 66%|██████▌   | 42/64 [00:32<00:26,  1.19s/it] 67%|██████▋   | 43/64 [00:33<00:25,  1.21s/it] 69%|██████▉   | 44/64 [00:35<00:24,  1.24s/it] 70%|███████   | 45/64 [00:36<00:24,  1.29s/it] 72%|███████▏  | 46/64 [00:37<00:23,  1.33s/it] 73%|███████▎  | 47/64 [00:39<00:23,  1.37s/it] 75%|███████▌  | 48/64 [00:40<00:22,  1.38s/it] 77%|███████▋  | 49/64 [00:42<00:21,  1.41s/it] 78%|███████▊  | 50/64 [00:43<00:19,  1.42s/it] 80%|███████▉  | 51/64 [00:45<00:19,  1.46s/it] 81%|████████▏ | 52/64 [00:46<00:18,  1.52s/it] 83%|████████▎ | 53/64 [00:48<00:16,  1.54s/it] 84%|████████▍ | 54/64 [00:50<00:15,  1.56s/it] 86%|████████▌ | 55/64 [00:51<00:14,  1.60s/it] 88%|████████▊ | 56/64 [00:52<00:11,  1.42s/it] 89%|████████▉ | 57/64 [00:54<00:10,  1.49s/it] 91%|█████████ | 58/64 [00:56<00:09,  1.56s/it] 92%|█████████▏| 59/64 [00:58<00:08,  1.68s/it] 94%|█████████▍| 60/64 [01:00<00:07,  1.77s/it] 95%|█████████▌| 61/64 [01:02<00:05,  1.83s/it] 97%|█████████▋| 62/64 [01:04<00:03,  1.90s/it] 98%|█████████▊| 63/64 [01:06<00:01,  1.91s/it]100%|██████████| 64/64 [01:08<00:00,  1.99s/it]100%|██████████| 64/64 [01:08<00:00,  1.07s/it]
+bootstrap:   0%|          | 0/100 [00:00<?, ?it/s]bootstrap:   1%|          | 1/100 [00:01<01:49,  1.11s/it]bootstrap:   2%|▏         | 2/100 [00:01<01:31,  1.07it/s]bootstrap:   3%|▎         | 3/100 [00:02<01:18,  1.24it/s]bootstrap:   4%|▍         | 4/100 [00:03<01:15,  1.27it/s]bootstrap:   5%|▌         | 5/100 [00:04<01:15,  1.26it/s]bootstrap:   6%|▌         | 6/100 [00:05<01:24,  1.11it/s]bootstrap:   7%|▋         | 7/100 [00:06<01:27,  1.06it/s]bootstrap:   8%|▊         | 8/100 [00:07<01:23,  1.10it/s]bootstrap:   9%|▉         | 9/100 [00:07<01:18,  1.16it/s]bootstrap:  10%|█         | 10/100 [00:08<01:13,  1.22it/s]bootstrap:  11%|█         | 11/100 [00:09<01:15,  1.18it/s]bootstrap:  12%|█▏        | 12/100 [00:10<01:14,  1.18it/s]bootstrap:  13%|█▎        | 13/100 [00:11<01:14,  1.17it/s]bootstrap:  14%|█▍        | 14/100 [00:11<01:09,  1.23it/s]bootstrap:  15%|█▌        | 15/100 [00:12<01:07,  1.26it/s]bootstrap:  16%|█▌        | 16/100 [00:13<01:04,  1.30it/s]bootstrap:  17%|█▋        | 17/100 [00:14<01:03,  1.31it/s]bootstrap:  18%|█▊        | 18/100 [00:14<01:00,  1.35it/s]bootstrap:  19%|█▉        | 19/100 [00:15<00:59,  1.36it/s]bootstrap:  20%|██        | 20/100 [00:16<00:56,  1.41it/s]bootstrap:  21%|██        | 21/100 [00:16<00:57,  1.37it/s]bootstrap:  22%|██▏       | 22/100 [00:17<00:56,  1.37it/s]bootstrap:  23%|██▎       | 23/100 [00:18<00:57,  1.33it/s]bootstrap:  24%|██▍       | 24/100 [00:19<00:54,  1.40it/s]bootstrap:  25%|██▌       | 25/100 [00:19<00:52,  1.42it/s]bootstrap:  26%|██▌       | 26/100 [00:20<00:51,  1.43it/s]bootstrap:  27%|██▋       | 27/100 [00:21<00:53,  1.37it/s]bootstrap:  28%|██▊       | 28/100 [00:21<00:51,  1.41it/s]bootstrap:  29%|██▉       | 29/100 [00:22<00:52,  1.36it/s]bootstrap:  30%|███       | 30/100 [00:23<00:50,  1.38it/s]bootstrap:  31%|███       | 31/100 [00:24<00:54,  1.28it/s]bootstrap:  32%|███▏      | 32/100 [00:25<00:53,  1.27it/s]bootstrap:  33%|███▎      | 33/100 [00:25<00:49,  1.35it/s]bootstrap:  34%|███▍      | 34/100 [00:26<00:49,  1.34it/s]bootstrap:  35%|███▌      | 35/100 [00:27<00:45,  1.42it/s]bootstrap:  36%|███▌      | 36/100 [00:27<00:46,  1.38it/s]bootstrap:  37%|███▋      | 37/100 [00:28<00:45,  1.39it/s]bootstrap:  38%|███▊      | 38/100 [00:29<00:44,  1.39it/s]bootstrap:  39%|███▉      | 39/100 [00:30<00:44,  1.36it/s]bootstrap:  40%|████      | 40/100 [00:30<00:45,  1.33it/s]bootstrap:  41%|████      | 41/100 [00:31<00:44,  1.33it/s]bootstrap:  42%|████▏     | 42/100 [00:32<00:42,  1.36it/s]bootstrap:  43%|████▎     | 43/100 [00:33<00:43,  1.32it/s]bootstrap:  44%|████▍     | 44/100 [00:33<00:41,  1.35it/s]bootstrap:  45%|████▌     | 45/100 [00:34<00:41,  1.33it/s]bootstrap:  46%|████▌     | 46/100 [00:35<00:41,  1.31it/s]bootstrap:  47%|████▋     | 47/100 [00:36<00:38,  1.38it/s]bootstrap:  48%|████▊     | 48/100 [00:36<00:37,  1.40it/s]bootstrap:  49%|████▉     | 49/100 [00:37<00:39,  1.29it/s]bootstrap:  50%|█████     | 50/100 [00:38<00:38,  1.29it/s]bootstrap:  51%|█████     | 51/100 [00:39<00:36,  1.34it/s]bootstrap:  52%|█████▏    | 52/100 [00:40<00:37,  1.28it/s]bootstrap:  53%|█████▎    | 53/100 [00:40<00:37,  1.24it/s]bootstrap:  54%|█████▍    | 54/100 [00:41<00:37,  1.24it/s]bootstrap:  55%|█████▌    | 55/100 [00:42<00:36,  1.24it/s]bootstrap:  56%|█████▌    | 56/100 [00:43<00:36,  1.19it/s]bootstrap:  57%|█████▋    | 57/100 [00:44<00:34,  1.25it/s]bootstrap:  58%|█████▊    | 58/100 [00:44<00:33,  1.27it/s]bootstrap:  59%|█████▉    | 59/100 [00:45<00:32,  1.27it/s]bootstrap:  60%|██████    | 60/100 [00:46<00:31,  1.25it/s]bootstrap:  61%|██████    | 61/100 [00:47<00:30,  1.27it/s]bootstrap:  62%|██████▏   | 62/100 [00:48<00:30,  1.23it/s]bootstrap:  63%|██████▎   | 63/100 [00:48<00:29,  1.26it/s]bootstrap:  64%|██████▍   | 64/100 [00:49<00:28,  1.28it/s]bootstrap:  65%|██████▌   | 65/100 [00:50<00:26,  1.32it/s]bootstrap:  66%|██████▌   | 66/100 [00:51<00:26,  1.30it/s]bootstrap:  67%|██████▋   | 67/100 [00:51<00:24,  1.33it/s]bootstrap:  68%|██████▊   | 68/100 [00:52<00:24,  1.30it/s]bootstrap:  69%|██████▉   | 69/100 [00:53<00:24,  1.27it/s]bootstrap:  70%|███████   | 70/100 [00:54<00:22,  1.32it/s]bootstrap:  71%|███████   | 71/100 [00:54<00:22,  1.28it/s]bootstrap:  72%|███████▏  | 72/100 [00:55<00:21,  1.29it/s]bootstrap:  73%|███████▎  | 73/100 [00:56<00:20,  1.31it/s]bootstrap:  74%|███████▍  | 74/100 [00:57<00:20,  1.26it/s]bootstrap:  75%|███████▌  | 75/100 [00:58<00:19,  1.26it/s]bootstrap:  76%|███████▌  | 76/100 [00:58<00:18,  1.30it/s]bootstrap:  77%|███████▋  | 77/100 [00:59<00:17,  1.34it/s]bootstrap:  78%|███████▊  | 78/100 [01:00<00:15,  1.39it/s]bootstrap:  79%|███████▉  | 79/100 [01:01<00:15,  1.34it/s]bootstrap:  80%|████████  | 80/100 [01:01<00:15,  1.32it/s]bootstrap:  81%|████████  | 81/100 [01:02<00:14,  1.31it/s]bootstrap:  82%|████████▏ | 82/100 [01:03<00:13,  1.34it/s]bootstrap:  83%|████████▎ | 83/100 [01:04<00:12,  1.32it/s]bootstrap:  84%|████████▍ | 84/100 [01:04<00:11,  1.36it/s]bootstrap:  85%|████████▌ | 85/100 [01:05<00:11,  1.34it/s]bootstrap:  86%|████████▌ | 86/100 [01:06<00:11,  1.26it/s]bootstrap:  87%|████████▋ | 87/100 [01:07<00:10,  1.28it/s]bootstrap:  88%|████████▊ | 88/100 [01:07<00:09,  1.30it/s]bootstrap:  89%|████████▉ | 89/100 [01:08<00:08,  1.31it/s]bootstrap:  90%|█████████ | 90/100 [01:09<00:07,  1.30it/s]bootstrap:  91%|█████████ | 91/100 [01:10<00:06,  1.34it/s]bootstrap:  92%|█████████▏| 92/100 [01:10<00:05,  1.35it/s]bootstrap:  93%|█████████▎| 93/100 [01:11<00:05,  1.35it/s]bootstrap:  94%|█████████▍| 94/100 [01:12<00:04,  1.32it/s]bootstrap:  95%|█████████▌| 95/100 [01:13<00:03,  1.37it/s]bootstrap:  96%|█████████▌| 96/100 [01:13<00:02,  1.34it/s]bootstrap:  97%|█████████▋| 97/100 [01:14<00:02,  1.36it/s]bootstrap:  98%|█████████▊| 98/100 [01:15<00:01,  1.36it/s]bootstrap:  99%|█████████▉| 99/100 [01:16<00:00,  1.36it/s]bootstrap: 100%|██████████| 100/100 [01:16<00:00,  1.28it/s]bootstrap: 100%|██████████| 100/100 [01:16<00:00,  1.30it/s]
+gpt-4-turbo-2024-04-09         | score: 82.6  | 95% CI: (-1.9, 1.9)  | average #tokens: 662
+claude-3-5-sonnet-20240620     | score: 79.3  | 95% CI: (-2.2, 1.9)  | average #tokens: 567
+gpt-4o-2024-05-13              | score: 79.2  | 95% CI: (-2.0, 2.4)  | average #tokens: 696
+gpt-4-0125-preview             | score: 78.0  | 95% CI: (-2.2, 2.0)  | average #tokens: 619
+athene-70b                     | score: 76.8  | 95% CI: (-2.1, 2.2)  | average #tokens: 683
+gpt-4o-mini                    | score: 74.9  | 95% CI: (-2.8, 2.3)  | average #tokens: 668
+gemini-1.5-pro-api-0514        | score: 72.0  | 95% CI: (-2.5, 2.5)  | average #tokens: 676
+yi-large-preview               | score: 71.5  | 95% CI: (-2.5, 2.1)  | average #tokens: 720
+mistral-large-2407             | score: 70.4  | 95% CI: (-2.2, 2.1)  | average #tokens: 623
+llama-3.1-405b-instruct        | score: 64.1  | 95% CI: (-2.4, 2.8)  | average #tokens: 633
+glm-4-0520                     | score: 63.8  | 95% CI: (-2.1, 2.0)  | average #tokens: 636
+yi-large                       | score: 63.7  | 95% CI: (-2.3, 2.5)  | average #tokens: 626
+deepseek-coder-v2              | score: 62.3  | 95% CI: (-2.1, 2.4)  | average #tokens: 578
+claude-3-opus-20240229         | score: 60.4  | 95% CI: (-2.4, 2.2)  | average #tokens: 541
+gemma-2-27b-it                 | score: 57.5  | 95% CI: (-2.1, 2.2)  | average #tokens: 577
+llama-3.1-70b-instruct         | score: 55.7  | 95% CI: (-3.2, 2.8)  | average #tokens: 628
+glm-4-0116                     | score: 55.7  | 95% CI: (-2.5, 2.2)  | average #tokens: 622
+gemini-1.5-pro-api-0409-preview | score: 53.4  | 95% CI: (-2.0, 2.6)  | average #tokens: 478
+glm-4-air                      | score: 50.9  | 95% CI: (-2.7, 2.5)  | average #tokens: 619
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+gemini-1.5-flash-api-0514      | score: 49.6  | 95% CI: (-2.2, 2.3)  | average #tokens: 642
+qwen2-72b-instruct             | score: 46.9  | 95% CI: (-3.0, 2.2)  | average #tokens: 515
+claude-3-sonnet-20240229       | score: 46.8  | 95% CI: (-2.3, 2.1)  | average #tokens: 552
+llama-3-70b-instruct           | score: 46.6  | 95% CI: (-2.3, 2.4)  | average #tokens: 591
+claude-3-haiku-20240307        | score: 41.5  | 95% CI: (-2.0, 2.1)  | average #tokens: 505
+gpt-4-0613                     | score: 37.9  | 95% CI: (-2.5, 2.9)  | average #tokens: 354
+mistral-large-2402             | score: 37.7  | 95% CI: (-2.1, 3.0)  | average #tokens: 400
+Meta-Llama-3.1-8B-Instruct     | score: 36.5  | 95% CI: (-2.2, 2.0)  | average #tokens: 731
+mixtral-8x22b-instruct-v0.1    | score: 36.4  | 95% CI: (-2.3, 2.4)  | average #tokens: 430
+qwen1.5-72b-chat               | score: 36.1  | 95% CI: (-1.8, 2.6)  | average #tokens: 474
+phi-3-medium-4k-instruct       | score: 33.4  | 95% CI: (-2.7, 1.8)  | average #tokens: 517
+command-r-plus                 | score: 33.1  | 95% CI: (-2.6, 2.2)  | average #tokens: 541
+mistral-medium                 | score: 31.9  | 95% CI: (-1.8, 2.7)  | average #tokens: 485
+phi-3-small-8k-instruct        | score: 29.8  | 95% CI: (-2.0, 1.8)  | average #tokens: 568
+mistral-next                   | score: 27.4  | 95% CI: (-2.0, 1.5)  | average #tokens: 297
+gpt-3.5-turbo-0613             | score: 24.8  | 95% CI: (-2.1, 1.9)  | average #tokens: 401
+dbrx-instruct-preview          | score: 24.6  | 95% CI: (-1.9, 2.6)  | average #tokens: 415
+claude-2.0                     | score: 24.0  | 95% CI: (-2.0, 2.0)  | average #tokens: 295
+mixtral-8x7b-instruct-v0.1     | score: 23.4  | 95% CI: (-1.8, 2.2)  | average #tokens: 457
+gpt-3.5-turbo-0125             | score: 23.3  | 95% CI: (-2.1, 1.8)  | average #tokens: 329
+yi-34b-chat                    | score: 23.1  | 95% CI: (-2.0, 2.2)  | average #tokens: 611
+starling-lm-7b-beta            | score: 23.0  | 95% CI: (-2.2, 1.6)  | average #tokens: 530
+claude-2.1                     | score: 22.8  | 95% CI: (-1.9, 1.8)  | average #tokens: 290
+llama-3.1-8b-instruct          | score: 21.3  | 95% CI: (-1.5, 1.8)  | average #tokens: 861
+snorkel-mistral-pairrm-dpo     | score: 20.7  | 95% CI: (-1.8, 1.9)  | average #tokens: 564
+llama-3-8b-instruct            | score: 20.6  | 95% CI: (-2.2, 1.6)  | average #tokens: 585
+gpt-3.5-turbo-1106             | score: 18.9  | 95% CI: (-2.0, 2.0)  | average #tokens: 285
+gpt-3.5-turbo-0314             | score: 18.1  | 95% CI: (-1.7, 1.8)  | average #tokens: 334
+gemini-pro                     | score: 17.8  | 95% CI: (-1.7, 1.7)  | average #tokens: 322
+snowflake-arctic-instruct      | score: 17.6  | 95% CI: (-1.8, 2.3)  | average #tokens: 365
+command-r                      | score: 17.0  | 95% CI: (-1.7, 1.7)  | average #tokens: 432
+phi-3-mini-128k-instruct       | score: 15.4  | 95% CI: (-1.9, 1.5)  | average #tokens: 609
+tulu-2-dpo-70b                 | score: 15.0  | 95% CI: (-1.7, 2.0)  | average #tokens: 550
+starling-lm-7b-alpha           | score: 12.8  | 95% CI: (-1.5, 1.4)  | average #tokens: 483
+mistral-7b-instruct            | score: 12.6  | 95% CI: (-1.5, 1.4)  | average #tokens: 541
+gemma-1.1-7b-it                | score: 12.1  | 95% CI: (-1.5, 1.1)  | average #tokens: 341
+llama-2-70b-chat               | score: 11.6  | 95% CI: (-1.2, 1.2)  | average #tokens: 595
+vicuna-33b                     | score:  8.6  | 95% CI: (-1.2, 1.2)  | average #tokens: 451
+tulu_v2_8b_base_template_dpo   | score:  7.9  | 95% CI: (-1.4, 1.4)  | average #tokens: 496
+gemma-7b-it                    | score:  7.5  | 95% CI: (-0.9, 1.2)  | average #tokens: 378
+tulu_v2_8b_bsz64_default_template_dpo | score:  7.0  | 95% CI: (-1.1, 1.0)  | average #tokens: 449
+tulu_lora_sft_default_template_8b | score:  4.3  | 95% CI: (-0.9, 0.6)  | average #tokens: 444
+tulu_lora_sft_base_template_8b | score:  4.3  | 95% CI: (-0.8, 0.7)  | average #tokens: 458
+gemma-1.1-2b-it                | score:  3.4  | 95% CI: (-0.7, 0.7)  | average #tokens: 316
+gemma-2b-it                    | score:  3.0  | 95% CI: (-0.6, 0.7)  | average #tokens: 369
++ kill 1673553
++ wait 1673553
++ echo '所有任务已完成，vllm 服务已关闭。'
+所有任务已完成，vllm 服务已关闭。
++ echo ----------------------------------------
++ tee -a eval.log
+----------------------------------------
++ sleep 60
++ for PARAM in "${PARAMS[@]}"
++ echo '执行参数: tulu_v2_8b_bsz64_default_template_dpo'
++ tee -a eval.log
+执行参数: tulu_v2_8b_bsz64_default_template_dpo
++ bash eval_script/arean_hard.sh tulu_v2_8b_bsz64_default_template_dpo
++ tee -a eval.log
++ DEFAULT_MODEL_NAME=Meta-Llama-3.1-8B-Instruct
++ MODEL_NAME=tulu_v2_8b_bsz64_default_template_dpo
++ TEMPLATE_FILES=("config/config_template/api_config_template.yaml" "config/config_template/gen_answer_config_template.yaml" "config/config_template/judge_config_template.yaml")
++ FILES=("config/api_config.yaml" "config/gen_answer_config.yaml" "config/judge_config.yaml")
++ for i in "${!TEMPLATE_FILES[@]}"
++ TEMPLATE_FILE=config/config_template/api_config_template.yaml
++ OUTPUT_FILE=config/api_config.yaml
++ cp config/config_template/api_config_template.yaml config/api_config.yaml
++ sed -i 's/{{MODEL_NAME}}/tulu_v2_8b_bsz64_default_template_dpo/g' config/api_config.yaml
++ for i in "${!TEMPLATE_FILES[@]}"
++ TEMPLATE_FILE=config/config_template/gen_answer_config_template.yaml
++ OUTPUT_FILE=config/gen_answer_config.yaml
++ cp config/config_template/gen_answer_config_template.yaml config/gen_answer_config.yaml
++ sed -i 's/{{MODEL_NAME}}/tulu_v2_8b_bsz64_default_template_dpo/g' config/gen_answer_config.yaml
++ for i in "${!TEMPLATE_FILES[@]}"
++ TEMPLATE_FILE=config/config_template/judge_config_template.yaml
++ OUTPUT_FILE=config/judge_config.yaml
++ cp config/config_template/judge_config_template.yaml config/judge_config.yaml
++ sed -i 's/{{MODEL_NAME}}/tulu_v2_8b_bsz64_default_template_dpo/g' config/judge_config.yaml
++ VLLM_PID=1685084
++ HOST=0.0.0.0
++ PORT=8000
++ TIMEOUT=600
++ INTERVAL=10
++ nohup vllm serve /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/tulu_v2_8b_bsz64_default_template_dpo --dtype auto --api-key token-abc123
++ echo '等待 vllm 服务启动...'
++ (( i=0 ))
+等待 vllm 服务启动...
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ echo 'vllm 服务已启动。'
++ break
++ ((  i >= TIMEOUT  ))
++ python gen_answer.py
+vllm 服务已启动。
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+{'name': 'config of answer generation for arena-hard-v0.1', 'bench_name': 'arena-hard-v0.1', 'temperature': 0.0, 'max_tokens': 2048, 'num_choices': 1, 'model_list': ['tulu_v2_8b_bsz64_default_template_dpo']}
+Output to data/arena-hard-v0.1/model_answer/tulu_v2_8b_bsz64_default_template_dpo.jsonl
+500 number of existing answers
++ python gen_judgment.py
+0it [00:00, ?it/s]Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4-1106-preview, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+500 number of existing judgments
+0it [00:00, ?it/s]
++ python show_result.py
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4-1106-preview', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=False, first_game_only=False)
+Turning judgment results into battles...
+  0%|          | 0/64 [00:00<?, ?it/s]  2%|▏         | 1/64 [00:00<00:24,  2.53it/s]  3%|▎         | 2/64 [00:00<00:24,  2.49it/s]  5%|▍         | 3/64 [00:01<00:24,  2.47it/s]  6%|▋         | 4/64 [00:01<00:25,  2.40it/s]  8%|▊         | 5/64 [00:02<00:25,  2.32it/s]  9%|▉         | 6/64 [00:02<00:25,  2.25it/s] 11%|█         | 7/64 [00:03<00:26,  2.18it/s] 12%|█▎        | 8/64 [00:03<00:26,  2.11it/s] 14%|█▍        | 9/64 [00:04<00:27,  1.97it/s] 16%|█▌        | 10/64 [00:04<00:28,  1.92it/s] 17%|█▋        | 11/64 [00:05<00:28,  1.87it/s] 19%|█▉        | 12/64 [00:05<00:28,  1.81it/s] 20%|██        | 13/64 [00:06<00:29,  1.76it/s] 22%|██▏       | 14/64 [00:07<00:30,  1.66it/s] 23%|██▎       | 15/64 [00:07<00:30,  1.63it/s] 25%|██▌       | 16/64 [00:08<00:30,  1.59it/s] 27%|██▋       | 17/64 [00:09<00:30,  1.56it/s] 28%|██▊       | 18/64 [00:09<00:30,  1.52it/s] 30%|██▉       | 19/64 [00:10<00:30,  1.48it/s] 31%|███▏      | 20/64 [00:11<00:31,  1.40it/s] 33%|███▎      | 21/64 [00:12<00:31,  1.38it/s] 34%|███▍      | 22/64 [00:12<00:30,  1.36it/s] 36%|███▌      | 23/64 [00:13<00:30,  1.33it/s] 38%|███▊      | 24/64 [00:14<00:30,  1.31it/s] 39%|███▉      | 25/64 [00:15<00:30,  1.28it/s] 41%|████      | 26/64 [00:16<00:30,  1.25it/s] 42%|████▏     | 27/64 [00:16<00:30,  1.23it/s] 44%|████▍     | 28/64 [00:17<00:30,  1.17it/s] 45%|████▌     | 29/64 [00:18<00:30,  1.14it/s] 47%|████▋     | 30/64 [00:19<00:30,  1.12it/s] 48%|████▊     | 31/64 [00:20<00:30,  1.10it/s] 50%|█████     | 32/64 [00:21<00:30,  1.06it/s] 52%|█████▏    | 33/64 [00:22<00:29,  1.04it/s] 53%|█████▎    | 34/64 [00:23<00:29,  1.01it/s] 55%|█████▍    | 35/64 [00:24<00:29,  1.02s/it] 56%|█████▋    | 36/64 [00:25<00:29,  1.04s/it] 58%|█████▊    | 37/64 [00:27<00:28,  1.07s/it] 59%|█████▉    | 38/64 [00:28<00:28,  1.10s/it] 61%|██████    | 39/64 [00:29<00:27,  1.12s/it] 62%|██████▎   | 40/64 [00:30<00:27,  1.16s/it] 64%|██████▍   | 41/64 [00:32<00:27,  1.21s/it] 66%|██████▌   | 42/64 [00:33<00:27,  1.23s/it] 67%|██████▋   | 43/64 [00:34<00:26,  1.27s/it] 69%|██████▉   | 44/64 [00:36<00:26,  1.31s/it] 70%|███████   | 45/64 [00:37<00:25,  1.35s/it] 72%|███████▏  | 46/64 [00:38<00:24,  1.38s/it] 73%|███████▎  | 47/64 [00:40<00:23,  1.40s/it] 75%|███████▌  | 48/64 [00:41<00:22,  1.41s/it] 77%|███████▋  | 49/64 [00:43<00:21,  1.44s/it] 78%|███████▊  | 50/64 [00:44<00:20,  1.50s/it] 80%|███████▉  | 51/64 [00:46<00:20,  1.57s/it] 81%|████████▏ | 52/64 [00:48<00:19,  1.62s/it] 83%|████████▎ | 53/64 [00:50<00:18,  1.67s/it] 84%|████████▍ | 54/64 [00:52<00:17,  1.71s/it] 86%|████████▌ | 55/64 [00:53<00:16,  1.78s/it] 88%|████████▊ | 56/64 [00:55<00:12,  1.57s/it] 89%|████████▉ | 57/64 [00:57<00:11,  1.68s/it] 91%|█████████ | 58/64 [00:59<00:10,  1.77s/it] 92%|█████████▏| 59/64 [01:00<00:09,  1.82s/it] 94%|█████████▍| 60/64 [01:02<00:07,  1.86s/it] 95%|█████████▌| 61/64 [01:05<00:05,  1.95s/it] 97%|█████████▋| 62/64 [01:07<00:03,  1.98s/it] 98%|█████████▊| 63/64 [01:09<00:02,  2.02s/it]100%|██████████| 64/64 [01:11<00:00,  2.08s/it]100%|██████████| 64/64 [01:11<00:00,  1.12s/it]
+bootstrap:   0%|          | 0/100 [00:00<?, ?it/s]bootstrap:   1%|          | 1/100 [00:00<01:32,  1.06it/s]bootstrap:   2%|▏         | 2/100 [00:01<01:17,  1.27it/s]bootstrap:   3%|▎         | 3/100 [00:02<01:10,  1.37it/s]bootstrap:   4%|▍         | 4/100 [00:03<01:10,  1.35it/s]bootstrap:   5%|▌         | 5/100 [00:03<01:07,  1.40it/s]bootstrap:   6%|▌         | 6/100 [00:04<01:17,  1.21it/s]bootstrap:   7%|▋         | 7/100 [00:05<01:16,  1.21it/s]bootstrap:   8%|▊         | 8/100 [00:06<01:14,  1.24it/s]bootstrap:   9%|▉         | 9/100 [00:06<01:08,  1.32it/s]bootstrap:  10%|█         | 10/100 [00:07<01:06,  1.36it/s]bootstrap:  11%|█         | 11/100 [00:08<01:05,  1.37it/s]bootstrap:  12%|█▏        | 12/100 [00:09<01:03,  1.39it/s]bootstrap:  13%|█▎        | 13/100 [00:09<01:03,  1.36it/s]bootstrap:  14%|█▍        | 14/100 [00:10<01:00,  1.42it/s]bootstrap:  15%|█▌        | 15/100 [00:11<00:59,  1.43it/s]bootstrap:  16%|█▌        | 16/100 [00:12<01:05,  1.28it/s]bootstrap:  17%|█▋        | 17/100 [00:12<01:05,  1.26it/s]bootstrap:  18%|█▊        | 18/100 [00:13<01:07,  1.22it/s]bootstrap:  19%|█▉        | 19/100 [00:14<01:05,  1.23it/s]bootstrap:  20%|██        | 20/100 [00:15<01:05,  1.22it/s]bootstrap:  21%|██        | 21/100 [00:16<01:05,  1.21it/s]bootstrap:  22%|██▏       | 22/100 [00:17<01:03,  1.23it/s]bootstrap:  23%|██▎       | 23/100 [00:17<01:01,  1.25it/s]bootstrap:  24%|██▍       | 24/100 [00:18<00:57,  1.32it/s]bootstrap:  25%|██▌       | 25/100 [00:19<00:55,  1.36it/s]bootstrap:  26%|██▌       | 26/100 [00:19<00:53,  1.37it/s]bootstrap:  27%|██▋       | 27/100 [00:20<00:53,  1.37it/s]bootstrap:  28%|██▊       | 28/100 [00:21<00:50,  1.41it/s]bootstrap:  29%|██▉       | 29/100 [00:22<00:53,  1.32it/s]bootstrap:  30%|███       | 30/100 [00:22<00:52,  1.33it/s]bootstrap:  31%|███       | 31/100 [00:23<00:52,  1.32it/s]bootstrap:  32%|███▏      | 32/100 [00:24<00:53,  1.27it/s]bootstrap:  33%|███▎      | 33/100 [00:25<00:51,  1.30it/s]bootstrap:  34%|███▍      | 34/100 [00:26<00:50,  1.30it/s]bootstrap:  35%|███▌      | 35/100 [00:26<00:47,  1.36it/s]bootstrap:  36%|███▌      | 36/100 [00:27<00:46,  1.38it/s]bootstrap:  37%|███▋      | 37/100 [00:28<00:46,  1.37it/s]bootstrap:  38%|███▊      | 38/100 [00:28<00:44,  1.38it/s]bootstrap:  39%|███▉      | 39/100 [00:29<00:43,  1.40it/s]bootstrap:  40%|████      | 40/100 [00:30<00:42,  1.42it/s]bootstrap:  41%|████      | 41/100 [00:30<00:42,  1.39it/s]bootstrap:  42%|████▏     | 42/100 [00:31<00:42,  1.36it/s]bootstrap:  43%|████▎     | 43/100 [00:32<00:44,  1.27it/s]bootstrap:  44%|████▍     | 44/100 [00:33<00:42,  1.32it/s]bootstrap:  45%|████▌     | 45/100 [00:34<00:40,  1.35it/s]bootstrap:  46%|████▌     | 46/100 [00:34<00:39,  1.38it/s]bootstrap:  47%|████▋     | 47/100 [00:35<00:37,  1.40it/s]bootstrap:  48%|████▊     | 48/100 [00:36<00:36,  1.42it/s]bootstrap:  49%|████▉     | 49/100 [00:37<00:40,  1.26it/s]bootstrap:  50%|█████     | 50/100 [00:37<00:37,  1.34it/s]bootstrap:  51%|█████     | 51/100 [00:38<00:35,  1.40it/s]bootstrap:  52%|█████▏    | 52/100 [00:39<00:35,  1.33it/s]bootstrap:  53%|█████▎    | 53/100 [00:39<00:35,  1.34it/s]bootstrap:  54%|█████▍    | 54/100 [00:40<00:35,  1.29it/s]bootstrap:  55%|█████▌    | 55/100 [00:41<00:33,  1.34it/s]bootstrap:  56%|█████▌    | 56/100 [00:42<00:31,  1.38it/s]bootstrap:  57%|█████▋    | 57/100 [00:42<00:32,  1.34it/s]bootstrap:  58%|█████▊    | 58/100 [00:43<00:31,  1.35it/s]bootstrap:  59%|█████▉    | 59/100 [00:44<00:31,  1.31it/s]bootstrap:  60%|██████    | 60/100 [00:45<00:29,  1.34it/s]bootstrap:  61%|██████    | 61/100 [00:46<00:29,  1.32it/s]bootstrap:  62%|██████▏   | 62/100 [00:46<00:29,  1.28it/s]bootstrap:  63%|██████▎   | 63/100 [00:47<00:27,  1.34it/s]bootstrap:  64%|██████▍   | 64/100 [00:48<00:27,  1.31it/s]bootstrap:  65%|██████▌   | 65/100 [00:49<00:27,  1.27it/s]bootstrap:  66%|██████▌   | 66/100 [00:49<00:25,  1.31it/s]bootstrap:  67%|██████▋   | 67/100 [00:50<00:25,  1.30it/s]bootstrap:  68%|██████▊   | 68/100 [00:51<00:24,  1.29it/s]bootstrap:  69%|██████▉   | 69/100 [00:52<00:24,  1.28it/s]bootstrap:  70%|███████   | 70/100 [00:52<00:22,  1.33it/s]bootstrap:  71%|███████   | 71/100 [00:53<00:21,  1.33it/s]bootstrap:  72%|███████▏  | 72/100 [00:54<00:20,  1.35it/s]bootstrap:  73%|███████▎  | 73/100 [00:55<00:19,  1.37it/s]bootstrap:  74%|███████▍  | 74/100 [00:55<00:19,  1.37it/s]bootstrap:  75%|███████▌  | 75/100 [00:56<00:19,  1.32it/s]bootstrap:  76%|███████▌  | 76/100 [00:57<00:18,  1.32it/s]bootstrap:  77%|███████▋  | 77/100 [00:58<00:17,  1.35it/s]bootstrap:  78%|███████▊  | 78/100 [00:58<00:16,  1.37it/s]bootstrap:  79%|███████▉  | 79/100 [00:59<00:15,  1.40it/s]bootstrap:  80%|████████  | 80/100 [01:00<00:14,  1.36it/s]bootstrap:  81%|████████  | 81/100 [01:00<00:13,  1.39it/s]bootstrap:  82%|████████▏ | 82/100 [01:01<00:13,  1.36it/s]bootstrap:  83%|████████▎ | 83/100 [01:02<00:12,  1.37it/s]bootstrap:  84%|████████▍ | 84/100 [01:03<00:11,  1.40it/s]bootstrap:  85%|████████▌ | 85/100 [01:03<00:10,  1.36it/s]bootstrap:  86%|████████▌ | 86/100 [01:04<00:10,  1.30it/s]bootstrap:  87%|████████▋ | 87/100 [01:05<00:09,  1.31it/s]bootstrap:  88%|████████▊ | 88/100 [01:06<00:09,  1.29it/s]bootstrap:  89%|████████▉ | 89/100 [01:06<00:08,  1.34it/s]bootstrap:  90%|█████████ | 90/100 [01:07<00:07,  1.35it/s]bootstrap:  91%|█████████ | 91/100 [01:08<00:06,  1.39it/s]bootstrap:  92%|█████████▏| 92/100 [01:09<00:05,  1.38it/s]bootstrap:  93%|█████████▎| 93/100 [01:09<00:05,  1.38it/s]bootstrap:  94%|█████████▍| 94/100 [01:10<00:04,  1.34it/s]bootstrap:  95%|█████████▌| 95/100 [01:11<00:03,  1.38it/s]bootstrap:  96%|█████████▌| 96/100 [01:12<00:02,  1.39it/s]bootstrap:  97%|█████████▋| 97/100 [01:12<00:02,  1.41it/s]bootstrap:  98%|█████████▊| 98/100 [01:13<00:01,  1.35it/s]bootstrap:  99%|█████████▉| 99/100 [01:14<00:00,  1.35it/s]bootstrap: 100%|██████████| 100/100 [01:15<00:00,  1.32it/s]bootstrap: 100%|██████████| 100/100 [01:15<00:00,  1.33it/s]
+gpt-4-turbo-2024-04-09         | score: 82.6  | 95% CI: (-1.9, 1.9)  | average #tokens: 662
+claude-3-5-sonnet-20240620     | score: 79.3  | 95% CI: (-2.2, 1.9)  | average #tokens: 567
+gpt-4o-2024-05-13              | score: 79.2  | 95% CI: (-2.0, 2.4)  | average #tokens: 696
+gpt-4-0125-preview             | score: 78.0  | 95% CI: (-2.2, 2.0)  | average #tokens: 619
+athene-70b                     | score: 76.8  | 95% CI: (-2.1, 2.2)  | average #tokens: 683
+gpt-4o-mini                    | score: 74.9  | 95% CI: (-2.8, 2.3)  | average #tokens: 668
+gemini-1.5-pro-api-0514        | score: 72.0  | 95% CI: (-2.5, 2.5)  | average #tokens: 676
+yi-large-preview               | score: 71.5  | 95% CI: (-2.5, 2.1)  | average #tokens: 720
+mistral-large-2407             | score: 70.4  | 95% CI: (-2.2, 2.1)  | average #tokens: 623
+llama-3.1-405b-instruct        | score: 64.1  | 95% CI: (-2.4, 2.8)  | average #tokens: 633
+glm-4-0520                     | score: 63.8  | 95% CI: (-2.1, 2.0)  | average #tokens: 636
+yi-large                       | score: 63.7  | 95% CI: (-2.3, 2.5)  | average #tokens: 626
+deepseek-coder-v2              | score: 62.3  | 95% CI: (-2.1, 2.4)  | average #tokens: 578
+claude-3-opus-20240229         | score: 60.4  | 95% CI: (-2.4, 2.2)  | average #tokens: 541
+gemma-2-27b-it                 | score: 57.5  | 95% CI: (-2.1, 2.2)  | average #tokens: 577
+llama-3.1-70b-instruct         | score: 55.7  | 95% CI: (-3.2, 2.8)  | average #tokens: 628
+glm-4-0116                     | score: 55.7  | 95% CI: (-2.5, 2.2)  | average #tokens: 622
+gemini-1.5-pro-api-0409-preview | score: 53.4  | 95% CI: (-2.0, 2.6)  | average #tokens: 478
+glm-4-air                      | score: 50.9  | 95% CI: (-2.7, 2.5)  | average #tokens: 619
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+gemini-1.5-flash-api-0514      | score: 49.6  | 95% CI: (-2.2, 2.3)  | average #tokens: 642
+qwen2-72b-instruct             | score: 46.9  | 95% CI: (-3.0, 2.2)  | average #tokens: 515
+claude-3-sonnet-20240229       | score: 46.8  | 95% CI: (-2.3, 2.1)  | average #tokens: 552
+llama-3-70b-instruct           | score: 46.6  | 95% CI: (-2.3, 2.4)  | average #tokens: 591
+claude-3-haiku-20240307        | score: 41.5  | 95% CI: (-2.0, 2.1)  | average #tokens: 505
+gpt-4-0613                     | score: 37.9  | 95% CI: (-2.5, 2.9)  | average #tokens: 354
+mistral-large-2402             | score: 37.7  | 95% CI: (-2.1, 3.0)  | average #tokens: 400
+Meta-Llama-3.1-8B-Instruct     | score: 36.5  | 95% CI: (-2.2, 2.0)  | average #tokens: 731
+mixtral-8x22b-instruct-v0.1    | score: 36.4  | 95% CI: (-2.3, 2.4)  | average #tokens: 430
+qwen1.5-72b-chat               | score: 36.1  | 95% CI: (-1.8, 2.6)  | average #tokens: 474
+phi-3-medium-4k-instruct       | score: 33.4  | 95% CI: (-2.7, 1.8)  | average #tokens: 517
+command-r-plus                 | score: 33.1  | 95% CI: (-2.6, 2.2)  | average #tokens: 541
+mistral-medium                 | score: 31.9  | 95% CI: (-1.8, 2.7)  | average #tokens: 485
+phi-3-small-8k-instruct        | score: 29.8  | 95% CI: (-2.0, 1.8)  | average #tokens: 568
+mistral-next                   | score: 27.4  | 95% CI: (-2.0, 1.5)  | average #tokens: 297
+gpt-3.5-turbo-0613             | score: 24.8  | 95% CI: (-2.1, 1.9)  | average #tokens: 401
+dbrx-instruct-preview          | score: 24.6  | 95% CI: (-1.9, 2.6)  | average #tokens: 415
+claude-2.0                     | score: 24.0  | 95% CI: (-2.0, 2.0)  | average #tokens: 295
+mixtral-8x7b-instruct-v0.1     | score: 23.4  | 95% CI: (-1.8, 2.2)  | average #tokens: 457
+gpt-3.5-turbo-0125             | score: 23.3  | 95% CI: (-2.1, 1.8)  | average #tokens: 329
+yi-34b-chat                    | score: 23.1  | 95% CI: (-2.0, 2.2)  | average #tokens: 611
+starling-lm-7b-beta            | score: 23.0  | 95% CI: (-2.2, 1.6)  | average #tokens: 530
+claude-2.1                     | score: 22.8  | 95% CI: (-1.9, 1.8)  | average #tokens: 290
+llama-3.1-8b-instruct          | score: 21.3  | 95% CI: (-1.5, 1.8)  | average #tokens: 861
+snorkel-mistral-pairrm-dpo     | score: 20.7  | 95% CI: (-1.8, 1.9)  | average #tokens: 564
+llama-3-8b-instruct            | score: 20.6  | 95% CI: (-2.2, 1.6)  | average #tokens: 585
+gpt-3.5-turbo-1106             | score: 18.9  | 95% CI: (-2.0, 2.0)  | average #tokens: 285
+gpt-3.5-turbo-0314             | score: 18.1  | 95% CI: (-1.7, 1.8)  | average #tokens: 334
+gemini-pro                     | score: 17.8  | 95% CI: (-1.7, 1.7)  | average #tokens: 322
+snowflake-arctic-instruct      | score: 17.6  | 95% CI: (-1.8, 2.3)  | average #tokens: 365
+command-r                      | score: 17.0  | 95% CI: (-1.7, 1.7)  | average #tokens: 432
+phi-3-mini-128k-instruct       | score: 15.4  | 95% CI: (-1.9, 1.5)  | average #tokens: 609
+tulu-2-dpo-70b                 | score: 15.0  | 95% CI: (-1.7, 2.0)  | average #tokens: 550
+starling-lm-7b-alpha           | score: 12.8  | 95% CI: (-1.5, 1.4)  | average #tokens: 483
+mistral-7b-instruct            | score: 12.6  | 95% CI: (-1.5, 1.4)  | average #tokens: 541
+gemma-1.1-7b-it                | score: 12.1  | 95% CI: (-1.5, 1.1)  | average #tokens: 341
+llama-2-70b-chat               | score: 11.6  | 95% CI: (-1.2, 1.2)  | average #tokens: 595
+vicuna-33b                     | score:  8.6  | 95% CI: (-1.2, 1.2)  | average #tokens: 451
+tulu_v2_8b_base_template_dpo   | score:  7.9  | 95% CI: (-1.4, 1.4)  | average #tokens: 496
+gemma-7b-it                    | score:  7.5  | 95% CI: (-0.9, 1.2)  | average #tokens: 378
+tulu_v2_8b_bsz64_default_template_dpo | score:  7.0  | 95% CI: (-1.1, 1.0)  | average #tokens: 449
+tulu_lora_sft_default_template_8b | score:  4.3  | 95% CI: (-0.9, 0.6)  | average #tokens: 444
+tulu_lora_sft_base_template_8b | score:  4.3  | 95% CI: (-0.8, 0.7)  | average #tokens: 458
+gemma-1.1-2b-it                | score:  3.4  | 95% CI: (-0.7, 0.7)  | average #tokens: 316
+gemma-2b-it                    | score:  3.0  | 95% CI: (-0.6, 0.7)  | average #tokens: 369
++ kill 1685084
++ wait 1685084
++ echo '所有任务已完成，vllm 服务已关闭。'
+所有任务已完成，vllm 服务已关闭。
++ echo ----------------------------------------
++ tee -a eval.log
+----------------------------------------
++ sleep 60
++ for PARAM in "${PARAMS[@]}"
++ echo '执行参数: tulu_v2_8b_base_template_dpo'
++ tee -a eval.log
+执行参数: tulu_v2_8b_base_template_dpo
++ bash eval_script/arean_hard.sh tulu_v2_8b_base_template_dpo
++ tee -a eval.log
++ DEFAULT_MODEL_NAME=Meta-Llama-3.1-8B-Instruct
++ MODEL_NAME=tulu_v2_8b_base_template_dpo
++ TEMPLATE_FILES=("config/config_template/api_config_template.yaml" "config/config_template/gen_answer_config_template.yaml" "config/config_template/judge_config_template.yaml")
++ FILES=("config/api_config.yaml" "config/gen_answer_config.yaml" "config/judge_config.yaml")
++ for i in "${!TEMPLATE_FILES[@]}"
++ TEMPLATE_FILE=config/config_template/api_config_template.yaml
++ OUTPUT_FILE=config/api_config.yaml
++ cp config/config_template/api_config_template.yaml config/api_config.yaml
++ sed -i 's/{{MODEL_NAME}}/tulu_v2_8b_base_template_dpo/g' config/api_config.yaml
++ for i in "${!TEMPLATE_FILES[@]}"
++ TEMPLATE_FILE=config/config_template/gen_answer_config_template.yaml
++ OUTPUT_FILE=config/gen_answer_config.yaml
++ cp config/config_template/gen_answer_config_template.yaml config/gen_answer_config.yaml
++ sed -i 's/{{MODEL_NAME}}/tulu_v2_8b_base_template_dpo/g' config/gen_answer_config.yaml
++ for i in "${!TEMPLATE_FILES[@]}"
++ TEMPLATE_FILE=config/config_template/judge_config_template.yaml
++ OUTPUT_FILE=config/judge_config.yaml
++ cp config/config_template/judge_config_template.yaml config/judge_config.yaml
++ sed -i 's/{{MODEL_NAME}}/tulu_v2_8b_base_template_dpo/g' config/judge_config.yaml
++ VLLM_PID=1686164
++ HOST=0.0.0.0
++ PORT=8000
++ TIMEOUT=600
++ INTERVAL=10
++ echo '等待 vllm 服务启动...'
++ (( i=0 ))
+等待 vllm 服务启动...
++ nohup vllm serve /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/tulu_v2_8b_base_template_dpo --dtype auto --api-key token-abc123
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ sleep 10
++ (( i+=10 ))
++ (( i<=600 ))
++ curl -s http://0.0.0.0:8000
++ echo 'vllm 服务已启动。'
++ break
+vllm 服务已启动。
++ ((  i >= TIMEOUT  ))
++ python gen_answer.py
+0it [00:00, ?it/s]0it [00:00, ?it/s]{'name': 'config of answer generation for arena-hard-v0.1', 'bench_name': 'arena-hard-v0.1', 'temperature': 0.0, 'max_tokens': 2048, 'num_choices': 1, 'model_list': ['tulu_v2_8b_base_template_dpo']}
+Output to data/arena-hard-v0.1/model_answer/tulu_v2_8b_base_template_dpo.jsonl
+500 number of existing answers
+
++ python gen_judgment.py
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4-1106-preview, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+287 number of existing judgments
+  0%|          | 0/213 [00:00<?, ?it/s]  0%|          | 1/213 [00:27<1:38:07, 27.77s/it]  1%|          | 2/213 [00:33<51:06, 14.53s/it]    1%|▏         | 3/213 [00:37<34:44,  9.93s/it]  2%|▏         | 4/213 [00:45<32:10,  9.24s/it]  2%|▏         | 5/213 [00:47<22:17,  6.43s/it]  3%|▎         | 6/213 [00:51<20:11,  5.85s/it]  3%|▎         | 7/213 [00:55<17:27,  5.09s/it]  4%|▍         | 8/213 [01:03<20:13,  5.92s/it]  4%|▍         | 9/213 [01:03<14:03,  4.14s/it]  5%|▍         | 10/213 [01:26<34:18, 10.14s/it]  5%|▌         | 11/213 [01:28<25:43,  7.64s/it]  6%|▌         | 12/213 [01:29<18:48,  5.61s/it]  6%|▌         | 13/213 [01:32<15:27,  4.64s/it]  7%|▋         | 14/213 [01:32<11:05,  3.34s/it]  7%|▋         | 15/213 [01:38<13:32,  4.10s/it]  8%|▊         | 16/213 [01:49<20:00,  6.09s/it]  8%|▊         | 17/213 [01:53<18:15,  5.59s/it]  8%|▊         | 18/213 [01:56<15:23,  4.73s/it]  9%|▉         | 19/213 [02:02<16:17,  5.04s/it]  9%|▉         | 20/213 [02:11<20:21,  6.33s/it] 10%|▉         | 21/213 [02:15<18:27,  5.77s/it] 10%|█         | 22/213 [02:21<18:42,  5.88s/it] 11%|█         | 23/213 [02:22<13:13,  4.18s/it] 11%|█▏        | 24/213 [02:32<19:01,  6.04s/it] 12%|█▏        | 25/213 [02:37<17:59,  5.74s/it] 12%|█▏        | 26/213 [02:48<22:22,  7.18s/it] 13%|█▎        | 27/213 [02:50<17:26,  5.63s/it] 14%|█▎        | 29/213 [02:55<12:49,  4.18s/it] 14%|█▍        | 30/213 [02:56<10:40,  3.50s/it] 15%|█▍        | 31/213 [02:57<08:38,  2.85s/it] 15%|█▌        | 32/213 [03:09<16:20,  5.42s/it] 15%|█▌        | 33/213 [03:14<15:11,  5.06s/it] 16%|█▌        | 34/213 [03:36<29:57, 10.04s/it] 16%|█▋        | 35/213 [03:50<32:53, 11.08s/it] 17%|█▋        | 36/213 [03:52<24:58,  8.47s/it] 17%|█▋        | 37/213 [03:52<18:04,  6.16s/it] 18%|█▊        | 38/213 [03:57<16:34,  5.68s/it] 18%|█▊        | 39/213 [03:59<13:27,  4.64s/it] 19%|█▉        | 40/213 [04:00<10:17,  3.57s/it] 19%|█▉        | 41/213 [04:01<07:44,  2.70s/it] 20%|█▉        | 42/213 [04:19<21:07,  7.41s/it] 20%|██        | 43/213 [04:25<19:09,  6.76s/it] 21%|██        | 44/213 [04:31<18:58,  6.74s/it] 22%|██▏       | 46/213 [04:36<13:10,  4.73s/it] 22%|██▏       | 47/213 [04:38<11:15,  4.07s/it] 23%|██▎       | 48/213 [04:47<14:27,  5.25s/it] 23%|██▎       | 49/213 [04:58<18:57,  6.94s/it] 23%|██▎       | 50/213 [05:05<18:25,  6.78s/it] 24%|██▍       | 51/213 [05:08<15:27,  5.73s/it] 24%|██▍       | 52/213 [05:12<14:40,  5.47s/it] 25%|██▍       | 53/213 [05:16<13:14,  4.97s/it] 25%|██▌       | 54/213 [05:21<13:15,  5.00s/it] 26%|██▌       | 55/213 [05:22<09:45,  3.70s/it] 26%|██▋       | 56/213 [05:24<08:41,  3.32s/it] 27%|██▋       | 57/213 [05:35<14:37,  5.63s/it] 27%|██▋       | 58/213 [05:39<12:49,  4.97s/it] 28%|██▊       | 59/213 [05:47<15:27,  6.02s/it] 28%|██▊       | 60/213 [05:49<12:14,  4.80s/it] 29%|██▊       | 61/213 [05:55<12:43,  5.02s/it] 29%|██▉       | 62/213 [06:08<18:29,  7.35s/it] 30%|██▉       | 63/213 [06:09<14:15,  5.70s/it] 30%|███       | 64/213 [06:14<13:03,  5.26s/it] 31%|███       | 65/213 [06:17<11:49,  4.79s/it] 31%|███       | 66/213 [06:20<10:18,  4.21s/it] 31%|███▏      | 67/213 [06:24<10:10,  4.18s/it] 32%|███▏      | 68/213 [06:42<19:36,  8.11s/it] 32%|███▏      | 69/213 [06:42<13:53,  5.78s/it] 33%|███▎      | 70/213 [06:43<10:34,  4.44s/it] 33%|███▎      | 71/213 [06:48<10:36,  4.48s/it] 34%|███▍      | 72/213 [06:51<09:38,  4.11s/it] 34%|███▍      | 73/213 [06:52<07:07,  3.05s/it] 35%|███▍      | 74/213 [06:55<07:27,  3.22s/it] 35%|███▌      | 75/213 [06:58<07:23,  3.21s/it] 36%|███▌      | 76/213 [07:12<14:26,  6.32s/it] 36%|███▌      | 77/213 [07:21<15:48,  6.98s/it] 37%|███▋      | 78/213 [07:24<13:13,  5.88s/it] 37%|███▋      | 79/213 [07:24<09:23,  4.21s/it] 38%|███▊      | 80/213 [07:24<06:40,  3.01s/it] 38%|███▊      | 81/213 [07:33<10:14,  4.66s/it] 38%|███▊      | 82/213 [07:45<15:10,  6.95s/it] 39%|███▉      | 83/213 [07:45<10:39,  4.92s/it] 39%|███▉      | 84/213 [08:11<23:38, 10.99s/it] 40%|███▉      | 85/213 [08:17<20:37,  9.67s/it] 40%|████      | 86/213 [08:24<18:57,  8.96s/it] 41%|████      | 87/213 [08:32<17:45,  8.45s/it] 41%|████▏     | 88/213 [08:32<12:38,  6.07s/it] 42%|████▏     | 89/213 [08:44<16:22,  7.92s/it] 42%|████▏     | 90/213 [08:50<14:52,  7.26s/it] 43%|████▎     | 91/213 [08:53<12:08,  5.97s/it] 43%|████▎     | 92/213 [09:08<17:13,  8.54s/it] 44%|████▎     | 93/213 [09:11<14:09,  7.08s/it] 45%|████▍     | 95/213 [09:16<09:28,  4.81s/it] 45%|████▌     | 96/213 [09:16<07:25,  3.81s/it] 46%|████▌     | 97/213 [09:24<09:03,  4.68s/it] 46%|████▌     | 98/213 [09:27<08:17,  4.33s/it] 46%|████▋     | 99/213 [09:48<16:53,  8.89s/it] 47%|████▋     | 100/213 [09:52<14:32,  7.72s/it] 47%|████▋     | 101/213 [10:01<15:04,  8.07s/it] 48%|████▊     | 102/213 [10:02<10:48,  5.85s/it] 48%|████▊     | 103/213 [10:03<08:17,  4.53s/it] 49%|████▉     | 104/213 [10:05<06:46,  3.73s/it] 49%|████▉     | 105/213 [10:05<04:48,  2.67s/it] 50%|████▉     | 106/213 [10:11<06:27,  3.62s/it] 50%|█████     | 107/213 [10:14<06:06,  3.45s/it] 51%|█████     | 108/213 [10:21<07:36,  4.35s/it] 51%|█████     | 109/213 [10:31<10:42,  6.18s/it] 52%|█████▏    | 110/213 [10:39<11:23,  6.63s/it] 52%|█████▏    | 111/213 [10:40<08:24,  4.95s/it] 53%|█████▎    | 112/213 [10:41<06:14,  3.71s/it] 53%|█████▎    | 113/213 [10:48<08:00,  4.81s/it] 54%|█████▎    | 114/213 [10:54<08:20,  5.06s/it] 54%|█████▍    | 115/213 [10:56<07:01,  4.30s/it] 54%|█████▍    | 116/213 [11:09<11:15,  6.96s/it] 55%|█████▍    | 117/213 [11:11<08:43,  5.45s/it] 55%|█████▌    | 118/213 [11:14<07:24,  4.68s/it] 56%|█████▌    | 119/213 [11:17<06:34,  4.20s/it] 56%|█████▋    | 120/213 [11:25<08:03,  5.20s/it] 57%|█████▋    | 121/213 [11:36<10:40,  6.96s/it] 57%|█████▋    | 122/213 [11:41<09:53,  6.52s/it]max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+ 58%|█████▊    | 123/213 [11:50<10:47,  7.20s/it] 58%|█████▊    | 124/213 [11:56<10:05,  6.81s/it] 59%|█████▊    | 125/213 [12:00<08:39,  5.90s/it] 59%|█████▉    | 126/213 [12:08<09:28,  6.53s/it] 60%|█████▉    | 127/213 [12:10<07:43,  5.39s/it] 60%|██████    | 128/213 [12:11<05:41,  4.02s/it] 61%|██████    | 129/213 [12:17<06:26,  4.60s/it] 61%|██████    | 130/213 [12:22<06:25,  4.65s/it] 62%|██████▏   | 132/213 [12:46<10:51,  8.04s/it] 62%|██████▏   | 133/213 [12:52<09:54,  7.44s/it] 63%|██████▎   | 134/213 [12:52<07:22,  5.60s/it] 63%|██████▎   | 135/213 [12:56<06:34,  5.06s/it] 64%|██████▍   | 136/213 [12:58<05:22,  4.19s/it] 64%|██████▍   | 137/213 [12:59<04:12,  3.32s/it] 65%|██████▍   | 138/213 [13:01<03:42,  2.96s/it] 65%|██████▌   | 139/213 [13:10<05:57,  4.83s/it] 66%|██████▌   | 140/213 [13:20<07:46,  6.39s/it] 66%|██████▌   | 141/213 [13:27<07:45,  6.47s/it] 67%|██████▋   | 142/213 [13:29<06:09,  5.20s/it] 67%|██████▋   | 143/213 [13:35<06:21,  5.45s/it] 68%|██████▊   | 144/213 [13:49<09:12,  8.01s/it] 68%|██████▊   | 145/213 [13:56<08:50,  7.81s/it] 69%|██████▊   | 146/213 [13:58<06:35,  5.90s/it] 69%|██████▉   | 147/213 [14:14<09:50,  8.94s/it] 69%|██████▉   | 148/213 [14:17<07:36,  7.02s/it] 70%|██████▉   | 149/213 [14:33<10:21,  9.71s/it] 70%|███████   | 150/213 [14:35<07:51,  7.49s/it] 71%|███████   | 151/213 [14:58<12:28, 12.07s/it] 71%|███████▏  | 152/213 [14:59<08:52,  8.73s/it]max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8615 tokens (4519 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8615 tokens (4519 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8615 tokens (4519 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8615 tokens (4519 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8615 tokens (4519 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8615 tokens (4519 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8635 tokens (4539 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8635 tokens (4539 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8635 tokens (4539 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8635 tokens (4539 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8635 tokens (4539 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8635 tokens (4539 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8615 tokens (4519 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8615 tokens (4519 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8615 tokens (4519 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8615 tokens (4519 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8615 tokens (4519 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8615 tokens (4519 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8635 tokens (4539 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+ 72%|███████▏  | 153/213 [15:06<08:17,  8.29s/it] 72%|███████▏  | 154/213 [15:06<05:53,  6.00s/it] 73%|███████▎  | 155/213 [15:10<05:08,  5.32s/it] 74%|███████▎  | 157/213 [15:15<03:46,  4.04s/it] 74%|███████▍  | 158/213 [15:21<04:11,  4.57s/it] 75%|███████▍  | 159/213 [15:23<03:19,  3.70s/it] 75%|███████▌  | 160/213 [15:42<06:59,  7.91s/it] 76%|███████▌  | 161/213 [15:54<07:52,  9.09s/it] 76%|███████▌  | 162/213 [16:00<06:58,  8.20s/it] 77%|███████▋  | 163/213 [16:10<07:22,  8.85s/it] 77%|███████▋  | 164/213 [16:19<07:06,  8.70s/it] 77%|███████▋  | 165/213 [16:28<07:01,  8.78s/it] 78%|███████▊  | 166/213 [16:30<05:29,  7.00s/it] 78%|███████▊  | 167/213 [16:31<03:57,  5.15s/it] 79%|███████▉  | 168/213 [16:41<04:49,  6.43s/it] 79%|███████▉  | 169/213 [16:47<04:34,  6.24s/it] 80%|███████▉  | 170/213 [16:50<03:50,  5.36s/it] 80%|████████  | 171/213 [16:51<02:52,  4.11s/it] 81%|████████  | 172/213 [16:57<03:12,  4.69s/it] 81%|████████  | 173/213 [17:01<02:59,  4.50s/it] 82%|████████▏ | 174/213 [17:06<03:00,  4.62s/it] 82%|████████▏ | 175/213 [17:08<02:24,  3.79s/it] 83%|████████▎ | 176/213 [17:27<05:05,  8.26s/it] 83%|████████▎ | 177/213 [17:29<03:56,  6.57s/it] 84%|████████▎ | 178/213 [17:40<04:35,  7.88s/it] 84%|████████▍ | 179/213 [17:44<03:43,  6.58s/it] 85%|████████▍ | 180/213 [17:44<02:36,  4.75s/it] 85%|████████▍ | 181/213 [17:49<02:32,  4.76s/it] 85%|████████▌ | 182/213 [17:49<01:45,  3.40s/it] 86%|████████▌ | 183/213 [18:02<03:07,  6.26s/it] 86%|████████▋ | 184/213 [18:08<02:54,  6.02s/it] 87%|████████▋ | 185/213 [18:13<02:45,  5.91s/it] 87%|████████▋ | 186/213 [18:14<01:56,  4.30s/it] 88%|████████▊ | 187/213 [18:21<02:15,  5.21s/it] 88%|████████▊ | 188/213 [18:29<02:27,  5.90s/it] 89%|████████▊ | 189/213 [18:33<02:11,  5.48s/it] 89%|████████▉ | 190/213 [18:51<03:35,  9.35s/it] 90%|████████▉ | 191/213 [18:52<02:30,  6.84s/it] 90%|█████████ | 192/213 [18:54<01:50,  5.27s/it] 91%|█████████ | 193/213 [19:02<02:00,  6.03s/it] 91%|█████████ | 194/213 [19:04<01:35,  5.00s/it] 92%|█████████▏| 195/213 [19:07<01:14,  4.14s/it] 92%|█████████▏| 196/213 [19:23<02:11,  7.72s/it] 92%|█████████▏| 197/213 [19:28<01:52,  7.02s/it] 93%|█████████▎| 198/213 [19:33<01:34,  6.29s/it] 93%|█████████▎| 199/213 [19:45<01:53,  8.08s/it] 94%|█████████▍| 200/213 [19:46<01:18,  6.06s/it] 94%|█████████▍| 201/213 [19:47<00:54,  4.55s/it] 95%|█████████▍| 202/213 [19:52<00:49,  4.53s/it] 95%|█████████▌| 203/213 [20:04<01:07,  6.79s/it] 96%|█████████▌| 204/213 [20:10<00:59,  6.61s/it] 96%|█████████▌| 205/213 [20:10<00:37,  4.68s/it] 97%|█████████▋| 206/213 [20:15<00:33,  4.82s/it] 97%|█████████▋| 207/213 [20:25<00:37,  6.29s/it] 98%|█████████▊| 208/213 [20:26<00:23,  4.64s/it] 98%|█████████▊| 209/213 [20:31<00:19,  4.82s/it] 99%|█████████▊| 210/213 [21:00<00:36, 12.22s/it] 99%|█████████▉| 211/213 [21:02<00:18,  9.14s/it]100%|█████████▉| 212/213 [21:03<00:06,  6.58s/it]100%|██████████| 213/213 [21:10<00:00,  6.60s/it]100%|██████████| 213/213 [21:10<00:00,  5.96s/it]
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8635 tokens (4539 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8635 tokens (4539 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8635 tokens (4539 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8635 tokens (4539 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 8635 tokens (4539 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
++ python show_result.py
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4-1106-preview', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=False, first_game_only=False)
+Turning judgment results into battles...
+  0%|          | 0/64 [00:00<?, ?it/s]  2%|▏         | 1/64 [00:00<00:24,  2.53it/s]  3%|▎         | 2/64 [00:00<00:24,  2.50it/s]  5%|▍         | 3/64 [00:01<00:24,  2.46it/s]  6%|▋         | 4/64 [00:01<00:25,  2.39it/s]  8%|▊         | 5/64 [00:02<00:25,  2.32it/s]  9%|▉         | 6/64 [00:02<00:25,  2.25it/s] 11%|█         | 7/64 [00:03<00:26,  2.18it/s] 12%|█▎        | 8/64 [00:03<00:26,  2.11it/s] 14%|█▍        | 9/64 [00:04<00:27,  1.97it/s] 16%|█▌        | 10/64 [00:04<00:28,  1.90it/s] 17%|█▋        | 11/64 [00:05<00:28,  1.86it/s] 19%|█▉        | 12/64 [00:05<00:28,  1.81it/s] 20%|██        | 13/64 [00:06<00:28,  1.77it/s] 22%|██▏       | 14/64 [00:07<00:30,  1.66it/s] 23%|██▎       | 15/64 [00:07<00:29,  1.64it/s] 25%|██▌       | 16/64 [00:08<00:29,  1.60it/s] 27%|██▋       | 17/64 [00:09<00:30,  1.57it/s] 28%|██▊       | 18/64 [00:09<00:30,  1.53it/s] 30%|██▉       | 19/64 [00:10<00:30,  1.49it/s] 31%|███▏      | 20/64 [00:11<00:31,  1.41it/s] 33%|███▎      | 21/64 [00:12<00:30,  1.39it/s] 34%|███▍      | 22/64 [00:12<00:30,  1.36it/s] 36%|███▌      | 23/64 [00:13<00:30,  1.34it/s] 38%|███▊      | 24/64 [00:14<00:30,  1.32it/s] 39%|███▉      | 25/64 [00:15<00:30,  1.29it/s] 41%|████      | 26/64 [00:16<00:30,  1.27it/s] 42%|████▏     | 27/64 [00:16<00:29,  1.24it/s] 44%|████▍     | 28/64 [00:17<00:30,  1.19it/s] 45%|████▌     | 29/64 [00:18<00:30,  1.16it/s] 47%|████▋     | 30/64 [00:19<00:29,  1.14it/s] 48%|████▊     | 31/64 [00:20<00:29,  1.12it/s] 50%|█████     | 32/64 [00:21<00:29,  1.09it/s] 52%|█████▏    | 33/64 [00:22<00:29,  1.06it/s] 53%|█████▎    | 34/64 [00:23<00:28,  1.05it/s] 55%|█████▍    | 35/64 [00:24<00:28,  1.03it/s] 56%|█████▋    | 36/64 [00:25<00:27,  1.01it/s] 58%|█████▊    | 37/64 [00:26<00:27,  1.00s/it] 59%|█████▉    | 38/64 [00:27<00:26,  1.02s/it] 61%|██████    | 39/64 [00:28<00:26,  1.04s/it] 62%|██████▎   | 40/64 [00:29<00:25,  1.07s/it] 64%|██████▍   | 41/64 [00:31<00:25,  1.10s/it] 66%|██████▌   | 42/64 [00:32<00:25,  1.14s/it] 67%|██████▋   | 43/64 [00:33<00:24,  1.16s/it] 69%|██████▉   | 44/64 [00:34<00:24,  1.22s/it] 70%|███████   | 45/64 [00:36<00:23,  1.24s/it] 72%|███████▏  | 46/64 [00:37<00:22,  1.25s/it] 73%|███████▎  | 47/64 [00:38<00:21,  1.28s/it] 75%|███████▌  | 48/64 [00:40<00:20,  1.31s/it] 77%|███████▋  | 49/64 [00:41<00:20,  1.36s/it] 78%|███████▊  | 50/64 [00:43<00:19,  1.39s/it] 80%|███████▉  | 51/64 [00:44<00:18,  1.41s/it] 81%|████████▏ | 52/64 [00:46<00:17,  1.44s/it] 83%|████████▎ | 53/64 [00:47<00:16,  1.49s/it] 84%|████████▍ | 54/64 [00:49<00:15,  1.57s/it] 86%|████████▌ | 55/64 [00:51<00:14,  1.60s/it] 88%|████████▊ | 56/64 [00:52<00:13,  1.63s/it] 89%|████████▉ | 57/64 [00:54<00:11,  1.65s/it] 91%|█████████ | 58/64 [00:56<00:10,  1.68s/it] 92%|█████████▏| 59/64 [00:57<00:08,  1.71s/it] 94%|█████████▍| 60/64 [00:59<00:07,  1.79s/it] 95%|█████████▌| 61/64 [01:01<00:05,  1.84s/it] 97%|█████████▋| 62/64 [01:03<00:03,  1.86s/it] 98%|█████████▊| 63/64 [01:05<00:01,  1.90s/it]100%|██████████| 64/64 [01:07<00:00,  1.94s/it]100%|██████████| 64/64 [01:07<00:00,  1.06s/it]
+bootstrap:   0%|          | 0/100 [00:00<?, ?it/s]bootstrap:   1%|          | 1/100 [00:00<01:29,  1.11it/s]bootstrap:   2%|▏         | 2/100 [00:01<01:29,  1.10it/s]bootstrap:   3%|▎         | 3/100 [00:02<01:24,  1.14it/s]bootstrap:   4%|▍         | 4/100 [00:03<01:27,  1.10it/s]bootstrap:   5%|▌         | 5/100 [00:04<01:21,  1.16it/s]bootstrap:   6%|▌         | 6/100 [00:05<01:21,  1.15it/s]bootstrap:   7%|▋         | 7/100 [00:06<01:18,  1.18it/s]bootstrap:   8%|▊         | 8/100 [00:06<01:11,  1.29it/s]bootstrap:   9%|▉         | 9/100 [00:07<01:11,  1.28it/s]bootstrap:  10%|█         | 10/100 [00:08<01:14,  1.21it/s]bootstrap:  11%|█         | 11/100 [00:09<01:12,  1.22it/s]bootstrap:  12%|█▏        | 12/100 [00:10<01:13,  1.20it/s]bootstrap:  13%|█▎        | 13/100 [00:10<01:11,  1.22it/s]bootstrap:  14%|█▍        | 14/100 [00:11<01:06,  1.30it/s]bootstrap:  15%|█▌        | 15/100 [00:12<01:06,  1.28it/s]bootstrap:  16%|█▌        | 16/100 [00:13<01:06,  1.27it/s]bootstrap:  17%|█▋        | 17/100 [00:13<01:01,  1.35it/s]bootstrap:  18%|█▊        | 18/100 [00:14<01:01,  1.33it/s]bootstrap:  19%|█▉        | 19/100 [00:15<01:05,  1.24it/s]bootstrap:  20%|██        | 20/100 [00:16<01:08,  1.16it/s]bootstrap:  21%|██        | 21/100 [00:17<01:10,  1.12it/s]bootstrap:  22%|██▏       | 22/100 [00:18<01:02,  1.24it/s]bootstrap:  23%|██▎       | 23/100 [00:18<01:03,  1.21it/s]bootstrap:  24%|██▍       | 24/100 [00:19<01:03,  1.20it/s]bootstrap:  25%|██▌       | 25/100 [00:20<00:59,  1.25it/s]bootstrap:  26%|██▌       | 26/100 [00:21<01:00,  1.23it/s]bootstrap:  27%|██▋       | 27/100 [00:22<00:59,  1.22it/s]bootstrap:  28%|██▊       | 28/100 [00:22<00:58,  1.22it/s]bootstrap:  29%|██▉       | 29/100 [00:23<00:56,  1.25it/s]bootstrap:  30%|███       | 30/100 [00:24<00:53,  1.30it/s]bootstrap:  31%|███       | 31/100 [00:25<00:56,  1.21it/s]bootstrap:  32%|███▏      | 32/100 [00:26<00:54,  1.25it/s]bootstrap:  33%|███▎      | 33/100 [00:26<00:52,  1.27it/s]bootstrap:  34%|███▍      | 34/100 [00:27<00:51,  1.28it/s]bootstrap:  35%|███▌      | 35/100 [00:28<00:49,  1.31it/s]bootstrap:  36%|███▌      | 36/100 [00:29<00:49,  1.29it/s]bootstrap:  37%|███▋      | 37/100 [00:29<00:49,  1.28it/s]bootstrap:  38%|███▊      | 38/100 [00:30<00:51,  1.20it/s]bootstrap:  39%|███▉      | 39/100 [00:31<00:48,  1.25it/s]bootstrap:  40%|████      | 40/100 [00:32<00:49,  1.21it/s]bootstrap:  41%|████      | 41/100 [00:33<00:47,  1.24it/s]bootstrap:  42%|████▏     | 42/100 [00:34<00:46,  1.25it/s]bootstrap:  43%|████▎     | 43/100 [00:34<00:46,  1.21it/s]bootstrap:  44%|████▍     | 44/100 [00:35<00:47,  1.18it/s]bootstrap:  45%|████▌     | 45/100 [00:36<00:50,  1.10it/s]bootstrap:  46%|████▌     | 46/100 [00:37<00:50,  1.07it/s]bootstrap:  47%|████▋     | 47/100 [00:38<00:45,  1.17it/s]bootstrap:  48%|████▊     | 48/100 [00:39<00:45,  1.13it/s]bootstrap:  49%|████▉     | 49/100 [00:40<00:42,  1.20it/s]bootstrap:  50%|█████     | 50/100 [00:40<00:39,  1.27it/s]bootstrap:  51%|█████     | 51/100 [00:41<00:39,  1.23it/s]bootstrap:  52%|█████▏    | 52/100 [00:42<00:40,  1.19it/s]bootstrap:  53%|█████▎    | 53/100 [00:43<00:39,  1.19it/s]bootstrap:  54%|█████▍    | 54/100 [00:44<00:36,  1.27it/s]bootstrap:  55%|█████▌    | 55/100 [00:45<00:38,  1.18it/s]bootstrap:  56%|█████▌    | 56/100 [00:45<00:36,  1.20it/s]bootstrap:  57%|█████▋    | 57/100 [00:46<00:33,  1.27it/s]bootstrap:  58%|█████▊    | 58/100 [00:47<00:32,  1.30it/s]bootstrap:  59%|█████▉    | 59/100 [00:48<00:30,  1.34it/s]bootstrap:  60%|██████    | 60/100 [00:48<00:30,  1.33it/s]bootstrap:  61%|██████    | 61/100 [00:49<00:30,  1.28it/s]bootstrap:  62%|██████▏   | 62/100 [00:50<00:29,  1.29it/s]bootstrap:  63%|██████▎   | 63/100 [00:51<00:28,  1.29it/s]bootstrap:  64%|██████▍   | 64/100 [00:51<00:27,  1.33it/s]bootstrap:  65%|██████▌   | 65/100 [00:52<00:26,  1.34it/s]bootstrap:  66%|██████▌   | 66/100 [00:53<00:24,  1.38it/s]bootstrap:  67%|██████▋   | 67/100 [00:54<00:23,  1.38it/s]bootstrap:  68%|██████▊   | 68/100 [00:54<00:24,  1.32it/s]bootstrap:  69%|██████▉   | 69/100 [00:55<00:24,  1.25it/s]bootstrap:  70%|███████   | 70/100 [00:56<00:23,  1.26it/s]bootstrap:  71%|███████   | 71/100 [00:57<00:24,  1.20it/s]bootstrap:  72%|███████▏  | 72/100 [00:58<00:23,  1.21it/s]bootstrap:  73%|███████▎  | 73/100 [00:59<00:21,  1.23it/s]bootstrap:  74%|███████▍  | 74/100 [00:59<00:21,  1.23it/s]bootstrap:  75%|███████▌  | 75/100 [01:00<00:20,  1.23it/s]bootstrap:  76%|███████▌  | 76/100 [01:01<00:20,  1.19it/s]bootstrap:  77%|███████▋  | 77/100 [01:02<00:19,  1.18it/s]bootstrap:  78%|███████▊  | 78/100 [01:03<00:19,  1.15it/s]bootstrap:  79%|███████▉  | 79/100 [01:04<00:17,  1.21it/s]bootstrap:  80%|████████  | 80/100 [01:04<00:16,  1.22it/s]bootstrap:  81%|████████  | 81/100 [01:05<00:15,  1.23it/s]bootstrap:  82%|████████▏ | 82/100 [01:06<00:15,  1.18it/s]bootstrap:  83%|████████▎ | 83/100 [01:07<00:13,  1.23it/s]bootstrap:  84%|████████▍ | 84/100 [01:08<00:12,  1.26it/s]bootstrap:  85%|████████▌ | 85/100 [01:09<00:13,  1.14it/s]bootstrap:  86%|████████▌ | 86/100 [01:09<00:11,  1.23it/s]bootstrap:  87%|████████▋ | 87/100 [01:10<00:11,  1.18it/s]bootstrap:  88%|████████▊ | 88/100 [01:11<00:09,  1.31it/s]bootstrap:  89%|████████▉ | 89/100 [01:12<00:09,  1.22it/s]bootstrap:  90%|█████████ | 90/100 [01:13<00:08,  1.25it/s]bootstrap:  91%|█████████ | 91/100 [01:13<00:07,  1.24it/s]bootstrap:  92%|█████████▏| 92/100 [01:14<00:06,  1.18it/s]bootstrap:  93%|█████████▎| 93/100 [01:15<00:05,  1.25it/s]bootstrap:  94%|█████████▍| 94/100 [01:16<00:04,  1.29it/s]bootstrap:  95%|█████████▌| 95/100 [01:17<00:03,  1.31it/s]bootstrap:  96%|█████████▌| 96/100 [01:17<00:03,  1.31it/s]bootstrap:  97%|█████████▋| 97/100 [01:18<00:02,  1.29it/s]bootstrap:  98%|█████████▊| 98/100 [01:19<00:01,  1.29it/s]bootstrap:  99%|█████████▉| 99/100 [01:20<00:00,  1.28it/s]bootstrap: 100%|██████████| 100/100 [01:20<00:00,  1.36it/s]bootstrap: 100%|██████████| 100/100 [01:20<00:00,  1.24it/s]
+gpt-4-turbo-2024-04-09         | score: 82.6  | 95% CI: (-1.7, 1.7)  | average #tokens: 662
+claude-3-5-sonnet-20240620     | score: 79.3  | 95% CI: (-2.2, 1.8)  | average #tokens: 567
+gpt-4o-2024-05-13              | score: 79.2  | 95% CI: (-2.0, 2.4)  | average #tokens: 696
+gpt-4-0125-preview             | score: 78.0  | 95% CI: (-2.2, 2.0)  | average #tokens: 619
+athene-70b                     | score: 76.8  | 95% CI: (-2.1, 2.1)  | average #tokens: 683
+gpt-4o-mini                    | score: 74.9  | 95% CI: (-2.8, 2.3)  | average #tokens: 668
+gemini-1.5-pro-api-0514        | score: 72.0  | 95% CI: (-2.4, 2.5)  | average #tokens: 676
+yi-large-preview               | score: 71.5  | 95% CI: (-2.5, 2.1)  | average #tokens: 720
+mistral-large-2407             | score: 70.4  | 95% CI: (-2.2, 2.2)  | average #tokens: 623
+llama-3.1-405b-instruct        | score: 64.1  | 95% CI: (-2.6, 2.1)  | average #tokens: 633
+glm-4-0520                     | score: 63.8  | 95% CI: (-2.2, 1.9)  | average #tokens: 636
+yi-large                       | score: 63.7  | 95% CI: (-2.3, 2.5)  | average #tokens: 626
+deepseek-coder-v2              | score: 62.3  | 95% CI: (-2.1, 2.4)  | average #tokens: 578
+claude-3-opus-20240229         | score: 60.4  | 95% CI: (-2.4, 2.1)  | average #tokens: 541
+gemma-2-27b-it                 | score: 57.5  | 95% CI: (-2.1, 2.2)  | average #tokens: 577
+llama-3.1-70b-instruct         | score: 55.7  | 95% CI: (-3.2, 2.8)  | average #tokens: 628
+glm-4-0116                     | score: 55.7  | 95% CI: (-2.5, 2.3)  | average #tokens: 622
+gemini-1.5-pro-api-0409-preview | score: 53.4  | 95% CI: (-2.0, 2.6)  | average #tokens: 478
+glm-4-air                      | score: 50.9  | 95% CI: (-2.9, 2.3)  | average #tokens: 619
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+gemini-1.5-flash-api-0514      | score: 49.6  | 95% CI: (-2.2, 2.3)  | average #tokens: 642
+qwen2-72b-instruct             | score: 46.9  | 95% CI: (-3.0, 2.2)  | average #tokens: 515
+claude-3-sonnet-20240229       | score: 46.8  | 95% CI: (-2.3, 2.2)  | average #tokens: 552
+llama-3-70b-instruct           | score: 46.6  | 95% CI: (-2.3, 2.3)  | average #tokens: 591
+claude-3-haiku-20240307        | score: 41.5  | 95% CI: (-1.9, 2.1)  | average #tokens: 505
+gpt-4-0613                     | score: 37.9  | 95% CI: (-2.6, 2.9)  | average #tokens: 354
+mistral-large-2402             | score: 37.7  | 95% CI: (-2.1, 3.1)  | average #tokens: 400
+Meta-Llama-3.1-8B-Instruct     | score: 36.5  | 95% CI: (-2.2, 2.0)  | average #tokens: 731
+mixtral-8x22b-instruct-v0.1    | score: 36.4  | 95% CI: (-2.3, 2.3)  | average #tokens: 430
+qwen1.5-72b-chat               | score: 36.1  | 95% CI: (-1.7, 2.6)  | average #tokens: 474
+phi-3-medium-4k-instruct       | score: 33.4  | 95% CI: (-2.6, 1.8)  | average #tokens: 517
+command-r-plus                 | score: 33.1  | 95% CI: (-2.6, 2.3)  | average #tokens: 541
+mistral-medium                 | score: 31.9  | 95% CI: (-1.7, 2.7)  | average #tokens: 485
+phi-3-small-8k-instruct        | score: 29.8  | 95% CI: (-2.0, 1.8)  | average #tokens: 568
+mistral-next                   | score: 27.4  | 95% CI: (-2.0, 1.6)  | average #tokens: 297
+gpt-3.5-turbo-0613             | score: 24.8  | 95% CI: (-2.1, 1.8)  | average #tokens: 401
+dbrx-instruct-preview          | score: 24.6  | 95% CI: (-1.8, 2.6)  | average #tokens: 415
+claude-2.0                     | score: 24.0  | 95% CI: (-2.0, 2.0)  | average #tokens: 295
+mixtral-8x7b-instruct-v0.1     | score: 23.4  | 95% CI: (-1.9, 2.1)  | average #tokens: 457
+gpt-3.5-turbo-0125             | score: 23.3  | 95% CI: (-2.2, 1.8)  | average #tokens: 329
+yi-34b-chat                    | score: 23.1  | 95% CI: (-2.0, 2.2)  | average #tokens: 611
+starling-lm-7b-beta            | score: 23.0  | 95% CI: (-2.2, 1.6)  | average #tokens: 530
+claude-2.1                     | score: 22.8  | 95% CI: (-1.9, 1.9)  | average #tokens: 290
+llama-3.1-8b-instruct          | score: 21.3  | 95% CI: (-1.5, 1.8)  | average #tokens: 861
+snorkel-mistral-pairrm-dpo     | score: 20.7  | 95% CI: (-1.7, 1.9)  | average #tokens: 564
+llama-3-8b-instruct            | score: 20.6  | 95% CI: (-2.1, 1.6)  | average #tokens: 585
+gpt-3.5-turbo-1106             | score: 18.9  | 95% CI: (-2.0, 2.0)  | average #tokens: 285
+gpt-3.5-turbo-0314             | score: 18.1  | 95% CI: (-1.7, 1.7)  | average #tokens: 334
+gemini-pro                     | score: 17.8  | 95% CI: (-1.7, 1.7)  | average #tokens: 322
+snowflake-arctic-instruct      | score: 17.6  | 95% CI: (-1.8, 2.2)  | average #tokens: 365
+command-r                      | score: 17.0  | 95% CI: (-1.7, 1.7)  | average #tokens: 432
+phi-3-mini-128k-instruct       | score: 15.4  | 95% CI: (-1.9, 1.5)  | average #tokens: 609
+tulu-2-dpo-70b                 | score: 15.0  | 95% CI: (-1.7, 2.0)  | average #tokens: 550
+starling-lm-7b-alpha           | score: 12.8  | 95% CI: (-1.5, 1.4)  | average #tokens: 483
+mistral-7b-instruct            | score: 12.6  | 95% CI: (-1.4, 1.3)  | average #tokens: 541
+gemma-1.1-7b-it                | score: 12.1  | 95% CI: (-1.5, 1.2)  | average #tokens: 341
+llama-2-70b-chat               | score: 11.6  | 95% CI: (-1.1, 1.1)  | average #tokens: 595
+vicuna-33b                     | score:  8.6  | 95% CI: (-1.2, 1.2)  | average #tokens: 451
+gemma-7b-it                    | score:  7.5  | 95% CI: (-0.9, 1.2)  | average #tokens: 378
+tulu_v2_8b_base_template_dpo   | score:  7.2  | 95% CI: (-0.8, 1.1)  | average #tokens: 496
+tulu_v2_8b_bsz64_default_template_dpo | score:  7.0  | 95% CI: (-1.1, 1.0)  | average #tokens: 449
+tulu_lora_sft_default_template_8b | score:  4.3  | 95% CI: (-0.9, 0.6)  | average #tokens: 444
+tulu_lora_sft_base_template_8b | score:  4.3  | 95% CI: (-0.8, 0.7)  | average #tokens: 458
+gemma-1.1-2b-it                | score:  3.4  | 95% CI: (-0.7, 0.7)  | average #tokens: 316
+gemma-2b-it                    | score:  3.0  | 95% CI: (-0.5, 0.8)  | average #tokens: 369
++ kill 1686164
++ wait 1686164
++ echo '所有任务已完成，vllm 服务已关闭。'
+所有任务已完成，vllm 服务已关闭。
++ echo ----------------------------------------
++ tee -a eval.log
+----------------------------------------
++ sleep 60
++ echo 所有任务已完成。
++ tee -a eval.log
+所有任务已完成。
