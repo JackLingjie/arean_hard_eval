@@ -8,4 +8,4 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - tulu_v2_8b_base_template_dpo
+  - tulu-2-7b

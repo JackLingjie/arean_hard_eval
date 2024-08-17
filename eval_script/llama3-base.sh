@@ -3,7 +3,7 @@
 set -x
 
 # 默认模型名称  
-DEFAULT_MODEL_NAME="Meta-Llama-3.1-8B-Instruct"  
+DEFAULT_MODEL_NAME="Meta-Llama-3.1-8B"  
   
 # 检查是否传入了参数，如果没有则使用默认值  
 MODEL_NAME=${1:-$DEFAULT_MODEL_NAME}  
@@ -36,7 +36,7 @@ done
 
   
 # 继续执行后续的指令  
-nohup vllm serve /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/${MODEL_NAME} --dtype auto --api-key token-abc123 > vllm_service.log 2>&1 &
+nohup vllm serve /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/${MODEL_NAME} --dtype auto --api-key token-abc123 --chat-template default.jinja > vllm_service.log 2>&1 &
 
 # 获取 vllm 服务的进程 ID (PID)  
 VLLM_PID=$!  
@@ -66,7 +66,7 @@ fi
 
 python gen_answer.py  
 python gen_judgment.py  
-python show_result.py  --output
+python show_result.py  
 
 # 关闭 vllm 服务  
 kill $VLLM_PID  
