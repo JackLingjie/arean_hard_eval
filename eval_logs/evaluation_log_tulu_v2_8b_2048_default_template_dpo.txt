@@ -1,8 +1,8 @@
-执行参数: wildchat_v1_8b_2048_default_template
+执行参数: tulu_v2_8b_2048_default_template_dpo
 等待 vllm 服务启动...
 vllm 服务已启动。
-{'name': 'config of answer generation for arena-hard-v0.1', 'bench_name': 'arena-hard-v0.1', 'temperature': 0.0, 'max_tokens': 2048, 'num_choices': 1, 'model_list': ['wildchat_v1_8b_2048_default_template']}
-Output to data/arena-hard-v0.1/model_answer/wildchat_v1_8b_2048_default_template.jsonl
+{'name': 'config of answer generation for arena-hard-v0.1', 'bench_name': 'arena-hard-v0.1', 'temperature': 0.0, 'max_tokens': 2048, 'num_choices': 1, 'model_list': ['tulu_v2_8b_2048_default_template_dpo']}
+Output to data/arena-hard-v0.1/model_answer/tulu_v2_8b_2048_default_template_dpo.jsonl
 {'api_base': 'http://localhost:8000/v1', 'api_key': 'token-abc123'}
 {'api_base': 'http://localhost:8000/v1', 'api_key': 'token-abc123'}
 {'api_base': 'http://localhost:8000/v1', 'api_key': 'token-abc123'}
@@ -677,428 +677,80 @@ max_tokens: 4096
  temperature:0
 max_tokens: 4096
  temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Connection error.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-Request timed out.
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-Request timed out.
-Request timed out.
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-Request timed out.
 max_tokens: 4096
  temperature:0
 max_tokens: 4096
  temperature:0
 max_tokens: 4096
  temperature:0
-Request timed out.
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
 max_tokens: 4096
  temperature:0
 max_tokens: 4096
@@ -1138,8 +790,29 @@ max_tokens: 4096
 max_tokens: 4096
  temperature:0
 Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
 max_tokens: 4096
  temperature:0
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
 max_tokens: 4096
  temperature:0
 max_tokens: 4096
@@ -1157,77 +830,6 @@ max_tokens: 4096
  temperature:0
 max_tokens: 4096
  temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-max_tokens: 4096
- temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-max_tokens: 4096
- temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-max_tokens: 4096
- temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-max_tokens: 4096
- temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
 Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
 max_tokens: 4096
  temperature:0
@@ -1236,765 +838,11 @@ max_tokens: 4096
 max_tokens: 4096
  temperature:0
 Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-max_tokens: 4096
- temperature:0
 Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
 Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
 Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
 Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-max_tokens: 4096
- temperature:0
 Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
-max_tokens: 4096
- temperature:0
 max_tokens: 4096
  temperature:0
 max_tokens: 4096
@@ -2118,6 +966,11 @@ max_tokens: 4096
  temperature:0
 max_tokens: 4096
  temperature:0
+Error code: 400 - {'error': {'message': "The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
 max_tokens: 4096
  temperature:0
 max_tokens: 4096
@@ -2137,12 +990,15 @@ max_tokens: 4096
  temperature:0
 max_tokens: 4096
  temperature:0
+max_tokens: 4096
+ temperature:0
 Error code: 400 - {'error': {'message': "The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}
 max_tokens: 4096
  temperature:0
 max_tokens: 4096
  temperature:0
-Error code: 400 - {'error': {'message': "The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}
+max_tokens: 4096
+ temperature:0
 max_tokens: 4096
  temperature:0
 max_tokens: 4096
@@ -2377,26 +1233,20 @@ max_tokens: 4096
  temperature:0
 max_tokens: 4096
  temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 10874 tokens (6778 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
 max_tokens: 4096
  temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 10874 tokens (6778 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
 max_tokens: 4096
  temperature:0
 max_tokens: 4096
  temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 10874 tokens (6778 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
 max_tokens: 4096
  temperature:0
 max_tokens: 4096
  temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 10874 tokens (6778 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
 max_tokens: 4096
  temperature:0
 max_tokens: 4096
  temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 10874 tokens (6778 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 10874 tokens (6778 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
 max_tokens: 4096
  temperature:0
 max_tokens: 4096
@@ -2523,12 +1373,824 @@ max_tokens: 4096
  temperature:0
 max_tokens: 4096
  temperature:0
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 10874 tokens (6778 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 10874 tokens (6778 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 10874 tokens (6778 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 10874 tokens (6778 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 10874 tokens (6778 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
-Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 10874 tokens (6778 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
+max_tokens: 4096
+ temperature:0
 max_tokens: 4096
  temperature:0
 max_tokens: 4096
@@ -2909,76 +2571,75 @@ max_tokens: 4096
  temperature:0
 Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4-1106-preview', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
 Turning judgment results into battles...
-gpt-4-turbo-2024-04-09         | score: 82.6  | 95% CI: (-2.1, 1.8)  | average #tokens: 662
+gpt-4-turbo-2024-04-09         | score: 82.6  | 95% CI: (-1.5, 1.8)  | average #tokens: 662
 claude-3-5-sonnet-20240620     | score: 79.3  | 95% CI: (-1.4, 2.5)  | average #tokens: 567
 gpt-4o-2024-05-13              | score: 79.2  | 95% CI: (-1.9, 2.4)  | average #tokens: 696
 gpt-4-0125-preview             | score: 78.0  | 95% CI: (-1.6, 2.0)  | average #tokens: 619
-athene-70b                     | score: 76.8  | 95% CI: (-2.1, 1.8)  | average #tokens: 683
+athene-70b                     | score: 76.8  | 95% CI: (-2.2, 1.7)  | average #tokens: 683
 gpt-4o-mini                    | score: 74.9  | 95% CI: (-2.0, 2.5)  | average #tokens: 668
-gemini-1.5-pro-api-0514        | score: 72.0  | 95% CI: (-1.9, 1.9)  | average #tokens: 676
+gemini-1.5-pro-api-0514        | score: 72.0  | 95% CI: (-1.9, 2.0)  | average #tokens: 676
 yi-large-preview               | score: 71.5  | 95% CI: (-2.7, 1.9)  | average #tokens: 720
 mistral-large-2407             | score: 70.4  | 95% CI: (-2.1, 2.4)  | average #tokens: 623
-llama-3.1-405b-instruct        | score: 64.1  | 95% CI: (-2.3, 2.0)  | average #tokens: 633
-glm-4-0520                     | score: 63.8  | 95% CI: (-2.0, 2.0)  | average #tokens: 636
-yi-large                       | score: 63.7  | 95% CI: (-2.5, 2.0)  | average #tokens: 626
+llama-3.1-405b-instruct        | score: 64.1  | 95% CI: (-2.2, 2.2)  | average #tokens: 633
+glm-4-0520                     | score: 63.8  | 95% CI: (-2.1, 1.9)  | average #tokens: 636
+yi-large                       | score: 63.7  | 95% CI: (-2.6, 2.0)  | average #tokens: 626
 deepseek-coder-v2              | score: 62.3  | 95% CI: (-1.9, 2.3)  | average #tokens: 578
-claude-3-opus-20240229         | score: 60.4  | 95% CI: (-1.9, 2.2)  | average #tokens: 541
-gemma-2-27b-it                 | score: 57.5  | 95% CI: (-2.7, 2.2)  | average #tokens: 577
+claude-3-opus-20240229         | score: 60.4  | 95% CI: (-1.8, 2.2)  | average #tokens: 541
+gemma-2-27b-it                 | score: 57.5  | 95% CI: (-2.7, 2.1)  | average #tokens: 577
 llama-3.1-70b-instruct         | score: 55.7  | 95% CI: (-1.9, 2.4)  | average #tokens: 628
-glm-4-0116                     | score: 55.7  | 95% CI: (-2.6, 2.3)  | average #tokens: 622
+glm-4-0116                     | score: 55.7  | 95% CI: (-2.6, 2.4)  | average #tokens: 622
 gemini-1.5-pro-api-0409-preview | score: 53.4  | 95% CI: (-2.3, 2.8)  | average #tokens: 478
-glm-4-air                      | score: 50.9  | 95% CI: (-1.8, 2.8)  | average #tokens: 619
+glm-4-air                      | score: 50.9  | 95% CI: (-2.5, 2.6)  | average #tokens: 619
 gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
-gemini-1.5-flash-api-0514      | score: 49.6  | 95% CI: (-2.3, 2.2)  | average #tokens: 642
+gemini-1.5-flash-api-0514      | score: 49.6  | 95% CI: (-2.4, 2.2)  | average #tokens: 642
 qwen2-72b-instruct             | score: 46.9  | 95% CI: (-2.6, 2.9)  | average #tokens: 515
 claude-3-sonnet-20240229       | score: 46.8  | 95% CI: (-2.4, 2.8)  | average #tokens: 552
-llama-3-70b-instruct           | score: 46.6  | 95% CI: (-2.5, 3.1)  | average #tokens: 591
+llama-3-70b-instruct           | score: 46.6  | 95% CI: (-2.7, 2.3)  | average #tokens: 591
 claude-3-haiku-20240307        | score: 41.5  | 95% CI: (-2.0, 2.1)  | average #tokens: 505
-gpt-4-0613                     | score: 37.9  | 95% CI: (-2.5, 2.2)  | average #tokens: 354
-mistral-large-2402             | score: 37.7  | 95% CI: (-2.8, 2.2)  | average #tokens: 400
-Meta-Llama-3.1-8B-Instruct     | score: 36.5  | 95% CI: (-2.0, 2.8)  | average #tokens: 731
-mixtral-8x22b-instruct-v0.1    | score: 36.4  | 95% CI: (-1.9, 2.0)  | average #tokens: 430
+gpt-4-0613                     | score: 37.9  | 95% CI: (-2.3, 2.7)  | average #tokens: 354
+mistral-large-2402             | score: 37.7  | 95% CI: (-2.8, 2.1)  | average #tokens: 400
+Meta-Llama-3.1-8B-Instruct     | score: 36.5  | 95% CI: (-2.0, 2.7)  | average #tokens: 731
+mixtral-8x22b-instruct-v0.1    | score: 36.4  | 95% CI: (-1.8, 1.9)  | average #tokens: 430
 qwen1.5-72b-chat               | score: 36.1  | 95% CI: (-2.2, 2.7)  | average #tokens: 474
 phi-3-medium-4k-instruct       | score: 33.4  | 95% CI: (-1.8, 2.7)  | average #tokens: 517
 command-r-plus                 | score: 33.1  | 95% CI: (-2.4, 2.2)  | average #tokens: 541
 mistral-medium                 | score: 31.9  | 95% CI: (-2.3, 2.1)  | average #tokens: 485
-wildchat_v1_8b_2048_default_template | score: 30.7  | 95% CI: (-2.0, 1.9)  | average #tokens: 756
-phi-3-small-8k-instruct        | score: 29.8  | 95% CI: (-2.0, 2.1)  | average #tokens: 568
+phi-3-small-8k-instruct        | score: 29.8  | 95% CI: (-1.6, 2.0)  | average #tokens: 568
 mistral-next                   | score: 27.4  | 95% CI: (-2.0, 1.6)  | average #tokens: 297
 gpt-3.5-turbo-0613             | score: 24.8  | 95% CI: (-2.2, 1.6)  | average #tokens: 401
 dbrx-instruct-preview          | score: 24.6  | 95% CI: (-2.0, 2.4)  | average #tokens: 415
 claude-2.0                     | score: 24.0  | 95% CI: (-1.6, 2.0)  | average #tokens: 295
-mixtral-8x7b-instruct-v0.1     | score: 23.4  | 95% CI: (-1.9, 1.7)  | average #tokens: 457
+mixtral-8x7b-instruct-v0.1     | score: 23.4  | 95% CI: (-2.3, 2.1)  | average #tokens: 457
 gpt-3.5-turbo-0125             | score: 23.3  | 95% CI: (-2.2, 1.8)  | average #tokens: 329
 yi-34b-chat                    | score: 23.1  | 95% CI: (-2.0, 2.2)  | average #tokens: 611
-starling-lm-7b-beta            | score: 23.0  | 95% CI: (-2.1, 1.9)  | average #tokens: 530
+starling-lm-7b-beta            | score: 23.0  | 95% CI: (-2.1, 1.8)  | average #tokens: 530
 claude-2.1                     | score: 22.8  | 95% CI: (-1.9, 2.1)  | average #tokens: 290
-llama-3.1-8b-instruct          | score: 21.3  | 95% CI: (-2.4, 2.0)  | average #tokens: 861
+llama-3.1-8b-instruct          | score: 21.3  | 95% CI: (-2.5, 2.0)  | average #tokens: 861
 snorkel-mistral-pairrm-dpo     | score: 20.7  | 95% CI: (-1.7, 1.9)  | average #tokens: 564
-llama-3-8b-instruct            | score: 20.6  | 95% CI: (-1.7, 1.9)  | average #tokens: 585
-gpt-3.5-turbo-1106             | score: 18.9  | 95% CI: (-1.7, 1.4)  | average #tokens: 285
-gpt-3.5-turbo-0314             | score: 18.1  | 95% CI: (-1.8, 1.7)  | average #tokens: 334
+llama-3-8b-instruct            | score: 20.6  | 95% CI: (-1.7, 1.8)  | average #tokens: 585
+gpt-3.5-turbo-1106             | score: 18.9  | 95% CI: (-1.6, 1.4)  | average #tokens: 285
+gpt-3.5-turbo-0314             | score: 18.1  | 95% CI: (-1.7, 1.7)  | average #tokens: 334
 gemini-pro                     | score: 17.8  | 95% CI: (-1.8, 1.7)  | average #tokens: 322
-snowflake-arctic-instruct      | score: 17.6  | 95% CI: (-1.5, 2.3)  | average #tokens: 365
+snowflake-arctic-instruct      | score: 17.6  | 95% CI: (-1.8, 1.7)  | average #tokens: 365
 command-r                      | score: 17.0  | 95% CI: (-1.7, 1.8)  | average #tokens: 432
 phi-3-mini-128k-instruct       | score: 15.4  | 95% CI: (-1.4, 1.8)  | average #tokens: 609
 tulu-2-dpo-70b                 | score: 15.0  | 95% CI: (-1.5, 1.7)  | average #tokens: 550
 starling-lm-7b-alpha           | score: 12.8  | 95% CI: (-1.2, 1.5)  | average #tokens: 483
-mistral-7b-instruct            | score: 12.6  | 95% CI: (-1.2, 2.0)  | average #tokens: 541
+mistral-7b-instruct            | score: 12.6  | 95% CI: (-1.7, 1.6)  | average #tokens: 541
 gemma-1.1-7b-it                | score: 12.1  | 95% CI: (-1.5, 1.2)  | average #tokens: 341
-llama-2-70b-chat               | score: 11.6  | 95% CI: (-1.0, 1.7)  | average #tokens: 595
-vicuna-33b                     | score:  8.6  | 95% CI: (-1.1, 1.3)  | average #tokens: 451
+llama-2-70b-chat               | score: 11.6  | 95% CI: (-1.3, 1.6)  | average #tokens: 595
+vicuna-33b                     | score:  8.6  | 95% CI: (-1.1, 1.2)  | average #tokens: 451
 gemma-7b-it                    | score:  7.5  | 95% CI: (-1.1, 1.2)  | average #tokens: 378
-tulu_v2_8b_base_template_dpo   | score:  7.2  | 95% CI: (-0.8, 0.9)  | average #tokens: 496
+tulu_v2_8b_base_template_dpo   | score:  7.2  | 95% CI: (-1.1, 0.9)  | average #tokens: 496
 tulu_v2_8b_bsz64_default_template_dpo | score:  7.0  | 95% CI: (-0.9, 0.9)  | average #tokens: 449
 tulu_v2_8b_2048_default_template_dpo | score:  6.6  | 95% CI: (-1.0, 0.8)  | average #tokens: 463
-tulu-2-dpo-7b                  | score:  6.0  | 95% CI: (-0.9, 0.9)  | average #tokens: 539
-tulu_v2_8b_2048_default_template_sft | score:  5.1  | 95% CI: (-0.7, 1.1)  | average #tokens: 441
+tulu-2-dpo-7b                  | score:  6.0  | 95% CI: (-0.8, 0.9)  | average #tokens: 539
+tulu_v2_8b_2048_default_template_sft | score:  5.1  | 95% CI: (-0.6, 1.1)  | average #tokens: 441
 tulu_lora_sft_default_template_8b | score:  4.3  | 95% CI: (-0.7, 0.9)  | average #tokens: 444
 tulu_lora_sft_base_template_8b | score:  4.3  | 95% CI: (-0.8, 0.6)  | average #tokens: 458
 gemma-1.1-2b-it                | score:  3.4  | 95% CI: (-0.8, 0.7)  | average #tokens: 316
-gemma-2b-it                    | score:  3.0  | 95% CI: (-0.6, 0.8)  | average #tokens: 369
-tulu-2-7b                      | score:  2.5  | 95% CI: (-0.5, 0.5)  | average #tokens: 413
+gemma-2b-it                    | score:  3.0  | 95% CI: (-0.5, 0.6)  | average #tokens: 369
+tulu-2-7b                      | score:  2.5  | 95% CI: (-0.6, 0.7)  | average #tokens: 413
 Meta-Llama-3.1-8B              | score:  0.5  | 95% CI: (-0.2, 0.3)  | average #tokens: 1616
 所有任务已完成，vllm 服务已关闭。
 ----------------------------------------

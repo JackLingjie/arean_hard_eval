@@ -8,4 +8,4 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - tulu-2-dpo-7b
+  - wildchat_v1_8b_2048_default_template

@@ -2,10 +2,10 @@
 set -x
 # 参数列表  
 PARAMS=(  
-  "tulu_lora_sft_base_template_8b"  
-  "tulu_lora_sft_default_template_8b"
-  "tulu_v2_8b_bsz64_default_template_dpo"
-  "tulu_v2_8b_base_template_dpo"
+  "wildchat_v1_8b_2048_default_template"  
+  # "tulu_lora_sft_default_template_8b"
+  # "tulu_v2_8b_bsz64_default_template_dpo"
+  # "tulu_v2_8b_base_template_dpo"
   # 添加更多参数  
 )  
 
