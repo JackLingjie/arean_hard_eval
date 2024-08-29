@@ -14,7 +14,7 @@ gpt-4-1106-preview:
     model_name: gpt4
     endpoints: null
     api_type: azure
-    parallel: 8
+    parallel: 3
 
 {{MODEL_NAME}}:
     model_name: allenai/{{MODEL_NAME}}

@@ -128,7 +128,6 @@ if __name__ == "__main__":
 
         answer_file = os.path.join("data", settings["bench_name"], "model_answer", f"{model}.jsonl")
         print(f"Output to {answer_file}")
-
         if "parallel" in endpoint_info:
             parallel = endpoint_info["parallel"]
         else:
