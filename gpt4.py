@@ -43,7 +43,7 @@ class Openai():
                 break
             except:
                 continue
-
+        print(f"apis:{apis}", flush=True)
         self.clients_weight = [apis[i]['speed'] for i in range(len(apis))]
         weight_sum = sum(self.clients_weight)
         for i in range(len(self.clients_weight)):
@@ -60,7 +60,7 @@ class Openai():
         )
         self.model = selected_api['model']
 
-    def get_response(self, messages, temperature=0, max_tokens=64):
+    def get_response(self, messages, temperature=0, max_tokens=2048):
 
 
         client = self.client

@@ -130,11 +130,12 @@ def chat_completion_openai(model, messages, temperature, max_tokens, api_dict=No
     return output
 
 
-def chat_completion_openai_azure(model, messages, temperature, max_tokens, api_dict=None):
+def chat_completion_openai_azure(model, messages, temperature, max_tokens, api_dict=None, index=0):
     import openai
     # from openai import AzureOpenAI
-    from gpt4 import Openai, API_INFOS
-    oai_client = Openai(apis=API_INFOS)
+    from gpt4o import Openai, API_INFOS
+    # print(f"index:{index}", flush=True)
+    oai_client = Openai(apis=[API_INFOS[index % len(API_INFOS)]])
     # api_base = api_dict["api_base"]
     # client = AzureOpenAI(
     #     azure_endpoint = api_base,
@@ -158,7 +159,7 @@ def chat_completion_openai_azure(model, messages, temperature, max_tokens, api_d
             # output = response.choices[0].message.content
             # print(len(messages))
             # print(messages)
-            print(f"max_tokens: {max_tokens}\n temperature:{temperature}")
+            # print(f"max_tokens: {max_tokens}\n temperature:{temperature}")
             output = oai_client.get_response(
                 messages=messages,
                 temperature=temperature,

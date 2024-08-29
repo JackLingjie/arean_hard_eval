@@ -10,14 +10,14 @@
 
 
 
-gpt-4-1106-preview:
+gpt-4o:
     model_name: gpt4
     endpoints: null
     api_type: azure
     parallel: 8
 
-ta_rejected_llama3.1_instruct_dpo_2048:
-    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_rejected_llama3.1_instruct_dpo_2048
+Meta-Llama-3.1-8B-Instruct:
+    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/Meta-Llama-3.1-8B-Instruct
     endpoints: 
         - api_base: http://localhost:8000/v1
           api_key: token-abc123

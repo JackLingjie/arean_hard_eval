@@ -33,13 +33,13 @@ def get_score(judgment, pattern, pairwise=True):
 
 
 # get answer from model
-def get_answer(model, conv, temperature, max_tokens, endpoint_dict=None):
+def get_answer(model, conv, temperature, max_tokens, endpoint_dict=None, index=0):
     api_dict = get_endpoint(endpoint_dict["endpoints"])
 
     if endpoint_dict["api_type"] == "anthropic":
         output = chat_completion_anthropic(model, conv, temperature, max_tokens)
     elif endpoint_dict["api_type"] == "azure":
-        output = chat_completion_openai_azure(model, conv, temperature, max_tokens, api_dict)
+        output = chat_completion_openai_azure(model, conv, temperature, max_tokens, api_dict, index)
     else:
         output = chat_completion_openai(model, conv, temperature, max_tokens, api_dict)
     return output
@@ -52,6 +52,7 @@ def judgment(**args):
     baseline = args["baseline_answer"]
     configs = args["configs"]
     output_file = args["output_file"]
+    index = args["index"]
     model = configs["judge_model"]
 
     num_games = 2 if configs["pairwise"] else 1
@@ -100,6 +101,7 @@ def judgment(**args):
                 configs["temperature"],
                 configs["max_tokens"],
                 args["endpoint_dict"],
+                index
             )
 
             judgment += ("\n" + new_judgment)
@@ -174,7 +176,7 @@ if __name__ == "__main__":
         futures = []
         for model in models:
             count = 0
-            for question in questions:
+            for idx, question in enumerate(questions):
                 question_id = question["question_id"]
 
                 kwargs = {}
@@ -201,6 +203,7 @@ if __name__ == "__main__":
                 kwargs["endpoint_dict"] = endpoint_info
                 kwargs["output_file"] = output_files[model]
                 kwargs["regex_pattern"] = pattern
+                kwargs["index"] = idx
                 future = executor.submit(judgment, **kwargs)
                 futures.append(future)
 

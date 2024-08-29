@@ -1,0 +1,2780 @@
+执行参数: Meta-Llama-3.1-8B-Instruct
+文件 data/arena-hard-v0.1/model_answer/Meta-Llama-3.1-8B-Instruct.jsonl 存在，跳过 vllm 服务启动和 gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+index:0
+index:1
+index:2
+index:3
+index:4
+index:6
+index:5
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:7
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:39
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:1
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:40
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:3
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:4
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:0
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:7
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:5
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:41
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:2
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:6
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:42
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:8
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:9
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:10
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:11
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:12
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:40
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:42
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:41
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:13
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:14
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:10
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:15
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:43
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:8
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:15
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:9
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:43
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:11
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:15
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:44
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:14
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:16
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:17
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:45
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:12
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:46
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:13
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:14
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:17
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:16
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:18
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:19
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:20
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:21
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:22
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:44
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:23
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:18
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:16
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:20
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:46
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:18
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:22
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:21
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:23
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:19
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:16
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:45
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:24
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:25
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:26
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:27
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:28
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:29
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:47
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:30
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:24
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:48
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:26
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:28
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:29
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:27
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:47
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:49
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:30
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:48
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:31
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:32
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:50
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:33
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:34
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:35
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:36
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:37
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:32
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:49
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:25
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:51
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:38
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:34
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:35
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:50
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:52
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:31
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:36
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:51
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:52
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:53
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:39
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:33
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:37
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:38
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:40
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:41
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:54
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:55
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:42
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:43
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:53
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:44
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:45
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:46
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:40
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:42
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:43
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:41
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:44
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:39
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:56
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:55
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:45
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:47
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:48
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:54
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:49
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:46
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:50
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:47
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:57
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:48
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:56
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:49
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:51
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:52
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:53
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:54
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:55
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:51
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:56
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:52
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:53
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:58
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:57
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:59
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:58
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:57
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:55
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:56
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:53
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:58
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:60
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:61
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:59
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:54
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:58
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:59
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:58
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:60
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:61
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:62
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:57
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:61
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:50
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:59
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:63
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:60
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:64
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:62
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:65
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:62
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:63
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:66
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:60
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:63
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:65
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:61
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:62
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:67
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:68
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:64
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:69
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:70
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:66
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:67
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:69
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:68
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:63
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:70
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:64
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:71
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:72
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:73
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:74
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:65
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:75
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:71
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:76
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:64
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:77
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:78
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:76
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:66
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:65
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:79
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:74
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:67
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:77
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:73
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:78
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:80
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:79
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:67
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:68
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:75
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:72
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:81
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:69
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:82
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:66
+index:83
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:84
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:85
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:81
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:69
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:68
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:80
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:82
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:86
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:84
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:87
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:83
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:70
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:88
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:87
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:89
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:71
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:86
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:70
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:85
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:72
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+index:72
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:90
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:91
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:92
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:93
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:88
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:89
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+index:73
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:94
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:71
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:91
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:95
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:89
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:94
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:93
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:95
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+index:73
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:74
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:96
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:97
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:98
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:99
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:100
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:101
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:96
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:92
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:75
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:97
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:74
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+index:72
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:98
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:96
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:99
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:90
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:101
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:100
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:102
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:103
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+index:75
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:104
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:105
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:106
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:76
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:107
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:102
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:105
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:104
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:106
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:107
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:108
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:109
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:110
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:92
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:103
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:111
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:108
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9218 tokens (5122 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+index:72
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:76
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:112
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:113
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 9238 tokens (5142 in the messages, 4096 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+index:77
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:114
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:110
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:109
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:115
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:111
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:78
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:79
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:112
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:116
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:114
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:77
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:117
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:113
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:116
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:118
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:115
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:119
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:120
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:121
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:78
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:79
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:80
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:121
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:122
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:123
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:117
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:124
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:118
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:119
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:122
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:120
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:125
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:81
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:123
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:118
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:82
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:124
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:126
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:125
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:127
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:124
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:80
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:128
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:129
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:130
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:131
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:132
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:133
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:126
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:132
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:127
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:130
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:81
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:130
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:131
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:82
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:134
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:128
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:135
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:136
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:83
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:137
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:138
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:84
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:139
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:133
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:129
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:137
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:135
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:83
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:139
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:138
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:85
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:140
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:134
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:141
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:142
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:143
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:86
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:140
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:144
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:85
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:145
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:142
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:146
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:84
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:143
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:87
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:141
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:144
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:136
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:86
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:147
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:145
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:148
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:149
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:150
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:146
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:147
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:151
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:150
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:148
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:152
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:153
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:154
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:88
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:155
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:87
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:156
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:151
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:155
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:153
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:89
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:152
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:154
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:151
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:157
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:158
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:88
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:90
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:159
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:158
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:160
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:89
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:149
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:156
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:91
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:160
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:159
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:159
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:92
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:161
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:162
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:91
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:90
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:163
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:164
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:161
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:165
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:166
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:157
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:162
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:167
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:93
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:163
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:166
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:167
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:163
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:92
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:168
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:157
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:169
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:170
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:164
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:165
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:171
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:94
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:172
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:173
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:169
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:93
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:168
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:170
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:173
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:95
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:94
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:171
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:172
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:174
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:96
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:175
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:176
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:177
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:95
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:178
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:174
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:179
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:175
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:97
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:176
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:98
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:177
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:180
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:179
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:178
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:181
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:96
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:182
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:97
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:183
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:184
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:185
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:172
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:186
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:181
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:184
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:97
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:187
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:180
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:99
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:100
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:186
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:98
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:183
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:185
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:182
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:188
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:100
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:189
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:101
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:190
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:191
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:192
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:193
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:102
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:189
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:188
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:99
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:194
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:191
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:187
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:195
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:101
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:194
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:196
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:193
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:102
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:195
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:103
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:190
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:197
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:104
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:192
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:198
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:199
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:103
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:200
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:199
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:201
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:198
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:105
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:202
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:197
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:104
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:106
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:203
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:200
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:204
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:201
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:105
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:205
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:202
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:107
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:203
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:206
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:204
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:106
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:207
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:208
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:196
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:108
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:209
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:210
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:205
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:206
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:208
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:109
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:207
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:209
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:211
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:107
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:212
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:213
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:214
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:210
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:211
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:108
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:212
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:109
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:215
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:216
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:214
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:217
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:218
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:213
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:110
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:219
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:220
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:111
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:215
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:217
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:110
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:220
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:218
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:221
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:219
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:112
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:218
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:222
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:223
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:224
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:221
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:113
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:225
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:111
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:222
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:112
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:223
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:226
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:227
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:228
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:229
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:224
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:114
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:216
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:113
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:226
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:225
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:227
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:115
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:230
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:226
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:231
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:232
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:228
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:233
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:234
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:235
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:116
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:232
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:114
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:229
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:230
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:236
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:234
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:115
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:233
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:237
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:235
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:231
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:236
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:238
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:239
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:116
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:231
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:240
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:117
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:118
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:237
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:241
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:238
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:239
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:240
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:242
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:119
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:243
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:241
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:244
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:118
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:245
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:246
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:247
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:243
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:246
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:244
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:248
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:249
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:250
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:120
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:242
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:117
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:251
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:247
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:249
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:252
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:119
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:248
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:245
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:251
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:250
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:253
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:252
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:120
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:254
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:255
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:121
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:256
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:257
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:122
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:258
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:253
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:254
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:123
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:121
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:257
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:255
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:259
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:258
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:260
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:261
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:124
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:262
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:260
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:124
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:123
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:262
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:263
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:263
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:261
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:125
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:259
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:260
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:263
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:264
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:265
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:256
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:126
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:266
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:264
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:122
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:125
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:259
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:267
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:268
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:269
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:266
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:267
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:265
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:270
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:269
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:271
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:126
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:272
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:268
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:127
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:265
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:273
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:274
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:275
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:276
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:274
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:273
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:271
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:275
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:272
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:128
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:270
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:129
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:277
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:127
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:276
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:278
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:279
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:280
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:281
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:282
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:277
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:282
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:279
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:283
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:282
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:280
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:284
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:285
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:286
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:278
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:287
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:130
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:283
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:285
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:284
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:130
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:286
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:288
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:128
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:289
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:129
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:290
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:131
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:281
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:291
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:287
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:290
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:289
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:288
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:292
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:131
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:132
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:133
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:293
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:294
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:295
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:292
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:291
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:132
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:294
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:296
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:297
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:287
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:295
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:296
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:134
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:135
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:297
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:298
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:299
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:300
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:301
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:293
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:133
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:302
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:298
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:299
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:300
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:302
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:303
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:304
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:301
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:305
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:306
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:303
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:304
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:307
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:308
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:305
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:136
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:309
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:310
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:306
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:311
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:308
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:135
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:309
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:312
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:313
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:314
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:136
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:315
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:311
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:307
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:314
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:312
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:134
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:310
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:316
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:317
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:137
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:318
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:319
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:298
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:317
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:138
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:313
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:320
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:315
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:316
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:317
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:320
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:321
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:322
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:323
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:138
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:319
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:324
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:137
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:321
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:323
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:325
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:318
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:326
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:324
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:322
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:327
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:328
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:326
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:139
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:328
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:329
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:330
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:327
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:331
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:140
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:332
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:141
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:333
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:332
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:334
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:330
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:139
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:331
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:140
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:333
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:329
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:325
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:335
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:336
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:337
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:141
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:142
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:338
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:339
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:334
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:336
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:143
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:340
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:335
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:338
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:339
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:142
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:144
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:337
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:340
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:341
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:143
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:342
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:343
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:344
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:145
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:338
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:342
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:345
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:346
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:343
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:344
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:347
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:144
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:348
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:349
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:345
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:350
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:351
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:341
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:145
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:146
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:349
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:341
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:346
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:348
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:352
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:353
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:147
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:347
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:354
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:353
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:351
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:352
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:148
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:350
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:355
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:356
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:357
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:146
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:148
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:354
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:358
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:355
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:147
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:356
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:359
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:360
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:149
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:357
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:361
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:362
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:363
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:358
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:364
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:360
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:361
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:359
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:362
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:365
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:366
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:367
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:368
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:369
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:150
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:370
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:367
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:365
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:371
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:151
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:371
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:372
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:369
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:363
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:373
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:149
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:371
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:370
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:368
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:366
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:373
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:374
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:375
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:371
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:376
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:372
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:374
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:151
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:152
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:150
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:377
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:378
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:375
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:379
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:380
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:381
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:379
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:376
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:377
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:152
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:382
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:380
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:381
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:383
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:376
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:384
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:153
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:154
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:385
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:382
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:384
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:385
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:155
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:383
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:378
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:376
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:386
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:387
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:154
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:388
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:389
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:390
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:155
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:386
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:153
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:387
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:391
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:389
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:392
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:390
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:388
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:156
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:157
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:393
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:394
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:391
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:395
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:396
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:397
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:398
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:394
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:395
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:158
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:396
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:399
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:398
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:157
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:400
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:401
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:392
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:398
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:397
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:156
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:393
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:396
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:158
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:401
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:402
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:399
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:403
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:404
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:400
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:405
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:159
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:402
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:406
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:403
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:160
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:407
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:408
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:406
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:404
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:402
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:409
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:161
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:405
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:159
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:410
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:408
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:160
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:411
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:409
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:407
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:412
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:413
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:162
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:414
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:161
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:163
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:411
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:413
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:410
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:414
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:163
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:415
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:162
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:164
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:412
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:416
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:417
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:418
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:419
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:420
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:421
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:415
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:418
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:165
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:166
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:417
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:420
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:416
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:419
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:422
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:423
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:424
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:425
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:426
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:427
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:428
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:166
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:422
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:164
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:426
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:427
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:424
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:423
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:429
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:430
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:425
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:431
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:165
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:432
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:421
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:433
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:167
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:428
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:431
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:434
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:433
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:429
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:167
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:168
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:434
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:435
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:436
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:437
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:438
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:432
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:439
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:430
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:169
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:435
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:440
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:170
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:438
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:439
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:441
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:168
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:440
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:169
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:442
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:437
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:436
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:443
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:444
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:442
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:445
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:171
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:170
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:172
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:446
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:441
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:447
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:448
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:444
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:449
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:446
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:443
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:445
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:171
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:447
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:450
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:451
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:452
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:453
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:454
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:172
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:173
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:174
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:454
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:449
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:451
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:452
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:455
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:456
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:457
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:453
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:458
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:448
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:456
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:175
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:457
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:459
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:450
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:173
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:458
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:455
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:460
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:461
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:174
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:175
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:459
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:462
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:460
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:463
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:464
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:465
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:176
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:177
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:461
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:463
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:466
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:178
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:467
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:468
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:469
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:465
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:470
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:462
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:464
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:466
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:469
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:176
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:178
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:467
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:471
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:472
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:473
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:177
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:179
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:468
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:474
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:472
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:475
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:473
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:471
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:476
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:477
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:475
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:180
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:478
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:474
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:179
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:470
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:476
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:181
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:477
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:180
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:479
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:480
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:478
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:481
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:482
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:471
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:182
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:183
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:483
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:181
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:483
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:480
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:481
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:484
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:485
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:479
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:482
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:483
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:184
+apis:[{'endpoints': 'https://conversationhubaustraliaeast.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:486
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:487
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:488
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:489
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:490
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:491
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:183
+apis:[{'endpoints': 'https://readinswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:485
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:489
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:484
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:491
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:490
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:492
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:493
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:492
+apis:[{'endpoints': 'https://conversationhubwestus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:486
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:494
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:185
+apis:[{'endpoints': 'https://conversationhubswedencentral.openai.azure.com/', 'speed': 150, 'model': 'gpt-4'}]
+index:487
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:488
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:495
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:493
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:496
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:497
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:498
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:497
+apis:[{'endpoints': 'https://conversationhubeastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:496
+apis:[{'endpoints': 'https://conversationhubeastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:493
+apis:[{'endpoints': 'https://conversationhubwestus3.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:495
+apis:[{'endpoints': 'https://readineastus2.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:499
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:494
+apis:[{'endpoints': 'https://readineastus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:498
+apis:[{'endpoints': 'https://conversationhubnorthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+index:499
+apis:[{'endpoints': 'https://conversationhubsouthcentralus.openai.azure.com/', 'speed': 150, 'model': 'gpt-4o'}]
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4-1106-preview', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-turbo-2024-04-09         | score: 82.6  | 95% CI: (-1.4, 1.7)  | average #tokens: 662
+claude-3-5-sonnet-20240620     | score: 79.3  | 95% CI: (-2.0, 1.8)  | average #tokens: 567
+gpt-4o-2024-05-13              | score: 79.2  | 95% CI: (-2.1, 2.0)  | average #tokens: 696
+gpt-4-0125-preview             | score: 78.0  | 95% CI: (-2.3, 1.8)  | average #tokens: 619
+athene-70b                     | score: 76.8  | 95% CI: (-1.9, 1.9)  | average #tokens: 683
+gpt-4o-mini                    | score: 74.9  | 95% CI: (-1.8, 3.0)  | average #tokens: 668
+gemini-1.5-pro-api-0514        | score: 72.0  | 95% CI: (-2.2, 2.2)  | average #tokens: 676
+yi-large-preview               | score: 71.5  | 95% CI: (-2.1, 1.8)  | average #tokens: 720
+mistral-large-2407             | score: 70.4  | 95% CI: (-2.1, 2.9)  | average #tokens: 623
+llama-3.1-405b-instruct        | score: 64.1  | 95% CI: (-2.7, 2.0)  | average #tokens: 633
+glm-4-0520                     | score: 63.8  | 95% CI: (-2.2, 2.5)  | average #tokens: 636
+yi-large                       | score: 63.7  | 95% CI: (-2.7, 2.2)  | average #tokens: 626
+deepseek-coder-v2              | score: 62.3  | 95% CI: (-2.3, 2.2)  | average #tokens: 578
+claude-3-opus-20240229         | score: 60.4  | 95% CI: (-2.2, 2.2)  | average #tokens: 541
+gemma-2-27b-it                 | score: 57.5  | 95% CI: (-2.9, 2.5)  | average #tokens: 577
+llama-3.1-70b-instruct         | score: 55.7  | 95% CI: (-3.0, 2.6)  | average #tokens: 628
+glm-4-0116                     | score: 55.7  | 95% CI: (-2.0, 2.1)  | average #tokens: 622
+gemini-1.5-pro-api-0409-preview | score: 53.4  | 95% CI: (-2.2, 3.3)  | average #tokens: 478
+glm-4-air                      | score: 50.9  | 95% CI: (-2.4, 2.7)  | average #tokens: 619
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+gemini-1.5-flash-api-0514      | score: 49.6  | 95% CI: (-2.1, 2.6)  | average #tokens: 642
+qwen2-72b-instruct             | score: 46.9  | 95% CI: (-2.3, 3.0)  | average #tokens: 515
+claude-3-sonnet-20240229       | score: 46.8  | 95% CI: (-2.4, 1.6)  | average #tokens: 552
+llama-3-70b-instruct           | score: 46.6  | 95% CI: (-2.5, 3.5)  | average #tokens: 591
+wildchat_v2_8b_2048_default_template_fullft_lr5e6_e5_9485 | score: 42.9  | 95% CI: (-2.4, 2.1)  | average #tokens: 684
+claude-3-haiku-20240307        | score: 41.5  | 95% CI: (-2.0, 2.4)  | average #tokens: 505
+gpt-4-0613                     | score: 37.9  | 95% CI: (-2.9, 1.9)  | average #tokens: 354
+mistral-large-2402             | score: 37.7  | 95% CI: (-2.5, 2.9)  | average #tokens: 400
+Meta-Llama-3.1-8B-Instruct     | score: 37.5  | 95% CI: (-6.0, 5.9)  | average #tokens: 731
+wildchat_v2_8b_2048_default_template_fullft_lr5e6_3794 | score: 36.9  | 95% CI: (-2.3, 2.3)  | average #tokens: 682
+mixtral-8x22b-instruct-v0.1    | score: 36.4  | 95% CI: (-2.4, 2.5)  | average #tokens: 430
+qwen1.5-72b-chat               | score: 36.1  | 95% CI: (-2.6, 2.0)  | average #tokens: 474
+phi-3-medium-4k-instruct       | score: 33.4  | 95% CI: (-2.0, 2.4)  | average #tokens: 517
+command-r-plus                 | score: 33.1  | 95% CI: (-2.6, 2.1)  | average #tokens: 541
+mistral-medium                 | score: 31.9  | 95% CI: (-2.2, 2.5)  | average #tokens: 485
+wildchat_v1_8b_2048_default_template | score: 30.7  | 95% CI: (-2.8, 2.2)  | average #tokens: 756
+phi-3-small-8k-instruct        | score: 29.8  | 95% CI: (-1.5, 2.2)  | average #tokens: 568
+ta_chosen_llama3.1_instruct_dpo_2048 | score: 28.7  | 95% CI: (-2.1, 1.9)  | average #tokens: 662
+wildchat_v2_8b_2048_default_template_3796 | score: 28.1  | 95% CI: (-2.2, 1.6)  | average #tokens: 787
+ta_rejected_llama3.1_instruct_dpo_2048 | score: 28.0  | 95% CI: (-1.8, 2.3)  | average #tokens: 646
+mistral-next                   | score: 27.4  | 95% CI: (-2.2, 2.3)  | average #tokens: 297
+wildchat_v2_8b_2048_default_template_fullft_e5_9485 | score: 26.7  | 95% CI: (-1.9, 2.0)  | average #tokens: 699
+wildchat_v2_8b_2048_default_template_full_sft | score: 26.5  | 95% CI: (-1.7, 2.1)  | average #tokens: 669
+wildchat_v1_8b_2048_default_template_4000 | score: 25.5  | 95% CI: (-2.0, 2.0)  | average #tokens: 742
+gpt-3.5-turbo-0613             | score: 24.8  | 95% CI: (-2.1, 2.0)  | average #tokens: 401
+dbrx-instruct-preview          | score: 24.6  | 95% CI: (-1.7, 2.3)  | average #tokens: 415
+claude-2.0                     | score: 24.0  | 95% CI: (-1.7, 2.0)  | average #tokens: 295
+mixtral-8x7b-instruct-v0.1     | score: 23.4  | 95% CI: (-1.8, 2.2)  | average #tokens: 457
+gpt-3.5-turbo-0125             | score: 23.3  | 95% CI: (-2.1, 2.3)  | average #tokens: 329
+yi-34b-chat                    | score: 23.1  | 95% CI: (-1.8, 1.7)  | average #tokens: 611
+starling-lm-7b-beta            | score: 23.0  | 95% CI: (-1.9, 2.0)  | average #tokens: 530
+claude-2.1                     | score: 22.8  | 95% CI: (-1.6, 2.0)  | average #tokens: 290
+llama-3.1-8b-instruct          | score: 21.3  | 95% CI: (-1.9, 1.4)  | average #tokens: 861
+snorkel-mistral-pairrm-dpo     | score: 20.7  | 95% CI: (-1.9, 1.9)  | average #tokens: 564
+llama-3-8b-instruct            | score: 20.6  | 95% CI: (-1.8, 1.9)  | average #tokens: 585
+gpt-3.5-turbo-1106             | score: 18.9  | 95% CI: (-1.9, 1.9)  | average #tokens: 285
+gpt-3.5-turbo-0314             | score: 18.1  | 95% CI: (-1.9, 1.4)  | average #tokens: 334
+gemini-pro                     | score: 17.8  | 95% CI: (-1.6, 1.6)  | average #tokens: 322
+snowflake-arctic-instruct      | score: 17.6  | 95% CI: (-2.0, 1.9)  | average #tokens: 365
+command-r                      | score: 17.0  | 95% CI: (-1.8, 1.7)  | average #tokens: 432
+phi-3-mini-128k-instruct       | score: 15.4  | 95% CI: (-1.4, 1.5)  | average #tokens: 609
+tulu-2-dpo-70b                 | score: 15.0  | 95% CI: (-1.8, 1.4)  | average #tokens: 550
+starling-lm-7b-alpha           | score: 12.8  | 95% CI: (-1.6, 1.4)  | average #tokens: 483
+mistral-7b-instruct            | score: 12.6  | 95% CI: (-1.2, 1.3)  | average #tokens: 541
+gemma-1.1-7b-it                | score: 12.1  | 95% CI: (-1.0, 1.3)  | average #tokens: 341
+llama-2-70b-chat               | score: 11.6  | 95% CI: (-1.2, 1.3)  | average #tokens: 595
+vicuna-33b                     | score:  8.6  | 95% CI: (-1.4, 1.0)  | average #tokens: 451
+gemma-7b-it                    | score:  7.5  | 95% CI: (-1.1, 1.1)  | average #tokens: 378
+tulu_v2_8b_base_template_dpo   | score:  7.2  | 95% CI: (-0.9, 0.9)  | average #tokens: 496
+tulu_v2_8b_bsz64_default_template_dpo | score:  7.0  | 95% CI: (-1.1, 1.3)  | average #tokens: 449
+tulu_v2_8b_2048_default_template_dpo | score:  6.6  | 95% CI: (-0.9, 1.1)  | average #tokens: 463
+tulu-2-dpo-7b                  | score:  6.0  | 95% CI: (-0.8, 0.9)  | average #tokens: 539
+tulu_v2_8b_2048_default_template_sft | score:  5.1  | 95% CI: (-0.8, 1.0)  | average #tokens: 441
+ta_chosen_tuluv2_dpo_2048_default_template | score:  4.7  | 95% CI: (-0.9, 0.9)  | average #tokens: 758
+tulu_lora_sft_default_template_8b | score:  4.3  | 95% CI: (-0.8, 0.7)  | average #tokens: 444
+tulu_lora_sft_base_template_8b | score:  4.3  | 95% CI: (-0.6, 0.8)  | average #tokens: 458
+gemma-1.1-2b-it                | score:  3.4  | 95% CI: (-0.6, 0.7)  | average #tokens: 316
+gemma-2b-it                    | score:  3.0  | 95% CI: (-0.7, 0.6)  | average #tokens: 369
+tulu-2-7b                      | score:  2.5  | 95% CI: (-0.6, 0.6)  | average #tokens: 413
+Meta-Llama-3.1-8B              | score:  0.5  | 95% CI: (-0.2, 0.3)  | average #tokens: 1616
+所有任务已完成，vllm 服务已关闭。
+运行时间: -28748873.05 分钟
+----------------------------------------
+所有任务已完成。

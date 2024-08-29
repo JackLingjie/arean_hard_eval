@@ -3,7 +3,7 @@ name: judgment config file for Arena Hard
 bench_name: arena-hard-v0.1
 
 # Arena Hard default
-judge_model: gpt-4-1106-preview
+judge_model: gpt-4o
 reference: False # Optional
 ref_model: null  
 
@@ -22,4 +22,4 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
-  - ta_rejected_llama3.1_instruct_dpo_2048
+  - Meta-Llama-3.1-8B-Instruct
