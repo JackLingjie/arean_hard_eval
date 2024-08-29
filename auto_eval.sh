@@ -2,18 +2,34 @@
 set -x
 # 参数列表  
 PARAMS=(  
-  "wildchat_v1_8b_2048_default_template"  
+    "ta_chosen_tuluv2_dpo_2048_default_template"
+    "ta_chosen_llama3.1_instruct_dpo_2048"
+    "ta_rejected_llama3.1_instruct_dpo_2048" 
+    # "wildchat_v2_8b_2048_default_template_fullft_lr5e6_e5_9485" 
+    # "wildchat_v2_8b_2048_default_template_fullft_lr5e6_3794" 
+    # "wildchat_v2_8b_2048_default_template_fullft_e5_9485" 
+    # "wildchat_v2_8b_2048_default_template_full_sft"
+    # "wildchat_v2_8b_2048_default_template_3796"
+    # "wildchat_v1_8b_2048_default_template_4000" 
   # "tulu_lora_sft_default_template_8b"
   # "tulu_v2_8b_bsz64_default_template_dpo"
   # "tulu_v2_8b_base_template_dpo"
   # 添加更多参数  
 )  
 
-# 日志文件  
-LOG_FILE="eval.log"  
+LOG_FILE="evaluation_log"  
+  
+# 遍历模型列表，生成新的文件名  
+for model in "${PARAMS[@]}"; do  
+    # 拼接模型名到log_file后  
+    LOG_FILE="${LOG_FILE}_${model}"  
+done  
+  
+# 最终的文件名  
+LOG_FILE="./eval_logs/${LOG_FILE}.txt" 
 
-# 清空或创建日志文件  
-> $LOG_FILE  
+# 清空日志文件  
+> "$LOG_FILE"  
 
 # 遍历参数列表  
 for PARAM in "${PARAMS[@]}"; do  

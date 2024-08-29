@@ -16,8 +16,8 @@ gpt-4-1106-preview:
     api_type: azure
     parallel: 8
 
-wildchat_v1_8b_2048_default_template:
-    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/wildchat_v1_8b_2048_default_template
+wildchat_v2_8b_2048_default_template_full_sft:
+    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/wildchat_v2_8b_2048_default_template_full_sft
     endpoints: 
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
