@@ -11,7 +11,7 @@
 
 
 gpt-4o:
-    model_name: gpt4
+    model_name: gpt4o
     endpoints: null
     api_type: azure
     parallel: 8

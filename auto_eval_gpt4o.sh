@@ -28,18 +28,21 @@ PARAMS=(
 )  
 
 LOG_FILE="evaluation_log"  
-  
+counter=0
+
 # 遍历模型列表，生成新的文件名  
-for model in "${PARAMS[@]}"; do  
+for model in "${PARAMS[@]}"; do 
+    if [ $counter -ge 3 ]; then  
+        break  
+    fi
     # 拼接模型名到log_file后  
     LOG_FILE="${LOG_FILE}_${model}"  
+
+    counter=$((counter + 1)) 
 done  
   
 # 最终的文件名  
-LOG_FILE="./eval_logs/${LOG_FILE}.txt" 
-
-# 清空日志文件  
-> "$LOG_FILE"  
+LOG_FILE="./eval_logs/${LOG_FILE}.txt"   
 
 # 遍历参数列表  
 for PARAM in "${PARAMS[@]}"; do  
@@ -47,7 +50,7 @@ for PARAM in "${PARAMS[@]}"; do
   start_time=$(date +%s)
 
   echo "执行参数: $PARAM" | tee -a $LOG_FILE  
-  bash eval_script/arean_hard.sh $PARAM | tee -a $LOG_FILE  
+  bash eval_script/arean_hard_gpt4o.sh $PARAM | tee -a $LOG_FILE  
 
     # 计算运行时间  
   elapsed_time=$((end_time - start_time))  
