@@ -11,13 +11,13 @@
 
 
 gpt-4o:
-    model_name: gpt4
+    model_name: gpt4o
     endpoints: null
     api_type: azure
     parallel: 8
 
-Meta-Llama-3.1-8B-Instruct:
-    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/Meta-Llama-3.1-8B-Instruct
+tulu_lora_sft_default_template_8b:
+    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/tulu_lora_sft_default_template_8b
     endpoints: 
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
