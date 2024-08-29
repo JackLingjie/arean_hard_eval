@@ -22,4 +22,4 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
-  - wildchat_v2_8b_2048_default_template_full_sft
+  - ta_rejected_llama3.1_instruct_dpo_2048
