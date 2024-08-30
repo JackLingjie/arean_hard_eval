@@ -5,17 +5,28 @@ WARNING 08-30 01:51:05 arg_utils.py:766] Chunked prefill is enabled by default f
 INFO 08-30 01:51:05 config.py:820] Chunked prefill is enabled with max_num_batched_tokens=512.
 INFO 08-30 01:51:05 llm_engine.py:174] Initializing an LLM engine (v0.5.4) with config: model='/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_chosen_tuluv2_merge_dpo_2048_default_template', speculative_config=None, tokenizer='/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_chosen_tuluv2_merge_dpo_2048_default_template', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None), seed=0, served_model_name=/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_chosen_tuluv2_merge_dpo_2048_default_template, use_v2_block_manager=False, enable_prefix_caching=False)
 INFO 08-30 01:51:54 model_runner.py:720] Starting to load model /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_chosen_tuluv2_merge_dpo_2048_default_template...
-Loading safetensors checkpoint shards:   0% Completed | 0/9 [00:00<?, ?it/s]
-Loading safetensors checkpoint shards:  11% Completed | 1/9 [00:03<00:28,  3.62s/it]
-Loading safetensors checkpoint shards:  22% Completed | 2/9 [00:07<00:25,  3.61s/it]
-Loading safetensors checkpoint shards:  33% Completed | 3/9 [00:10<00:21,  3.61s/it]
-Loading safetensors checkpoint shards:  44% Completed | 4/9 [00:14<00:17,  3.59s/it]
-Loading safetensors checkpoint shards:  56% Completed | 5/9 [00:17<00:14,  3.58s/it]
-Loading safetensors checkpoint shards:  67% Completed | 6/9 [00:21<00:10,  3.57s/it]
-Loading safetensors checkpoint shards:  78% Completed | 7/9 [00:25<00:07,  3.57s/it]
-Loading safetensors checkpoint shards:  89% Completed | 8/9 [00:27<00:03,  3.21s/it]
-Loading safetensors checkpoint shards: 100% Completed | 9/9 [00:29<00:00,  2.80s/it]
-Loading safetensors checkpoint shards: 100% Completed | 9/9 [00:29<00:00,  3.27s/it]
+
+Loading safetensors checkpoint shards:   0% Completed | 0/9 [00:00<?, ?it/s]
+
+Loading safetensors checkpoint shards:  11% Completed | 1/9 [00:03<00:28,  3.62s/it]
+
+Loading safetensors checkpoint shards:  22% Completed | 2/9 [00:07<00:25,  3.61s/it]
+
+Loading safetensors checkpoint shards:  33% Completed | 3/9 [00:10<00:21,  3.61s/it]
+
+Loading safetensors checkpoint shards:  44% Completed | 4/9 [00:14<00:17,  3.59s/it]
+
+Loading safetensors checkpoint shards:  56% Completed | 5/9 [00:17<00:14,  3.58s/it]
+
+Loading safetensors checkpoint shards:  67% Completed | 6/9 [00:21<00:10,  3.57s/it]
+
+Loading safetensors checkpoint shards:  78% Completed | 7/9 [00:25<00:07,  3.57s/it]
+
+Loading safetensors checkpoint shards:  89% Completed | 8/9 [00:27<00:03,  3.21s/it]
+
+Loading safetensors checkpoint shards: 100% Completed | 9/9 [00:29<00:00,  2.80s/it]
+
+Loading safetensors checkpoint shards: 100% Completed | 9/9 [00:29<00:00,  3.27s/it]
 
 INFO 08-30 01:52:24 model_runner.py:732] Loading model weights took 14.9888 GB
 INFO 08-30 01:52:25 gpu_executor.py:102] # GPU blocks: 12313, # CPU blocks: 2048

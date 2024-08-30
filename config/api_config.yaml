@@ -12,7 +12,12 @@
 
 gpt-4o:
     model_name: gpt4o
+
+
+gpt-4o:
+    model_name: gpt4o
     endpoints: null
+    api_type: azure
     api_type: azure
     parallel: 8
 
@@ -25,5 +30,6 @@ ta_chosen_tuluv2_merge_dpo_2048_default_template:
           api_key: token-abc123
     api_type: openai
     parallel: 8
+
 
 

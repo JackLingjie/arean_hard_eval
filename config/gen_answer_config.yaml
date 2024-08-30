@@ -8,5 +8,4 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - ta_chosen_tuluv2_merge_dpo_2048_default_template
-
+  - gpt-3.5-turbo-0125
