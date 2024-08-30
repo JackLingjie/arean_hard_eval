@@ -78,7 +78,7 @@ else
 fi 
  
 python gen_judgment.py  
-python show_result.py  --output
+python show_result.py  --output --judge-name gpt-4o
 
 # 关闭 vllm 服务  
 kill $VLLM_PID  
