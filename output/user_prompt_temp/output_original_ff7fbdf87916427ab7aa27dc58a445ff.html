@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>output_original_ff7fbdf87916427ab7aa27dc58a445ff</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <style type="text/css">
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+display: block;
+}
+
+audio,
+canvas,
+video {
+display: inline-block;
+}
+
+audio:not([controls]) {
+display: none;
+height: 0;
+}
+
+[hidden],
+template {
+display: none;
+}
+
+
+html {
+font-family: sans-serif; 
+-ms-text-size-adjust: 100%; 
+-webkit-text-size-adjust: 100%; 
+}
+
+body {
+margin: 0;
+}
+
+
+a {
+background: transparent;
+}
+
+a:focus {
+outline: thin dotted;
+}
+
+a:active,
+a:hover {
+outline: 0;
+}
+
+
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+
+abbr[title] {
+border-bottom: 1px dotted;
+}
+
+b,
+strong {
+font-weight: bold;
+}
+
+dfn {
+font-style: italic;
+}
+
+hr {
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+height: 0;
+}
+
+mark {
+background: #ff0;
+color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+font-family: monospace, serif;
+font-size: 1em;
+}
+
+pre {
+white-space: pre-wrap;
+}
+
+q {
+quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+font-size: 80%;
+}
+
+sub,
+sup {
+font-size: 75%;
+line-height: 0;
+position: relative;
+vertical-align: baseline;
+}
+sup {
+top: -0.5em;
+}
+sub {
+bottom: -0.25em;
+}
+
+
+img {
+border: 0;
+}
+
+svg:not(:root) {
+overflow: hidden;
+}
+
+
+figure {
+margin: 0;
+}
+
+
+fieldset {
+border: 1px solid #c0c0c0;
+margin: 0 2px;
+padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+border: 0; 
+padding: 0; 
+}
+
+button,
+input,
+select,
+textarea {
+font-family: inherit; 
+font-size: 100%; 
+margin: 0; 
+}
+
+button,
+input {
+line-height: normal;
+}
+
+button,
+select {
+text-transform: none;
+}
+
+button,
+html input[type="button"], 
+input[type="reset"],
+input[type="submit"] {
+-webkit-appearance: button; 
+cursor: pointer; 
+}
+
+button[disabled],
+html input[disabled] {
+cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+box-sizing: border-box; 
+padding: 0; 
+}
+
+input[type="search"] {
+-webkit-appearance: textfield; 
+-moz-box-sizing: content-box;
+-webkit-box-sizing: content-box; 
+box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+border: 0;
+padding: 0;
+}
+
+textarea {
+overflow: auto; 
+vertical-align: top; 
+}
+
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+.go-top {
+position: fixed;
+bottom: 2em;
+right: 2em;
+text-decoration: none;
+background-color: #E0E0E0;
+font-size: 12px;
+padding: 1em;
+display: inline;
+}
+
+html,body{ margin: auto;
+padding-right: 1em;
+padding-left: 1em;
+max-width: 44em; color:black;}*:not('#mkdbuttons'){margin:0;padding:0}body{font:13.34px helvetica,arial,freesans,clean,sans-serif;-webkit-font-smoothing:subpixel-antialiased;line-height:1.4;padding:3px;background:#fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}p{margin:1em 0}a{color:#4183c4;text-decoration:none}body{background-color:#fff;padding:30px;margin:15px;font-size:14px;line-height:1.6}body>*:first-child{margin-top:0!important}body>*:last-child{margin-bottom:0!important}@media screen{body{box-shadow:0 0 0 1px #cacaca,0 0 0 4px #eee}}h1,h2,h3,h4,h5,h6{margin:20px 0 10px;padding:0;font-weight:bold;-webkit-font-smoothing:subpixel-antialiased;cursor:text}h1{font-size:28px;color:#000}h2{font-size:24px;border-bottom:1px solid #ccc;color:#000}h3{font-size:18px;color:#333}h4{font-size:16px;color:#333}h5{font-size:14px;color:#333}h6{color:#777;font-size:14px}p,blockquote,table,pre{margin:15px 0}ul{padding-left:30px}ol{padding-left:30px}ol li ul:first-of-type{margin-top:0}hr{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;border:0 none;color:#ccc;height:4px;padding:0}body>h2:first-child{margin-top:0;padding-top:0}body>h1:first-child{margin-top:0;padding-top:0}body>h1:first-child+h2{margin-top:0;padding-top:0}body>h3:first-child,body>h4:first-child,body>h5:first-child,body>h6:first-child{margin-top:0;padding-top:0}a:first-child h1,a:first-child h2,a:first-child h3,a:first-child h4,a:first-child h5,a:first-child h6{margin-top:0;padding-top:0}h1+p,h2+p,h3+p,h4+p,h5+p,h6+p,ul li>:first-child,ol li>:first-child{margin-top:0}dl{padding:0}dl dt{font-size:14px;font-weight:bold;font-style:italic;padding:0;margin:15px 0 5px}dl dt:first-child{padding:0}dl dt>:first-child{margin-top:0}dl dt>:last-child{margin-bottom:0}dl dd{margin:0 0 15px;padding:0 15px}dl dd>:first-child{margin-top:0}dl dd>:last-child{margin-bottom:0}blockquote{border-left:4px solid #DDD;padding:0 15px;color:#777}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}table{border-collapse:collapse;border-spacing:0;font-size:100%;font:inherit}table th{font-weight:bold;border:1px solid #ccc;padding:6px 13px}table td{border:1px solid #ccc;padding:6px 13px}table tr{border-top:1px solid #ccc;background-color:#fff}table tr:nth-child(2n){background-color:#f8f8f8}img{max-width:100%}code,tt{margin:0 2px;padding:0 5px;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px;font-family:Consolas,'Liberation Mono',Courier,monospace;font-size:12px;color:#333}pre>code{margin:0;padding:0;white-space:pre;border:0;background:transparent}.highlight pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre code,pre tt{background-color:transparent;border:0}.poetry pre{font-family:Georgia,Garamond,serif!important;font-style:italic;font-size:110%!important;line-height:1.6em;display:block;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif!important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;vertical-align:super;position:relative}sub{vertical-align:sub;top:-1px}@media print{body{background:#fff}img,pre,blockquote,table,figure{page-break-inside:avoid}body{background:#fff;border:0}code{background-color:#fff;color:#333!important;padding:0 .2em;border:1px solid #dedede}pre{background:#fff}pre code{background-color:white!important;overflow:visible}}@media screen{body.inverted{color:#eee!important;border-color:#555;box-shadow:none}.inverted body,.inverted hr .inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt,.inverted blockquote{color:#eee!important;border-color:#555;box-shadow:none}.inverted td,.inverted th{background:#333}.inverted h2{border-color:#555}.inverted hr{border-color:#777;border-width:1px!important}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eee}code span::selection{background-color:rgba(0,0,0,0.7)!important;color:#eee!important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}.inverted{background:#0b2531;background:#252a2a}.inverted body{background:#252a2a}.inverted a{color:#acd1d5}}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k,.highlight .o{font-weight:bold}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:bold}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:bold;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#800080;font-weight:bold}.highlight .gt{color:#a00}.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr{font-weight:bold}.highlight .kt{color:#458;font-weight:bold}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:#008080}.highlight .nb{color:#0086b3}.highlight .nc{color:#458;font-weight:bold}.highlight .no{color:#008080}.highlight .ni{color:#800080}.highlight .ne,.highlight .nf{color:#900;font-weight:bold}.highlight .nn{color:#555}.highlight .nt{color:#000080}.highlight .nv{color:#008080}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo{color:#099}.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc,.highlight .vg,.highlight .vi{color:#008080}.highlight .il{color:#099}.highlight .gc{color:#999;background-color:#eaf2f5}.type-csharp .highlight .k,.type-csharp .highlight .kt{color:#00F}.type-csharp .highlight .nf{color:#000;font-weight:normal}.type-csharp .highlight .nc{color:#2b91af}.type-csharp .highlight .nn{color:#000}.type-csharp .highlight .s,.type-csharp .highlight .sc{color:#a31515}
+</style>
+</head>
+<body>
+<p>&lt;|User Prompt|&gt; Write Vitis HLS code to do the popular mnist handrwitten digit neural network.</p>
+<p>&lt;|The Start of Assistant A’s Answer|&gt; Creating a complete MNIST handwritten digit neural network using Vitis HLS requires a significant amount of code and explanation. However, I can provide you with a high-level overview and some code snippets to help you get started.</p>
+<ol type="1">
+<li>First, you need to include the necessary header files and define the required constants:</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb1-1" title="1"><span class="pp">#include </span><span class="im">&lt;hls_stream.h&gt;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="pp">#include </span><span class="im">&lt;ap_fixed.h&gt;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="pp">#include </span><span class="im">&lt;ap_int.h&gt;</span></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="pp">#define IMG_DIM </span><span class="dv">28</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="pp">#define L1_KERNEL_SIZE </span><span class="dv">5</span></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="pp">#define L1_NUM_KERNELS </span><span class="dv">6</span></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="pp">#define L2_KERNEL_SIZE </span><span class="dv">5</span></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="pp">#define L2_NUM_KERNELS </span><span class="dv">16</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="pp">#define L3_NUM_NEURONS </span><span class="dv">120</span></a>
+<a class="sourceLine" id="cb1-11" title="11"><span class="pp">#define L4_NUM_NEURONS </span><span class="dv">84</span></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="pp">#define OUTPUT_NUM_NEURONS </span><span class="dv">10</span></a></code></pre></div>
+<ol start="2" type="1">
+<li>Define the data types for fixed-point representation:</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">typedef</span> ap_fixed&lt;<span class="dv">16</span>, <span class="dv">8</span>&gt; <span class="dt">data_t</span>;</a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">typedef</span> ap_fixed&lt;<span class="dv">16</span>, <span class="dv">4</span>&gt; <span class="dt">weight_t</span>;</a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="kw">typedef</span> ap_fixed&lt;<span class="dv">32</span>, <span class="dv">16</span>&gt; <span class="dt">accum_t</span>;</a></code></pre></div>
+<ol start="3" type="1">
+<li>Implement the convolution layer function:</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb3-1" title="1"><span class="dt">void</span> conv_layer(<span class="dt">data_t</span> input[IMG_DIM][IMG_DIM], <span class="dt">weight_t</span> kernel[L1_NUM_KERNELS][L1_KERNEL_SIZE][L1_KERNEL_SIZE], <span class="dt">data_t</span> output[L1_NUM_KERNELS][IMG_DIM - L1_KERNEL_SIZE + <span class="dv">1</span>][IMG_DIM - L1_KERNEL_SIZE + <span class="dv">1</span>]) {</a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="cf">for</span> (<span class="dt">int</span> k = <span class="dv">0</span>; k &lt; L1_NUM_KERNELS; k++) {</a>
+<a class="sourceLine" id="cb3-3" title="3">        <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; IMG_DIM - L1_KERNEL_SIZE + <span class="dv">1</span>; i++) {</a>
+<a class="sourceLine" id="cb3-4" title="4">            <span class="cf">for</span> (<span class="dt">int</span> j = <span class="dv">0</span>; j &lt; IMG_DIM - L1_KERNEL_SIZE + <span class="dv">1</span>; j++) {</a>
+<a class="sourceLine" id="cb3-5" title="5">                <span class="dt">accum_t</span> sum = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb3-6" title="6">                <span class="cf">for</span> (<span class="dt">int</span> ki = <span class="dv">0</span>; ki &lt; L1_KERNEL_SIZE; ki++) {</a>
+<a class="sourceLine" id="cb3-7" title="7">                    <span class="cf">for</span> (<span class="dt">int</span> kj = <span class="dv">0</span>; kj &lt; L1_KERNEL_SIZE; kj++) {</a>
+<a class="sourceLine" id="cb3-8" title="8">                        sum += input[i + ki][j + kj] * kernel[k][ki][kj];</a>
+<a class="sourceLine" id="cb3-9" title="9">                    }</a>
+<a class="sourceLine" id="cb3-10" title="10">                }</a>
+<a class="sourceLine" id="cb3-11" title="11">                output[k][i][j] = sum;</a>
+<a class="sourceLine" id="cb3-12" title="12">            }</a>
+<a class="sourceLine" id="cb3-13" title="13">        }</a>
+<a class="sourceLine" id="cb3-14" title="14">    }</a>
+<a class="sourceLine" id="cb3-15" title="15">}</a></code></pre></div>
+<ol start="4" type="1">
+<li>Implement the pooling layer function:</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb4-1" title="1"><span class="dt">void</span> pooling_layer(<span class="dt">data_t</span> input[L1_NUM_KERNELS][IMG_DIM - L1_KERNEL_SIZE + <span class="dv">1</span>][IMG_DIM - L1_KERNEL_SIZE + <span class="dv">1</span>], <span class="dt">data_t</span> output[L1_NUM_KERNELS][(IMG_DIM - L1_KERNEL_SIZE + <span class="dv">1</span>) / <span class="dv">2</span>][(IMG_DIM - L1_KERNEL_SIZE + <span class="dv">1</span>) / <span class="dv">2</span>]) {</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="cf">for</span> (<span class="dt">int</span> k = <span class="dv">0</span>; k &lt; L1_NUM_KERNELS; k++) {</a>
+<a class="sourceLine" id="cb4-3" title="3">        <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; (IMG_DIM - L1_KERNEL_SIZE + <span class="dv">1</span>) / <span class="dv">2</span>; i++) {</a>
+<a class="sourceLine" id="cb4-4" title="4">            <span class="cf">for</span> (<span class="dt">int</span> j = <span class="dv">0</span>; j &lt; (IMG_DIM - L1_KERNEL_SIZE + <span class="dv">1</span>) / <span class="dv">2</span>; j++) {</a>
+<a class="sourceLine" id="cb4-5" title="5">                <span class="dt">data_t</span> max_val = input[k][<span class="dv">2</span> * i][<span class="dv">2</span> * j];</a>
+<a class="sourceLine" id="cb4-6" title="6">                <span class="cf">for</span> (<span class="dt">int</span> ki = <span class="dv">0</span>; ki &lt; <span class="dv">2</span>; ki++) {</a>
+<a class="sourceLine" id="cb4-7" title="7">                    <span class="cf">for</span> (<span class="dt">int</span> kj = <span class="dv">0</span>; kj &lt; <span class="dv">2</span>; kj++) {</a>
+<a class="sourceLine" id="cb4-8" title="8">                        max_val = (input[k][<span class="dv">2</span> * i + ki][<span class="dv">2</span> * j + kj] &gt; max_val) ? input[k][<span class="dv">2</span> * i + ki][<span class="dv">2</span> * j + kj] : max_val;</a>
+<a class="sourceLine" id="cb4-9" title="9">                    }</a>
+<a class="sourceLine" id="cb4-10" title="10">                }</a>
+<a class="sourceLine" id="cb4-11" title="11">                output[k][i][j] = max_val;</a>
+<a class="sourceLine" id="cb4-12" title="12">            }</a>
+<a class="sourceLine" id="cb4-13" title="13">        }</a>
+<a class="sourceLine" id="cb4-14" title="14">    }</a>
+<a class="sourceLine" id="cb4-15" title="15">}</a></code></pre></div>
+<ol start="5" type="1">
+<li>Implement the fully connected layer function:</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb5-1" title="1"><span class="dt">void</span> fc_layer(<span class="dt">data_t</span> input[L3_NUM_NEURONS], <span class="dt">weight_t</span> weights[L4_NUM_NEURONS][L3_NUM_NEURONS], <span class="dt">data_t</span> output[L4_NUM_NEURONS]) {</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; L4_NUM_NEURONS; i++) {</a>
+<a class="sourceLine" id="cb5-3" title="3">        <span class="dt">accum_t</span> sum = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb5-4" title="4">        <span class="cf">for</span> (<span class="dt">int</span> j = <span class="dv">0</span>; j &lt; L3_NUM_NEURONS; j++) {</a>
+<a class="sourceLine" id="cb5-5" title="5">            sum += input[j] * weights[i][j];</a>
+<a class="sourceLine" id="cb5-6" title="6">        }</a>
+<a class="sourceLine" id="cb5-7" title="7">        output[i] = sum;</a>
+<a class="sourceLine" id="cb5-8" title="8">    }</a>
+<a class="sourceLine" id="cb5-9" title="9">}</a></code></pre></div>
+<ol start="6" type="1">
+<li>Implement the top-level function that combines all the layers:</li>
+</ol>
+<div class="sourceCode" id="cb6"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb6-1" title="1"><span class="dt">void</span> mnist_nn(<span class="dt">data_t</span> input[IMG_DIM][IMG_DIM], <span class="dt">weight_t</span> conv1_kernel[L1_NUM_KERNELS][L1_KERNEL_SIZE][L1_KERNEL_SIZE], <span class="dt">weight_t</span> conv2_kernel[L2_NUM_KERNELS][L2_KERNEL_SIZE][L2_KERNEL_SIZE], <span class="dt">weight_t</span> fc1_weights[L3_NUM_NEURONS][L2_NUM_KERNELS * (IMG_DIM / <span class="dv">4</span>) * (IMG_DIM / <span class="dv">4</span>)], <span class="dt">weight_t</span> fc2_weights[L4_NUM_NEURONS][L3_NUM_NEURONS], <span class="dt">weight_t</span> fc3_weights[OUTPUT_NUM_NEURONS][L4_NUM_NEURONS], <span class="dt">data_t</span> output[OUTPUT_NUM_NEURONS]) {</a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="co">// Implement the layers here</span></a>
+<a class="sourceLine" id="cb6-3" title="3">}</a></code></pre></div>
+<p>Please note that this is a high-level overview and does not include activation functions, biases, and other optimizations. You will need to adapt and expand this code to create a complete MNIST handwritten digit neural network using Vitis HLS. &lt;|The End of Assistant A’s Answer|&gt;</p>
+<p>&lt;|The Start of Assistant B’s Answer|&gt; <strong>Implementing the MNIST Handwritten Digit Neural Network with Vitis HLS</strong></p>
+<p>This example demonstrates how to implement a simple neural network for handwritten digit recognition using the MNIST dataset with Vitis HLS (High-Level Synthesis).</p>
+<h3 id="mnist-neural-network-overview"><strong>MNIST Neural Network Overview</strong></h3>
+<p>The MNIST dataset consists of 70,000 images of handwritten digits (0-9). Each image is a 28x28 grayscale pixel array.</p>
+<p><strong>Network Architecture:</strong></p>
+<ul>
+<li><strong>Input Layer:</strong> 28x28 grayscale images</li>
+<li><strong>Hidden Layer:</strong> 512 neurons with ReLU activation</li>
+<li><strong>Output Layer:</strong> 10 neurons (one for each digit) with softmax activation</li>
+</ul>
+<h3 id="vitis-hls-code"><strong>Vitis HLS Code</strong></h3>
+<h4 id="mnist.h"><strong>mnist.h</strong></h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb7-1" title="1"><span class="pp">#ifndef MNIST_H</span></a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="pp">#define M</span>NIST_H</a>
+<a class="sourceLine" id="cb7-3" title="3"></a>
+<a class="sourceLine" id="cb7-4" title="4"><span class="pp">#include </span><span class="im">&lt;ap_int.h&gt;</span></a>
+<a class="sourceLine" id="cb7-5" title="5"></a>
+<a class="sourceLine" id="cb7-6" title="6"><span class="co">// Define the input image dimensions</span></a>
+<a class="sourceLine" id="cb7-7" title="7"><span class="pp">#define IMAGE_WIDTH </span><span class="dv">28</span></a>
+<a class="sourceLine" id="cb7-8" title="8"><span class="pp">#define IMAGE_HEIGHT </span><span class="dv">28</span></a>
+<a class="sourceLine" id="cb7-9" title="9"></a>
+<a class="sourceLine" id="cb7-10" title="10"><span class="co">// Define the number of output classes</span></a>
+<a class="sourceLine" id="cb7-11" title="11"><span class="pp">#define NUM_CLASSES </span><span class="dv">10</span></a>
+<a class="sourceLine" id="cb7-12" title="12"></a>
+<a class="sourceLine" id="cb7-13" title="13"><span class="co">// Define the number of neurons in the hidden layer</span></a>
+<a class="sourceLine" id="cb7-14" title="14"><span class="pp">#define HIDDEN_NEURONS </span><span class="dv">512</span></a>
+<a class="sourceLine" id="cb7-15" title="15"></a>
+<a class="sourceLine" id="cb7-16" title="16"><span class="co">// Define the activation functions</span></a>
+<a class="sourceLine" id="cb7-17" title="17"><span class="kw">typedef</span> <span class="kw">enum</span> {</a>
+<a class="sourceLine" id="cb7-18" title="18">    RELU,</a>
+<a class="sourceLine" id="cb7-19" title="19">    SOFTMAX</a>
+<a class="sourceLine" id="cb7-20" title="20">} <span class="dt">activation_t</span>;</a>
+<a class="sourceLine" id="cb7-21" title="21"></a>
+<a class="sourceLine" id="cb7-22" title="22"><span class="co">// Define the neural network structure</span></a>
+<a class="sourceLine" id="cb7-23" title="23"><span class="kw">typedef</span> <span class="kw">struct</span> {</a>
+<a class="sourceLine" id="cb7-24" title="24">    ap_int&lt;IMAGE_WIDTH * IMAGE_HEIGHT&gt; input;</a>
+<a class="sourceLine" id="cb7-25" title="25">    ap_int&lt;HIDDEN_NEURONS&gt; hidden[HIDDEN_NEURONS];</a>
+<a class="sourceLine" id="cb7-26" title="26">    ap_int&lt;NUM_CLASSES&gt; output[NUM_CLASSES];</a>
+<a class="sourceLine" id="cb7-27" title="27">} <span class="dt">mnist_nn_t</span>;</a>
+<a class="sourceLine" id="cb7-28" title="28"></a>
+<a class="sourceLine" id="cb7-29" title="29"><span class="pp">#endif  </span><span class="co">// MNIST_H</span></a></code></pre></div>
+<h4 id="mnist.cpp"><strong>mnist.cpp</strong></h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb8-1" title="1"><span class="pp">#include </span><span class="im">&quot;mnist.h&quot;</span></a>
+<a class="sourceLine" id="cb8-2" title="2"></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="co">// Activation functions</span></a>
+<a class="sourceLine" id="cb8-4" title="4">ap_int&lt;<span class="dv">32</span>&gt; relu(ap_int&lt;<span class="dv">32</span>&gt; x) {</a>
+<a class="sourceLine" id="cb8-5" title="5">    <span class="cf">return</span> x &gt; <span class="dv">0</span> ? x : <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb8-6" title="6">}</a>
+<a class="sourceLine" id="cb8-7" title="7"></a>
+<a class="sourceLine" id="cb8-8" title="8">ap_int&lt;<span class="dv">32</span>&gt; softmax(ap_int&lt;<span class="dv">32</span>&gt; x) {</a>
+<a class="sourceLine" id="cb8-9" title="9">    <span class="co">// Simplified softmax for demonstration purposes</span></a>
+<a class="sourceLine" id="cb8-10" title="10">    <span class="cf">return</span> x &gt; <span class="dv">0</span> ? x : <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb8-11" title="11">}</a>
+<a class="sourceLine" id="cb8-12" title="12"></a>
+<a class="sourceLine" id="cb8-13" title="13"><span class="co">// Neural network implementation</span></a>
+<a class="sourceLine" id="cb8-14" title="14"><span class="dt">void</span> mnist_nn(<span class="dt">mnist_nn_t</span>&amp; nn, <span class="dt">activation_t</span> activation) {</a>
+<a class="sourceLine" id="cb8-15" title="15">    <span class="co">// Input layer</span></a>
+<a class="sourceLine" id="cb8-16" title="16">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; IMAGE_WIDTH * IMAGE_HEIGHT; i++) {</a>
+<a class="sourceLine" id="cb8-17" title="17">        nn.hidden[<span class="dv">0</span>] += nn.input[i] * <span class="fl">0.1</span>;  <span class="co">// Simple weight for demonstration</span></a>
+<a class="sourceLine" id="cb8-18" title="18">    }</a>
+<a class="sourceLine" id="cb8-19" title="19"></a>
+<a class="sourceLine" id="cb8-20" title="20">    <span class="co">// Hidden layer</span></a>
+<a class="sourceLine" id="cb8-21" title="21">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; HIDDEN_NEURONS; i++) {</a>
+<a class="sourceLine" id="cb8-22" title="22">        nn.hidden[i] = relu(nn.hidden[i]);</a>
+<a class="sourceLine" id="cb8-23" title="23">    }</a>
+<a class="sourceLine" id="cb8-24" title="24"></a>
+<a class="sourceLine" id="cb8-25" title="25">    <span class="co">// Output layer</span></a>
+<a class="sourceLine" id="cb8-26" title="26">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; NUM_CLASSES; i++) {</a>
+<a class="sourceLine" id="cb8-27" title="27">        nn.output[i] = softmax(nn.hidden[<span class="dv">0</span>]);</a>
+<a class="sourceLine" id="cb8-28" title="28">    }</a>
+<a class="sourceLine" id="cb8-29" title="29">}</a></code></pre></div>
+<h4 id="main.cpp"><strong>main.cpp</strong></h4>
+<div class="sourceCode" id="cb9"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb9-1" title="1"><span class="pp">#include </span><span class="im">&quot;mnist.h&quot;</span></a>
+<a class="sourceLine" id="cb9-2" title="2"></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="dt">int</span> main() {</a>
+<a class="sourceLine" id="cb9-4" title="4">    <span class="co">// Initialize the neural network</span></a>
+<a class="sourceLine" id="cb9-5" title="5">    <span class="dt">mnist_nn_t</span> nn;</a>
+<a class="sourceLine" id="cb9-6" title="6">    ap_int&lt;IMAGE_WIDTH * IMAGE_HEIGHT&gt; input = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb9-7" title="7"></a>
+<a class="sourceLine" id="cb9-8" title="8">    <span class="co">// Set the input image</span></a>
+<a class="sourceLine" id="cb9-9" title="9">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; IMAGE_WIDTH * IMAGE_HEIGHT; i++) {</a>
+<a class="sourceLine" id="cb9-10" title="10">        input[i] = <span class="dv">1</span>;  <span class="co">// Example input</span></a>
+<a class="sourceLine" id="cb9-11" title="11">    }</a>
+<a class="sourceLine" id="cb9-12" title="12"></a>
+<a class="sourceLine" id="cb9-13" title="13">    <span class="co">// Run the neural network</span></a>
+<a class="sourceLine" id="cb9-14" title="14">    mnist_nn(nn, RELU);</a>
+<a class="sourceLine" id="cb9-15" title="15"></a>
+<a class="sourceLine" id="cb9-16" title="16">    <span class="co">// Print the output</span></a>
+<a class="sourceLine" id="cb9-17" title="17">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; NUM_CLASSES; i++) {</a>
+<a class="sourceLine" id="cb9-18" title="18">        printf(<span class="st">&quot;Output </span><span class="sc">%d</span><span class="st">: </span><span class="sc">%d\n</span><span class="st">&quot;</span>, i, nn.output[i]);</a>
+<a class="sourceLine" id="cb9-19" title="19">    }</a>
+<a class="sourceLine" id="cb9-20" title="20"></a>
+<a class="sourceLine" id="cb9-21" title="21">    <span class="cf">return</span> <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb9-22" title="22">}</a></code></pre></div>
+<h3 id="compilation-and-synthesis"><strong>Compilation and Synthesis</strong></h3>
+<p>To compile and synthesize the code:</p>
+<ol type="1">
+<li><p><strong>Compile the code:</strong></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb10-1" title="1"><span class="ex">v++</span> -c mnist.cpp</a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="ex">v++</span> -c main.cpp</a></code></pre></div></li>
+<li><p><strong>Link the object files:</strong></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb11-1" title="1"><span class="ex">v++</span> -o mnist main.o mnist.o</a></code></pre></div></li>
+<li><p><strong>Synthesize the design:</strong></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb12-1" title="1"><span class="ex">v++</span> -t xilinx_u200_xdma --platform xilinx_u200_xdma_201920_2 -o mnist.xsa mnist.o</a></code></pre></div></li>
+</ol>
+<h3 id="note"><strong>Note</strong></h3>
+<p>This example is a simplified version of the MNIST neural network. For a more accurate implementation, consider using a deep learning framework like TensorFlow or PyTorch.</p>
+<p><strong>Commit Message Guidelines:</strong></p>
+<ul>
+<li>Use the present tense (“Add” instead of “Added”)</li>
+<li>Keep the first line concise (&lt;50 characters)</li>
+<li>Use bullet points for multiple changes</li>
+</ul>
+<p><strong>API Documentation Guidelines:</strong></p>
+<ul>
+<li>Use clear and concise language</li>
+<li>Include parameter descriptions</li>
+<li>Use proper grammar and punctuation</li>
+</ul>
+<p><strong>Code Formatting Guidelines:</strong></p>
+<ul>
+<li>Use consistent indentation (4 spaces)</li>
+<li>Use blank lines to separate logical sections</li>
+<li>Avoid unnecessary whitespace</li>
+</ul>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li>Follow the Vitis HLS coding standards</li>
+<li>Use meaningful variable names</li>
+<li>Avoid magic numbers</li>
+</ul>
+<p>This example demonstrates a basic neural network implementation using Vitis HLS. For more complex networks, consider using a deep learning framework. &lt;|The End of Assistant B’s Answer|&gt;</p>
+</body>
+</html>

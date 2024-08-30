@@ -1,0 +1,5 @@
+执行参数: ta_chosen_tuluv2_merge_dpo_2048_default_template
+等待 vllm 服务启动...
+vllm 服务已启动。
+{'name': 'config of answer generation for arena-hard-v0.1', 'bench_name': 'arena-hard-v0.1', 'temperature': 0.0, 'max_tokens': 2048, 'num_choices': 1, 'model_list': ['ta_chosen_tuluv2_merge_dpo_2048_default_template']}
+Output to data/arena-hard-v0.1/model_answer/ta_chosen_tuluv2_merge_dpo_2048_default_template.jsonl

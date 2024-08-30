@@ -8,4 +8,4 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - tulu_lora_sft_default_template_8b
+  - ta_chosen_tuluv2_merge_dpo_2048_default_template
