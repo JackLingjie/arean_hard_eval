@@ -12,16 +12,24 @@
 
 gpt-4o:
     model_name: gpt4o
+
+
+gpt-4o:
+    model_name: gpt4o
     endpoints: null
+    api_type: azure
     api_type: azure
     parallel: 8
 
-wildchat_v2_8b_2048_default_template_fullft_lr5e6_e5_9485:
-    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/wildchat_v2_8b_2048_default_template_fullft_lr5e6_e5_9485
+
+ta_chosen_tuluv2_merge_dpo_2048_default_template:
+    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_chosen_tuluv2_merge_dpo_2048_default_template
+
     endpoints: 
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
     api_type: openai
     parallel: 8
+
 
 
