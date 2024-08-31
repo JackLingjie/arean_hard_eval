@@ -1,0 +1,93 @@
+执行参数: tulu-dpo-llama3-8b-base
+等待 vllm 服务启动...
+vllm 服务启动超时，退出...
+运行时间: -28750392.76 分钟
+----------------------------------------
+执行参数: tulu-lora-sft-llama3-8b-base
+等待 vllm 服务启动...
+vllm 服务启动超时，退出...
+运行时间: -28750403.95 分钟
+----------------------------------------
+执行参数: tulu_lora_sft_base_template_8b
+文件 data/arena-hard-v0.1/model_answer/tulu_lora_sft_base_template_8b.jsonl 存在，跳过 vllm 服务启动和 gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Request timed out.
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+wildchat_v2_8b_2048_default_template_fullft_lr5e6_e5_9485 | score: 44.2  | 95% CI: (-2.1, 2.2)  | average #tokens: 684
+wildchat_v2_8b_2048_default_template_fullft_lr5e6_3794 | score: 37.6  | 95% CI: (-2.5, 1.9)  | average #tokens: 682
+Meta-Llama-3.1-8B-Instruct     | score: 37.1  | 95% CI: (-2.1, 2.0)  | average #tokens: 731
+wildchat_v2_8b_2048_default_template_3796 | score: 32.0  | 95% CI: (-2.1, 2.1)  | average #tokens: 787
+wildchat_v1_8b_2048_default_template | score: 29.5  | 95% CI: (-1.9, 1.9)  | average #tokens: 756
+wildchat_v2_8b_2048_default_template_full_sft | score: 28.6  | 95% CI: (-1.8, 1.8)  | average #tokens: 669
+ta_rejected_llama3.1_instruct_dpo_2048 | score: 28.4  | 95% CI: (-1.8, 2.0)  | average #tokens: 646
+wildchat_v2_8b_2048_default_template_fullft_e5_9485 | score: 28.3  | 95% CI: (-1.6, 2.0)  | average #tokens: 699
+wildchat_v1_8b_2048_default_template_4000 | score: 27.2  | 95% CI: (-1.9, 2.0)  | average #tokens: 742
+ta_chosen_llama3.1_instruct_dpo_2048 | score: 26.1  | 95% CI: (-2.1, 2.0)  | average #tokens: 662
+tulu_v2_8b_2048_default_template_dpo | score:  6.5  | 95% CI: (-1.0, 1.0)  | average #tokens: 463
+tulu_v2_8b_bsz64_default_template_dpo | score:  5.4  | 95% CI: (-0.8, 0.9)  | average #tokens: 449
+ta_chosen_tuluv2_dpo_2048_default_template | score:  4.7  | 95% CI: (-0.8, 1.0)  | average #tokens: 758
+tulu_lora_sft_base_template_8b | score:  4.5  | 95% CI: (-0.8, 0.7)  | average #tokens: 458
+tulu_v2_8b_2048_default_template_sft | score:  4.1  | 95% CI: (-0.8, 0.8)  | average #tokens: 441
+tulu_lora_sft_default_template_8b | score:  4.1  | 95% CI: (-0.8, 0.7)  | average #tokens: 444
+所有任务已完成，vllm 服务已关闭。
+运行时间: -28750415.11 分钟
+----------------------------------------
+执行参数: tulu_v2_8b_base_template_dpo
+文件 data/arena-hard-v0.1/model_answer/tulu_v2_8b_base_template_dpo.jsonl 存在，跳过 vllm 服务启动和 gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+wildchat_v2_8b_2048_default_template_fullft_lr5e6_e5_9485 | score: 44.2  | 95% CI: (-2.5, 2.5)  | average #tokens: 684
+wildchat_v2_8b_2048_default_template_fullft_lr5e6_3794 | score: 37.6  | 95% CI: (-1.8, 1.7)  | average #tokens: 682
+Meta-Llama-3.1-8B-Instruct     | score: 37.1  | 95% CI: (-2.3, 2.1)  | average #tokens: 731
+wildchat_v2_8b_2048_default_template_3796 | score: 32.0  | 95% CI: (-1.9, 2.6)  | average #tokens: 787
+wildchat_v1_8b_2048_default_template | score: 29.5  | 95% CI: (-2.1, 1.9)  | average #tokens: 756
+wildchat_v2_8b_2048_default_template_full_sft | score: 28.6  | 95% CI: (-1.7, 1.7)  | average #tokens: 669
+ta_rejected_llama3.1_instruct_dpo_2048 | score: 28.4  | 95% CI: (-1.9, 1.7)  | average #tokens: 646
+wildchat_v2_8b_2048_default_template_fullft_e5_9485 | score: 28.3  | 95% CI: (-2.0, 1.8)  | average #tokens: 699
+wildchat_v1_8b_2048_default_template_4000 | score: 27.2  | 95% CI: (-2.0, 2.0)  | average #tokens: 742
+ta_chosen_llama3.1_instruct_dpo_2048 | score: 26.1  | 95% CI: (-1.9, 1.8)  | average #tokens: 662
+tulu_v2_8b_base_template_dpo   | score:  6.9  | 95% CI: (-1.1, 1.0)  | average #tokens: 496
+tulu_v2_8b_2048_default_template_dpo | score:  6.5  | 95% CI: (-0.8, 1.1)  | average #tokens: 463
+tulu_v2_8b_bsz64_default_template_dpo | score:  5.4  | 95% CI: (-0.9, 0.9)  | average #tokens: 449
+ta_chosen_tuluv2_dpo_2048_default_template | score:  4.7  | 95% CI: (-1.0, 1.0)  | average #tokens: 758
+tulu_lora_sft_base_template_8b | score:  4.5  | 95% CI: (-0.7, 0.8)  | average #tokens: 458
+tulu_v2_8b_2048_default_template_sft | score:  4.1  | 95% CI: (-0.9, 0.8)  | average #tokens: 441
+tulu_lora_sft_default_template_8b | score:  4.1  | 95% CI: (-0.9, 0.7)  | average #tokens: 444
+所有任务已完成，vllm 服务已关闭。
+运行时间: -28750455.06 分钟
+----------------------------------------
+执行参数: tulu_v2_8b_bsz64_default_template_dpo
+文件 data/arena-hard-v0.1/model_answer/tulu_v2_8b_bsz64_default_template_dpo.jsonl 存在，跳过 vllm 服务启动和 gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+500 number of existing judgments
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+wildchat_v2_8b_2048_default_template_fullft_lr5e6_e5_9485 | score: 44.2  | 95% CI: (-2.5, 2.5)  | average #tokens: 684
+wildchat_v2_8b_2048_default_template_fullft_lr5e6_3794 | score: 37.6  | 95% CI: (-1.8, 1.7)  | average #tokens: 682
+Meta-Llama-3.1-8B-Instruct     | score: 37.1  | 95% CI: (-2.3, 2.1)  | average #tokens: 731
+wildchat_v2_8b_2048_default_template_3796 | score: 32.0  | 95% CI: (-1.9, 2.6)  | average #tokens: 787
+wildchat_v1_8b_2048_default_template | score: 29.5  | 95% CI: (-2.1, 1.9)  | average #tokens: 756
+wildchat_v2_8b_2048_default_template_full_sft | score: 28.6  | 95% CI: (-1.7, 1.7)  | average #tokens: 669
+ta_rejected_llama3.1_instruct_dpo_2048 | score: 28.4  | 95% CI: (-1.9, 1.7)  | average #tokens: 646
+wildchat_v2_8b_2048_default_template_fullft_e5_9485 | score: 28.3  | 95% CI: (-2.0, 1.8)  | average #tokens: 699
+wildchat_v1_8b_2048_default_template_4000 | score: 27.2  | 95% CI: (-2.0, 2.0)  | average #tokens: 742
+ta_chosen_llama3.1_instruct_dpo_2048 | score: 26.1  | 95% CI: (-1.9, 1.8)  | average #tokens: 662
+tulu_v2_8b_base_template_dpo   | score:  6.9  | 95% CI: (-1.1, 1.0)  | average #tokens: 496
+tulu_v2_8b_2048_default_template_dpo | score:  6.5  | 95% CI: (-0.8, 1.1)  | average #tokens: 463
+tulu_v2_8b_bsz64_default_template_dpo | score:  5.4  | 95% CI: (-0.9, 0.9)  | average #tokens: 449
+ta_chosen_tuluv2_dpo_2048_default_template | score:  4.7  | 95% CI: (-1.0, 1.0)  | average #tokens: 758
+tulu_lora_sft_base_template_8b | score:  4.5  | 95% CI: (-0.7, 0.8)  | average #tokens: 458
+tulu_v2_8b_2048_default_template_sft | score:  4.1  | 95% CI: (-0.9, 0.8)  | average #tokens: 441
+tulu_lora_sft_default_template_8b | score:  4.1  | 95% CI: (-0.9, 0.7)  | average #tokens: 444
+所有任务已完成，vllm 服务已关闭。
+运行时间: -28750493.25 分钟
+----------------------------------------
+所有任务已完成。
