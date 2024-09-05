@@ -1,6 +1,6 @@
 name: judgment config file for Arena Hard
 
-bench_name: arena-hard-v0.1
+bench_name: alpaca
 
 # Arena Hard default
 judge_model: gpt-4o
@@ -8,7 +8,7 @@ reference: False # Optional
 ref_model: null  
 
 baseline: True
-baseline_model: gpt-4-0314
+baseline_model: gpt4_1106_preview
 
 pairwise: True
 temperature: 0
