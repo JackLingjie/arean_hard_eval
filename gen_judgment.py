@@ -71,10 +71,13 @@ def judgment(**args):
             prompt_args = {}
 
             for i, turn in enumerate(question["turns"]):
+                print(f"i: {i} turn: {turn}")
                 prompt_args[f"question_{i+1}"] = turn["content"]
             base = 1
 
             if baseline:
+                print("has baseline")
+                print(f"game: {game}")
                 if game % 2 == 1: # swap position
                     answer, baseline = baseline, answer
 
@@ -89,7 +92,7 @@ def judgment(**args):
                 for j, ref_answer in enumerate(reference):
                     for i, turn in enumerate(ref_answer["choices"][0]["turns"]):
                         prompt_args[f"ref_answer_{i+j+1}"] = turn["content"]
-            
+            print(f"prompt_args:{prompt_args}")
             user_prompt = template.format(**prompt_args)
             conv.append({"role": "user", "content": user_prompt})
 
