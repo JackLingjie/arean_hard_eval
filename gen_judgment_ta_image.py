@@ -184,7 +184,7 @@ def judgment(**args):
             conv.append({"role": "user", "content": "continue your judgment and finish by outputting a final verdict label"})
 
         result = {
-            "user_prompt": conv[1]["content"],
+            "user_prompt": user_prompt,
             "judgment": judgment,
             "score": score
         }
@@ -240,8 +240,9 @@ if __name__ == "__main__":
 
     endpoint_info = endpoint_list[configs["judge_model"]]
     print(f"generate images {','.join(models)}")
-    for model in models:
-        generate_answer_images(model_answers, model_name=model, baseline_model=configs["baseline_model"], data_dir='data/images')
+    # NOTE(1): debug
+    # for model in models:
+    #     generate_answer_images(model_answers, model_name=model, baseline_model=configs["baseline_model"], data_dir='data/images')
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=endpoint_info["parallel"]) as executor:
         futures = []

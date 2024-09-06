@@ -66,7 +66,9 @@ def text_to_image(text, output_image, size=(1280, 1080), save_dir='text_images',
  
     # Convert HTML to image using html2image  
     # print("html2imageing")
-    hti = Html2Image(size=size, output_path=output_path, temp_path="/home/v-lingjiang/project/temp")  
+    user_home_dir = os.path.expanduser("~")
+    temp_dir = os.path.join(user_home_dir, "temp")
+    hti = Html2Image(size=size, output_path=output_path, temp_path=temp_dir)  
     # 设置浏览器路径（如果需要）  
     # hti.browser_executable = '/path/to/your/chrome-or-edge'  
     # print("html2image done.")

@@ -1,21 +1,243 @@
 Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
 judge model: gpt-4o, baseline: True, baseline model: gpt4_1106_preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
 generate images Meta-Llama-3.1-8B-Instruct
------------------generate Meta-Llama-3.1-8B-Instruct images -----------------
-images generated done.
-Error code: 424 - {'error': {'message': 'Error occurred while processing image(s).', 'type': 'failed_dependency', 'param': None, 'code': None}}
-Error code: 424 - {'error': {'message': 'Error occurred while processing image(s).', 'type': 'failed_dependency', 'param': None, 'code': None}}
-Error code: 424 - {'error': {'message': 'Error occurred while processing image(s).', 'type': 'failed_dependency', 'param': None, 'code': None}}
-Error code: 424 - {'error': {'message': 'Error occurred while processing image(s).', 'type': 'failed_dependency', 'param': None, 'code': None}}
-Error code: 424 - {'error': {'message': 'Error occurred while processing image(s).', 'type': 'failed_dependency', 'param': None, 'code': None}}
-Error code: 400 - {'error': {'message': "The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}
-Error code: 400 - {'error': {'message': "The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}
-Error code: 400 - {'error': {'message': "The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}
-Error code: 400 - {'error': {'message': "The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}
-Error code: 400 - {'error': {'message': "The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}
-Error code: 400 - {'error': {'message': "The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}
-Error code: 400 - {'error': {'message': "The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}
-Error code: 400 - {'error': {'message': "The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}
-Error code: 400 - {'error': {'message': "The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}
-Error code: 424 - {'error': {'message': 'Error occurred while processing image(s).', 'type': 'failed_dependency', 'param': None, 'code': None}}
-Error code: 400 - {'error': {'message': "The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
+DefaultAzureCredential failed to retrieve a token from the included credentials.
+Attempted credentials:
+	EnvironmentCredential: EnvironmentCredential authentication unavailable. Environment variables are not fully configured.
+Visit https://aka.ms/azsdk/python/identity/environmentcredential/troubleshoot to troubleshoot this issue.
+	ManagedIdentityCredential: User assigned managed identities are not supported by Azure Arc. To authenticate with the system assigned identity omit the client id when constructing the credential, and if authenticating with DefaultAzureCredential ensure the AZURE_CLIENT_ID environment variable is not set.
+To mitigate this issue, please refer to the troubleshooting guidelines here at https://aka.ms/azsdk/python/identity/defaultazurecredential/troubleshoot.
