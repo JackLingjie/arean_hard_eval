@@ -1,0 +1,1 @@
+python gen_answer_ta.py --model-name Meta-Llama-3.1-8B-Instruct | tee gen_answer_ta.log
