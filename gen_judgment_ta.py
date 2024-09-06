@@ -47,6 +47,7 @@ def get_answer(model, conv, temperature, max_tokens, endpoint_dict=None, index=0
 
 
 def judgment(**args):
+    # global user_prompt
     question = args["question"]
     answer = args["answer"]
     reference = args["reference"]
@@ -55,7 +56,8 @@ def judgment(**args):
     output_file = args["output_file"]
     index = args["index"]
     model = configs["judge_model"]
-
+    user_prompt = args["user_prompt"]
+    system_prompt = args["system_prompt"]
     num_games = 2 if configs["pairwise"] else 1
 
     output = {
@@ -64,22 +66,22 @@ def judgment(**args):
         "judge": model,
         "games": []
         }
-
+    template = user_prompt
     for game in range(num_games):
         conv = [{"role": "system", "content": system_prompt}]
 
         # for template in configs["prompt_template"]:
-        template = user_prompt
+        # template = user_prompt
         prompt_args = {}
 
         for i, turn in enumerate(question["turns"]):
-            print(f"i: {i} turn: {turn}")
+            # print(f"i: {i} turn: {turn}")
             prompt_args[f"question_{i+1}"] = turn["content"]
         base = 1
 
         if baseline:
-            print("has baseline")
-            print(f"game: {game}")
+            # print("has baseline")
+            # print(f"game: {game}")
             if game % 2 == 1: # swap position
                 answer, baseline = baseline, answer
 
@@ -94,8 +96,16 @@ def judgment(**args):
         #     for j, ref_answer in enumerate(reference):
         #         for i, turn in enumerate(ref_answer["choices"][0]["turns"]):
         #             prompt_args[f"ref_answer_{i+j+1}"] = turn["content"]
-        print(f"prompt_args:{prompt_args}")
-        user_prompt = template.format(**prompt_args)
+        # print(f"prompt_args:{prompt_args}")
+        # print(f"template:{template}")
+        try:
+            user_prompt = template.format(**prompt_args)
+        except Exception as e:
+            
+            print(f"prompt_args: {prompt_args}")
+            print(f"template: {template}")
+            # print(f"Error: {e}")
+            raise e
         conv.append({"role": "user", "content": user_prompt})
 
         judgment = ""
@@ -209,6 +219,8 @@ if __name__ == "__main__":
                 kwargs["output_file"] = output_files[model]
                 kwargs["regex_pattern"] = pattern
                 kwargs["index"] = idx
+                kwargs["user_prompt"] = user_prompt
+                kwargs["system_prompt"] = system_prompt
                 future = executor.submit(judgment, **kwargs)
                 futures.append(future)
 
