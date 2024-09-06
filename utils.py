@@ -148,18 +148,34 @@ def chat_completion_openai_azure(model, messages, temperature, max_tokens, api_d
     output = API_ERROR_OUTPUT
     for _ in range(API_MAX_RETRY):
         try:
-            # response = client.chat.completions.create(
-            #     model=model,
-            #     messages=messages,
-            #     n=1,
-            #     temperature=temperature,
-            #     max_tokens=max_tokens,
-            #     seed=42,
-            # )
-            # output = response.choices[0].message.content
-            # print(len(messages))
-            # print(messages)
-            # print(f"max_tokens: {max_tokens}\n temperature:{temperature}")
+            output = oai_client.get_response(
+                messages=messages,
+                temperature=temperature,
+                max_tokens=max_tokens
+                )            
+            break
+        except openai.RateLimitError as e:
+            print(type(e), e)
+            time.sleep(API_RETRY_SLEEP)
+        except openai.BadRequestError as e:
+            print(type(e), e)
+            break
+        except KeyError:
+            print(type(e), e)
+            break
+
+    return output
+
+def chat_completion_openai_azure_image(model, messages, temperature, max_tokens, api_dict=None, index=0):
+    import openai
+    # from openai import AzureOpenAI
+    from gpt4o import Openai, API_INFOS
+    # print(f"index:{index}", flush=True)
+    oai_client = Openai(apis=[API_INFOS[index % len(API_INFOS)]])
+
+    output = API_ERROR_OUTPUT
+    for _ in range(API_MAX_RETRY):
+        try:
             output = oai_client.get_response(
                 messages=messages,
                 temperature=temperature,

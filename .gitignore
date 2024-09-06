@@ -2,3 +2,5 @@ arena-hard-browser/
 output.zip
 output/
 data/diff_data
+data/images/
+data/alpaca/model_judgment/gpt-4o_images

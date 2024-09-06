@@ -52,21 +52,24 @@ def markdown_to_html(input_text, save_name, base_dir, temp_dir="temp_mdhtmls", u
 def text_to_image(text, output_image, size=(1280, 1080), save_dir='text_images', data_dir="output", temp_dir="temp_mdhtmls"):  
     """Convert text to image and log the process"""  
     logging.info("Starting the conversion process.")  
+  
     # 定义输出路径 
     base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), data_dir)
     output_path = os.path.join(base_dir, save_dir)  
     if not os.path.exists(output_path):  
         os.makedirs(output_path)  
+
     # Convert text to Markdown (assume the text is in Markdown format)  
-    html_file_path = markdown_to_html(text, output_image, base_dir=base_dir, temp_dir=temp_dir, use_default_name=False, )  
+    html_file_path = markdown_to_html(text, output_image, base_dir=base_dir, temp_dir=temp_dir, use_default_name=False )  
     if not html_file_path:  
         return  
  
     # Convert HTML to image using html2image  
-    hti = Html2Image(size=size, output_path=output_path, temp_path="/home/lidong1/jianglingjie/temp")  
+    # print("html2imageing")
+    hti = Html2Image(size=size, output_path=output_path, temp_path="/home/v-lingjiang/project/temp")  
     # 设置浏览器路径（如果需要）  
     # hti.browser_executable = '/path/to/your/chrome-or-edge'  
-  
+    # print("html2image done.")
     hti.screenshot(html_file=html_file_path, save_as=output_image)  
     logging.info(f"Image saved to {os.path.join(output_path, output_image)}.")  
   
