@@ -47,7 +47,7 @@ sampling_params = SamplingParams(**gen_kwargs_vllm)
 
 # 加载question.jsonl数据集  
 questions = datasets.load_dataset('json', data_files='data/alpaca/question.jsonl')['train']  
-print(questions[0])
+
 def convert_to_message(example):  
     messages = [{"role": "user", "content": example["turns"][0]['content']}]  
     example["messages"] = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)  

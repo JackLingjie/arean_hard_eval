@@ -1,0 +1,2 @@
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt4_1106_preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True

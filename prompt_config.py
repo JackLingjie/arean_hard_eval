@@ -1,5 +1,5 @@
 ## user prompt
-user_prompt_A  = \
+user_prompt  = \
 """
 <|User Prompt|>{question_1}
 <|The Start of Assistant A's Answer|>

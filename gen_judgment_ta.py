@@ -4,7 +4,8 @@ import argparse
 import os
 import re
 import concurrent.futures
-from config.prompt_config import system_prompt, user_templates
+from prompt_config import system_prompt
+from prompt_config import user_prompt
 from tqdm import tqdm
 
 from utils import (
