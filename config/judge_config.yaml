@@ -8,7 +8,7 @@ reference: False # Optional
 ref_model: null  
 
 baseline: True
-baseline_model: gpt4_1106_preview
+# baseline_model: gpt4_1106_preview
 
 pairwise: True
 temperature: 0
@@ -21,5 +21,5 @@ system_prompt: "Please act as an impartial judge and evaluate the quality of the
 prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's Answer|>\n{answer_1}\n<|The End of Assistant A's Answer|>\n\n<|The Start of Assistant B's Answer|>\n{answer_2}\n<|The End of Assistant B's Answer|>"]
 
 # Add your model below for evaluation
-model_list:
-  - Meta-Llama-3.1-8B-Instruct
+# model_list:
+#   - Meta-Llama-3.1-8B-Instruct
