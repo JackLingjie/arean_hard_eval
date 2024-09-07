@@ -17,6 +17,8 @@ else
   python gen_answer_ta.py --model-name ${MODEL_NAME} 
 fi 
 
+python gen_images.py --model_name ${MODEL_NAME} 
+
 python gen_judgment_ta_image.py --model-name ${MODEL_NAME} 
 
 python show_result.py  --output image --judge-name gpt-4o_images --bench-name alpaca
