@@ -2,15 +2,39 @@ import os
 from text2img import text_to_image
 import concurrent.futures  
 from tqdm import tqdm
+import argparse
+# def process_item(item, data_dir):  
+#     question_id = item["question_id"]  
+#     answers = item['choices'][0]['turns'][0]['content']
+#     model_id = item["model_id"]
+#     output_img = f"image_{question_id}.png"  
+#     data_dir = "data/images"
+#     text_to_image(answers, output_img, save_dir=model_id, data_dir=data_dir, temp_dir="original_temp")  
+
 def process_item(item, data_dir):  
     question_id = item["question_id"]  
-    answers = item['choices'][0]['turns'][0]['content']
-    model_id = item["model_id"]
+    answers = item['choices'][0]['turns'][0]['content']  
+    model_id = item["model_id"]  
     output_img = f"image_{question_id}.png"  
-    data_dir = "data/images"
-    text_to_image(answers, output_img, save_dir=model_id, data_dir=data_dir, temp_dir="original_temp")  
-
-
+      
+    attempts = 0  
+    max_attempts = 3  
+    success = False  
+  
+    while attempts < max_attempts and not success:  
+        attempts += 1  
+        text_to_image(answers, output_img, save_dir=model_id, data_dir=data_dir, temp_dir="original_temp")  
+          
+        # 检查文件是否存在  
+        file_path = os.path.join(data_dir, model_id, output_img)  
+        if os.path.exists(file_path):  
+            success = True  
+        else:  
+            print(f"Attempt {attempts} failed for question_id {question_id}. Retrying...")  
+      
+    if not success:  
+        print(f"Failed to generate image for question_id {question_id} after {max_attempts} attempts.")
+ 
 def generate_image(model_name, model_answers, data_dir):
     max_workers = 20  
     print(f"-----------------generate {model_name} images -----------------")
@@ -33,16 +57,22 @@ def generate_answer_images(model_answers, model_name, baseline_model, data_dir='
     generate_image(model_name, model_answers, data_dir)
     
     print("images generated done.")
-# model_name = 'Meta-Llama-3.1-8B-Instruct'
-# baseline_model = 'gpt4_1106_preview'
-# generate_answer_images()
+
 
 
 if __name__ == "__main__":
     from utils import load_model_answers
+    parser = argparse.ArgumentParser(description='Generate images from model answers.')  
+    parser.add_argument('--model_name', type=str, default='Meta-Llama-3.1-8B-Instruct', help='Name of the model.')  
+    parser.add_argument('--baseline_model', type=str, default='gpt4_1106_preview', help='Name of the baseline model.') 
+    args = parser.parse_args() 
+
+
     answer_dir = 'data/alpaca/model_answer'
     model_answers = load_model_answers(answer_dir)
-    print(f"model_answers.keys() {model_answers.keys()}")
-    model_name = 'Meta-Llama-3.1-8B-Instruct'
-    baseline_model = 'gpt4_1106_preview'
+    # print(f"model_answers.keys() {model_answers.keys()}")
+    # model_name = 'Meta-Llama-3.1-8B-Instruct'
+    model_name = args.model_name
+    baseline_model = args.baseline_model
+    # baseline_model = 'gpt4_1106_preview'
     generate_answer_images(model_answers, model_name, baseline_model)

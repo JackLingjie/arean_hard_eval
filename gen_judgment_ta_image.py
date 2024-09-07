@@ -4,8 +4,7 @@ import argparse
 import os
 import re
 import concurrent.futures
-from prompt_config import system_prompt
-from prompt_config import user_prompt
+from prompt_config import system_template_image as system_prompt, user_template_image as user_prompt
 from tqdm import tqdm
 from text2img import text_to_image
 import base64
@@ -23,15 +22,38 @@ def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')  
      
+# def process_item(item, data_dir):  
+#     question_id = item["question_id"]  
+#     answers = item['choices'][0]['turns'][0]['content']
+#     model_id = item["model_id"]
+#     output_img = f"image_{question_id}.png"  
+#     data_dir = "data/images"
+#     text_to_image(answers, output_img, save_dir=model_id, data_dir=data_dir, temp_dir="original_temp")  
+
 def process_item(item, data_dir):  
     question_id = item["question_id"]  
-    answers = item['choices'][0]['turns'][0]['content']
-    model_id = item["model_id"]
+    answers = item['choices'][0]['turns'][0]['content']  
+    model_id = item["model_id"]  
     output_img = f"image_{question_id}.png"  
-    data_dir = "data/images"
-    text_to_image(answers, output_img, save_dir=model_id, data_dir=data_dir, temp_dir="original_temp")  
-
-
+      
+    attempts = 0  
+    max_attempts = 3  
+    success = False  
+  
+    while attempts < max_attempts and not success:  
+        attempts += 1  
+        text_to_image(answers, output_img, save_dir=model_id, data_dir=data_dir, temp_dir="original_temp")  
+          
+        # 检查文件是否存在  
+        file_path = os.path.join(data_dir, model_id, output_img)  
+        if os.path.exists(file_path):  
+            success = True  
+        else:  
+            print(f"Attempt {attempts} failed for question_id {question_id}. Retrying...")  
+      
+    if not success:  
+        print(f"Failed to generate image for question_id {question_id} after {max_attempts} attempts.")
+          
 def generate_image(model_name, model_answers, data_dir):
     max_workers = 20  
     print(f"-----------------generate {model_name} images -----------------")
@@ -127,12 +149,12 @@ def judgment(**args):
             if game % 2 == 1: # swap position
                 answer, baseline = baseline, answer
                 base64_image1, base64_image2 = base64_image2, base64_image1
-            for i, turn in enumerate(baseline["choices"][0]["turns"]):
-                prompt_args[f"answer_{i+1}"] = turn["content"]
-                base += 1
-        if answer:
-            for i, turn in enumerate(answer["choices"][0]["turns"]):
-                prompt_args[f"answer_{i+base}"] = turn["content"]
+            # for i, turn in enumerate(baseline["choices"][0]["turns"]):
+            #     prompt_args[f"answer_{i+1}"] = turn["content"]
+            #     base += 1
+        # if answer:
+        #     for i, turn in enumerate(answer["choices"][0]["turns"]):
+        #         prompt_args[f"answer_{i+base}"] = turn["content"]
 
         # if reference:
         #     for j, ref_answer in enumerate(reference):
@@ -143,10 +165,7 @@ def judgment(**args):
         try:
             user_prompt = template.format(**prompt_args)
         except Exception as e:
-            
-            print(f"prompt_args: {prompt_args}")
-            print(f"template: {template}")
-            # print(f"Error: {e}")
+            print(f"Error: {e}")
             raise e
         conv.append(
             {"role": "user", 
@@ -182,7 +201,7 @@ def judgment(**args):
                 break
 
             conv.append({"role": "user", "content": "continue your judgment and finish by outputting a final verdict label"})
-
+        # print(f"system prompt {system_prompt}")
         result = {
             "user_prompt": user_prompt,
             "judgment": judgment,

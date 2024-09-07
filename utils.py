@@ -133,7 +133,7 @@ def chat_completion_openai(model, messages, temperature, max_tokens, api_dict=No
 def chat_completion_openai_azure(model, messages, temperature, max_tokens, api_dict=None, index=0):
     import openai
     # from openai import AzureOpenAI
-    from gpt4o import Openai, API_INFOS
+    from gpt4o_tenant import Openai, API_INFOS
     # print(f"index:{index}", flush=True)
     oai_client = Openai(apis=[API_INFOS[index % len(API_INFOS)]])
     # api_base = api_dict["api_base"]
