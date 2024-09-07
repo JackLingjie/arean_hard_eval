@@ -1,10 +1,26 @@
 import random
 import time
-from azure.identity import DefaultAzureCredential, get_bearer_token_provider
+from azure.identity import DefaultAzureCredential, get_bearer_token_provider, AzureCliCredential
 from openai import AzureOpenAI
 import openai
-import base64
-
+import logging  
+import os
+import subprocess   
+import json
+# 设置日志级别为DEBUG  
+# logging.basicConfig(level=logging.DEBUG)
+def get_tenant_id():  
+    try:  
+        result = subprocess.run(["az", "account", "show"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)  
+        if result.returncode != 0:  
+            raise Exception(f"Failed to run az command: {result.stderr}")  
+        account_info = json.loads(result.stdout)  
+        tenant_id = account_info['tenantId']  
+        return tenant_id  
+    except Exception as e:  
+        print(f"Failed to get tenant_id: {e}")  
+        return None  
+    
 API_INFOS = [
     {
         "endpoints": "https://conversationhubeastus.openai.azure.com/",
@@ -49,6 +65,7 @@ API_INFOS = [
 ]
 
 
+
 class Openai():
     def __init__(
             self,
@@ -58,17 +75,22 @@ class Openai():
     ):
         self.identity_id = identity_id
         flag = True
+        tenant_id = get_tenant_id()
         while flag:
             try:
                 self.token_provider = get_bearer_token_provider(
-                    DefaultAzureCredential(managed_identity_client_id=self.identity_id),
+                    # DefaultAzureCredential(managed_identity_client_id=self.identity_id, exclude_visual_studio_code_credential=True, exclude_shared_token_cache_credential=True),
+                    # DefaultAzureCredential(exclude_visual_studio_code_credential=True, exclude_shared_token_cache_credential=True),
+                    AzureCliCredential(tenant_id=tenant_id),
+                    # DefaultAzureCredential(managed_identity_client_id=self.identity_id),
+                    # DefaultAzureCredential(),
                     "https://cognitiveservices.azure.com/.default"
                 )
                 flag = False
                 break
             except:
                 continue
-
+        # print(f"apis:{apis}", flush=True)
         self.clients_weight = [apis[i]['speed'] for i in range(len(apis))]
         weight_sum = sum(self.clients_weight)
         for i in range(len(self.clients_weight)):
@@ -84,42 +106,6 @@ class Openai():
             max_retries=0,
         )
         self.model = selected_api['model']
-
-    def get_response(self, content, system="You are a helpful assistant.", max_tokens=2048, client_index = None):
-        messages = [
-            {"role": "system", "content": f"{system}"},
-            {"role": "user", "content": [
-                {"type": "text", "text": f"{content}\n"},
-            ]
-             },
-        ]
-
-        client = self.client
-        model = self.model
-
-        max_retry = 5
-        cur_retry = 0
-        while cur_retry <= max_retry:
-            try:
-                completion = client.chat.completions.create(
-                    model=model,
-                    messages=messages,
-                    temperature=0.0,
-                    max_tokens=max_tokens,
-                    frequency_penalty=0,
-                    presence_penalty=0,
-                    stop=None
-                )
-
-                # client.chat.completions.with_raw_response
-                results = completion.choices[0].message.content
-                return results
-            except openai.RateLimitError as e:
-                time.sleep(1)
-            except Exception as e:
-                print(e)
-                cur_retry += 1
-        return ""
 
     def get_image_response(self, content, image1, image2, system="You are a helpful assistant.", max_tokens=2048, client_index = None):
 
@@ -171,6 +157,36 @@ class Openai():
                 cur_retry += 1
         return ""
     
+    def get_response(self, messages, temperature=0, max_tokens=2048):
+
+
+        client = self.client
+        model = self.model
+
+        max_retry = 5
+        cur_retry = 0
+        while cur_retry <= max_retry:
+            try:
+                completion = client.chat.completions.create(
+                    model=model,
+                    messages=messages,
+                    temperature=temperature,
+                    max_tokens=max_tokens,
+                    frequency_penalty=0,
+                    presence_penalty=0,
+                    stop=None
+                )
+
+                # client.chat.completions.with_raw_response
+                results = completion.choices[0].message.content
+                return results
+            except openai.RateLimitError as e:
+                time.sleep(1)
+            except Exception as e:
+                print(e)
+                cur_retry += 1
+        return ""
+            
     def call(self, content, client_index = None):
         messages = [
             {"role": "system", "content": "You are a helpful assistant."},
@@ -208,18 +224,17 @@ class Openai():
         return ""
 
 if __name__ == '__main__':
-    # oai_clients = Openai(
-    #     apis=API_INFOS
-    # )
+    oai_clients = Openai(
+        apis=API_INFOS
+    )
     # res = oai_clients.call("你是gpt几？")
-    # print(res)
-
-
-    for i in range(len(API_INFOS)):
-        print(API_INFOS[i])
-        oai_clients = Openai(
-            apis=[API_INFOS[i]]
-        )
-        res = oai_clients.call("hello")
-        # res = oai_clients.call(text)
-        print(res)
+    content = "你是gpt几？"
+    messages = [
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": [
+            {"type": "text", "text": f"{content}\n"},
+        ]
+            },
+    ]    
+    res = oai_clients.get_response(messages)
+    print(res)
