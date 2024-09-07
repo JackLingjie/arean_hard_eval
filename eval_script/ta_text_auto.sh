@@ -9,7 +9,11 @@ DEFAULT_MODEL_NAME="Meta-Llama-3.1-8B-Instruct"
 MODEL_NAME=${1:-$DEFAULT_MODEL_NAME}  
 
 # gen asnwer
-python gen_answer_ta.py --model-name ${MODEL_NAME} 
+if [ -f "data/alpaca/model_answer/${MODEL_NAME}.jsonl" ]; then  
+  echo "文件 data/alpaca/model_answer/${MODEL_NAME}.jsonl 存在, 跳过gen_answer.py 执行。"  
+else  
+  python gen_answer_ta.py --model-name ${MODEL_NAME} 
+fi 
 
 python gen_judgment_ta.py --model-name ${MODEL_NAME}
 
