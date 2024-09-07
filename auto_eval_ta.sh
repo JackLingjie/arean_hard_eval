@@ -4,10 +4,10 @@ set -x
 PARAMS=(  
   "tulu_v2_8b_2048_default_template_dpo"
   "tulu_v2_8b_2048_default_template_sft"
-  # "uf_llama3.1_instruct_dpo_2048_job"
-  # "ta_chosen_tuluv2_merge_dpo_2048_default_template"
+  "uf_llama3.1_instruct_dpo_2048_job"
+  "ta_chosen_tuluv2_merge_dpo_2048_default_template"
   # "ta_rejected_llama3.1_instruct_2048_default_template_v2"
-  # "ta_v2_rejected_noneed_length_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
+  "ta_v2_rejected_noneed_length_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
   # "ta_v2_rejected_noneed_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
   # "ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
   # "ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v5"
@@ -42,7 +42,7 @@ PARAMS=(
   # "wildchat_v2_8b_2048_default_template_full_sft"
   # "wildchat_v2_8b_2048_default_template_fullft_e5_9485"
   # "wildchat_v2_8b_2048_default_template_fullft_lr5e6_3794"
-  # "wildchat_v2_8b_2048_default_template_fullft_lr5e6_e5_9485"
+  "wildchat_v2_8b_2048_default_template_fullft_lr5e6_e5_9485"
   # 添加更多参数  
 )  
 

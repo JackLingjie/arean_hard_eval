@@ -1,4 +1,9 @@
 model,score,rating_q025,rating_q975,CI,avg_tokens,date
 gpt4_1106_preview,50.0,50.0,50.0,"(-0.00, +0.00)",432.0,2024-09-07
-Meta-Llama-3.1-8B-Instruct,40.87,40.5,41.0,"(-0.37, +0.13)",498.0,2024-09-07
-tulu_v2_8b_2048_default_template_dpo,4.48,4.26,4.5,"(-0.22, +0.02)",285.0,2024-09-07
+uf_llama3.1_instruct_dpo_2048_job,43.98,43.37,45.43,"(-0.61, +1.45)",463.0,2024-09-07
+Meta-Llama-3.1-8B-Instruct,40.87,40.02,42.04,"(-0.85, +1.17)",498.0,2024-09-07
+wildchat_v2_8b_2048_default_template_fullft_lr5e6_e5_9485,37.08,36.33,37.98,"(-0.75, +0.90)",417.0,2024-09-07
+ta_v2_rejected_noneed_length_tuluv2_dpo_2048_default_template_bsz1_acc8_v2,33.7,33.25,34.17,"(-0.45, +0.47)",584.0,2024-09-07
+tulu_v2_8b_2048_default_template_dpo,4.48,4.09,4.89,"(-0.39, +0.41)",285.0,2024-09-07
+tulu_v2_8b_2048_default_template_sft,3.27,2.86,3.6,"(-0.41, +0.33)",274.0,2024-09-07
+ta_chosen_tuluv2_merge_dpo_2048_default_template,0.4,0.28,0.5,"(-0.12, +0.10)",1589.0,2024-09-07
