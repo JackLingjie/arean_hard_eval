@@ -190,7 +190,7 @@ if __name__ == "__main__":
     parser.add_argument("--show-elo", action="store_true")
     parser.add_argument("--weight", type=int, default=3)
     parser.add_argument("--num-rounds", type=int, default=100)
-    parser.add_argument("--output", action="store_true")
+    parser.add_argument("--output", type=str, default="")
     parser.add_argument("--first-game-only", action="store_true")
     args = parser.parse_args()
     print(args)
@@ -273,4 +273,4 @@ if __name__ == "__main__":
         col_list[-2], col_list[-1] = col_list[-1], col_list[-2]
         stats = stats.loc[:,col_list]
         stats['date'] = date_str[:4] + '-' + date_str[4:6] + '-' + date_str[6:]
-        stats.to_csv(f"leaderboard/arena_hard_leaderboard_{date_str}.csv", index=False)
+        stats.to_csv(f"leaderboard/arena_hard_leaderboard_{date_str}_{args.output}.csv", index=False)
