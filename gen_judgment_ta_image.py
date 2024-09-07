@@ -217,11 +217,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--setting-file", type=str, default="config/judge_config.yaml")
     parser.add_argument("--endpoint-file", type=str, default="config/api_config.yaml")
+    parser.add_argument("--model-name", type=str, required=True)
+    parser.add_argument("--baseline-model", type=str, default="gpt4_1106_preview")
     args = parser.parse_args()
     print(args)
     images_path = 'data/images'
     configs = make_config(args.setting_file)
     endpoint_list = make_config(args.endpoint_file)
+
+    configs["model_list"] = [args.model_name]
+    configs["baseline_model"] = args.baseline_model 
 
     print(f'judge model: {configs["judge_model"]}, baseline: {configs["baseline"]}, baseline model: {configs["baseline_model"]}, reference: {configs["reference"]}, '
           + f'reference models: {configs["ref_model"]}, temperature: {configs["temperature"]}, max tokens: {configs["max_tokens"]}, pairwise: {configs["pairwise"]}')

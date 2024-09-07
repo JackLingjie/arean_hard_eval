@@ -1,0 +1,4 @@
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='Meta-Llama-3.1-8B-Instruct', baseline_model='gpt4_1106_preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt4_1106_preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+generate images Meta-Llama-3.1-8B-Instruct
+802 number of existing judgments
