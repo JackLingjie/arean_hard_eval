@@ -16,5 +16,5 @@ else
 fi 
 
 python gen_judgment_ta.py --model-name ${MODEL_NAME}
-
-python show_result.py  --output --judge-name gpt-4o --bench-name alpaca
+## show result
+python show_result.py  --output text --judge-name gpt-4o --bench-name alpaca
