@@ -1,0 +1,1 @@
+It is not rational to believe things for which there is no objective evidence. Beliefs should be based on evidence and reason, and without objective evidence, it is difficult to determine the truthfulness or accuracy of a belief. It is important to be skeptical and critical of claims that lack evidence, and to seek out reliable sources of information before forming beliefs.

@@ -1,0 +1,1 @@
+The address of the property is Grass Valley, CA.

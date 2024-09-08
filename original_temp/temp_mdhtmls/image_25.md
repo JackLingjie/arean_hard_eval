@@ -1,0 +1,11 @@
+Some species of bears that are now extinct include the following:
+1. Irish elk (Megaloceros giganteus) - This species of elk was native to Ireland and was known for its large antlers. It became extinct around 7,700 years ago.
+2. Steller's sea cow (Hydrodamalis gigas) - This species of sea cow was native to the Bering Sea and was known for its large size. It became extinct in 1768 due to overhunting by humans.
+3. Tasmanian tiger (Thylacinus cynocephalus) - This species of marsupial was native to Tasmania and was known for its striped fur. It became extinct in 1936 due to habitat loss and hunting by humans.
+4. Caribbean monk seal (Neomonachus tropicalis) - This species of seal was native to the Caribbean Sea and was known for its large size. It became extinct in 1952 due to overhunting by humans.
+5. Passenger pigeon (Ectopistes migratorius) - This species of pigeon was native to North America and was known for its large flocks. It became extinct in 1914 due to overhunting and habitat loss.
+6. Dodo (Raphus cucullatus) - This species of bird was native to the island of Mauritius and was known for its large size and distinctive appearance. It became extinct in 1681 due to overhunting and habitat loss.
+7. Great auk (Pinguinus impennis) - This species of bird was native to the North Atlantic and was known for its large size and distinctive appearance. It became extinct in 1844 due to overhunting and habitat loss.
+8. Thylacine (Thylacinus cynocephalus) - This species of marsupial was native to Australia and was known for its striped fur. It became extinct in 1936 due to habitat loss and hunting by humans.
+9. Pyrenean ibex (Capra pyrenaica pyrenaica) - This species of goat was native to the Pyrenees Mountains and was known for its distinctive horns. It became extinct in 2000 due to habitat loss and hunting by humans.
+10. Western black rhinoceros (Diceros bicornis longipes) - This species of rhinoceros was native to western Africa and was known for its distinctive horns. It became extinct in 2011 due to habitat loss and poaching.

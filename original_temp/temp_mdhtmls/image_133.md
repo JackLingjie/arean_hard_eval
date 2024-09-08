@@ -1,0 +1,1 @@
+December 21 · 1:00 – 1:50pm Pacific Time converts to December 21 · 9:00pm – 9:50pm Asia/Taipei Time.

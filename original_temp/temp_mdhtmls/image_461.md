@@ -1,0 +1,1 @@
+As of my knowledge cutoff in September 2021, Christmas was on December 25th. To find out the exact number of days until Christmas, you can use a calendar or an online countdown tool.

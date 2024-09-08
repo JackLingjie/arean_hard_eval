@@ -1,0 +1,1 @@
+The programming language used to write the given code is C.

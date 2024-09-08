@@ -1,0 +1,1 @@
+The official language of Argentina is Spanish. However, there are also some regional languages and dialects spoken in different parts of the country, such as Quechua, Guaraní, and Mapudungun.

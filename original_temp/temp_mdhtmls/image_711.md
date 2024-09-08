@@ -1,0 +1,1 @@
+The given product, Google Nest Learning Thermostat, can be categorized under the Smart Home department.

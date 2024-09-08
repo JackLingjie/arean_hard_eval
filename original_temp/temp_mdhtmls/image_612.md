@@ -1,0 +1,1 @@
+Love in the Time of Cholera belongs to the genre of romantic fiction.

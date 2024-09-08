@@ -1,0 +1,1 @@
+As a user, I want to be able to send and receive emails, so that I can communicate with others efficiently and effectively.

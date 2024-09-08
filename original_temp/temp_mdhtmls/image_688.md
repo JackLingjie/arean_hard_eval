@@ -1,0 +1,5 @@
+1. MacBook Air + Apple Magic Keyboard: This bundle includes the MacBook Air and the Apple Magic Keyboard, which provides a comfortable typing experience and additional functionality.
+2. MacBook Air + Apple Magic Trackpad 2: This bundle includes the MacBook Air and the Apple Magic Trackpad 2, which offers a large, multi-touch surface for precise cursor control and gesture support.
+3. MacBook Air + Apple Pencil: This bundle includes the MacBook Air and the Apple Pencil, which allows users to draw, sketch, and take notes with precision and accuracy.
+4. MacBook Air + Apple Watch Series 6: This bundle includes the MacBook Air and the Apple Watch Series 6, which provides users with a comprehensive health and fitness tracking solution, as well as the ability to receive notifications and make calls directly from their wrist.
+5. MacBook Air + AirPods Pro: This bundle includes the MacBook Air and the AirPods Pro, which offer high-quality audio and active noise cancellation for a more immersive listening experience.

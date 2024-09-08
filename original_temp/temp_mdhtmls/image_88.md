@@ -1,0 +1,1 @@
+Kevlar is a synthetic fiber made from a polymer called para-aramid. It is composed of long chains of aromatic rings linked together by strong chemical bonds. The specific chemical formula for Kevlar is poly(p-phenylene terephthalamide).

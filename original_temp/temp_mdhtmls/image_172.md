@@ -1,0 +1,1 @@
+To find the total profit percent over a period of time, we can add up the percentages for each quarter. The total profit percent is 90% + 92% + 81% + 88% = 351%. Therefore, the total profit percent over a period of time is 351%.

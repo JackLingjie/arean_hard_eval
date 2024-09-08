@@ -1,0 +1,1 @@
+Manifest is a science fiction drama series that falls into the genres of mystery, thriller, and supernatural. It explores the concept of time travel and the consequences of a plane crash that brings its passengers back to life years after their presumed death.

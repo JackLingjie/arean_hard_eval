@@ -1,0 +1,1 @@
+Based on the Yelp review provided, it is likely that the author will give the restaurant 2 stars out of 5. The reviewer mentioned that the food was mediocre and the service was just okay, which suggests that the overall experience was not particularly impressive.

@@ -1,0 +1,1 @@
+No, the tree is not close to the sea. The tree is on top of a mountain, which is far from the sea. The tree and the sea are not in the same location.

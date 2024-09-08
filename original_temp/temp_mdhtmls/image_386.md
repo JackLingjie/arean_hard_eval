@@ -1,0 +1,1 @@
+In Tolkien's Quenya language, some words to express love and affection include: Elen síla lúmenn' omentielvo (meaning "A star shines on the hour of our meeting"), Namarie (meaning "Farewell"), and Eärendil, Eärendil (meaning "Eärendil, Eärendil").

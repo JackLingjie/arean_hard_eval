@@ -1,0 +1,1 @@
+Marley has $20 left when she turns 21 years old. If her parents give her $3 more at the moment of marriage, she will have a total of $20 + $3 = $23 when she gets married. When she turns 22 years old, she will have $23 left.

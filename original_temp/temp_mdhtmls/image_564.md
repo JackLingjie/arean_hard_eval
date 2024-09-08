@@ -1,0 +1,7 @@
+Question1: The main advantage of multiprocessing over threading is that it allows you to fully utilize multiple CPU cores, whereas threading can only utilize a single core due to the Global Interpreter Lock (GIL). Additionally, multiprocessing allows for more efficient memory usage and can be more scalable than threading. Threading can still be useful for certain tasks, such as I/O-bound operations, where the GIL is not a concern.
+
+Question2: The main difference between threading.Thread() and multiprocessing.Process() objects is that threading uses a single process, while multiprocessing uses multiple processes. This means that threading can share memory between threads, while multiprocessing requires each process to have its own memory space. Additionally, threading is more lightweight and can be more efficient for certain tasks, while multiprocessing can be more scalable and can handle more complex tasks.
+
+To instantiate a queue of jobs and limit the number of parallel processes to 4, you can use the multiprocessing.Pool() class with the maxtasksperchild argument set to 4. This will create a pool of 4 processes that can be used to execute tasks in parallel, and will automatically restart new processes when the previous ones are finished.
+
+Some resources that explain the concepts behind threading and multiprocessing in Python include the official documentation, as well as tutorials and articles such as those found on Real Python, Towards Data Science, and Stack Overflow.

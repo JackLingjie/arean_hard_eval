@@ -1,0 +1,1 @@
+As of 2021, there are approximately 6,000 black holes that have been confirmed to exist. However, it is important to note that this number is constantly changing as new black holes are discovered and existing ones are confirmed. Additionally, it is estimated that there are many more black holes that have not yet been detected, as they are too small or too far away to be observed.

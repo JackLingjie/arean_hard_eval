@@ -1,0 +1,1 @@
+The current President of Germany is Frank-Walter Steinmeier. He was elected in 2017 and is serving his first term.

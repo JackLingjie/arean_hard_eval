@@ -1,0 +1,1 @@
+If you enjoy Billy Joel's music, you might also enjoy the following artists: Elton John, Bruce Springsteen, Paul Simon, Stevie Wonder, and James Taylor. These artists share similar styles and themes, such as storytelling, piano-based melodies, and a focus on personal experiences and social commentary.

@@ -1,0 +1,1 @@
+Based on the given information, the tweet can be classified as "news".

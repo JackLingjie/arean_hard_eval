@@ -1,0 +1,1 @@
+Yes, Facebook Corporation changed its name to Meta Platforms, Inc. on October 28, 2021. The rebranding was announced by CEO Mark Zuckerberg during the company's annual Connect conference. The name change reflects the company's focus on developing the metaverse, a virtual world where people can interact and engage with each other in a variety of ways.

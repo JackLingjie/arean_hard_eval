@@ -1,0 +1,1 @@
+Recently, we were able to increase the amount of stock we hold with the same supplier, thereby reducing our risk.

@@ -1,0 +1,1 @@
+=IF(OR(C7="U.S.A.", C7="Canada", C7="Europe", C7="The Americas"), TRUE, FALSE)

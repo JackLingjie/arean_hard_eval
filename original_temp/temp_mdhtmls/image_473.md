@@ -1,0 +1,1 @@
+If you have any questions about my rate or if you need to adjust the project's scope, please reach out to me.

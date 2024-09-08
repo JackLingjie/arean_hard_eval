@@ -1,0 +1,1 @@
+There is no known formula that can generate all prime numbers. The distribution of primes is not truly random, but rather follows a pattern known as the prime number theorem. This theorem states that the probability of a number being prime decreases as the number increases, but the rate at which this decrease occurs is not constant.

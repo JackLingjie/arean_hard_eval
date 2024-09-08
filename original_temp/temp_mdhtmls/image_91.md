@@ -1,0 +1,1 @@
+Smartphones were first made in the late 1990s, with the first commercially available smartphone being the IBM Simon, released in 1994. However, it wasn't until the early 2000s that smartphones became more widely adopted and popularized by companies like Apple and Samsung.

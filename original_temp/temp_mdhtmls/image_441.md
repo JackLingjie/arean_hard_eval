@@ -1,0 +1,1 @@
+In Python, the @ symbol is used for the "Matrix Multiplication" operator. It is used to perform matrix multiplication between two matrices. For example, if A and B are two matrices, then A @ B represents the matrix multiplication of A and B.

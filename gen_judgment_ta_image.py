@@ -8,6 +8,8 @@ from prompt_config import system_template_image as system_prompt, user_template_
 from tqdm import tqdm
 from text2img import text_to_image
 import base64
+import logging 
+logging.basicConfig(filename='missing_images.log', level=logging.INFO)  
 from utils import (
     load_questions,
     chat_completion_openai,
@@ -18,9 +20,15 @@ from utils import (
     get_endpoint,
     make_config,
 )
-def encode_image(image_path):
-    with open(image_path, "rb") as image_file:
-        return base64.b64encode(image_file.read()).decode('utf-8')  
+def encode_image(image_path):  
+    if os.path.exists(image_path):  
+        with open(image_path, "rb") as image_file:  
+            return base64.b64encode(image_file.read()).decode('utf-8')  
+    else:  
+        # Log the missing image path  
+        logging.info(f"Image not found: {image_path}")  
+        # Default base64 string for a 1x1 pixel transparent PNG image  
+        return "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/wcAAgAB/1uXzRkAAAAASUVORK5CYII="
      
 # def process_item(item, data_dir):  
 #     question_id = item["question_id"]  
@@ -125,8 +133,9 @@ def judgment(**args):
         "games": []
         }
     question_id = question["question_id"]
-    image1_path = os.path.join(images_path, answer["model_id"], f"image_{question_id}.png")
-    image2_path = os.path.join(images_path, baseline_model, f"image_{question_id}.png")
+    # image1_path = os.path.join(images_path, answer["model_id"], f"image_{question_id}.png")
+    image1_path = os.path.join(images_path, baseline_model, f"image_{question_id}.png")
+    image2_path = os.path.join(images_path, answer["model_id"], f"image_{question_id}.png")
  
     base64_image1 = encode_image(image1_path)
     base64_image2 = encode_image(image2_path)

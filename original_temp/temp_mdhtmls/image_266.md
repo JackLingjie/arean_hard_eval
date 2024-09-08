@@ -1,0 +1,1 @@
+Yes, a roll of 24 would hit a Yugoloth in 5e D&D. The target's Armor Class (AC) is 16, and the attack roll of 24 exceeds the AC by 8, which means the attack hits.

@@ -1,0 +1,1 @@
+One scary Halloween costume idea could be a zombie. You can wear a white or gray shirt, torn jeans, and a fake blood-stained bandage around your head. Add some fake wounds and scratches to your face and hands, and carry a fake prop weapon like a machete or chainsaw. You can also wear a fake prosthetic arm or leg to make the costume even more realistic.

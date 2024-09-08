@@ -1,0 +1,1 @@
+The largest ocean in the world is the Pacific Ocean. It covers approximately 63 million square miles (163 million square kilometers) and accounts for about 46% of the Earth's water surface. The Pacific Ocean is bordered by the continents of Asia and Australia to the west, North and South America to the east, and Antarctica to the south.

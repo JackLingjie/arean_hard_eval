@@ -1,0 +1,1 @@
+Lady Gaga does not play a character in American Horror Story. She was a guest star in the show's seventh season, titled "Cult," where she portrayed the character of Ally Mayfair-Richards, a woman struggling with her sexuality and a fear of clowns.

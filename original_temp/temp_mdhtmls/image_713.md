@@ -1,0 +1,1 @@
+It solves problems common and unique to every team.

@@ -1,0 +1,1 @@
+Item, Qty, Price, Subtotal | mango, 5, 500, 2500 | apple, 4, 150, 600 | oil, 2, 1500, 3000

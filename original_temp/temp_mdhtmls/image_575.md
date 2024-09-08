@@ -1,0 +1,1 @@
+Some popular careers for students of development studies include working in international organizations such as the United Nations, World Bank, non-governmental organizations (NGOs), media and journalism houses, private sector development consultancy firms, corporate social responsibility (CSR) bodies, and research centers.

@@ -1,0 +1,1 @@
+The second batch of pancakes may brown faster due to the presence of residual heat from the first batch. When the first batch of pancakes is cooked, the pan or griddle retains some heat, which can cause the second batch to cook more quickly. Additionally, the oil or butter used to cook the first batch may have become hotter, leading to faster browning of the second batch.

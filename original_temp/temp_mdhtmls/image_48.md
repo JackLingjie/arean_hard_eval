@@ -1,0 +1,1 @@
+The moon can be seen during the day because it is a natural satellite of Earth, and it reflects sunlight. The moon's orbit around Earth is tilted at an angle of about 5 degrees, which means that it can be seen from Earth at any time of day or night. However, the moon's visibility during the day is often obscured by the bright light of the sun, making it difficult to see.

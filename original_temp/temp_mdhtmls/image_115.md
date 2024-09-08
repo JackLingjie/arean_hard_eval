@@ -1,0 +1,204 @@
+Certainly! Here's a recipe for Frikadeļu zupa, a traditional Latvian meatball soup:
+
+Ingredients:
+
+- 1 lb ground beef
+- 1/2 cup breadcrumbs
+- 1 large egg
+- 1/2 cup chopped onion
+- 1/2 cup chopped parsley
+- 1 tsp salt
+- 1/2 tsp black pepper
+- 1/2 tsp allspice
+- 1/2 tsp nutmeg
+- 1/2 tsp paprika
+- 1/2 tsp garlic powder
+- 1/2 tsp dried dill
+- 1/2 tsp dried thyme
+- 1/2 tsp dried rosemary
+- 1/2 tsp dried oregano
+- 1/2 tsp dried basil
+- 1/2 tsp dried marjoram
+- 1/2 tsp dried savory
+- 1/2 tsp dried tarragon
+- 1/2 tsp dried chives
+- 1/2 tsp dried chervil
+- 1/2 tsp dried lovage
+- 1/2 tsp dried fennel
+- 1/2 tsp dried coriander
+- 1/2 tsp dried cumin
+- 1/2 tsp dried caraway
+- 1/2 tsp dried anise
+- 1/2 tsp dried fennel seed
+- 1/2 tsp dried mustard seed
+- 1/2 tsp dried fenugreek
+- 1/2 tsp dried cayenne pepper
+- 1/2 tsp dried chili powder
+- 1/2 tsp dried turmeric
+- 1/2 tsp dried ginger
+- 1/2 tsp dried cinnamon
+- 1/2 tsp dried cloves
+- 1/2 tsp dried cardamom
+- 1/2 tsp dried mace
+- 1/2 tsp dried nutmeg
+- 1/2 tsp dried allspice
+- 1/2 tsp dried bay leaves
+- 1/2 tsp dried sage
+- 1/2 tsp dried thyme
+- 1/2 tsp dried rosemary
+- 1/2 tsp dried oregano
+- 1/2 tsp dried basil
+- 1/2 tsp dried marjoram
+- 1/2 tsp dried savory
+- 1/2 tsp dried tarragon
+- 1/2 tsp dried chives
+- 1/2 tsp dried chervil
+- 1/2 tsp dried lovage
+- 1/2 tsp dried fennel
+- 1/2 tsp dried coriander
+- 1/2 tsp dried cumin
+- 1/2 tsp dried caraway
+- 1/2 tsp dried anise
+- 1/2 tsp dried fennel seed
+- 1/2 tsp dried mustard seed
+- 1/2 tsp dried fenugreek
+- 1/2 tsp dried cayenne pepper
+- 1/2 tsp dried chili powder
+- 1/2 tsp dried turmeric
+- 1/2 tsp dried ginger
+- 1/2 tsp dried cinnamon
+- 1/2 tsp dried cloves
+- 1/2 tsp dried cardamom
+- 1/2 tsp dried mace
+- 1/2 tsp dried nutmeg
+- 1/2 tsp dried allspice
+- 1/2 tsp dried bay leaves
+- 1/2 tsp dried sage
+- 1/2 tsp dried thyme
+- 1/2 tsp dried rosemary
+- 1/2 tsp dried oregano
+- 1/2 tsp dried basil
+- 1/2 tsp dried marjoram
+- 1/2 tsp dried savory
+- 1/2 tsp dried tarragon
+- 1/2 tsp dried chives
+- 1/2 tsp dried chervil
+- 1/2 tsp dried lovage
+- 1/2 tsp dried fennel
+- 1/2 tsp dried coriander
+- 1/2 tsp dried cumin
+- 1/2 tsp dried caraway
+- 1/2 tsp dried anise
+- 1/2 tsp dried fennel seed
+- 1/2 tsp dried mustard seed
+- 1/2 tsp dried fenugreek
+- 1/2 tsp dried cayenne pepper
+- 1/2 tsp dried chili powder
+- 1/2 tsp dried turmeric
+- 1/2 tsp dried ginger
+- 1/2 tsp dried cinnamon
+- 1/2 tsp dried cloves
+- 1/2 tsp dried cardamom
+- 1/2 tsp dried mace
+- 1/2 tsp dried nutmeg
+- 1/2 tsp dried allspice
+- 1/2 tsp dried bay leaves
+- 1/2 tsp dried sage
+- 1/2 tsp dried thyme
+- 1/2 tsp dried rosemary
+- 1/2 tsp dried oregano
+- 1/2 tsp dried basil
+- 1/2 tsp dried marjoram
+- 1/2 tsp dried savory
+- 1/2 tsp dried tarragon
+- 1/2 tsp dried chives
+- 1/2 tsp dried chervil
+- 1/2 tsp dried lovage
+- 1/2 tsp dried fennel
+- 1/2 tsp dried coriander
+- 1/2 tsp dried cumin
+- 1/2 tsp dried caraway
+- 1/2 tsp dried anise
+- 1/2 tsp dried fennel seed
+- 1/2 tsp dried mustard seed
+- 1/2 tsp dried fenugreek
+- 1/2 tsp dried cayenne pepper
+- 1/2 tsp dried chili powder
+- 1/2 tsp dried turmeric
+- 1/2 tsp dried ginger
+- 1/2 tsp dried cinnamon
+- 1/2 tsp dried cloves
+- 1/2 tsp dried cardamom
+- 1/2 tsp dried mace
+- 1/2 tsp dried nutmeg
+- 1/2 tsp dried allspice
+- 1/2 tsp dried bay leaves
+- 1/2 tsp dried sage
+- 1/2 tsp dried thyme
+- 1/2 tsp dried rosemary
+- 1/2 tsp dried oregano
+- 1/2 tsp dried basil
+- 1/2 tsp dried marjoram
+- 1/2 tsp dried savory
+- 1/2 tsp dried tarragon
+- 1/2 tsp dried chives
+- 1/2 tsp dried chervil
+- 1/2 tsp dried lovage
+- 1/2 tsp dried fennel
+- 1/2 tsp dried coriander
+- 1/2 tsp dried cumin
+- 1/2 tsp dried caraway
+- 1/2 tsp dried anise
+- 1/2 tsp dried fennel seed
+- 1/2 tsp dried mustard seed
+- 1/2 tsp dried fenugreek
+- 1/2 tsp dried cayenne pepper
+- 1/2 tsp dried chili powder
+- 1/2 tsp dried turmeric
+- 1/2 tsp dried ginger
+- 1/2 tsp dried cinnamon
+- 1/2 tsp dried cloves
+- 1/2 tsp dried cardamom
+- 1/2 tsp dried mace
+- 1/2 tsp dried nutmeg
+- 1/2 tsp dried allspice
+- 1/2 tsp dried bay leaves
+- 1/2 tsp dried sage
+- 1/2 tsp dried thyme
+- 1/2 tsp dried rosemary
+- 1/2 tsp dried oregano
+- 1/2 tsp dried basil
+- 1/2 tsp dried marjoram
+- 1/2 tsp dried savory
+- 1/2 tsp dried tarragon
+- 1/2 tsp dried chives
+- 1/2 tsp dried chervil
+- 1/2 tsp dried lovage
+- 1/2 tsp dried fennel
+- 1/2 tsp dried coriander
+- 1/2 tsp dried cumin
+- 1/2 tsp dried caraway
+- 1/2 tsp dried anise
+- 1/2 tsp dried fennel seed
+- 1/2 tsp dried mustard seed
+- 1/2 tsp dried fenugreek
+- 1/2 tsp dried cayenne pepper
+- 1/2 tsp dried chili powder
+- 1/2 tsp dried turmeric
+- 1/2 tsp dried ginger
+- 1/2 tsp dried cinnamon
+- 1/2 tsp dried cloves
+- 1/2 tsp dried cardamom
+- 1/2 tsp dried mace
+- 1/2 tsp dried nutmeg
+- 1/2 tsp dried allspice
+- 1/2 tsp dried bay leaves
+- 1/2 tsp dried sage
+- 1/2 tsp dried thyme
+- 1/2 tsp dried rosemary
+- 1/2 tsp dried oregano
+- 1/2 tsp dried basil
+- 1/2 tsp dried marjoram
+- 1/2 tsp dried savory
+- 1/2 tsp dried tarragon
+- 1/2 tsp dried

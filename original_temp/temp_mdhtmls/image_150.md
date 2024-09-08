@@ -1,0 +1,1 @@
+Mick paid $800 for 40 lessons, each worth 2 hours. To find out how much he received, we can calculate the total cost of the lessons by multiplying the number of lessons by the cost per lesson. The cost per lesson is $800 / 40 = $20. Therefore, Mick received a total of 40 x $20 = $800 worth of lessons.

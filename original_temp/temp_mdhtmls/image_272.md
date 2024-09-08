@@ -1,0 +1,1 @@
+To calculate the number of variations on a 3x4 table, you can use the formula: Variations = Rows x Columns. In this case, Rows = 3 and Columns = 4. Therefore, the number of variations is 3 x 4 = 12.

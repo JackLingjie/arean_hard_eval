@@ -1,0 +1,1 @@
+The sound of "好" in Chinese is pronounced as "hǎo". It is a two-syllable word, with the first syllable "hǎo" being a rising tone and the second syllable "o" being a neutral tone. The pronunciation can be approximated as "how" with a rising tone on the first syllable.

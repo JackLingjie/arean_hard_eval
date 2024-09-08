@@ -1,0 +1,5 @@
+1. **Aardvark** - "a" comes before "a", "a" comes before "d", "d" comes before "v", "v" comes before "a", "a" comes before "r", "r" comes before "k".
+2. **Candy** - "c" comes before "a", "a" comes before "n", "n" comes before "d", "d" comes before "y".
+3. **Dessert** - "d" comes before "e", "e" comes before "s", "s" comes before "s", "s" comes before "e", "e" comes before "r", "r" comes before "t".
+4. **Eggplant** - "e" comes before "g", "g" comes before "g", "g" comes before "p", "p" comes before "l", "l" comes before "a", "a" comes before "n", "n" comes before "t".
+5. **Fahrenheit** - "f" comes before "a", "a" comes before "h", "h" comes before "r", "r" comes before "e", "e" comes before "n", "n" comes before "h", "h" comes before "e", "e" comes before "i", "i" comes before "t", "t" comes before "h".

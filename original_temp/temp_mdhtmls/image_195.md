@@ -1,0 +1,1 @@
+The apple is still on the plate. When you moved the plate from the kitchen to the dining room, the apple remained on top of it.

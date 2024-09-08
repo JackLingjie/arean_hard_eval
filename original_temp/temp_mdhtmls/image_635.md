@@ -1,0 +1,1 @@
+ The parties of the agreement are Good Kid, a Toronto-based musical group ("Artist"), and Universal Music Group, a record label with license number 545345 ("Record Label").

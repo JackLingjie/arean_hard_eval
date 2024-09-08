@@ -1,0 +1,1 @@
+The nth term in the given sequence can be computed using the formula: nth term = (n-1) * 9 + 5. For example, the 5th term can be found by plugging in n = 5 into the formula: 5th term = (5-1) * 9 + 5 = 41.

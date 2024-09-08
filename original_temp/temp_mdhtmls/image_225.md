@@ -1,0 +1,1 @@
+The permission that allows creating provisioning profiles in an Apple Developer account is called "Provisioning Profiles" or "Provisioning Profile Management." This permission allows users to create, edit, and delete provisioning profiles, which are used to sign and distribute iOS, macOS, tvOS, and watchOS apps.

@@ -1,0 +1,1 @@
+As of my knowledge cutoff in September 2021, the president of South Korea in 2023 will be Moon Jae-in. However, it is important to note that elections are scheduled to take place in March 2022, and the results of those elections will determine the president for the term beginning in May 2022.

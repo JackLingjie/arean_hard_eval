@@ -1,0 +1,1 @@
+In a remote hotel, a family's descent into madness is fueled by a malevolent entity and a writer's alcohol-fueled delusions, resulting in a chilling tale of psychological terror.

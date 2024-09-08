@@ -1,0 +1,1 @@
+The given statement is true. If j and k are both odd integers, then their product jk will also be odd. This is because the product of two odd integers is always odd. For example, 3 x 5 = 15, which is odd. Similarly, 7 x 9 = 63, which is also odd. Therefore, the given statement is correct.

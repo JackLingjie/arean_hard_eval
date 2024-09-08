@@ -1,0 +1,1 @@
+As of my knowledge cutoff in September 2021, Bethesda Softworks, the developer of The Elder Scrolls series, had not announced a release date for the new Elder Scrolls game. The game is currently in development and is expected to be released in the future. Stay tuned for updates from Bethesda Softworks for more information.

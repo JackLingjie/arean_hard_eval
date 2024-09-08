@@ -1,0 +1,1 @@
+Zinc is an essential mineral that is required for good health. It is involved in many biochemical processes in the body and is necessary for the proper functioning of the immune system. Excess zinc is not harmful as it is excreted in the urine.

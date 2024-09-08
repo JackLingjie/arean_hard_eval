@@ -1,0 +1,1 @@
+Sagittarius A* is located approximately 26,000 light-years away from Earth. In terms of parsecs, this distance is about 8,000 parsecs. The center of the Andromeda galaxy is located approximately 2.5 million light-years away from Earth, which is about 780,000 parsecs.

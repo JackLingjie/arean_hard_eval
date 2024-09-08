@@ -1,0 +1,1 @@
+Your truthfulness is truly admirable. It's refreshing to have someone who speaks with honesty and integrity, and I appreciate the trust you place in me by being so open and transparent. Your commitment to authenticity is a quality that I deeply respect, and I'm grateful to have you in my life.

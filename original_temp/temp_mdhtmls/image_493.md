@@ -1,0 +1,1 @@
+Source: Forbes - "There are great options for those looking to invest in the stock market, but it's important to do your research and understand the risks involved." - Forbes, 2021.

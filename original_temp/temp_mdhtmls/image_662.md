@@ -1,0 +1,1 @@
+David adorns an adorned hat each day.

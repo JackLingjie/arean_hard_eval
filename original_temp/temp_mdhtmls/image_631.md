@@ -1,0 +1,1 @@
+The given text is not offensive.

@@ -1,0 +1,1 @@
+Based on the subject of the email, it should be treated as spam. The subject is inappropriate and offensive, and does not contain any relevant information about the content of the email.

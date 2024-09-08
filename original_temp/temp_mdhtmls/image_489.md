@@ -1,0 +1,3 @@
+- Returns the number of days between two dates: DAYS function
+- Returns the starting position of a text string within another text string: FIND function
+- Returns the number in the middle of the set of given numbers: MEDIAN function

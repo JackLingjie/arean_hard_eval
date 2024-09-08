@@ -1,0 +1,1 @@
+I'd be happy to assist you! A good rated electric saw is the Makita 5007MG. It has a powerful 15-amp motor, a 7-1/4-inch blade, and a built-in dust blower to keep your work area clean. It also features a large, comfortable handle and a lock-off switch for added safety. This saw is highly rated by professionals and homeowners alike, and it's backed by a 5-year warranty.
