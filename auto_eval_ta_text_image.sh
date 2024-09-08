@@ -2,6 +2,9 @@
 set -x
 # 参数列表  
 PARAMS=(  
+  "ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
+  "ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
+  "ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
   # "Meta-Llama-3.1-8B-Instruct"
   # "tulu_v2_8b_2048_default_template_dpo"
   # "tulu_v2_8b_2048_default_template_sft"
@@ -23,9 +26,9 @@ PARAMS=(
   # "ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
   # "ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v3"
   # "Meta-Llama-3.1-8B-Instruct"
-  "ta_chosen_llama3.1_instruct_dpo_2048"
+  # "ta_chosen_llama3.1_instruct_dpo_2048"
   # "ta_chosen_tuluv2_dpo_2048_default_template"
-  "ta_rejected_llama3.1_instruct_dpo_2048"
+  # "ta_rejected_llama3.1_instruct_dpo_2048"
   # "tulu-2-7b"
   # "tulu-2-dpo-7b"
   # "tulu-dpo-llama3-8b-base"
@@ -42,7 +45,7 @@ PARAMS=(
   # "wildchat_v2_8b_2048_default_template_full_sft"
   # "wildchat_v2_8b_2048_default_template_fullft_e5_9485"
   # "wildchat_v2_8b_2048_default_template_fullft_lr5e6_3794"
-  "wildchat_v2_8b_2048_default_template_fullft_lr5e6_e5_9485"
+  # "wildchat_v2_8b_2048_default_template_fullft_lr5e6_e5_9485"
   # 添加更多参数  
 )  
 
@@ -61,7 +64,7 @@ for model in "${PARAMS[@]}"; do
 done  
   
 # 最终的文件名  
-LOG_FILE="./eval_logs/${LOG_FILE}_ta_images.txt"   
+LOG_FILE="./eval_logs/${LOG_FILE}_ta_text_images.txt"   
 
 # 遍历参数列表  
 for PARAM in "${PARAMS[@]}"; do  
