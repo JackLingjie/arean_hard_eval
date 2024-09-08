@@ -1,0 +1,1 @@
+I got charged interest on my credit card, but I paid my full balance on the due date. I haven't missed a payment yet. Can you reverse the interest charge?

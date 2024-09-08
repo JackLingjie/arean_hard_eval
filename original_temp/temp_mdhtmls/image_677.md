@@ -1,0 +1,1 @@
+Memorance - The feeling of knowing, while you are still in the moment, that something occurring will be remembered forever.

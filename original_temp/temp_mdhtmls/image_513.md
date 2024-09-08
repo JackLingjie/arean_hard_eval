@@ -1,0 +1,1 @@
+The output of the given LaTeX code is a simple document with the text "First document. This is a simple example, with no extra parameters or packages included."

@@ -1,0 +1,1 @@
+It typically takes about 30 minutes for our eyes to fully adapt to darkness. During this time, our pupils dilate to allow more light to enter the eye, and our rods and cones (light-sensitive cells in the retina) begin to adjust to the lower light levels. This process is known as dark adaptation, and it allows us to see better in low-light conditions.

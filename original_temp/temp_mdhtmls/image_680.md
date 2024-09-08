@@ -1,0 +1,1 @@
+Mark, an Italian national, is a creative, goal-oriented, and motivated individual. With expertise in software engineering and content marketing, he brings a unique blend of technical skills and strategic thinking to any team.

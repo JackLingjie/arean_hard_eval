@@ -1,0 +1,1 @@
+ The given email belongs to the Social category.

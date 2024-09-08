@@ -1,0 +1,1 @@
+No, human blood is always red in color. The red color is due to the presence of a protein called hemoglobin, which contains iron and transports oxygen throughout the body. The iron in hemoglobin gives blood its characteristic red color.

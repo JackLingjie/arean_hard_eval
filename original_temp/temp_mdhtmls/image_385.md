@@ -1,0 +1,1 @@
+The AK47 is a type of assault rifle, specifically a selective-fire, gas-operated, magazine-fed, infantry rifle. It was designed by Mikhail Kalashnikov in the Soviet Union and is one of the most widely used and recognized firearms in the world.

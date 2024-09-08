@@ -2,9 +2,10 @@ import subprocess
 from html2image import Html2Image  
 import os  
 import logging  
-
+import concurrent.futures 
+import multiprocessing 
 # 配置日志  
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')  
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')  
   
 def markdown_to_html(input_text, save_name, base_dir, temp_dir="temp_mdhtmls", use_default_name=False, css_file='mystyle.css'): 
 
@@ -79,59 +80,24 @@ def text_to_image(text, output_image, size=(1280, 1080), save_dir='text_images',
     # os.remove(md_file_path)  
     # os.remove(html_file_path)  
   
-    logging.info("Conversion process completed successfully.")  
+    # logging.info("Conversion process completed successfully.")  
+
+def text_to_image_with_timeout(text, output_image, size=(1280, 1080), save_dir='text_images', data_dir="output", temp_dir="temp_mdhtmls", timeout=20):  
+    def target_function():  
+        text_to_image(text, output_image, size, save_dir, data_dir, temp_dir)  
   
+    process = multiprocessing.Process(target=target_function)  
+    process.start()  
+    process.join(timeout)  
+  
+    if process.is_alive():  
+        logging.error(f"text_to_image function timed out after {timeout} seconds. Terminating process.")  
+        process.terminate()  
+        process.join()  # Ensure process has terminated  
+  
+
 markdown_text = \
 """Absolutely! Welcome to GPT-ART mode! I'm excited to help you create generative art using Python's turtle graphics. Let's start by setting up a simple turtle environment, and then we'll draw a magnificent piece of art using loops, functions, and some creative experimentation.
-
-Make sure you have the `turtle` module installed for Python. You can install it with:
-
-```python
-pip install PythonTurtle
-```
-
-Now, let's create a colorful spiral pattern using the turtle module:
-
-```python
-import turtle
-import random
-
-# Set up the screen
-screen = turtle.Screen()
-screen.bgcolor("black")
-
-# Create a turtle
-art_turtle = turtle.Turtle()
-art_turtle.speed(0)
-
-# Define colors for the art
-colors = ["red", "blue", "yellow", "green", "orange", "purple", "white"]
-
-# Function to draw a spiral pattern
-def draw_spiral(t, size):
-    t.pendown()
-    for _ in range(4):
-        t.forward(size)
-        t.right(90)
-    t.penup()
-    t.right(10)
-
-# Main loop to create the art
-for _ in range(360 // 10):
-    art_turtle.color(random.choice(colors))  # Change the color randomly
-    size = random.randint(10, 150)  # Change the size randomly
-    draw_spiral(art_turtle, size)
-    art_turtle.forward(10)
-    art_turtle.left(10)
-
-# Hide the turtle and display the art
-art_turtle.hideturtle()
-turtle.done()
-```
-
-This **program** sets up a turtle environment, defines a spiral function, and proceeds to create a colorful spiral pattern by iteratively drawing squares and rotating the turtle artist. The colors and dimensions of the squares are selected randomly, resulting in a unique piece of art every time you run the program.
-
-Feel free to modify the code, experiment with the colors, shapes, and functions to create your own unique artwork!
 """  
   
 if __name__ == "__main__":  

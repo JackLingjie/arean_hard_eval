@@ -1,0 +1,1 @@
+Certainly! Here's a mnemonic for the Kanji meaning Wish that has the primitives clock and heart: "When the clock strikes midnight, your heart's wish comes true." This mnemonic helps to remember the Kanji by associating it with a relatable scenario that incorporates both the clock and heart primitives.

@@ -1,0 +1,1 @@
+There exists an x such that for all y, if x is a soldier, then x is a general of y. In natural language, this translates to: "There is a soldier who is a general of everyone."

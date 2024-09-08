@@ -1,0 +1,1 @@
+The two players in the atomic bomb game (in go) are known as "Black" and "White". The referee's name is not typically associated with this game.

@@ -1,0 +1,1 @@
+The lyrics to the third verse of Rick Astley's "Never Gonna Give You Up" are: "I'll be there with a wink and a nod, just as long as you want me to. And if you should fall, I'll catch you, I'll never let go. 'Cause you're the one that I love, and I'm never gonna give you up."

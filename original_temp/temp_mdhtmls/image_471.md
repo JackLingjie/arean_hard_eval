@@ -1,0 +1,1 @@
+A - A kilogram of feathers is the most wet elbow of the given options. The other options are not elbows and do not have wetness associated with them.

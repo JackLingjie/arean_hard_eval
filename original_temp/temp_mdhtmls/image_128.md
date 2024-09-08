@@ -1,0 +1,1 @@
+Yes, the US border is currently open to Canada. However, due to the ongoing COVID-19 pandemic, there are certain restrictions and requirements in place for travelers. It is recommended to check the official government websites for the most up-to-date information before planning any travel.

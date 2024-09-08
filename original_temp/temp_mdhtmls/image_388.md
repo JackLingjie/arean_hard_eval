@@ -1,0 +1,1 @@
+It is generally recommended to use the boiling water method to extract dye from Hypogymnia lichen. Ammonia fermentation can also be used, but it may result in a weaker dye color and can be more time-consuming. The boiling water method is a simpler and more efficient way to extract the dye, and it produces a more vibrant color.

@@ -1,8 +1,10 @@
 import os
-from text2img import text_to_image
+from text2img import text_to_image, text_to_image_with_timeout
 import concurrent.futures  
 from tqdm import tqdm
 import argparse
+import logging
+
 # def process_item(item, data_dir):  
 #     question_id = item["question_id"]  
 #     answers = item['choices'][0]['turns'][0]['content']
@@ -18,23 +20,25 @@ def process_item(item, data_dir):
     output_img = f"image_{question_id}.png"  
       
     attempts = 0  
-    max_attempts = 3  
+    max_attempts = 5  
     success = False  
   
     while attempts < max_attempts and not success:  
         attempts += 1  
-        text_to_image(answers, output_img, save_dir=model_id, data_dir=data_dir, temp_dir="original_temp")  
+        logging.debug(f"output_img: {output_img}")
+        text_to_image_with_timeout(answers, output_img, save_dir=model_id, data_dir=data_dir, temp_dir="original_temp")  
           
         # 检查文件是否存在  
         file_path = os.path.join(data_dir, model_id, output_img)  
         if os.path.exists(file_path):  
             success = True  
         else:  
-            print(f"Attempt {attempts} failed for question_id {question_id}. Retrying...")  
+            logging.debug(f"Attempt {attempts} failed for question_id {question_id}. Retrying...")  
       
     if not success:  
-        print(f"Failed to generate image for question_id {question_id} after {max_attempts} attempts.")
+        logging.debug(f"Failed to generate image for question_id {question_id} after {max_attempts} attempts.")
  
+
 def generate_image(model_name, model_answers, data_dir):
     max_workers = 20  
     print(f"-----------------generate {model_name} images -----------------")

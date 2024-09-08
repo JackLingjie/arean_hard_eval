@@ -1,0 +1,1 @@
+As a pirate captain, I would say to my crew: "Fellow pirates, let us embark on a grand adventure to seek out the hidden treasure that awaits us! Our ship is our home, and our crew is our family. Together, we will face any challenges that come our way, and we will emerge victorious. So, let us hoist the sails, set a course for the horizon, and let the treasure hunt begin!"

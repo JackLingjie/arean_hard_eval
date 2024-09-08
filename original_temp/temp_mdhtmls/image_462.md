@@ -1,0 +1,1 @@
+Yes, I am familiar with the German language. I can speak, read, and write in German.

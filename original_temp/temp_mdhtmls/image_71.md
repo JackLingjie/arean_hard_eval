@@ -1,0 +1,1 @@
+Grace Slick was the first lead vocalist for the rock band Starship. She was a member of the band from 1974 to 1989, and her powerful voice and distinctive style helped to define the band's sound.

@@ -1,0 +1,1 @@
+The chicken is prepared and ready to be consumed.

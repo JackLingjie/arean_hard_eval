@@ -1,0 +1,1 @@
+Yes, there are a few ways to salvage runny mayonnaise. One option is to add a small amount of mustard or lemon juice to the mixture, which can help thicken it. Another option is to add a small amount of flour or cornstarch to the mixture, which can also help thicken it. Finally, you can try adding a small amount of oil to the mixture, which can help stabilize it.

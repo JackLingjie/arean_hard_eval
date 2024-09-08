@@ -2,7 +2,8 @@
 set -x
 # 参数列表  
 PARAMS=(  
-  "tulu_v2_8b_2048_default_template_dpo"
+  # "Meta-Llama-3.1-8B-Instruct"
+  # "tulu_v2_8b_2048_default_template_dpo"
   "tulu_v2_8b_2048_default_template_sft"
   "uf_llama3.1_instruct_dpo_2048_job"
   "ta_chosen_tuluv2_merge_dpo_2048_default_template"

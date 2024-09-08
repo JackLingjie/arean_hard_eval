@@ -1,0 +1,1 @@
+ The customer was seeking guidance on finding a new phone with a good camera, and the AI provided options to assist in their search.

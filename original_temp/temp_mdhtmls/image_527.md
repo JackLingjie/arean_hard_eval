@@ -1,0 +1,1 @@
+Hi, I'm Jane! An architect with a passion for tech. I love exploring the latest innovations and how they can be applied to design. Let's connect and geek out about all things tech and architecture! 🏢💻

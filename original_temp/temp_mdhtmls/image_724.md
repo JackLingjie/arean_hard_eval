@@ -1,0 +1,1 @@
+The phrase "with a little give in them" means that something has a bit of flexibility or elasticity. For example, a rubber band has a little give in it, so it can stretch and return to its original shape.

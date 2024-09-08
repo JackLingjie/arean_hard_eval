@@ -1,0 +1,1 @@
+Navina has $30 more to her weekly budget than her younger sister. If Navina's weekly budget is $X, then her sister's weekly budget is $X - $30. Therefore, Navina can spend $X and her sister can spend $X - $30.

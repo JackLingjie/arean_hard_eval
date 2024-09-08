@@ -1,0 +1,1 @@
+A banana is a fruit. Bananas are the edible fruit of the banana plant, which is a herbaceous plant. The banana plant is a member of the Musa genus, which includes several other species of herbaceous plants. Bananas are a popular and nutritious fruit that are enjoyed by people all over the world.

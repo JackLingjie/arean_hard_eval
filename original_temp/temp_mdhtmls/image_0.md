@@ -1,0 +1,1 @@
+Some famous actors who started their careers on Broadway include: Tom Hanks, Denzel Washington, Meryl Streep, James Earl Jones, Angela Lansbury, and Audra McDonald.

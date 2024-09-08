@@ -1,0 +1,1 @@
+The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. These models also connect the encoder and decoder through an attention mechanism.

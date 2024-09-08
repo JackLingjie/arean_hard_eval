@@ -1,0 +1,1 @@
+African or European? The airspeed velocity of an African swallow is approximately 11 meters per second (24 miles per hour), while the European swallow has an airspeed velocity of about 24 meters per second (54 miles per hour).

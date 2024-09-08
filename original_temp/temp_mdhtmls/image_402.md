@@ -1,0 +1,1 @@
+(A B)^T = B^T A^T. The transpose of a matrix product is equal to the product of the transposes in reverse order.

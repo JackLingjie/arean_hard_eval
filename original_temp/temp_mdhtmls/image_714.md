@@ -1,0 +1,1 @@
+Antonyms for the word "laureating" are: demoting, degrading, humiliating, disgracing, discrediting, dishonoring, debasing, belittling, demeaning, and devaluing.

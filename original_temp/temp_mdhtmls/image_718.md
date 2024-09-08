@@ -1,0 +1,1 @@
+To keep a promise means to do what you said you would do, even if it is hard or takes time. It is important to keep your promises because it shows that you are honest and reliable. For example, if you promise to help your friend with their homework, you should keep that promise and help them even if it takes time away from your own work.

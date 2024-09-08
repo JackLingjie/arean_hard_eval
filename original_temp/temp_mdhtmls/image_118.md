@@ -1,0 +1,1 @@
+No, dinosaurs are not currently living on Earth. They became extinct around 66 million years ago. However, their fossils and remains can be found in various parts of the world, providing valuable information about their anatomy, behavior, and evolution.

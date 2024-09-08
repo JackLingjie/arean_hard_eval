@@ -1,0 +1,1 @@
+Indonesia is a country located in Southeast Asia. It is an archipelago consisting of over 17,000 islands, with the main islands being Java, Sumatra, Borneo, Sulawesi, and New Guinea. The capital city of Indonesia is Jakarta, which is located on the island of Java.

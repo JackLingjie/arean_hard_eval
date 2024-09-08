@@ -1,0 +1,1 @@
+The word that represents people reacting to unpleasant events is "discomfort."

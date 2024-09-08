@@ -1,0 +1,2 @@
+Positive Points: Innovative story, strong script, engaging characters, intense cinematography, good theme, great acting, important messages, compelling story, fascinating visual effects.
+Negative Points: Ed Norton grates on some viewers, never bought into the idea of Fight Club being a cultural phenomenon, falls apart halfway through, becomes tedious towards the end, childish and contrived, loses touch with base elements, rage against the machine vibe takes over, fails to connect audience with storyline, leaves viewers in a world of confusion, overrated, doesn't end well.

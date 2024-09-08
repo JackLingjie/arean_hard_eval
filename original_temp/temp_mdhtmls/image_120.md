@@ -1,0 +1,1 @@
+Chris Tucker's first movie was "Friday" (1995), in which he starred alongside Ice Cube.

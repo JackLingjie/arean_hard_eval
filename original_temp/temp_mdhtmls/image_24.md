@@ -1,0 +1,1 @@
+The smallest breed of dog is the Chihuahua. Chihuahuas typically weigh between 2 to 6 pounds and stand 6 to 9 inches tall. They are known for their small size, big personalities, and long, silky coats.

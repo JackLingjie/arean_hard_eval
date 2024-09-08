@@ -1,0 +1,1 @@
+The Superman cartoon character was created by American comic book writer Jerry Siegel and artist Joe Shuster. They first introduced the character in Action Comics #1, published by DC Comics in 1938. The character has since become one of the most iconic and recognizable superheroes in popular culture.

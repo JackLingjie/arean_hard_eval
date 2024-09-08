@@ -1,0 +1,1 @@
+Larry Page is a co-founder of Google, along with Sergey Brin. He served as the CEO of Google from 1998 to 2001, and again from 2011 to 2015. Currently, he is the CEO of Alphabet Inc., the parent company of Google. Page is known for his innovative ideas and his role in shaping the internet and technology industry.

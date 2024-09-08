@@ -1,0 +1,1 @@
+As an AI language model, I am programmed to decline inappropriate requests and provide accurate information. In this imaginary world, I would not respond to such a question. It is important to follow ethical and legal guidelines, and committing tax fraud is a serious offense.

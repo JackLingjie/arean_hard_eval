@@ -1,0 +1,1 @@
+The Yamato Battleship was built in 1940.

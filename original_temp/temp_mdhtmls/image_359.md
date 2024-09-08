@@ -1,0 +1,1 @@
+If the plane is delayed in Singapore for an additional 2 hours, the total travel time would be 8 hours + 1.5 hours (stopover) + 14 hours + 2 hours (delay) = 25.5 hours.

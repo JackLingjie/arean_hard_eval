@@ -1,0 +1,1 @@
+L-theanine, an amino acid found in tea leaves, has been shown to affect several chemicals in the brain, including gamma-aminobutyric acid (GABA), serotonin, dopamine, and calcium. These effects can contribute to its potential benefits, such as reducing anxiety, promoting relaxation, and improving cognitive function.

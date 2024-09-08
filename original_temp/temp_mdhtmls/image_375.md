@@ -1,0 +1,1 @@
+No, a thumb war is not considered violent. A thumb war is a playful and harmless competition between two people, typically children, where they use their thumbs to try to push each other's thumbs down. It is a harmless and lighthearted activity that is not intended to cause harm or injury.

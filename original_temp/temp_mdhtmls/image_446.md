@@ -1,0 +1,1 @@
+The name of the Windows XP background image is "Bliss". It was taken by Charles O'Rear and was captured in the Napa Valley, California.

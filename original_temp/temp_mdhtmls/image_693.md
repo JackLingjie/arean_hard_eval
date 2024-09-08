@@ -1,0 +1,1 @@
+Numerous scholarly articles have been published on this subject.

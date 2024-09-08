@@ -1,0 +1,1 @@
+The color of Mars is a reddish-orange hue. This color is due to the presence of iron oxide, also known as rust, on the surface of the planet. The reddish color of Mars has been observed by astronomers since ancient times and has been a subject of fascination for centuries.

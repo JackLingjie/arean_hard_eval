@@ -1,0 +1,1 @@
+A recent study found that sleeping with dim light, such as a TV set with the sound off, can raise blood sugar and heart rate in healthy adults in their 20s, potentially increasing their risk of heart disease and diabetes.

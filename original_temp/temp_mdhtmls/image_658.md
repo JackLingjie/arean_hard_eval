@@ -1,0 +1,1 @@
+Based on the emojis provided, the movie could be "Harry Potter and the Sorcerer's Stone." The emojis represent a wizard (🧙‍♂️), a door (🚪), a book (📚), an eagle (🦅), and lightning (⚡). These symbols correspond to the main characters, objects, and events in the movie.

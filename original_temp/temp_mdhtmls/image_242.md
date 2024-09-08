@@ -1,0 +1,1 @@
+If on the break in billiards, every strip ball is pocketed, it is considered a "break and a half" or a "full break." This is a rare occurrence and is usually only achieved by highly skilled players. It results in a significant advantage for the player, as they are awarded an additional free shot after the break.

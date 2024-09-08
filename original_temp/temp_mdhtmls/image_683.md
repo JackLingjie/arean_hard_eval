@@ -1,0 +1,1 @@
+The regular expression to match a valid IP address is: ^([0-9]{1,3}\.){3}[0-9]{1,3}$

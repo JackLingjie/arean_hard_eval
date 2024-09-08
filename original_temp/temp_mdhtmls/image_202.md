@@ -1,0 +1,1 @@
+Monday: 30 min cardio, 20 min strength training, 10 min stretching. Tuesday: Rest day. Wednesday: 30 min yoga, 20 min HIIT, 10 min core. Thursday: Rest day. Friday: 30 min swimming, 20 min weight lifting, 10 min balance. Saturday: Rest day. Sunday: 30 min walking, 20 min Pilates, 10 min meditation.

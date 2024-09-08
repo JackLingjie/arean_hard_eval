@@ -1,0 +1,1 @@
+The underlined word "keep" belongs to the part of speech "verb."

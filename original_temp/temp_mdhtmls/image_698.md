@@ -1,0 +1,1 @@
+ESRB Rating: M (Mature) for Blood and Gore, Intense Violence, Strong Language.

@@ -1,0 +1,1 @@
+Cacti thrive in well-draining soil that is low in nutrients. A cactus soil mix is ideal, which typically consists of a combination of sand, perlite, and peat moss. This type of soil allows for proper drainage and prevents water from accumulating around the roots, which can lead to root rot. Additionally, cacti prefer a slightly acidic soil pH between 6.0 and 7.0.

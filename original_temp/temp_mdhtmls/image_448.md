@@ -1,0 +1,1 @@
+If you dropped 2 eggs and ate 5 eggs, you have 12 - 2 - 5 = 5 eggs left.
