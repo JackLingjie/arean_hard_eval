@@ -1,0 +1,49 @@
+执行参数: ta_rejected_llama3.1_instruct_dpo_2048
+文件 data/alpaca/model_answer/ta_rejected_llama3.1_instruct_dpo_2048.jsonl 存在, 跳过gen_answer.py 执行。
+Text judge ta_rejected_llama3.1_instruct_dpo_2048 Begin
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_rejected_llama3.1_instruct_dpo_2048', baseline_model='gpt4_1106_preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt4_1106_preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+805 number of existing judgments
+执行参数: ta_rejected_llama3.1_instruct_dpo_2048
+文件 data/alpaca/model_answer/ta_rejected_llama3.1_instruct_dpo_2048.jsonl 存在, 跳过gen_answer.py 执行。
+Text judge ta_rejected_llama3.1_instruct_dpo_2048 Begin
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_rejected_llama3.1_instruct_dpo_2048', baseline_model='gpt4_1106_preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt4_1106_preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+805 number of existing judgments
+Namespace(bench_name='alpaca', judge_name='gpt-4o', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text', first_game_only=False)
+Turning judgment results into battles...
+ta_rejected_llama3.1_instruct_dpo_2048 | score: 54.5  | 95% CI: (-1.0, 0.7)  | average #tokens: 472
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 432
+ta_chosen_llama3.1_instruct_dpo_2048 | score: 49.6  | 95% CI: (-0.9, 1.7)  | average #tokens: 499
+uf_llama3.1_instruct_dpo_2048_job | score: 44.0  | 95% CI: (-0.6, 1.2)  | average #tokens: 463
+ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 43.3  | 95% CI: (-1.0, 0.6)  | average #tokens: 564
+Meta-Llama-3.1-8B-Instruct     | score: 40.9  | 95% CI: (-0.6, 1.2)  | average #tokens: 498
+ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 40.4  | 95% CI: (-0.9, 0.9)  | average #tokens: 552
+wildchat_v2_8b_2048_default_template_fullft_lr5e6_e5_9485 | score: 37.1  | 95% CI: (-0.5, 1.7)  | average #tokens: 417
+ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 34.5  | 95% CI: (-1.1, 0.9)  | average #tokens: 362
+ta_v2_rejected_noneed_length_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 33.7  | 95% CI: (-0.5, 0.8)  | average #tokens: 584
+tulu_v2_8b_2048_default_template_dpo | score:  4.5  | 95% CI: (-0.6, 0.4)  | average #tokens: 285
+tulu_v2_8b_2048_default_template_sft | score:  3.3  | 95% CI: (-0.4, 0.3)  | average #tokens: 274
+ta_chosen_tuluv2_merge_dpo_2048_default_template | score:  0.4  | 95% CI: (-0.2, 0.1)  | average #tokens: 1589
+IMAGE judge ta_rejected_llama3.1_instruct_dpo_2048 Begin
+-----------------generate ta_rejected_llama3.1_instruct_dpo_2048 images -----------------
+images generated done.
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_rejected_llama3.1_instruct_dpo_2048', baseline_model='gpt4_1106_preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt4_1106_preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+generate images ta_rejected_llama3.1_instruct_dpo_2048
+执行参数: ta_rejected_llama3.1_instruct_dpo_2048
+文件 data/alpaca/model_answer/ta_rejected_llama3.1_instruct_dpo_2048.jsonl 存在, 跳过gen_answer.py 执行。
+Text judge ta_rejected_llama3.1_instruct_dpo_2048 Begin
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_rejected_llama3.1_instruct_dpo_2048', baseline_model='gpt4_1106_preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt4_1106_preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+805 number of existing judgments
+Namespace(bench_name='alpaca', judge_name='gpt-4o', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text', first_game_only=False)
+Turning judgment results into battles...
+执行参数: ta_rejected_llama3.1_instruct_dpo_2048
+文件 data/alpaca/model_answer/ta_rejected_llama3.1_instruct_dpo_2048.jsonl 存在, 跳过gen_answer.py 执行。
+Text judge ta_rejected_llama3.1_instruct_dpo_2048 Begin
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_rejected_llama3.1_instruct_dpo_2048', baseline_model='gpt4_1106_preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt4_1106_preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+805 number of existing judgments
+Namespace(bench_name='alpaca', judge_name='gpt-4o', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text', first_game_only=False)
+Turning judgment results into battles...

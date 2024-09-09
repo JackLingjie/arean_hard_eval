@@ -2,10 +2,11 @@
 set -x
 # 参数列表  
 PARAMS=(  
-  "ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
-  "ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
-  "ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
-  # "Meta-Llama-3.1-8B-Instruct"
+  # "ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
+  # "ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
+  # "ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
+  "ta_rejected_llama3.1_instruct_dpo_2048"
+  "ta_chosen_llama3.1_instruct_dpo_2048"
   # "tulu_v2_8b_2048_default_template_dpo"
   # "tulu_v2_8b_2048_default_template_sft"
   # "uf_llama3.1_instruct_dpo_2048_job"
@@ -72,7 +73,7 @@ for PARAM in "${PARAMS[@]}"; do
   start_time=$(date +%s)
 
   echo "执行参数: $PARAM" | tee -a $LOG_FILE  
-  bash eval_script/ta_image_auto.sh $PARAM | tee -a $LOG_FILE  
+  bash eval_script/ta_text_image_auto.sh $PARAM | tee -a $LOG_FILE  
 
     # 计算运行时间  
   elapsed_time=$((end_time - start_time))  

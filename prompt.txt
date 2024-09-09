@@ -1,83 +1,53 @@
-  对于下面这个代码生成的结果存储的一条格式如下
-  {
-      "instruction": "What are the names of some famous actors that started their careers on Broadway?",
-      "generator": "ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2",
-      "dataset": "helpful_base",
-      "output": "Here are some famous actors who began their careers on Broadway:\n\n- **Tom Hanks**  \n- **Meryl Streep**  \n- **Julia Roberts**  \n- **Daniel Day-Lewis**  \n- **Audra McDonald**  \n- **Idina Menzel**  \n- **Hugh Jackman**  \n- **Bryan Cranston**  \n- **Angela Lansbury**  \n- **James Earl Jones**"
-  },
-  我需要将其转为以下jsonl的格式进行存储，其中question_id和answer_id均为index，使用dataset中的index，model_id换成model_name，content替换output，token_len使用预训练的分词器进行分词统计其长度
-  {"question_id":"3f85bf93f18343dbb17e228a214a3800","answer_id":"jWNMkUBRTtfACGiD2fWDyM","model_id":"gpt-4-1106-preview","choices":[{"index":0,"turns":[{"content":"To create a sad and slow chord progression in the key of C major, you can use minor chords and certain progressions that evoke a melancholic feel. Here's a simple chord progression that you can try:\n\nC major - Am7 - Dm7 - G7\n\nTo add more depth and sadness to the progression, consider the following:\n\nCmaj7 - Am7 - Em7 - Fmaj7 - Fm6 - Cmaj7\/G - Fm6 - G7\n\nHere's how you can play these chords on the guitar or piano:\n\n**Guitar Chords:**\n```\nCmaj7: x32000\nAm7:   x02010\nEm7:   022030\nFmaj7: xx3210\nFm6:   xx0111\nCmaj7\/G: 332000\nG7:    320001\n```\n\n**Piano Chords:**\n- Cmaj7: C - E - G - B\n- Am7: A - C - E - G\n- Em7: E - G - B - D\n- Fmaj7: F - A - C - E\n- Fm6: F - Ab - C - D\n- Cmaj7\/G: G - C - E - G - B (G in the bass)\n- G7: G - B - D - F\n\nRemember to play these chords slowly and with feeling to enhance the sad emotion. You can also experiment with different inversions and voicings to see what sounds best to you.","token_len":320}]}],"tstamp":1719091586.1960244179}
+以下的的prompt会对文本进行文本美学打分，我希望其能通过CoT的方式引导GPTY对文本美学进行打分，但下面的这个promp会先给出打分结果再给出分析流程，修改prompt让gpt先分析对比文本最后再给出打分结果，给出修改后的英语prompt
+system_template_image = \
+"""
+You are an impartial judge tasked with evaluating the textual aesthetics of responses provided by two AI assistants to the user prompt displayed below. The responses are presented as images. Your goal is to determine which response is more aesthetically pleasing and easier to read and understand, considering both textual and visual factors.
 
-  from vllm import LLM, SamplingParams
-  from tqdm import tqdm
-  import datasets
-  import json
-  import argparse 
+Evaluate each response based on the following criteria:
 
-  parser = argparse.ArgumentParser(description='Set model name.')  
-  parser.add_argument('--model-name', type=str, required=True, help='Name of the model to use')  
-  parser.add_argument('--model-path', type=str, default="/home/lidong1/jianglingjie/LLama-Factory/model_checkpoint/huggingface", help='Dir of the model to use') 
-  args = parser.parse_args()  
-  path_dir = args.model_path
-  model_name = args.model_name 
+1. **Readability**: Is the text easy to read and understand? Are the sentences of appropriate length and complexity?
+2. **Visual Organization**: Is the text visually organized in a logical manner? Are there appropriate headings, subheadings, lists, and other formatting elements?
+3. **Consistency**: Does the text maintain a consistent style and format throughout?
+4. **Overall Structure**: Are the paragraphs well-structured and logically connected? Is there appropriate spacing between paragraphs?
+5. **Visual Clarity**: Is the text in the image clear and legible? Are the fonts and spacing visually appealing and easy on the eyes?
 
-  # template = "{{ '<|begin_of_text|>' }}{% if messages[0]['role'] == 'system' %}{% set system_message = messages[0]['content'] %}{% endif %}{% if system_message is defined %}{{ '<|start_header_id|>system<|end_header_id|>\n\n' + system_message + '<|eot_id|>' }}{% endif %}{% for message in messages %}{% set content = message['content'] %}{% if message['role'] == 'user' %}{{ '<|start_header_id|>user<|end_header_id|>\n\n' + content + '<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n' }}{% elif message['role'] == 'assistant' %}{{ content + '<|eot_id|>' }}{% endif %}{% endfor %}"
-  template = "{% if messages[0]['role'] == 'system' %}{% set system_message = messages[0]['content'] %}{% endif %}{% if system_message is defined %}{{ system_message + '\n' }}{% endif %}{% for message in messages %}{% set content = message['content'] %}{% if message['role'] == 'user' %}{{ 'Human: ' + content + '\nAssistant:' }}{% elif message['role'] == 'assistant' %}{{ content + '<|end_of_text|>' + '\n' }}{% endif %}{% endfor %}"
+Follow these steps for your evaluation:
+1. **Analyze each response**: Carefully examine both images based on the criteria provided.
+2. **Compare both responses**: Determine which response excels in textual and visual aesthetics considering all aspects.
+3. **Make a final decision**: Choose the response that is better in terms of textual and visual aesthetics and justify your choice.
 
-  # model_name = "Meta-Llama-3.1-8B-Instruct"
-  # model_name = "Meta-Llama-3.1-8B"
-  # Create an LLM.
-  llm = LLM(model=f"{path_dir}/{model_name}")
+Output your final verdict with one of the following labels:
+1. Assistant A is significantly better: [[A>>B]]
+2. Assistant A is slightly better: [[A>B]]
+3. Tie, relatively the same: [[A=B]]
+4. Assistant B is slightly better: [[B>A]]
+5. Assistant B is significantly better: [[B>>A]]
 
-  print(f"model name: {model_name}")
-  print(f"model_path: {path_dir}/{model_name}")
+Example output:   
+1. Analysis of Assistant A's response:  
+    - Readability: ...  
+    - Visual Organization: ...  
+    - Consistency: ...  
+    - Overall Structure: ...  
+    - Visual Clarity: ...  
+2. Analysis of Assistant B's response:  
+    - Readability: ...  
+    - Visual Organization: ...  
+    - Consistency: ...  
+    - Overall Structure: ...  
+    - Visual Clarity: ...  
+3. Comparison:  
+    - Both responses are similar in readability, but...  
+    - Assistant A has better visual organization...  
+    - Assistant B's consistency is...  
+    - Overall, Assistant A/B stands out in...
+    
+My final verdict is Assistant A is slightly better: [[A>B]].
+"""
 
-  gen_kwargs_vllm = {
-      "max_tokens": 2048,
-      "top_p": 0.9,
-      "top_k": 50,
-      "temperature": 0.0,
-      "repetition_penalty": 1.0,
-  }
-  tokenizer = llm.get_tokenizer()
-  if tokenizer.chat_template is None:
-      tokenizer.chat_template = template
-      tokenizer.chat_template = tokenizer.chat_template.replace("<|eot_id|>", tokenizer.eos_token)
-      # tokenizer.chat_template
-      gen_kwargs_vllm['stop_token_ids'] = [tokenizer.eos_token_id, tokenizer.convert_tokens_to_ids("<|eot_id|>")]
-      print(f"tokenizer.chat_template: {tokenizer.chat_template}")
-      print("tokenizer is None, use setted template")
-  else:
-      gen_kwargs_vllm['stop_token_ids'] = [tokenizer.eos_token_id, tokenizer.convert_tokens_to_ids("<|end_of_text|>")]
-      print("use original template")
-  # messages = tokenizer.apply_chat_template(messages, tokenize=False)
-
-
-  sampling_params = SamplingParams(**gen_kwargs_vllm)
-
-  eval_set = datasets.load_dataset("tatsu-lab/alpaca_eval", "alpaca_eval")["eval"]
-
-  def convert_to_message(example):  
-      messages = [{"role": "user", "content": example["instruction"]}]  
-      example["messages"] = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)  
-      return example  
-  eval_set = eval_set.map(convert_to_message)
-  # eval_set['messages']
-  outputs = llm.generate(eval_set['messages'], sampling_params)
-  outputs_text = [x.outputs[0].text for x in outputs]
-  eval_set = eval_set.remove_columns(["output"])  # Remove the existing 'output' column if it exists  
-  eval_set = eval_set.remove_columns(["messages"])
-  eval_set = eval_set.add_column("output", outputs_text)  
-  def rename_generator(sample):
-      sample['generator'] = f"{model_name}"
-      return sample
-  eval_set = eval_set.map(rename_generator)
-  eval_set.to_json(f"{model_name}.jsonl", batch_size=128, num_proc=8)
-
-  ## save data
-
-  export_dataset = eval_set
-  export_data_list = [dict(row) for row in export_dataset]
-  print(f"export data length {len(export_data_list)}")
-  with open(f'./data/{model_name}.json', 'w', encoding='utf-8') as f:  
-      json.dump(export_data_list, f, ensure_ascii=False, indent=4)  
+## user prompt
+user_template_image  = \
+"""
+<|User Prompt|>{question_1}
+Below are two images: the first one is Assistant A's response, and the second one is Assistant B's response. Please evaluate them based on the criteria provided and give the final verdict answer.
+"""
