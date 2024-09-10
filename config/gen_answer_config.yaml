@@ -9,3 +9,4 @@ num_choices: 1
 # a list of model to generate answers
 model_list:
   - glan_v2_glanchat_v2_8b_2048_default_template
+

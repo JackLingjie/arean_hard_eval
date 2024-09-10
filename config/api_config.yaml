@@ -16,6 +16,7 @@ gpt-4o:
     api_type: azure
     parallel: 8
 
+
 glan_v2_glanchat_v2_8b_2048_default_template:
     model_name: /mnt/lingjiejiang/textual_aesthetics/exp/saves/glan_v2_glanchat_v2_8b_2048_default_template/fullft_lr5e6_e3_fx/sft/checkpoint-33000  
     endpoints: 
