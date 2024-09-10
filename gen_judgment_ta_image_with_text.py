@@ -177,17 +177,18 @@ def judgment(**args):
             print(f"Error: {e}")
             raise e
         conv.append(
-            {"role": "user", 
-             "content": [
-                {"type": "text", "text": f"{user_prompt}\n"},
-                {
-                    "image":base64_image1
-                },
-                {
-                    "image":base64_image2
-                }
+                {"role": "user", "content": [
+                    {"type": "text", "text": f"{user_prompt}\n <|The Image of Assistant A's Answer|>\n"},
+                    {
+                        "image":base64_image1
+                    },
+                    {"type": "text", "text": "<|The Image of Assistant B's Answer Answer|>\n"},
+                    {
+                        "image":base64_image2
+                    }
                 ]
-            })
+                    }
+            )
 
         judgment = ""
         for _ in range(configs['number_of_judgment_attempts']):

@@ -1,0 +1,11 @@
+model,score,rating_q025,rating_q975,CI,avg_tokens,date
+ta_rejected_llama3.1_instruct_dpo_2048,72.14,68.01,76.6,"(-4.13, +4.46)",472.0,2024-09-09
+ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2,63.61,63.26,64.58,"(-0.35, +0.97)",564.0,2024-09-09
+uf_llama3.1_instruct_dpo_2048_job,63.52,62.4,64.26,"(-1.12, +0.74)",463.0,2024-09-09
+ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2,62.33,61.66,63.28,"(-0.67, +0.95)",552.0,2024-09-09
+Meta-Llama-3.1-8B-Instruct,59.51,58.78,60.17,"(-0.73, +0.66)",498.0,2024-09-09
+ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2,55.49,54.78,56.28,"(-0.71, +0.79)",362.0,2024-09-09
+gpt4_1106_preview,50.0,50.0,50.0,"(-0.00, +0.00)",432.0,2024-09-09
+tulu_v2_8b_2048_default_template_dpo,9.4,8.88,9.97,"(-0.52, +0.57)",285.0,2024-09-09
+tulu_v2_8b_2048_default_template_sft,5.81,5.27,6.16,"(-0.54, +0.35)",274.0,2024-09-09
+ta_chosen_tuluv2_merge_dpo_2048_default_template,0.8,0.59,0.95,"(-0.21, +0.15)",1589.0,2024-09-09

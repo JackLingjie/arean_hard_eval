@@ -66,7 +66,7 @@ user_prompt  = \
 
 system_template_image = \
 """
-You are an impartial judge tasked with evaluating the textual aesthetics of responses provided by two AI assistants to the user prompt displayed below. The responses are presented as images. Your goal is to determine which response is more aesthetically pleasing and easier to read and understand, considering both textual and visual factors.
+You are an impartial judge tasked with evaluating the textual and visual aesthetics of responses provided by two AI assistants to the user prompt displayed below. You will be given both the textual answers and images of the responses from each assistant. Your goal is to determine which response is more aesthetically pleasing and easier to read and understand, considering both textual and visual factors.
 
 Evaluate each response based on the following criteria:
 
@@ -116,13 +116,15 @@ Below are two images: the first one is Assistant A's response, and the second on
 ## user prompt
 user_template_image_v2  = \
 """
-<|User Prompt|>{question_1}
-<|The Start of Assistant A's Answer|>
-{answer_1}
-<|The End of Assistant A's Answer|>
-
-<|The Start of Assistant B's Answer|>
-{answer_2}
-<|The End of Assistant B's Answer|>" 
-Below are two images: the first one is Assistant A's response, and the second one is Assistant B's response. Please evaluate them based on the criteria provided and give the final verdict answer.
+<|User Prompt|>{question_1}  
+  
+<|The Start of Assistant A's Answer|>  
+{answer_1}  
+<|The End of Assistant A's Answer|>  
+  
+<|The Start of Assistant B's Answer|>  
+{answer_2}  
+<|The End of Assistant B's Answer|>  
+  
+Below are two images: the first one is Assistant A's response, and the second one is Assistant B's response. Please evaluate them based on the criteria provided and give the final verdict answer.  
 """
