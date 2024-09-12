@@ -16,7 +16,7 @@ gpt-4o:
     api_type: azure
     parallel: 8
 
-{{MODEL_NAME}}:
+{{SAVE_MODEL_ID}}:
 
     model_name: /mnt/lingjiejiang/textual_aesthetics/exp/saves/{{MODEL_NAME}}/{{HYPERPARAMETER}}/sft/{{CHECKPOINT}}  
     endpoints: 
