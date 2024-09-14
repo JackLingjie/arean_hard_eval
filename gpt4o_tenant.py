@@ -221,17 +221,26 @@ class Openai():
         return ""
 
 if __name__ == '__main__':
-    oai_clients = Openai(
-        apis=API_INFOS
-    )
-    # res = oai_clients.call("你是gpt几？")
-    content = "你是gpt几？"
-    messages = [
-        {"role": "system", "content": "You are a helpful assistant."},
-        {"role": "user", "content": [
-            {"type": "text", "text": f"{content}\n"},
-        ]
-            },
-    ]    
-    res = oai_clients.get_response(messages)
-    print(res)
+    # oai_clients = Openai(
+    #     apis=API_INFOS
+    # )
+    # # res = oai_clients.call("你是gpt几？")
+    # content = "你是gpt几？"
+    # messages = [
+    #     {"role": "system", "content": "You are a helpful assistant."},
+    #     {"role": "user", "content": [
+    #         {"type": "text", "text": f"{content}\n"},
+    #     ]
+    #         },
+    # ]    
+    # res = oai_clients.get_response(messages)
+    # print(res)
+
+    for i in range(len(API_INFOS)):
+        print(API_INFOS[i])
+        oai_clients = Openai(
+            apis=[API_INFOS[i]]
+        )
+        res = oai_clients.call("hello")
+        # res = oai_clients.call(text)
+        print(res)

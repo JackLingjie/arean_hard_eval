@@ -6,3 +6,4 @@ data/images/
 data/alpaca/model_judgment/gpt-4o_images
 __pycache__/
 data/ta_judges/
+data/images_arena/
