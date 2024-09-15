@@ -1,5 +1,9 @@
 arena-hard-browser/
 output.zip
 output/
+data/alpaca/
+data/diff_data/
 data/images/
-__pycache__/*
+data/ta_judges/
+__pycache__/
+

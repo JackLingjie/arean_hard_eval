@@ -1,0 +1,28 @@
+# name: str
+#     model_name: str
+#     endpoints: default to null
+#         - api_base: str
+#           api_key: str
+#           api_version: str optional (only for azure)
+#     api_type: str
+#     tokenizer: str optional (to optimize token limits)
+#     parallel: int
+
+
+
+gpt-4o:
+    model_name: gpt4o
+    endpoints: null
+    api_type: azure
+    parallel: 8
+
+{{SAVE_MODEL_ID}}:
+
+    model_name: /mnt/lingjiejiang/textual_aesthetics/exp/saves/{{MODEL_NAME}}/{{HYPERPARAMETER}}/sft/{{CHECKPOINT}}  
+    endpoints: 
+        - api_base: http://localhost:8000/v1
+          api_key: token-abc123
+    api_type: openai
+    parallel: 8
+
+

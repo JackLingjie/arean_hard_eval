@@ -4,7 +4,7 @@ import threading
 from azure.identity import DefaultAzureCredential, get_bearer_token_provider  
 from openai import AzureOpenAI  
 import openai  
-  
+
 API_INFOS = [  
     {  
         "endpoints": "https://readinswedencentral.openai.azure.com/",  

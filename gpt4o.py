@@ -1,6 +1,6 @@
 import random
 import time
-from azure.identity import DefaultAzureCredential, get_bearer_token_provider
+from azure.identity import DefaultAzureCredential, get_bearer_token_provider, AzureCliCredential
 from openai import AzureOpenAI
 import openai
 
@@ -59,10 +59,11 @@ class Openai():
     ):
         self.identity_id = identity_id
         flag = True
+        tenant_id = "72f988bf-86f1-41af-91ab-2d7cd011db47"
         while flag:
             try:
                 self.token_provider = get_bearer_token_provider(
-                    DefaultAzureCredential(managed_identity_client_id=self.identity_id),
+                    AzureCliCredential(tenant_id=tenant_id),
                     "https://cognitiveservices.azure.com/.default"
                 )
                 flag = False
