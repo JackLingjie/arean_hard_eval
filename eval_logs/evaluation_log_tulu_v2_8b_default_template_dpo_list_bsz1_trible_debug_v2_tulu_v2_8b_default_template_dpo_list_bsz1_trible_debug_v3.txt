@@ -1,0 +1,7 @@
+执行参数: tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v2
+等待 vllm 服务启动...
+执行参数: tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v2
+等待 vllm 服务启动...
+vllm 服务已启动。
+{'name': 'config of answer generation for arena-hard-v0.1', 'bench_name': 'arena-hard-v0.1', 'temperature': 0.0, 'max_tokens': 2048, 'num_choices': 1, 'model_list': ['tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v2']}
+Output to data/arena-hard-v0.1/model_answer/tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v2.jsonl

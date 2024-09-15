@@ -2,9 +2,13 @@
 set -x
 # 参数列表  
 PARAMS=(  
-  "uf_llama3.1_instruct_dpo_2048_job"
-  "ta_chosen_tuluv2_merge_dpo_2048_default_template"
-
+  # "uf_llama3.1_instruct_dpo_2048_job"
+  # "ta_chosen_tuluv2_merge_dpo_2048_default_template"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v2"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v3"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_1000"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_1500"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_500"
   # "Meta-Llama-3.1-8B-Instruct"
   # "ta_chosen_llama3.1_instruct_dpo_2048"
   # "ta_chosen_tuluv2_dpo_2048_default_template"

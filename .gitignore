@@ -1,3 +1,5 @@
 arena-hard-browser/
 output.zip
 output/
+data/images/
+__pycache__/*
