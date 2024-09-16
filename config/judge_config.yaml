@@ -22,4 +22,4 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
-  - glanchat_v2.1_8b_2048_default_template_checkpoint-9918
+  - ta_rejected_llama3.1_instruct_2048_default_template_v2-1000

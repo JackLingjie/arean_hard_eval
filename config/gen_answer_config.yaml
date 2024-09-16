@@ -8,4 +8,4 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - glanchat_v2.1_8b_2048_default_template_checkpoint-9918
+  - ta_rejected_llama3.1_instruct_2048_default_template_v2-1000
