@@ -1,0 +1,93 @@
+执行参数: Meta-Llama-3.1-8B-Instruct
+文件 data/arena-ta/model_answer/Meta-Llama-3.1-8B-Instruct.jsonl 存在, 跳过gen_answer.py 执行。
+model_answers.keys() dict_keys(['Meta-Llama-3.1-8B-Instruct', 'gpt-4-1106-preview'])
+-----------------generate gpt-4-1106-preview images -----------------
+-----------------generate Meta-Llama-3.1-8B-Instruct images -----------------
+images generated done.
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='Meta-Llama-3.1-8B-Instruct', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+generate images Meta-Llama-3.1-8B-Instruct
+500 number of existing judgments
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='image', first_game_only=False)
+Turning judgment results into battles...
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+Meta-Llama-3.1-8B-Instruct     | score: 46.3  | 95% CI:  (0.7, 0.7)  | average #tokens: 767
+运行时间: -28773524.73 分钟
+----------------------------------------
+执行参数: uf_llama3.1_instruct_dpo_2048_job
+model_answers.keys() dict_keys(['Meta-Llama-3.1-8B-Instruct', 'gpt-4-1106-preview'])
+-----------------generate uf_llama3.1_instruct_dpo_2048_job images -----------------
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='uf_llama3.1_instruct_dpo_2048_job', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+generate images uf_llama3.1_instruct_dpo_2048_job
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='image', first_game_only=False)
+Turning judgment results into battles...
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+Meta-Llama-3.1-8B-Instruct     | score: 46.3  | 95% CI:  (0.7, 0.7)  | average #tokens: 767
+运行时间: -28773534.01 分钟
+----------------------------------------
+执行参数: ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2
+model_answers.keys() dict_keys(['Meta-Llama-3.1-8B-Instruct', 'gpt-4-1106-preview'])
+-----------------generate ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 images -----------------
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+generate images ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='image', first_game_only=False)
+Turning judgment results into battles...
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+Meta-Llama-3.1-8B-Instruct     | score: 46.3  | 95% CI:  (0.7, 0.7)  | average #tokens: 767
+运行时间: -28773535.13 分钟
+----------------------------------------
+执行参数: ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2
+model_answers.keys() dict_keys(['Meta-Llama-3.1-8B-Instruct', 'gpt-4-1106-preview'])
+-----------------generate ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 images -----------------
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+generate images ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='image', first_game_only=False)
+Turning judgment results into battles...
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+Meta-Llama-3.1-8B-Instruct     | score: 46.3  | 95% CI:  (0.7, 0.7)  | average #tokens: 767
+运行时间: -28773536.21 分钟
+----------------------------------------
+执行参数: ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2
+model_answers.keys() dict_keys(['Meta-Llama-3.1-8B-Instruct', 'gpt-4-1106-preview'])
+-----------------generate ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 images -----------------
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+generate images ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='image', first_game_only=False)
+Turning judgment results into battles...
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+Meta-Llama-3.1-8B-Instruct     | score: 46.3  | 95% CI:  (0.7, 0.7)  | average #tokens: 767
+运行时间: -28773537.30 分钟
+----------------------------------------
+执行参数: tulu_v2_8b_2048_default_template_dpo
+model_answers.keys() dict_keys(['Meta-Llama-3.1-8B-Instruct', 'gpt-4-1106-preview'])
+-----------------generate tulu_v2_8b_2048_default_template_dpo images -----------------
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='tulu_v2_8b_2048_default_template_dpo', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+generate images tulu_v2_8b_2048_default_template_dpo
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='image', first_game_only=False)
+Turning judgment results into battles...
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+Meta-Llama-3.1-8B-Instruct     | score: 46.3  | 95% CI:  (0.7, 0.7)  | average #tokens: 767
+运行时间: -28773538.40 分钟
+----------------------------------------
+执行参数: tulu_v2_8b_2048_default_template_sft
+model_answers.keys() dict_keys(['Meta-Llama-3.1-8B-Instruct', 'gpt-4-1106-preview'])
+-----------------generate tulu_v2_8b_2048_default_template_sft images -----------------
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='tulu_v2_8b_2048_default_template_sft', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+generate images tulu_v2_8b_2048_default_template_sft
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='image', first_game_only=False)
+Turning judgment results into battles...
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+Meta-Llama-3.1-8B-Instruct     | score: 46.3  | 95% CI:  (0.7, 0.7)  | average #tokens: 767
+运行时间: -28773539.48 分钟
+----------------------------------------
+所有任务已完成。
+执行参数: Meta-Llama-3.1-8B-Instruct
+文件 data/arena-ta/model_answer/Meta-Llama-3.1-8B-Instruct.jsonl 存在, 跳过gen_answer.py 执行。
+model_answers.keys() dict_keys(['Meta-Llama-3.1-8B-Instruct', 'gpt-4-1106-preview'])
+-----------------generate Meta-Llama-3.1-8B-Instruct images -----------------
