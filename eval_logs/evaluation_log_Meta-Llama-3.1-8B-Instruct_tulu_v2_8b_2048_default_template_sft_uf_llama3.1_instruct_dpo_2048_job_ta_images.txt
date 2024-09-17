@@ -1,0 +1,152 @@
+执行参数: Meta-Llama-3.1-8B-Instruct
+文件 data/arena-ta/model_answer/Meta-Llama-3.1-8B-Instruct.jsonl 存在, 跳过gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='Meta-Llama-3.1-8B-Instruct', baseline_model='gpt-4-1106-preview', bench_name='arena-ta')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+500 number of existing judgments
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text', first_game_only=False)
+Turning judgment results into battles...
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+Meta-Llama-3.1-8B-Instruct     | score: 32.1  | 95% CI: (-0.2, -0.2) | average #tokens: 767
+运行时间: -28774616.36 分钟
+----------------------------------------
+执行参数: tulu_v2_8b_2048_default_template_sft
+文件 data/arena-ta/model_answer/tulu_v2_8b_2048_default_template_sft.jsonl 存在, 跳过gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='tulu_v2_8b_2048_default_template_sft', baseline_model='gpt-4-1106-preview', bench_name='arena-ta')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text', first_game_only=False)
+Turning judgment results into battles...
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+Meta-Llama-3.1-8B-Instruct     | score: 32.1  | 95% CI: (-0.0, 0.5)  | average #tokens: 767
+tulu_v2_8b_2048_default_template_sft | score:  1.2  | 95% CI: (-0.2, 0.1)  | average #tokens: 472
+运行时间: -28774617.40 分钟
+----------------------------------------
+执行参数: uf_llama3.1_instruct_dpo_2048_job
+文件 data/arena-ta/model_answer/uf_llama3.1_instruct_dpo_2048_job.jsonl 存在, 跳过gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='uf_llama3.1_instruct_dpo_2048_job', baseline_model='gpt-4-1106-preview', bench_name='arena-ta')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text', first_game_only=False)
+Turning judgment results into battles...
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+uf_llama3.1_instruct_dpo_2048_job | score: 32.5  | 95% CI: (-0.9, -0.1) | average #tokens: 687
+Meta-Llama-3.1-8B-Instruct     | score: 32.1  | 95% CI: (-1.0, 0.6)  | average #tokens: 767
+tulu_v2_8b_2048_default_template_sft | score:  1.2  | 95% CI: (-0.3, 0.1)  | average #tokens: 472
+运行时间: -28774627.70 分钟
+----------------------------------------
+执行参数: ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2
+文件 data/arena-ta/model_answer/ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2.jsonl 存在, 跳过gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', baseline_model='gpt-4-1106-preview', bench_name='arena-ta')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Error code: 400 - {'error': {'message': "Sorry! We've encountered an issue with repetitive patterns in your prompt. Please try again with a different prompt.", 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'invalid_prompt'}}
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text', first_game_only=False)
+Turning judgment results into battles...
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+uf_llama3.1_instruct_dpo_2048_job | score: 32.5  | 95% CI: (-1.0, 0.1)  | average #tokens: 687
+Meta-Llama-3.1-8B-Instruct     | score: 32.1  | 95% CI: (-1.1, 0.7)  | average #tokens: 767
+ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 19.3  | 95% CI: (-0.6, 0.4)  | average #tokens: 528
+tulu_v2_8b_2048_default_template_sft | score:  1.2  | 95% CI: (-0.3, 0.2)  | average #tokens: 472
+运行时间: -28774636.88 分钟
+----------------------------------------
+执行参数: ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2
+文件 data/arena-ta/model_answer/ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2.jsonl 存在, 跳过gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', baseline_model='gpt-4-1106-preview', bench_name='arena-ta')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text', first_game_only=False)
+Turning judgment results into battles...
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+uf_llama3.1_instruct_dpo_2048_job | score: 32.5  | 95% CI: (-1.0, 0.6)  | average #tokens: 687
+Meta-Llama-3.1-8B-Instruct     | score: 32.1  | 95% CI: (-1.4, 1.3)  | average #tokens: 767
+ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 25.1  | 95% CI: (-1.6, 0.9)  | average #tokens: 672
+ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 19.3  | 95% CI: (-1.2, 0.2)  | average #tokens: 528
+tulu_v2_8b_2048_default_template_sft | score:  1.2  | 95% CI: (-0.4, 0.3)  | average #tokens: 472
+运行时间: -28774646.60 分钟
+----------------------------------------
+执行参数: ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2
+文件 data/arena-ta/model_answer/ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2.jsonl 存在, 跳过gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', baseline_model='gpt-4-1106-preview', bench_name='arena-ta')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text', first_game_only=False)
+Turning judgment results into battles...
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+uf_llama3.1_instruct_dpo_2048_job | score: 32.5  | 95% CI: (-1.0, 1.5)  | average #tokens: 687
+Meta-Llama-3.1-8B-Instruct     | score: 32.1  | 95% CI: (-1.4, 1.5)  | average #tokens: 767
+ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 26.5  | 95% CI: (-1.1, 1.0)  | average #tokens: 677
+ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 25.1  | 95% CI: (-0.8, 0.6)  | average #tokens: 672
+ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 19.3  | 95% CI: (-1.1, 0.9)  | average #tokens: 528
+tulu_v2_8b_2048_default_template_sft | score:  1.2  | 95% CI: (-0.3, 0.4)  | average #tokens: 472
+运行时间: -28774655.65 分钟
+----------------------------------------
+执行参数: ta_chosen_llama3.1_instruct_dpo_2048
+文件 data/arena-ta/model_answer/ta_chosen_llama3.1_instruct_dpo_2048.jsonl 存在, 跳过gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_chosen_llama3.1_instruct_dpo_2048', baseline_model='gpt-4-1106-preview', bench_name='arena-ta')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text', first_game_only=False)
+Turning judgment results into battles...
+ta_chosen_llama3.1_instruct_dpo_2048 | score: 50.1  | 95% CI: (-0.9, 1.4)  | average #tokens: 706
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+uf_llama3.1_instruct_dpo_2048_job | score: 32.5  | 95% CI: (-1.6, 1.9)  | average #tokens: 687
+Meta-Llama-3.1-8B-Instruct     | score: 32.1  | 95% CI: (-1.4, 1.1)  | average #tokens: 767
+ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 26.5  | 95% CI: (-1.3, 0.6)  | average #tokens: 677
+ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 25.1  | 95% CI: (-1.0, 0.9)  | average #tokens: 672
+ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 19.3  | 95% CI: (-0.7, 1.1)  | average #tokens: 528
+tulu_v2_8b_2048_default_template_sft | score:  1.2  | 95% CI: (-0.3, 0.3)  | average #tokens: 472
+运行时间: -28774664.58 分钟
+----------------------------------------
+执行参数: ta_rejected_llama3.1_instruct_dpo_2048
+文件 data/arena-ta/model_answer/ta_rejected_llama3.1_instruct_dpo_2048.jsonl 存在, 跳过gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_rejected_llama3.1_instruct_dpo_2048', baseline_model='gpt-4-1106-preview', bench_name='arena-ta')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text', first_game_only=False)
+Turning judgment results into battles...
+ta_chosen_llama3.1_instruct_dpo_2048 | score: 50.1  | 95% CI: (-1.6, 1.4)  | average #tokens: 706
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+ta_rejected_llama3.1_instruct_dpo_2048 | score: 48.1  | 95% CI: (-1.5, 1.4)  | average #tokens: 663
+uf_llama3.1_instruct_dpo_2048_job | score: 32.5  | 95% CI: (-2.4, 1.0)  | average #tokens: 687
+Meta-Llama-3.1-8B-Instruct     | score: 32.1  | 95% CI: (-1.4, 1.5)  | average #tokens: 767
+ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 26.5  | 95% CI: (-1.3, 1.3)  | average #tokens: 677
+ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 25.1  | 95% CI: (-0.9, 1.3)  | average #tokens: 672
+ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 19.3  | 95% CI: (-1.4, 0.7)  | average #tokens: 528
+tulu_v2_8b_2048_default_template_sft | score:  1.2  | 95% CI: (-0.4, 0.3)  | average #tokens: 472
+运行时间: -28774673.33 分钟
+----------------------------------------
+执行参数: tulu_v2_8b_2048_default_template_dpo
+文件 data/arena-ta/model_answer/tulu_v2_8b_2048_default_template_dpo.jsonl 存在, 跳过gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='tulu_v2_8b_2048_default_template_dpo', baseline_model='gpt-4-1106-preview', bench_name='arena-ta')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text', first_game_only=False)
+Turning judgment results into battles...
+ta_chosen_llama3.1_instruct_dpo_2048 | score: 50.1  | 95% CI: (-1.6, 1.2)  | average #tokens: 706
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+ta_rejected_llama3.1_instruct_dpo_2048 | score: 48.1  | 95% CI: (-1.7, 2.1)  | average #tokens: 663
+uf_llama3.1_instruct_dpo_2048_job | score: 32.5  | 95% CI: (-1.2, 1.3)  | average #tokens: 687
+Meta-Llama-3.1-8B-Instruct     | score: 32.1  | 95% CI: (-1.0, 1.8)  | average #tokens: 767
+ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 26.5  | 95% CI: (-1.1, 1.0)  | average #tokens: 677
+ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 25.1  | 95% CI: (-1.0, 1.3)  | average #tokens: 672
+ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 19.3  | 95% CI: (-0.9, 1.1)  | average #tokens: 528
+tulu_v2_8b_2048_default_template_dpo | score:  2.4  | 95% CI: (-0.5, 0.3)  | average #tokens: 420
+tulu_v2_8b_2048_default_template_sft | score:  1.2  | 95% CI: (-0.3, 0.3)  | average #tokens: 472
+运行时间: -28774682.28 分钟
+----------------------------------------
+所有任务已完成。

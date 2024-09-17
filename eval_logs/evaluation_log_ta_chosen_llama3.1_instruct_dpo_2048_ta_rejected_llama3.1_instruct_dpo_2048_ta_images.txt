@@ -1,0 +1,81 @@
+执行参数: ta_chosen_llama3.1_instruct_dpo_2048
+WARNING 09-16 01:57:11 arg_utils.py:762] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 09-16 01:57:11 config.py:806] Chunked prefill is enabled with max_num_batched_tokens=512.
+INFO 09-16 01:57:11 llm_engine.py:176] Initializing an LLM engine (v0.5.3.post1) with config: model='/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_chosen_llama3.1_instruct_dpo_2048', speculative_config=None, tokenizer='/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_chosen_llama3.1_instruct_dpo_2048', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None), seed=0, served_model_name=/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_chosen_llama3.1_instruct_dpo_2048, use_v2_block_manager=False, enable_prefix_caching=False)
+INFO 09-16 01:57:13 model_runner.py:680] Starting to load model /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_chosen_llama3.1_instruct_dpo_2048...
+model_answers.keys() dict_keys(['Meta-Llama-3.1-8B-Instruct', 'gpt-4-1106-preview', 'ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', 'ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', 'ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', 'tulu_v2_8b_2048_default_template_dpo', 'tulu_v2_8b_2048_default_template_sft', 'uf_llama3.1_instruct_dpo_2048_job'])
+-----------------generate ta_chosen_llama3.1_instruct_dpo_2048 images -----------------
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_chosen_llama3.1_instruct_dpo_2048', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+generate images ta_chosen_llama3.1_instruct_dpo_2048
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='image', first_game_only=False)
+Turning judgment results into battles...
+执行参数: ta_chosen_llama3.1_instruct_dpo_2048
+WARNING 09-16 01:58:26 arg_utils.py:762] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 09-16 01:58:26 config.py:806] Chunked prefill is enabled with max_num_batched_tokens=512.
+INFO 09-16 01:58:26 llm_engine.py:176] Initializing an LLM engine (v0.5.3.post1) with config: model='/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_chosen_llama3.1_instruct_dpo_2048', speculative_config=None, tokenizer='/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_chosen_llama3.1_instruct_dpo_2048', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None), seed=0, served_model_name=/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_chosen_llama3.1_instruct_dpo_2048, use_v2_block_manager=False, enable_prefix_caching=False)
+INFO 09-16 01:58:27 model_runner.py:680] Starting to load model /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_chosen_llama3.1_instruct_dpo_2048...
+INFO 09-16 01:59:06 model_runner.py:692] Loading model weights took 14.9888 GB
+INFO 09-16 01:59:07 gpu_executor.py:102] # GPU blocks: 12310, # CPU blocks: 2048
+INFO 09-16 01:59:12 model_runner.py:980] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 09-16 01:59:12 model_runner.py:984] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 09-16 01:59:26 model_runner.py:1181] Graph capturing finished in 14 secs.
+model name: ta_chosen_llama3.1_instruct_dpo_2048
+model_path: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_chosen_llama3.1_instruct_dpo_2048
+use original template
+Data saved to ./data/arena-ta/model_answer/ta_chosen_llama3.1_instruct_dpo_2048.jsonl
+model_answers.keys() dict_keys(['Meta-Llama-3.1-8B-Instruct', 'gpt-4-1106-preview', 'ta_chosen_llama3.1_instruct_dpo_2048', 'ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', 'ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', 'ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', 'tulu_v2_8b_2048_default_template_dpo', 'tulu_v2_8b_2048_default_template_sft', 'uf_llama3.1_instruct_dpo_2048_job'])
+-----------------generate ta_chosen_llama3.1_instruct_dpo_2048 images -----------------
+images generated done.
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_chosen_llama3.1_instruct_dpo_2048', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+generate images ta_chosen_llama3.1_instruct_dpo_2048
+Request timed out.
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='image', first_game_only=False)
+Turning judgment results into battles...
+ta_chosen_llama3.1_instruct_dpo_2048 | score: 73.3  | 95% CI: (-1.0, 1.4)  | average #tokens: 706
+ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 60.7  | 95% CI: (-0.8, 1.6)  | average #tokens: 677
+ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 60.4  | 95% CI: (-1.6, 1.3)  | average #tokens: 672
+ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 57.7  | 95% CI: (-1.2, 1.0)  | average #tokens: 528
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+uf_llama3.1_instruct_dpo_2048_job | score: 49.6  | 95% CI: (-1.6, 1.1)  | average #tokens: 687
+Meta-Llama-3.1-8B-Instruct     | score: 46.3  | 95% CI: (-1.9, 1.2)  | average #tokens: 767
+tulu_v2_8b_2048_default_template_dpo | score:  9.6  | 95% CI: (-0.9, 0.7)  | average #tokens: 420
+tulu_v2_8b_2048_default_template_sft | score:  9.4  | 95% CI: (-1.1, 0.8)  | average #tokens: 472
+运行时间: -28774618.38 分钟
+----------------------------------------
+执行参数: ta_rejected_llama3.1_instruct_dpo_2048
+WARNING 09-16 02:37:38 arg_utils.py:762] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 09-16 02:37:38 config.py:806] Chunked prefill is enabled with max_num_batched_tokens=512.
+INFO 09-16 02:37:38 llm_engine.py:176] Initializing an LLM engine (v0.5.3.post1) with config: model='/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_rejected_llama3.1_instruct_dpo_2048', speculative_config=None, tokenizer='/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_rejected_llama3.1_instruct_dpo_2048', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None), seed=0, served_model_name=/mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_rejected_llama3.1_instruct_dpo_2048, use_v2_block_manager=False, enable_prefix_caching=False)
+INFO 09-16 02:37:39 model_runner.py:680] Starting to load model /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_rejected_llama3.1_instruct_dpo_2048...
+INFO 09-16 02:38:18 model_runner.py:692] Loading model weights took 14.9888 GB
+INFO 09-16 02:38:18 gpu_executor.py:102] # GPU blocks: 12310, # CPU blocks: 2048
+INFO 09-16 02:38:22 model_runner.py:980] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 09-16 02:38:22 model_runner.py:984] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 09-16 02:38:34 model_runner.py:1181] Graph capturing finished in 11 secs.
+model name: ta_rejected_llama3.1_instruct_dpo_2048
+model_path: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_rejected_llama3.1_instruct_dpo_2048
+use original template
+Data saved to ./data/arena-ta/model_answer/ta_rejected_llama3.1_instruct_dpo_2048.jsonl
+model_answers.keys() dict_keys(['Meta-Llama-3.1-8B-Instruct', 'gpt-4-1106-preview', 'ta_chosen_llama3.1_instruct_dpo_2048', 'ta_rejected_llama3.1_instruct_dpo_2048', 'ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', 'ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', 'ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', 'tulu_v2_8b_2048_default_template_dpo', 'tulu_v2_8b_2048_default_template_sft', 'uf_llama3.1_instruct_dpo_2048_job'])
+-----------------generate ta_rejected_llama3.1_instruct_dpo_2048 images -----------------
+images generated done.
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_rejected_llama3.1_instruct_dpo_2048', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+generate images ta_rejected_llama3.1_instruct_dpo_2048
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='image', first_game_only=False)
+Turning judgment results into battles...
+ta_chosen_llama3.1_instruct_dpo_2048 | score: 73.3  | 95% CI: (-1.4, 1.7)  | average #tokens: 706
+ta_rejected_llama3.1_instruct_dpo_2048 | score: 69.3  | 95% CI: (-1.5, 1.4)  | average #tokens: 663
+ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 60.7  | 95% CI: (-1.1, 1.6)  | average #tokens: 677
+ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 60.4  | 95% CI: (-1.8, 1.6)  | average #tokens: 672
+ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 | score: 57.7  | 95% CI: (-1.8, 1.5)  | average #tokens: 528
+gpt4_1106_preview              | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 0
+uf_llama3.1_instruct_dpo_2048_job | score: 49.6  | 95% CI: (-2.0, 2.2)  | average #tokens: 687
+Meta-Llama-3.1-8B-Instruct     | score: 46.3  | 95% CI: (-1.9, 2.2)  | average #tokens: 767
+tulu_v2_8b_2048_default_template_dpo | score:  9.6  | 95% CI: (-0.9, 0.8)  | average #tokens: 420
+tulu_v2_8b_2048_default_template_sft | score:  9.4  | 95% CI: (-0.9, 0.7)  | average #tokens: 472
+运行时间: -28774657.58 分钟
+----------------------------------------
+所有任务已完成。

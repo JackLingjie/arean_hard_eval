@@ -1,0 +1,51 @@
+执行参数: ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2
+文件 data/arena-ta/model_answer/ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2.jsonl 存在, 跳过gen_answer.py 执行。
+-----------------generate ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 images -----------------
+images generated done.
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images_with_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text_wtih_image', first_game_only=False)
+Turning judgment results into battles...
+运行时间: -28774990.35 分钟
+----------------------------------------
+执行参数: ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2
+文件 data/arena-ta/model_answer/ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2.jsonl 存在, 跳过gen_answer.py 执行。
+-----------------generate ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 images -----------------
+images generated done.
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images_with_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text_wtih_image', first_game_only=False)
+Turning judgment results into battles...
+运行时间: -28774993.40 分钟
+----------------------------------------
+执行参数: ta_chosen_llama3.1_instruct_dpo_2048
+文件 data/arena-ta/model_answer/ta_chosen_llama3.1_instruct_dpo_2048.jsonl 存在, 跳过gen_answer.py 执行。
+-----------------generate ta_chosen_llama3.1_instruct_dpo_2048 images -----------------
+images generated done.
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_chosen_llama3.1_instruct_dpo_2048', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images_with_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text_wtih_image', first_game_only=False)
+Turning judgment results into battles...
+运行时间: -28774996.55 分钟
+----------------------------------------
+执行参数: ta_rejected_llama3.1_instruct_dpo_2048
+文件 data/arena-ta/model_answer/ta_rejected_llama3.1_instruct_dpo_2048.jsonl 存在, 跳过gen_answer.py 执行。
+-----------------generate ta_rejected_llama3.1_instruct_dpo_2048 images -----------------
+images generated done.
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_rejected_llama3.1_instruct_dpo_2048', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images_with_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text_wtih_image', first_game_only=False)
+Turning judgment results into battles...
+运行时间: -28774999.63 分钟
+----------------------------------------
+执行参数: tulu_v2_8b_2048_default_template_dpo
+文件 data/arena-ta/model_answer/tulu_v2_8b_2048_default_template_dpo.jsonl 存在, 跳过gen_answer.py 执行。
+-----------------generate tulu_v2_8b_2048_default_template_dpo images -----------------
+images generated done.
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='tulu_v2_8b_2048_default_template_dpo', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images_with_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text_wtih_image', first_game_only=False)
+Turning judgment results into battles...
+运行时间: -28775002.60 分钟
+----------------------------------------
+所有任务已完成。

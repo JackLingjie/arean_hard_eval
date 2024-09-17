@@ -1,0 +1,11 @@
+model,score,rating_q025,rating_q975,CI,avg_tokens,date
+ta_chosen_llama3.1_instruct_dpo_2048,73.31,71.94,75.02,"(-1.37, +1.71)",706.0,2024-09-16
+ta_rejected_llama3.1_instruct_dpo_2048,69.34,67.85,70.73,"(-1.49, +1.39)",663.0,2024-09-16
+ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2,60.66,59.53,62.27,"(-1.13, +1.61)",677.0,2024-09-16
+ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2,60.4,58.6,61.99,"(-1.80, +1.59)",672.0,2024-09-16
+ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2,57.7,55.86,59.18,"(-1.84, +1.48)",528.0,2024-09-16
+gpt4_1106_preview,50.0,50.0,50.0,"(-0.00, +0.00)",0.0,2024-09-16
+uf_llama3.1_instruct_dpo_2048_job,49.61,47.59,51.8,"(-2.02, +2.19)",687.0,2024-09-16
+Meta-Llama-3.1-8B-Instruct,46.33,44.44,48.56,"(-1.89, +2.23)",767.0,2024-09-16
+tulu_v2_8b_2048_default_template_dpo,9.58,8.72,10.35,"(-0.86, +0.77)",420.0,2024-09-16
+tulu_v2_8b_2048_default_template_sft,9.44,8.51,10.16,"(-0.93, +0.72)",472.0,2024-09-16

@@ -1,0 +1,21 @@
+执行参数: ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2
+文件 data/arena-ta/model_answer/ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2.jsonl 存在, 跳过gen_answer.py 执行。
+-----------------generate gpt4_1106_preview images -----------------
+-----------------generate ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 images -----------------
+images generated done.
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images_with_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text_wtih_image', first_game_only=False)
+Turning judgment results into battles...
+运行时间: -28774980.86 分钟
+----------------------------------------
+执行参数: ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2
+文件 data/arena-ta/model_answer/ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2.jsonl 存在, 跳过gen_answer.py 执行。
+-----------------generate ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2 images -----------------
+images generated done.
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2', baseline_model='gpt-4-1106-preview')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-1106-preview, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-ta', judge_name='gpt-4o_images_with_text', baseline='gpt4_1106_preview', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output='text_wtih_image', first_game_only=False)
+Turning judgment results into battles...
+运行时间: -28774985.88 分钟
+----------------------------------------

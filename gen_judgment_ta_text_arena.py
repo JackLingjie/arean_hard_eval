@@ -146,7 +146,8 @@ if __name__ == "__main__":
     parser.add_argument("--setting-file", type=str, default="config/judge_config.yaml")
     parser.add_argument("--endpoint-file", type=str, default="config/api_config.yaml")
     parser.add_argument("--model-name", type=str, required=True)
-    parser.add_argument("--baseline-model", type=str, default="gpt4_1106_preview")
+    parser.add_argument("--baseline-model", type=str, default="gpt-4-1106-preview")
+    parser.add_argument("--bench-name", type=str, default="arena-ta")
     args = parser.parse_args()
     print(args)
 
@@ -155,7 +156,8 @@ if __name__ == "__main__":
     
     configs["model_list"] = [args.model_name]
     configs["baseline_model"] = args.baseline_model
-
+    # (NOTE): modify bench_name
+    configs["bench_name"] = args.bench_name
     # configs = make_config(args.setting_file)
 
 
@@ -181,7 +183,7 @@ if __name__ == "__main__":
         ref_answers = [ref_answers[model] for model in configs["ref_model"]]
     
     output_files = {}
-    output_dir = f"data/{configs['bench_name']}/model_judgment/{configs['judge_model']}"
+    output_dir = f"data/{configs['bench_name']}/model_judgment/{configs['judge_model']}_text"
     for model in models:
         output_files[model] = os.path.join(
             output_dir,
