@@ -16,8 +16,8 @@ gpt-4o:
     api_type: azure
     parallel: 8
 
-ta_rejected_llama3.1_instruct_2048_default_template_v2-1000:
-    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_rejected_llama3.1_instruct_2048_default_template_v2-1000
+ta_llama3_instruct_dpo_list_bsz1_trible_debug_v1-1500:
+    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/ta_llama3_instruct_dpo_list_bsz1_trible_debug_v1-1500
     endpoints: 
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
