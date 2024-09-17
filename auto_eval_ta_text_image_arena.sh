@@ -78,7 +78,7 @@ done
   
 # 最终的文件名  
 LOG_FILE="./eval_logs/${LOG_FILE}_ta_text_images.txt"   
-
+> $LOG_FILE
 # 遍历参数列表  
 for PARAM in "${PARAMS[@]}"; do  
     # 记录开始时间  

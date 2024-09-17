@@ -8,8 +8,8 @@ from prompt_config import system_template_image as system_prompt, user_template_
 from tqdm import tqdm
 from text2img import text_to_image
 import base64
-import logging 
-logging.basicConfig(filename='missing_images.log', level=logging.INFO)  
+# import logging 
+# logging.basicConfig(filename='missing_images.log', level=logging.INFO)  
 from utils import (
     load_questions,
     chat_completion_openai,
@@ -26,7 +26,7 @@ def encode_image(image_path):
             return base64.b64encode(image_file.read()).decode('utf-8')  
     else:  
         # Log the missing image path  
-        logging.info(f"Image not found: {image_path}")  
+        print(f"Image not found: {image_path}")  
         # Default base64 string for a 1x1 pixel transparent PNG image  
         return "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/wcAAgAB/1uXzRkAAAAASUVORK5CYII="
      
