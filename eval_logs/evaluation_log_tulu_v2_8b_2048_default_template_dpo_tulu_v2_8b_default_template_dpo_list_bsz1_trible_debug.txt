@@ -1,0 +1,2 @@
+执行参数: tulu_v2_8b_2048_default_template_dpo
+文件 data/arena-hard-v0.1/model_answer/tulu_v2_8b_2048_default_template_dpo.jsonl 存在，跳过 vllm 服务启动和 gen_answer.py 执行。
