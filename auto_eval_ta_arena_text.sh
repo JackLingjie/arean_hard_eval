@@ -2,36 +2,57 @@
 set -x
 # 参数列表  
 PARAMS=(  
+  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500"
+  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v4"
+  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v4_1500"
+  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v5"
+  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v5_1500"
+  "tulu_uf_ta_v2_2048_default_template_dpo_1000"
+  "tulu_uf_ta_v2_2048_default_template_dpo_1500"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v9"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v10"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v10_1500"
+  "tulu_v2_8b_2048_default_template_dpo"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v9"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v9-1500"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v11"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v11_1500"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v12"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v12_1500"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v13"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v13-1500"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v14"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v14-1500"
   # "Meta-Llama-3.1-8B-Instruct"
   # "tulu_v2_8b_2048_default_template_sft"
   # "uf_llama3.1_instruct_dpo_2048_job"
   # "ta_rejected_llama3.1_instruct_2048_default_template_v2"
   # "ta_v2_rejected_noneed_length_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
   # "ta_v2_rejected_noneed_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
-  "ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
+  # "ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
   # "ta_v2_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v5"
   # "ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v5"
   # "ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v4" 
   # "ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8" 
-  "ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
+  # "ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
   # "ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v3"
   # "ta_v2_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v4"
   # "glan_v2_8b_2048_default_template_9490"
   # "glanchat_v2_8b_2048_default_template_fullft_lr5e6_e3"
   # "ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8"
-  "ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
+  # "ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
   # "ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v3"
   # "Meta-Llama-3.1-8B-Instruct"
-  "ta_chosen_llama3.1_instruct_dpo_2048"
+  # "ta_chosen_llama3.1_instruct_dpo_2048"
   # "ta_chosen_tuluv2_dpo_2048_default_template"
-  "ta_rejected_llama3.1_instruct_dpo_2048"
+  # "ta_rejected_llama3.1_instruct_dpo_2048"
   # "tulu-2-7b"
   # "tulu-2-dpo-7b"
   # "tulu-dpo-llama3-8b-base"
   # "tulu-lora-sft-llama3-8b-base"
   # "tulu_lora_sft_base_template_8b"
   # "tulu_lora_sft_default_template_8b"
-  "tulu_v2_8b_2048_default_template_dpo"
+  # "tulu_v2_8b_2048_default_template_dpo"
   # "tulu_v2_8b_2048_default_template_sft"
   # "tulu_v2_8b_base_template_dpo"
   # "tulu_v2_8b_bsz64_default_template_dpo"
@@ -61,7 +82,7 @@ done
   
 # 最终的文件名  
 LOG_FILE="./eval_logs/${LOG_FILE}_ta_images.txt"   
-
+> $LOG_FILE
 # 遍历参数列表  
 for PARAM in "${PARAMS[@]}"; do  
     # 记录开始时间  
@@ -77,7 +98,7 @@ for PARAM in "${PARAMS[@]}"; do
     # 记录运行时间到日志文件  
   echo "运行时间: $elapsed_minutes 分钟" | tee -a $LOG_FILE  
   echo "----------------------------------------" | tee -a $LOG_FILE  
-  sleep 60
+  sleep 20
 done  
 
 echo "所有任务已完成。" | tee -a $LOG_FILE  
