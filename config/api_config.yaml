@@ -16,8 +16,8 @@ gpt-4o:
     api_type: azure
     parallel: 8
 
-tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v14:
-    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v14
+tulu_2048_default_template_trible_rejected_ta_dpo_1500:
+    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/tulu_2048_default_template_trible_rejected_ta_dpo_1500
     endpoints: 
         - api_base: http://localhost:8000/v1
           api_key: token-abc123

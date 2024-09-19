@@ -8,4 +8,4 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v14
+  - tulu_2048_default_template_trible_rejected_ta_dpo_1500
