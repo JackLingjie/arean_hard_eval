@@ -2,6 +2,31 @@
 set -x
 # 参数列表  
 PARAMS=(  
+  # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v9"
+  # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v9-1500"
+  # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v11"
+  # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v11_1500"
+  # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v12"
+  # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v12_1500"
+  # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v13"
+  # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v13-1500"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v14"
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v14-1500"
+  "tulu_2048_default_template_trible_uf_dpo"
+  "tulu_2048_default_template_trible_rejected_ta_dpo"
+  "tulu_2048_default_template_trible_chosen_ta_dpo_1500"
+  "tulu_2048_default_template_trible_chosen_ta_dpo"
+  "tulu_2048_default_template_trible_rejected_ta_dpo_1500"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v4"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v4_1500"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v5"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v5_1500"
+  # "tulu_uf_ta_v2_2048_default_template_dpo_1000"
+  # "tulu_uf_ta_v2_2048_default_template_dpo_1500"
+  # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v9"
+  # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v10"
+  # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v10_1500"
   # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v4-1500"
   # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v5_1500"
   # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v6_1500"
@@ -14,7 +39,7 @@ PARAMS=(
   # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v7"
   # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v8"
   # "tulu_v2_8b_2048_default_template_dpo"
-  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug"
+  # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug"
   # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v1"
   # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v1-1500"
   # "ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_v2_500"
@@ -86,7 +111,7 @@ done
   
 # 最终的文件名  
 LOG_FILE="./eval_logs/${LOG_FILE}.txt"   
-
+> $LOG_FILE
 # 遍历参数列表  
 for PARAM in "${PARAMS[@]}"; do  
     # 记录开始时间  
