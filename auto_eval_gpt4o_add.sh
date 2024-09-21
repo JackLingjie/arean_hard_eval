@@ -2,13 +2,24 @@
 set -x
 # 参数列表  
 PARAMS=(  
+    # "tulu_v2_8b_2048_default_template_sft"
+    # "ta_rejected_llama3.1_instruct_2048_default_template_v2"
+    # "ta_chosen_llama3.1_instruct_dpo_2048_v2_1000"
+    # "ta_chosen_llama3.1_instruct_dpo_2048_v2"
+
+    "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v2_1500"
     "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v14"
-    "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v14-1500"
-    "tulu_2048_default_template_trible_uf_dpo"
-    "tulu_2048_default_template_trible_rejected_ta_dpo"
-    "tulu_2048_default_template_trible_chosen_ta_dpo_1500"
-    "tulu_2048_default_template_trible_chosen_ta_dpo"
-    "tulu_2048_default_template_trible_rejected_ta_dpo_1500"
+    "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v11"
+    "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v11_1500"
+    # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v15"
+    # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v15_1500"
+    # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v14"
+    # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v14-1500"
+    # "tulu_2048_default_template_trible_uf_dpo"
+    # "tulu_2048_default_template_trible_rejected_ta_dpo"
+    # "tulu_2048_default_template_trible_chosen_ta_dpo_1500"
+    # "tulu_2048_default_template_trible_chosen_ta_dpo"
+    # "tulu_2048_default_template_trible_rejected_ta_dpo_1500"
   # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v9"
   # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v9-1500"
   # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v11"
@@ -136,5 +147,4 @@ for PARAM in "${PARAMS[@]}"; do
   echo "----------------------------------------" | tee -a $LOG_FILE  
   sleep 60
 done  
-
 echo "所有任务已完成。" | tee -a $LOG_FILE  
