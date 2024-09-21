@@ -1,7 +1,6 @@
 #!/bin/bash  
   
 set -x
-export CUDA_VISIBLE_DEVICES=2
 # 默认模型名称  
 DEFAULT_MODEL_NAME="Meta-Llama-3.1-8B-Instruct"  
   

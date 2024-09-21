@@ -24,10 +24,7 @@ print(f"model_path: {path_dir}/{model_name}")
 
 gen_kwargs_vllm = {
     "max_tokens": 2048,
-    "top_p": 0.9,
-    "top_k": 50,
     "temperature": 0.0,
-    "repetition_penalty": 1.0,
 }
 tokenizer = llm.get_tokenizer()
 if tokenizer.chat_template is None:
@@ -55,7 +52,13 @@ def convert_to_message(example):
 questions = questions.map(convert_to_message)  
 
 # 生成输出  
-outputs = llm.generate(questions['messages'], sampling_params)  
+encoded_inputs = tokenizer.batch_encode_plus(  
+    questions['messages'],  
+    add_special_tokens=False,
+) 
+input_ids = encoded_inputs['input_ids']  
+# 生成输出  
+outputs = llm.generate(prompt_token_ids=input_ids, sampling_params=sampling_params)
 outputs_text = [x.outputs[0].text for x in outputs]  
 token_lens = [len(x.outputs[0].token_ids) for x in outputs]
 # 移除现有的 'output' 列并添加新的 'output' 列  
