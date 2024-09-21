@@ -46,12 +46,13 @@ def generate_image(model_name, model_answers, data_dir):
     with tqdm(total=total_items, desc=f"Processing {model_name}") as progress_bar:
         with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:  
             futures = [executor.submit(process_item, model_answers[model_name][key], data_dir) for key in model_answers[model_name].keys()]  
-            for future in concurrent.futures.as_completed(futures):  
+            concurrent.futures.wait(futures)  
+            for future in futures:  
                 try:  
                     future.result()  
                 except Exception as exc:  
                     print(f'Generated an exception: {exc}')  
-                progress_bar.update(1)
+                progress_bar.update(1) 
 
 def generate_answer_images(model_answers, model_name, baseline_model, data_dir='data/images_arena'):
     if os.path.exists(os.path.join(data_dir, baseline_model)) == False:

@@ -19,7 +19,7 @@ fi
 echo "Text judge ${MODEL_NAME} Begin"
 python gen_judgment_ta_text_arena.py --model-name ${MODEL_NAME} 
 
-python show_result_ta.py  --output text --judge-name gpt-4o_text --bench-name arena-ta
+# python show_result_ta.py  --output text --judge-name gpt-4o_text --bench-name arena-ta
 
 echo "IMAGE judge ${MODEL_NAME} Begin"
 
@@ -27,6 +27,6 @@ python gen_images_arena.py --model_name ${MODEL_NAME}
 
 python gen_judgment_ta_image_arena.py --model-name ${MODEL_NAME} 
 
-python show_result_ta.py  --output image --judge-name gpt-4o_images --bench-name arena-ta
+# python show_result_ta.py  --output image --judge-name gpt-4o_images --bench-name arena-ta
 
 echo "IMAGE judge ${MODEL_NAME} Done"
