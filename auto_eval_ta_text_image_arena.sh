@@ -52,6 +52,18 @@ PARAMS=(
   "ta_rejected_llama3.1_instruct_2048_default_template_v2"
   "ta_chosen_llama3.1_instruct_dpo_2048_v2_1000"
   "ta_chosen_llama3.1_instruct_dpo_2048_v2"
+
+  # "uf_llama3.1_instruct_dpo_2048_trible"
+  # "uf_llama3.1_instruct_dpo_2048_trible_ta_chosen"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v6"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v9"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v10"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v11"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v15"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v15_1500"
+  # "ta_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
+
+
   # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500"
   # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v4"
   # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v4_1500"
@@ -157,7 +169,7 @@ for PARAM in "${PARAMS[@]}"; do
     # 记录运行时间到日志文件  
   echo "运行时间: $elapsed_minutes 分钟" | tee -a $LOG_FILE  
   echo "----------------------------------------" | tee -a $LOG_FILE  
-  sleep 60
+  sleep 20
 done  
 
 echo "所有任务已完成。" | tee -a $LOG_FILE  
