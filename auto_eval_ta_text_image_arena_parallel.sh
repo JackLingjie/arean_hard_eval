@@ -2,6 +2,11 @@
 set -x
 # 参数列表  
 PARAMS=(  
+  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v2"
+  "tulu_2048_default_template_trible_rejected_ta_dpo"
+  "tulu_2048_default_template_trible_chosen_ta_dpo"
+  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v5_1500"
+  "uf_llama3.1_instruct_dpo_2048_trible_ta_rejected"
   # "Meta-Llama-3.1-8B-Instruct"
   # "ta_rejected_llama3.1_instruct_2048_default_template_v2-1000"
   # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v10"
@@ -53,16 +58,16 @@ PARAMS=(
   # "ta_chosen_llama3.1_instruct_dpo_2048_v2_1000"
   # "ta_chosen_llama3.1_instruct_dpo_2048_v2"
 
-  "uf_llama3.1_instruct_dpo_2048_trible"
-  "uf_llama3.1_instruct_dpo_2048_trible_ta_chosen"
-  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v6"
-  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v9"
-  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v10"
-  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v11"
-  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v15"
-  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v15_1500"
-  "ta_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
-
+  # "uf_llama3.1_instruct_dpo_2048_trible"
+  # "uf_llama3.1_instruct_dpo_2048_trible_ta_chosen"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v6"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v9"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v10"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v11"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v15"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v15_1500"
+  # "ta_chosen_tuluv2_dpo_2048_default_template_bsz1_acc8_v2"
+  "Meta-Llama-3.1-8B" 
   # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500"
   # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v4"
   # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v4_1500"
