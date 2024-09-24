@@ -13,7 +13,7 @@ MODEL_NAME=${1:-$DEFAULT_MODEL_NAME}
 if [ -f "data/arena-ta/model_answer/${MODEL_NAME}.jsonl" ]; then  
   echo "文件 data/arena-ta/model_answer/${MODEL_NAME}.jsonl 存在, 跳过gen_answer.py 执行。"  
 else  
-  python gen_answer_ta_arena.py --model-name ${MODEL_NAME} 
+  python gen_answer_ta_arena_large.py--model-name ${MODEL_NAME} 
 fi 
 # echo "Text judge ${MODEL_NAME} Begin"
 # python gen_judgment_ta_text_arena.py --model-name ${MODEL_NAME} 
