@@ -2,12 +2,16 @@
 set -x
 # 参数列表  
 PARAMS=(  
+  "gemma-2-27b-it"
+  "gemma-2-9b-it"
+  "tulu-2-dpo-70b"
+  "Qwen2-72B-Instruct"
   # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v2"
   # "tulu_2048_default_template_trible_rejected_ta_dpo"
   # "tulu_2048_default_template_trible_chosen_ta_dpo"
-  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v5_1500"
-  "uf_llama3.1_instruct_dpo_2048_trible_ta_rejected"
-  "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v3"
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v5_1500"
+  # "uf_llama3.1_instruct_dpo_2048_trible_ta_rejected"
+  # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v3"
   # "Meta-Llama-3.1-8B-Instruct"
   # "ta_rejected_llama3.1_instruct_2048_default_template_v2-1000"
   # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v10"
