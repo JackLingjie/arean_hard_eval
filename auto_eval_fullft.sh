@@ -5,7 +5,8 @@ set -x
 PARAMS=(  
   # "glanchat_v2.1_8b_2048_default_template,fullft_lr5e6_e3,checkpoint-8500"  
     # "glanchat_v2.1_8b_2048_default_template,fullft_lr5e6_e3,checkpoint-9918"
-    "magpie_8b_2048_default_template,fullft_lr5e6_e3,checkpoint-8500"
+    # "magpie_8b_2048_default_template,fullft_lr5e6_e3,checkpoint-8500"
+      "magpie_8b_2048_default_template_dpo,fullft,dpo,checkpoint-2756"
   # "glan_v2_glanchat_v2_8b_2048_default_template,fullft_lr5e6_e3_fx,checkpoint-33000"  
   # "Meta-Llama-3.1-8B-Instruct,fullft_lr5e6_e3,checkpoint-8500"  
   # "ta_chosen_llama3.1_instruct_dpo_2048,fullft_lr5e6_e3,checkpoint-8500"  
@@ -34,12 +35,12 @@ for PARAM in "${PARAMS[@]}"; do
   start_time=$(date +%s)  
   
   # 将参数分割为模型名称、超参数和checkpoint  
-  IFS=',' read -r model_name hyperparameter checkpoint <<< "$PARAM"  
+  IFS=',' read -r model_name hyperparameter stage checkpoint <<< "$PARAM"  
   
-  echo "执行参数: $model_name, $hyperparameter, $checkpoint" | tee -a $LOG_FILE  
+  echo "执行参数: $model_name, $hyperparameter, $stage, $checkpoint" | tee -a $LOG_FILE    
   
   # 调用带参数的脚本  
-  bash eval_script/arean_hard_fullft.sh "$model_name" "$hyperparameter" "$checkpoint" | tee -a $LOG_FILE  
+  bash eval_script/arean_hard_fullft.sh "$model_name" "$hyperparameter" "$stage" "$checkpoint" | tee -a $LOG_FILE  
   
   # 记录结束时间  
   end_time=$(date +%s)  

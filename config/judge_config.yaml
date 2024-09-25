@@ -22,4 +22,4 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
-  - tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_v11_1500
+  - MagpieLM-8B-Chat-v0.1

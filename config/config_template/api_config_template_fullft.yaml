@@ -18,7 +18,7 @@ gpt-4o:
 
 {{SAVE_MODEL_ID}}:
 
-    model_name: /mnt/lingjiejiang/textual_aesthetics/exp/saves/{{MODEL_NAME}}/{{HYPERPARAMETER}}/sft/{{CHECKPOINT}}  
+    model_name: /mnt/lingjiejiang/textual_aesthetics/exp/saves/{{MODEL_NAME}}/{{HYPERPARAMETER}}/{{STAGE}}/{{CHECKPOINT}}  
     endpoints: 
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
