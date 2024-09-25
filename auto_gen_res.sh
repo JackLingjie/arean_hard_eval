@@ -3,13 +3,14 @@ set -x
 # 参数列表  
 PARAMS=(  
     # "Qwen2-7B-Instruct"
-    "Qwen2-72B-Instruct"
+    # "Qwen2-72B-Instruct"
     # "Phi-3-medium-4k-instruct"
     # "Phi-3-small-8k-instruct"
     # "Meta-Llama-3.1-70B-Instruct"
     # "WizardLM-70B-V1.0"
     # "WizardLM-13B-V1.2"
-    "tulu-2-dpo-70b"
+    # "tulu-2-dpo-70b"
+      "Meta-Llama-3.1-70B-Instruct"
     # "tulu-2-dpo-13b"
     # "tulu-2-dpo-7b"
     # "Yi-34B-Chat"
