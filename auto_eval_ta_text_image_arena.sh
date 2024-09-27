@@ -17,7 +17,7 @@ PARAMS=(
     # "tulu_2048_default_template_trible_rejected_ta_dpo_1500"
     # "tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug"
     # "Meta-Llama-3.1-70B-Instruct"
-    "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v3"
+    # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v3"
     "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v3_1500"
     # "vicuna-13b-v1.5"
     # "vicuna-33b-v1.3"

@@ -1,0 +1,7 @@
+model,good_idx_image,same_idx_image,loss_idx_image,sum_image,good_idx_text,same_idx_text,loss_idx_text,sum_text
+ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500_sample.json,29,18,3,50,15,27,8,50
+tulu_v2_8b_default_template_dpo_list_bsz1_trible_debug_sample.json,21,22,7,50,7,17,26,50
+Qwen2-72B-Instruct_sample.json,8,26,16,50,6,17,27,50
+Meta-Llama-3.1-8B-Instruct_sample.json,15,23,12,50,9,23,18,50
+Meta-Llama-3.1-70B-Instruct_sample.json,14,31,5,50,10,28,12,50
+tulu-2-dpo-70b_sample.json,7,14,29,50,2,2,46,50

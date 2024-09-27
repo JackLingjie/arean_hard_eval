@@ -7,3 +7,9 @@ data/alpaca/model_judgment/gpt-4o_images
 __pycache__/
 data/ta_judges/
 data/images_arena/
+label_data.zip
+sample_image.zip
+label_data/
+querys.csv
+ta_judges.zip
+annotation/
