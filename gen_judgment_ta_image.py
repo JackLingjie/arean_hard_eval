@@ -182,7 +182,7 @@ def judgment(**args):
                     {
                         "image":base64_image1
                     },
-                    {"type": "text", "text": "<|The Image of Assistant B's Answer Answer|>\n"},
+                    {"type": "text", "text": "<|The Image of Assistant B's Answer|>\n"},
                     {
                         "image":base64_image2
                     }

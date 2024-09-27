@@ -12,6 +12,8 @@ PARAMS=(
     # "tulu-2-dpo-70b"
       # "Meta-Llama-3.1-70B-Instruct"
     "ta_llama3_instruct_70B_zero3_dpo_list_bsz1_trible_debug_v1"
+    "ta_llama3_instruct_70B_zero3_dpo_list_bsz1_trible_debug_v1_1500"
+    "ta_llama3_instruct_70B_zero3_dpo_list_bsz1_trible_debug_v1_1000"
     # "tulu-2-dpo-13b"
     # "tulu-2-dpo-7b"
     # "Yi-34B-Chat"

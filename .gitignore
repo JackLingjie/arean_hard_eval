@@ -13,3 +13,5 @@ label_data/
 querys.csv
 ta_judges.zip
 annotation/
+data/label_data_idx.zip
+data/label_data_idx
