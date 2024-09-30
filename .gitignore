@@ -15,3 +15,5 @@ ta_judges.zip
 annotation/
 data/label_data_idx.zip
 data/label_data_idx
+data/label_data_70B_idx.zip
+data/label_data_70B_idx/
