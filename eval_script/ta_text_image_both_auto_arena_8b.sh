@@ -22,10 +22,11 @@ python gen_judgment_ta_text_arena.py --model-name ${MODEL_NAME} --baseline-model
 
 echo "IMAGE judge ${MODEL_NAME} Begin"
 
-python gen_images_arena.py --model_name ${MODEL_NAME} 
+python gen_images_arena.py --model_name ${MODEL_NAME} --baseline_model ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500
 
 python gen_judgment_ta_image_arena.py --model-name ${MODEL_NAME} --baseline-model ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500
-
+# python gen_judgment_ta_image_arena.py --model-name Meta-Llama-3.1-8B-Instruct --baseline-model ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500
+# python gen_images_arena.py --model_name ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500
 # python show_result_ta.py  --output image --judge-name gpt-4o_images --bench-name arena-ta
 
 echo "IMAGE judge ${MODEL_NAME} Done"

@@ -263,3 +263,88 @@ Traceback (most recent call last):
   File "/home/v-lingjiang/project/arean_hard_eval/gpt4o.py", line 3, in <module>
     from azure.identity import DefaultAzureCredential, get_bearer_token_provider
 ModuleNotFoundError: No module named 'azure'
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='Meta-Llama-3.1-8B-Instruct', baseline_model='ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500')
+judge model: gpt-4o, baseline: True, baseline model: ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+generate images Meta-Llama-3.1-8B-Instruct
+12 number of existing judgments
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml', model_name='Meta-Llama-3.1-8B-Instruct', baseline_model='ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500')
+judge model: gpt-4o, baseline: True, baseline model: ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+generate images Meta-Llama-3.1-8B-Instruct
+-----------------generate ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500 images -----------------
+Generated an exception: [Errno 17] File exists: '/home/v-lingjiang/project/arean_hard_eval/data/images/original_temp'
+Generated an exception: [Errno 17] File exists: '/home/v-lingjiang/project/arean_hard_eval/data/images/ta_llama3_instruct_dpo_list_bsz1_trible_debug_v2-1500'
+-----------------generate Meta-Llama-3.1-8B-Instruct images -----------------
+Generated an exception: [Errno 17] File exists: '/home/v-lingjiang/project/arean_hard_eval/data/images/Meta-Llama-3.1-8B-Instruct'
+images generated done.
+12 number of existing judgments
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}
+Error code: 400 - {'error': {'code': 'BadRequest', 'message': 'Invalid image data.', 'param': None, 'type': None}}

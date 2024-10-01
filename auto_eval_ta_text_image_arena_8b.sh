@@ -2,10 +2,10 @@
 set -x
 # 参数列表  
 PARAMS=(  
-  "Meta-Llama-3.1-8B-Instruct"
-  "Meta-Llama-3.1-70B-Instruct"
+  # "Meta-Llama-3.1-8B-Instruct"
+  # "Meta-Llama-3.1-70B-Instruct"
   "Qwen2-72B-Instruct"
-  "tulu-2-dpo-70b"
+  # "tulu-2-dpo-70b"
   # 添加更多参数  
 )  
 
