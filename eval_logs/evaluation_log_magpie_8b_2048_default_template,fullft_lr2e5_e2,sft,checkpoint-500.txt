@@ -1,0 +1,3 @@
+执行参数: magpie_8b_2048_default_template, fullft_lr2e5_e2, sft, checkpoint-500
+magpie_8b_2048_default_template_checkpoint-500
+等待 vllm 服务启动...
