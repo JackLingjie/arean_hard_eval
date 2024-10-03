@@ -22,4 +22,4 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
-  - magpie_8b_2048_default_template_checkpoint-536
+  - Llama-3-8B-Magpie-Align-SFT-v0.1
