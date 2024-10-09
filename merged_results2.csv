@@ -1,0 +1,5 @@
+model,good_idx_image,same_idx_image,loss_idx_image,sum_image,good_idx_text,same_idx_text,loss_idx_text,sum_text
+Qwen2-72B-Instruct_sample.json,34,10,6,50,36,9,5,50
+Meta-Llama-3.1-8B-Instruct_sample.json,29,13,8,50,27,21,2,50
+Meta-Llama-3.1-70B-Instruct_sample.json,24,15,11,50,10,37,3,50
+tulu-2-dpo-70b_sample.json,37,12,1,50,44,4,2,50
