@@ -16,8 +16,8 @@ gpt-4o:
     api_type: azure
     parallel: 8
 
-Llama-3-8B-Magpie-Align-SFT-v0.1:
-    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/Llama-3-8B-Magpie-Align-SFT-v0.1
+MagpieLM-8B-SFT-v0.1:
+    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/MagpieLM-8B-SFT-v0.1
     endpoints: 
         - api_base: http://localhost:8000/v1
           api_key: token-abc123

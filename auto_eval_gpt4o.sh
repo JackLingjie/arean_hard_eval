@@ -2,6 +2,7 @@
 set -x
 # 参数列表  
 PARAMS=(  
+  "MagpieLM-8B-SFT-v0.1"
   # "Meta-Llama-3.1-8B"
   # "Meta-Llama-3.1-8B-Instruct"
   # "ta_chosen_llama3.1_instruct_dpo_2048"
@@ -9,14 +10,14 @@ PARAMS=(
   # "ta_rejected_llama3.1_instruct_dpo_2048"
   # "tulu-2-7b"
   # "tulu-2-dpo-7b"
-  "tulu-dpo-llama3-8b-base"
-  "tulu-lora-sft-llama3-8b-base"
-  "tulu_lora_sft_base_template_8b"
+  # "tulu-dpo-llama3-8b-base"
+  # "tulu-lora-sft-llama3-8b-base"
+  # "tulu_lora_sft_base_template_8b"
   # "tulu_lora_sft_default_template_8b"
   # "tulu_v2_8b_2048_default_template_dpo"
   # "tulu_v2_8b_2048_default_template_sft"
-  "tulu_v2_8b_base_template_dpo"
-  "tulu_v2_8b_bsz64_default_template_dpo"
+  # "tulu_v2_8b_base_template_dpo"
+  # "tulu_v2_8b_bsz64_default_template_dpo"
   # "wildchat_v1_8b_2048_default_template"
   # "wildchat_v1_8b_2048_default_template_4000"
   # "wildchat_v2_8b_2048_default_template_3796"

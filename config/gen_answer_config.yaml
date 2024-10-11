@@ -8,4 +8,4 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - Llama-3-8B-Magpie-Align-SFT-v0.1
+  - MagpieLM-8B-SFT-v0.1
