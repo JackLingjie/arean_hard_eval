@@ -2,7 +2,17 @@
 set -x
 # 参数列表  
 PARAMS=(  
-  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v1_mi300"
+      "Mistral-7B-Instruct-v0.3_ta_rejected_dpo_2048_v2"
+      "Mistral-7B-Instruct-v0.3_tapo_v2_1500"
+      "Mistral-7B-Instruct-v0.3_ta_rejected_dpo_2048_v2_1000"
+    # "Qwen2-7B-Instruct_tapo_v2"
+    # "ta_rejected_Qwen2-7B-Instruct_2048_v2"
+    # "ta_rejected_Yi-1.5-9B-Chat_2048_v2"
+    # "ta_Yi-1.5-9B-Chat_tapo_v2_1000"
+      # "Qwen2-7B-Instruct_tapo_v2_1500"
+      # "Mistral-7B-Instruct-v0.3"
+      # "ta_Yi-1.5-9B-Chat_tapo_v2_1500"s
+  # "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v1_mi300"
   # "Llama-3-8B-Magpie-Align-SFT-v0.1"
   # "ta_rejected_noneed_length_llama3.1_instruct_2048_default_template_v2_1500"
   # "ta_rejected_llama3.1_instruct_dpo_2048_default_template-1000"

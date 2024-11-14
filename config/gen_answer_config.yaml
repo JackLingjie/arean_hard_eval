@@ -8,4 +8,4 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - Phi-3-small-8k-instruct
+  - Mistral-7B-Instruct-v0.3

@@ -22,4 +22,4 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
-  - Phi-3-small-8k-instruct
+  - Mistral-7B-Instruct-v0.3
