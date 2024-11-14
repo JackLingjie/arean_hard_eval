@@ -10,11 +10,11 @@ API_INFOS = [
         "speed": 150,
         "model": "gpt-4o"
     },
-    # {
-    #     "endpoints": "https://conversationhubeastus2.openai.azure.com/",
-    #     "speed": 150,
-    #     "model": "gpt-4o"
-    # },
+    {
+        "endpoints": "https://conversationhubeastus2.openai.azure.com/",
+        "speed": 150,
+        "model": "gpt-4o"
+    },
     {
         "endpoints": "https://conversationhubnorthcentralus.openai.azure.com/",
         "speed": 150,
@@ -25,26 +25,26 @@ API_INFOS = [
         "speed": 150,
         "model": "gpt-4o"
     },
-    # {
-    #     "endpoints": "https://conversationhubwestus.openai.azure.com/",
-    #     "speed": 150,
-    #     "model": "gpt-4o"
-    # },
     {
-        "endpoints": "https://conversationhubwestus3.openai.azure.com/",
+        "endpoints": "https://conversationhubwestus.openai.azure.com/",
         "speed": 150,
         "model": "gpt-4o"
     },
+    # {
+    #     "endpoints": "https://conversationhubwestus3.openai.azure.com/",
+    #     "speed": 150,
+    #     "model": "gpt-4o"
+    # },
     {
         "endpoints": "https://readineastus.openai.azure.com/",
         "speed": 150,
         "model": "gpt-4o"
     },
-    # {
-    #     "endpoints": "https://readineastus2.openai.azure.com/",
-    #     "speed": 150,
-    #     "model": "gpt-4o"
-    # }
+    {
+        "endpoints": "https://readineastus2.openai.azure.com/",
+        "speed": 150,
+        "model": "gpt-4o"
+    }
 ]
 
 

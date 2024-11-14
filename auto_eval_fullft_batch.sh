@@ -4,6 +4,12 @@ set -x
   
 # 参数列表，每个元素包含model_name, hyperparameter, stage, 和 checkpoint，用逗号分隔  
 PARAMS=(  
+    "glan_dpo_v0.1_8b_2048_default_template_dpo_glanchatv2.1_ckpt9918,fullft,dpo_epoch2,checkpoint-1168"
+    "magpie_dpo_v0.1_8b_2048_default_template_dpo_glanchatv2.1_ckpt9918,fullft,dpo_lr5e7,checkpoint-1529"
+    "magpie_dpo_v0.1_8b_2048_default_template_dpo_glanchatv2.1_ckpt9918,fullft,dpo_lr2e6,checkpoint-1529"
+    "magpie_dpo_v0.1_8b_2048_default_template_dpo_glanchatv2.1_ckpt9918,fullft,dpo_lr1e6,checkpoint-1529"
+    "magpie_dpo_v0.1_8b_2048_default_template_dpo_glanchatv2.1_ckpt9918,fullft,dpo_bsz256,checkpoint-764"
+    "magpie_dpo_v0.1_8b_2048_default_template_dpo_glanchatv2.1_ckpt9918,fullft,dpo_bsz64,checkpoint-3059"
   # "glanchat_v2.1_8b_2048_default_template,fullft_lr5e6_e3,sft,checkpoint-8500"  
   # "glanchat_v2.1_8b_2048_default_template,fullft_lr5e6_e3,sft,checkpoint-9918"  
   # "magpie_8b_2048_default_template/fullft_lr5e6_e3/sft/checkpoint-8500"  
@@ -12,7 +18,10 @@ PARAMS=(
   # "glanchat_v2.1_8b_2048_default_template,fullft_lr5e6_e3,sft,checkpoint-9918"
   # "magpie_8b_2048_default_template_dpo,fullft,dpo,checkpoint-2756"
   # "magpie_8b_2048_default_template,fullft_lr2e5_e2,sft,checkpoint-500"
-  "magpie_8b_2048_default_template,fullft_lr2e5_e2,sft,checkpoint-536"
+  # "magpie_8b_2048_default_template,fullft_lr2e5_e2,sft,checkpoint-536"
+  # "magpie_dpo_v0.1_8b_2048_default_template_dpo_ckpt536,fullft,dpo,checkpoint-1529"
+  # "glan_dpo_v0.1_8b_2048_default_template_dpo_glanchatv2.1_ckpt9918,fullft,dpo,checkpoint-584"
+  # "magpie_dpo_v0.1_8b_2048_default_template_dpo_glanchatv2.1_ckpt9918,fullft,dpo,checkpoint-1529"
   # "glan_v2_glanchat_v2_8b_2048_default_template,fullft_lr5e6_e3_fx,sft,checkpoint-33000"  
   # "Meta-Llama-3.1-8B-Instruct,fullft_lr5e6_e3,sft,checkpoint-8500"  
   # "ta_chosen_llama3.1_instruct_dpo_2048,fullft_lr5e6_e3,sft,checkpoint-8500"  

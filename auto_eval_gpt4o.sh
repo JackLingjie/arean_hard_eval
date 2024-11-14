@@ -2,7 +2,8 @@
 set -x
 # 参数列表  
 PARAMS=(  
-  "MagpieLM-8B-SFT-v0.1"
+  # "MagpieLM-8B-SFT-v0.1"
+  "Phi-3-small-8k-instruct"
   # "Meta-Llama-3.1-8B"
   # "Meta-Llama-3.1-8B-Instruct"
   # "ta_chosen_llama3.1_instruct_dpo_2048"

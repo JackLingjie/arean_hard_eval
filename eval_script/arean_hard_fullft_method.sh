@@ -26,7 +26,8 @@ FILES=(
   "config/gen_answer_config.yaml"  
   "config/judge_config.yaml"  
 )  
-SAVE_MODEL_ID="${MODEL_NAME}_${CHECKPOINT}"
+SAVE_MODEL_ID="${MODEL_NAME}_${STAGE}_${CHECKPOINT}"
+# SAVE_MODEL_ID="${MODEL_NAME}_${CHECKPOINT}"
 echo $SAVE_MODEL_ID
 
 # 遍历模板文件列表并生成新的文件  

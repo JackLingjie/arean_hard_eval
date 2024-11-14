@@ -8,4 +8,4 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - MagpieLM-8B-SFT-v0.1
+  - Phi-3-small-8k-instruct

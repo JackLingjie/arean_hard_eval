@@ -40,7 +40,7 @@ if [ -f "data/arena-hard-v0.1/model_answer/${MODEL_NAME}.jsonl" ]; then
   echo "文件 data/arena-hard-v0.1/model_answer/${MODEL_NAME}.jsonl 存在，跳过 vllm 服务启动和 gen_answer.py 执行。"  
 else  
   # 继续执行后续的指令  
-  nohup vllm serve /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/${MODEL_NAME} --dtype auto --api-key token-abc123 > vllm_service.log 2>&1 &  
+  nohup vllm serve /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/${MODEL_NAME} --dtype auto --api-key token-abc123 --trust-remote-code > vllm_service.log 2>&1 &  
     
   # 获取 vllm 服务的进程 ID (PID)  
   VLLM_PID=$!  

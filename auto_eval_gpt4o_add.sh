@@ -2,7 +2,8 @@
 set -x
 # 参数列表  
 PARAMS=(  
-  "Llama-3-8B-Magpie-Align-SFT-v0.1"
+  "ta_llama3_instruct_dpo_list_bsz1_trible_debug_v1_mi300"
+  # "Llama-3-8B-Magpie-Align-SFT-v0.1"
   # "ta_rejected_noneed_length_llama3.1_instruct_2048_default_template_v2_1500"
   # "ta_rejected_llama3.1_instruct_dpo_2048_default_template-1000"
     # "ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_1000"
