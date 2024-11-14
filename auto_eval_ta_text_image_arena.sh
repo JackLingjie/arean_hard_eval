@@ -2,7 +2,11 @@
 set -x
 # 参数列表  
 PARAMS=(  
-    "Phi-3-small-8k-instruct"
+      "Qwen2-7B-Instruct_tapo_v2"
+      "ta_rejected_Qwen2-7B-Instruct_2048_v2"
+      "ta_rejected_Yi-1.5-9B-Chat_2048_v2"
+      "ta_Yi-1.5-9B-Chat_tapo_v2_1000"
+    # "Phi-3-small-8k-instruct"
     # "ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_1000"
     # "ta_rejected_tuluv2_dpo_2048_default_template_bsz1_acc8_1500"
   # "ta_rejected_noneed_length_llama3.1_instruct_2048_default_template_v2"
