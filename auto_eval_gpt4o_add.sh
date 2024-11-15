@@ -2,9 +2,12 @@
 set -x
 # 参数列表  
 PARAMS=(  
-      "Mistral-7B-Instruct-v0.3_ta_rejected_dpo_2048_v2"
-      "Mistral-7B-Instruct-v0.3_tapo_v2_1500"
-      "Mistral-7B-Instruct-v0.3_ta_rejected_dpo_2048_v2_1000"
+      "Mistral-7B-Instruct-v0.3_ta_rejected_dpo_2048_v2_500"
+      "Mistral-7B-Instruct-v0.3_tapo_v2_2000"
+      "Mistral-7B-Instruct-v0.3_tapo_v2_2124"
+      # "Mistral-7B-Instruct-v0.3_ta_rejected_dpo_2048_v2"
+      # "Mistral-7B-Instruct-v0.3_tapo_v2_1500"
+      # "Mistral-7B-Instruct-v0.3_ta_rejected_dpo_2048_v2_1000"
     # "Qwen2-7B-Instruct_tapo_v2"
     # "ta_rejected_Qwen2-7B-Instruct_2048_v2"
     # "ta_rejected_Yi-1.5-9B-Chat_2048_v2"
