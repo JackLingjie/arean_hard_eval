@@ -2,8 +2,11 @@
 set -x
 # 参数列表  
 PARAMS=(  
-  "Qwen2-7B-Instruct_tapo_v2_1500"
-  "ta_Yi-1.5-9B-Chat_tapo_v2_1500"
+      # "Mistral-7B-Instruct-v0.3_ta_rejected_dpo_2048_v2"
+      "Mistral-7B-Instruct-v0.3_tapo_v2_1500"
+      "Mistral-7B-Instruct-v0.3_ta_rejected_dpo_2048_v2_1000"
+  # "Qwen2-7B-Instruct_tapo_v2_1500"
+  # "ta_Yi-1.5-9B-Chat_tapo_v2_1500"
   # "gemma-2-27b-it"
   # "gemma-2-9b-it"
   # "tulu-2-dpo-70b"
