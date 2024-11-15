@@ -8,4 +8,4 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - Mistral-7B-Instruct-v0.3
+  - Mistral-7B-Instruct-v0.3_tapo_v2_2124

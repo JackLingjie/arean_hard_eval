@@ -16,8 +16,8 @@ gpt-4o:
     api_type: azure
     parallel: 8
 
-Mistral-7B-Instruct-v0.3:
-    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/Mistral-7B-Instruct-v0.3
+Mistral-7B-Instruct-v0.3_tapo_v2_2124:
+    model_name: /mnt/lingjiejiang/textual_aesthetics/model_checkpoint/sft_merge_checkpoints/Mistral-7B-Instruct-v0.3_tapo_v2_2124
     endpoints: 
         - api_base: http://localhost:8000/v1
           api_key: token-abc123
