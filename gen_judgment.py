@@ -142,8 +142,10 @@ if __name__ == "__main__":
     if configs["regex_pattern"]:
         pattern = re.compile(configs["regex_pattern"])
 
-    question_file = os.path.join("data", configs["bench_name"], "question.jsonl")
-    answer_dir = os.path.join("data", configs["bench_name"], "model_answer")
+    # question_file = os.path.join("data", configs["bench_name"], "question.jsonl")
+    question_file = os.path.join("data/arena-hard-v0.1/question.jsonl")
+    # answer_dir = os.path.join("data", configs["bench_name"], "model_answer")
+    answer_dir = os.path.join(configs["bench_name"], "model_answer")
     ref_answer_dir = os.path.join("data", configs["bench_name"], "reference_answer")
 
     questions = load_questions(question_file)
@@ -158,7 +160,8 @@ if __name__ == "__main__":
         ref_answers = [ref_answers[model] for model in configs["ref_model"]]
     
     output_files = {}
-    output_dir = f"data/{configs['bench_name']}/model_judgment/{configs['judge_model']}"
+    # output_dir = f"data/{configs['bench_name']}/model_judgment/{configs['judge_model']}"
+    output_dir = f"{configs['bench_name']}/model_judgment/{configs['judge_model']}"
     for model in models:
         output_files[model] = os.path.join(
             output_dir,

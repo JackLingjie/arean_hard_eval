@@ -118,7 +118,8 @@ def get_battles_from_judgment(judge_name, first_game_only=False, WEIGHT=3, basel
     
     print("Turning judgment results into battles...")
 
-    directory = f"data/arena-hard-v0.1/model_judgment/{judge_name}"
+    # directory = f"data/arena-hard-v0.1/model_judgment/{judge_name}"
+    directory = f"/mnt/lingjiejiang/reason/results/arena_hard/model_judgment/{judge_name}"
     assert os.path.exists(directory)
     for file in tqdm(glob(f"{directory}/*jsonl")):
         df = pd.read_json(file, lines=True)

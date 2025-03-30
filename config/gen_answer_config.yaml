@@ -8,4 +8,4 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - Mistral-7B-Instruct-v0.3_tapo_v2_2124
+  - think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_llama_think_t0.6_mt35000_seed1234

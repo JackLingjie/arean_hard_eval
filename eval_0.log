@@ -1,0 +1,688 @@
+INFO 03-24 12:02:33 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 12:02:40 config.py:542] This model supports multiple tasks: {'embed', 'score', 'classify', 'reward', 'generate'}. Defaulting to 'generate'.
+WARNING 03-24 12:02:40 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-24 12:02:40 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-24 12:02:40 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 12:02:42 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 12:02:43 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/...
+INFO 03-24 12:05:04 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 12:05:11 config.py:542] This model supports multiple tasks: {'score', 'classify', 'generate', 'reward', 'embed'}. Defaulting to 'generate'.
+WARNING 03-24 12:05:11 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-24 12:05:11 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-24 12:05:11 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 12:05:13 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 12:05:13 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/...
+INFO 03-24 12:05:19 model_runner.py:1115] Loading model weights took 2.9105 GB
+INFO 03-24 12:05:20 worker.py:267] Memory profiling takes 0.41 seconds
+INFO 03-24 12:05:20 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-24 12:05:20 worker.py:267] model weights take 2.91GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.39GiB; the rest of the memory reserved for KV Cache is 66.93GiB.
+INFO 03-24 12:05:20 executor_base.py:110] # CUDA blocks: 156665, # CPU blocks: 9362
+INFO 03-24 12:05:20 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 19.12x
+INFO 03-24 12:05:24 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-24 12:05:37 model_runner.py:1562] Graph capturing finished in 13 secs, took 0.21 GiB
+INFO 03-24 12:05:37 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 18.33 seconds
+set chat template to qwen_v1_no_sys
+INFO 03-24 12:29:23 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 12:29:30 config.py:542] This model supports multiple tasks: {'score', 'generate', 'embed', 'classify', 'reward'}. Defaulting to 'generate'.
+WARNING 03-24 12:29:30 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-24 12:29:30 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-24 12:29:30 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 12:29:32 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 12:29:32 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/...
+INFO 03-24 12:29:39 model_runner.py:1115] Loading model weights took 2.9105 GB
+INFO 03-24 12:29:39 worker.py:267] Memory profiling takes 0.42 seconds
+INFO 03-24 12:29:39 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-24 12:29:39 worker.py:267] model weights take 2.91GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.39GiB; the rest of the memory reserved for KV Cache is 66.93GiB.
+INFO 03-24 12:29:40 executor_base.py:110] # CUDA blocks: 156665, # CPU blocks: 9362
+INFO 03-24 12:29:40 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 19.12x
+INFO 03-24 12:29:44 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-24 12:29:58 model_runner.py:1562] Graph capturing finished in 14 secs, took 0.21 GiB
+INFO 03-24 12:29:58 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 19.05 seconds
+set chat template to qwen_v1_no_sys
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+所有任务已完成，vllm 服务已关闭。
+文件 /mnt/lingjiejiang/reason/results/arena_hard/model_answer/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234.jsonl 存在，跳过 vllm 服务启动和 gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+所有任务已完成，vllm 服务已关闭。
+文件 /mnt/lingjiejiang/reason/results/arena_hard/model_answer/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234.jsonl 存在，跳过 vllm 服务启动和 gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Request timed out.
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-1.2, 1.1)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-24 14:52:15 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 14:52:21 config.py:542] This model supports multiple tasks: {'embed', 'generate', 'score', 'reward', 'classify'}. Defaulting to 'generate'.
+WARNING 03-24 14:52:21 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-24 14:52:21 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-24 14:52:21 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 14:52:24 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 14:52:24 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B...
+INFO 03-24 14:52:29 model_runner.py:1115] Loading model weights took 3.3460 GB
+INFO 03-24 14:52:36 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 14:52:42 config.py:542] This model supports multiple tasks: {'classify', 'reward', 'embed', 'score', 'generate'}. Defaulting to 'generate'.
+WARNING 03-24 14:52:42 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-24 14:52:42 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-24 14:52:42 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 14:52:44 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 14:52:44 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B...
+INFO 03-24 14:52:45 model_runner.py:1115] Loading model weights took 3.3460 GB
+INFO 03-24 14:52:46 worker.py:267] Memory profiling takes 0.47 seconds
+INFO 03-24 14:52:46 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-24 14:52:46 worker.py:267] model weights take 3.35GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.39GiB; the rest of the memory reserved for KV Cache is 66.50GiB.
+INFO 03-24 14:52:46 executor_base.py:110] # CUDA blocks: 155646, # CPU blocks: 9362
+INFO 03-24 14:52:46 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 19.00x
+INFO 03-24 14:52:50 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-24 14:53:03 model_runner.py:1562] Graph capturing finished in 13 secs, took 0.21 GiB
+INFO 03-24 14:53:03 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 18.37 seconds
+use original template
+INFO 03-24 15:01:13 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 15:01:19 config.py:542] This model supports multiple tasks: {'reward', 'generate', 'classify', 'embed', 'score'}. Defaulting to 'generate'.
+WARNING 03-24 15:01:19 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-24 15:01:19 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-24 15:01:19 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 15:01:21 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 15:01:22 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B...
+INFO 03-24 15:01:27 model_runner.py:1115] Loading model weights took 3.3460 GB
+INFO 03-24 15:01:28 worker.py:267] Memory profiling takes 0.41 seconds
+INFO 03-24 15:01:28 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-24 15:01:28 worker.py:267] model weights take 3.35GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.39GiB; the rest of the memory reserved for KV Cache is 66.50GiB.
+INFO 03-24 15:01:28 executor_base.py:110] # CUDA blocks: 155646, # CPU blocks: 9362
+INFO 03-24 15:01:28 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 19.00x
+INFO 03-24 15:01:32 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-24 15:01:45 model_runner.py:1562] Graph capturing finished in 13 secs, took 0.21 GiB
+INFO 03-24 15:01:45 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 18.18 seconds
+use original template
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-1.2, 1.1)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-24 15:32:00 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 15:32:06 config.py:542] This model supports multiple tasks: {'score', 'classify', 'reward', 'generate', 'embed'}. Defaulting to 'generate'.
+INFO 03-24 15:32:06 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-Math-1.5B-Instruct', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-Math-1.5B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-Math-1.5B-Instruct, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 15:32:08 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 15:32:09 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/checkpoints/Qwen2.5-Math-1.5B-Instruct...
+INFO 03-24 15:32:13 model_runner.py:1115] Loading model weights took 2.8797 GB
+INFO 03-24 15:32:14 worker.py:267] Memory profiling takes 0.45 seconds
+INFO 03-24 15:32:14 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-24 15:32:14 worker.py:267] model weights take 2.88GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.40GiB; the rest of the memory reserved for KV Cache is 66.96GiB.
+INFO 03-24 15:32:14 executor_base.py:110] # CUDA blocks: 156723, # CPU blocks: 9362
+INFO 03-24 15:32:14 executor_base.py:115] Maximum concurrency for 4096 tokens per request: 612.20x
+INFO 03-24 15:32:18 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-24 15:32:31 model_runner.py:1562] Graph capturing finished in 13 secs, took 0.21 GiB
+INFO 03-24 15:32:31 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 18.40 seconds
+use original template
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-1.2, 1.1)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-24 15:34:51 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 15:34:58 config.py:542] This model supports multiple tasks: {'generate', 'embed', 'classify', 'score', 'reward'}. Defaulting to 'generate'.
+INFO 03-24 15:34:58 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-1.5B-Instruct', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-1.5B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-1.5B-Instruct, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 15:34:59 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 15:35:00 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/checkpoints/Qwen2.5-1.5B-Instruct...
+INFO 03-24 15:35:04 model_runner.py:1115] Loading model weights took 2.8875 GB
+INFO 03-24 15:35:05 worker.py:267] Memory profiling takes 0.83 seconds
+INFO 03-24 15:35:05 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-24 15:35:05 worker.py:267] model weights take 2.89GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 2.02GiB; the rest of the memory reserved for KV Cache is 66.32GiB.
+INFO 03-24 15:35:05 executor_base.py:110] # CUDA blocks: 155237, # CPU blocks: 9362
+INFO 03-24 15:35:05 executor_base.py:115] Maximum concurrency for 32768 tokens per request: 75.80x
+INFO 03-24 15:35:10 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-24 15:35:24 model_runner.py:1562] Graph capturing finished in 14 secs, took 0.21 GiB
+INFO 03-24 15:35:24 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 19.42 seconds
+use original template
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-1.2, 1.1)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-24 15:54:20 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 15:54:27 config.py:542] This model supports multiple tasks: {'classify', 'embed', 'score', 'reward', 'generate'}. Defaulting to 'generate'.
+WARNING 03-24 15:54:27 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-24 15:54:27 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-24 15:54:27 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-7B', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-7B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-7B, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 15:54:29 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 15:54:29 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-7B...
+INFO 03-24 15:54:48 model_runner.py:1115] Loading model weights took 14.2717 GB
+INFO 03-24 15:54:48 worker.py:267] Memory profiling takes 0.56 seconds
+INFO 03-24 15:54:48 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-24 15:54:48 worker.py:267] model weights take 14.27GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.40GiB; the rest of the memory reserved for KV Cache is 55.56GiB.
+INFO 03-24 15:54:49 executor_base.py:110] # CUDA blocks: 65024, # CPU blocks: 4681
+INFO 03-24 15:54:49 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 7.94x
+INFO 03-24 15:54:53 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-24 15:55:06 model_runner.py:1562] Graph capturing finished in 13 secs, took 0.22 GiB
+INFO 03-24 15:55:06 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 18.85 seconds
+use original template
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-1.2, 1.1)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-24 16:21:11 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 16:21:17 config.py:542] This model supports multiple tasks: {'reward', 'classify', 'embed', 'score', 'generate'}. Defaulting to 'generate'.
+WARNING 03-24 16:21:17 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-24 16:21:17 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-24 16:21:17 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 16:21:19 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 16:21:20 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/...
+INFO 03-24 16:21:24 model_runner.py:1115] Loading model weights took 2.9105 GB
+INFO 03-24 16:21:25 worker.py:267] Memory profiling takes 0.42 seconds
+INFO 03-24 16:21:25 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-24 16:21:25 worker.py:267] model weights take 2.91GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.39GiB; the rest of the memory reserved for KV Cache is 66.93GiB.
+INFO 03-24 16:21:25 executor_base.py:110] # CUDA blocks: 156665, # CPU blocks: 9362
+INFO 03-24 16:21:25 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 19.12x
+INFO 03-24 16:21:31 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-24 16:21:45 model_runner.py:1562] Graph capturing finished in 14 secs, took 0.21 GiB
+INFO 03-24 16:21:45 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 20.21 seconds
+set chat template to qwen_v1_no_sys
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.3, 1.4)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-1.2, 1.2)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-24 17:32:07 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 17:32:15 config.py:542] This model supports multiple tasks: {'score', 'classify', 'generate', 'embed', 'reward'}. Defaulting to 'generate'.
+WARNING 03-24 17:32:15 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-24 17:32:15 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-24 17:32:15 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 17:32:17 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 17:32:17 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/...
+INFO 03-24 17:32:22 model_runner.py:1115] Loading model weights took 2.9105 GB
+INFO 03-24 17:32:23 worker.py:267] Memory profiling takes 0.46 seconds
+INFO 03-24 17:32:23 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-24 17:32:23 worker.py:267] model weights take 2.91GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.39GiB; the rest of the memory reserved for KV Cache is 66.93GiB.
+INFO 03-24 17:32:23 executor_base.py:110] # CUDA blocks: 156665, # CPU blocks: 9362
+INFO 03-24 17:32:23 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 19.12x
+INFO 03-24 17:32:28 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-24 17:32:42 model_runner.py:1562] Graph capturing finished in 14 secs, took 0.21 GiB
+INFO 03-24 17:32:42 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 19.35 seconds
+set chat template to qwen_v1_no_sys
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.5, 1.5)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.4, 1.5)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-0.8, 1.1)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-24 18:40:28 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 18:40:35 config.py:542] This model supports multiple tasks: {'reward', 'classify', 'score', 'generate', 'embed'}. Defaulting to 'generate'.
+WARNING 03-24 18:40:35 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-24 18:40:35 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-24 18:40:35 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 18:40:37 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 18:40:37 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/...
+INFO 03-24 18:40:43 model_runner.py:1115] Loading model weights took 2.9105 GB
+INFO 03-24 18:40:44 worker.py:267] Memory profiling takes 0.43 seconds
+INFO 03-24 18:40:44 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-24 18:40:44 worker.py:267] model weights take 2.91GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.39GiB; the rest of the memory reserved for KV Cache is 66.93GiB.
+INFO 03-24 18:40:44 executor_base.py:110] # CUDA blocks: 156665, # CPU blocks: 9362
+INFO 03-24 18:40:44 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 19.12x
+INFO 03-24 18:40:48 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-24 18:41:04 model_runner.py:1562] Graph capturing finished in 15 secs, took 0.21 GiB
+INFO 03-24 18:41:04 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 20.61 seconds
+set chat template to qwen_v1_no_sys
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+500 number of existing judgments
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.5, 1.5)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.4, 1.5)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-0.8, 1.1)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-24 19:29:13 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 19:29:20 config.py:542] This model supports multiple tasks: {'embed', 'score', 'generate', 'reward', 'classify'}. Defaulting to 'generate'.
+WARNING 03-24 19:29:20 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-24 19:29:20 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-24 19:29:20 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k/checkpoint-25203/', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k/checkpoint-25203/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k/checkpoint-25203/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 19:29:22 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 19:29:23 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k/checkpoint-25203/...
+INFO 03-24 19:29:30 model_runner.py:1115] Loading model weights took 2.9105 GB
+INFO 03-24 19:29:30 worker.py:267] Memory profiling takes 0.43 seconds
+INFO 03-24 19:29:30 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-24 19:29:30 worker.py:267] model weights take 2.91GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.39GiB; the rest of the memory reserved for KV Cache is 66.93GiB.
+INFO 03-24 19:29:30 executor_base.py:110] # CUDA blocks: 156665, # CPU blocks: 9362
+INFO 03-24 19:29:30 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 19.12x
+INFO 03-24 19:29:35 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-24 19:29:49 model_runner.py:1562] Graph capturing finished in 14 secs, took 0.21 GiB
+INFO 03-24 19:29:49 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 19.32 seconds
+set chat template to qwen_v1_no_sys
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k_25203_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.4, 1.6)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.2, 1.6)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-1.4, 1.1)  | average #tokens: 0
+add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k_25203_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  6.1  | 95% CI: (-1.0, 0.8)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-24 21:13:04 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 21:13:11 config.py:542] This model supports multiple tasks: {'embed', 'classify', 'generate', 'score', 'reward'}. Defaulting to 'generate'.
+WARNING 03-24 21:13:11 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-24 21:13:11 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-24 21:13:11 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 21:13:13 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 21:13:14 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/...
+INFO 03-24 21:13:19 model_runner.py:1115] Loading model weights took 2.9105 GB
+INFO 03-24 21:13:20 worker.py:267] Memory profiling takes 0.44 seconds
+INFO 03-24 21:13:20 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-24 21:13:20 worker.py:267] model weights take 2.91GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.39GiB; the rest of the memory reserved for KV Cache is 66.93GiB.
+INFO 03-24 21:13:20 executor_base.py:110] # CUDA blocks: 156665, # CPU blocks: 9362
+INFO 03-24 21:13:20 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 19.12x
+INFO 03-24 21:13:24 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-24 21:13:38 model_runner.py:1562] Graph capturing finished in 14 secs, took 0.21 GiB
+INFO 03-24 21:13:38 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 19.19 seconds
+set chat template to qwen_nothink
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.2, 1.2)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.6, 1.6)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.4  | 95% CI: (-1.4, 1.6)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-1.1, 1.1)  | average #tokens: 0
+add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k_25203_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  6.1  | 95% CI: (-1.2, 0.9)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-24 22:09:56 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 22:10:04 config.py:542] This model supports multiple tasks: {'reward', 'score', 'generate', 'embed', 'classify'}. Defaulting to 'generate'.
+WARNING 03-24 22:10:04 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-24 22:10:04 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-24 22:10:04 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 22:10:06 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 22:10:06 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/...
+INFO 03-24 22:10:11 model_runner.py:1115] Loading model weights took 2.9105 GB
+INFO 03-24 22:10:12 worker.py:267] Memory profiling takes 0.44 seconds
+INFO 03-24 22:10:12 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-24 22:10:12 worker.py:267] model weights take 2.91GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.39GiB; the rest of the memory reserved for KV Cache is 66.93GiB.
+INFO 03-24 22:10:12 executor_base.py:110] # CUDA blocks: 156665, # CPU blocks: 9362
+INFO 03-24 22:10:12 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 19.12x
+INFO 03-24 22:10:16 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-24 22:10:30 model_runner.py:1562] Graph capturing finished in 14 secs, took 0.21 GiB
+INFO 03-24 22:10:30 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 19.07 seconds
+set chat template to qwen_nothink
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.2, 1.1)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.4, 1.5)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.5  | 95% CI: (-1.2, 1.4)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.4  | 95% CI: (-1.1, 1.3)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-1.2, 1.0)  | average #tokens: 0
+add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k_25203_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  6.1  | 95% CI: (-1.1, 1.0)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-24 22:56:36 __init__.py:190] Automatically detected platform cuda.
+INFO 03-24 22:56:42 config.py:542] This model supports multiple tasks: {'classify', 'embed', 'reward', 'score', 'generate'}. Defaulting to 'generate'.
+WARNING 03-24 22:56:42 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-24 22:56:42 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-24 22:56:42 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-24 22:56:44 cuda.py:230] Using Flash Attention backend.
+INFO 03-24 22:56:45 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/...
+INFO 03-24 22:56:49 model_runner.py:1115] Loading model weights took 2.9105 GB
+INFO 03-24 22:56:50 worker.py:267] Memory profiling takes 0.45 seconds
+INFO 03-24 22:56:50 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-24 22:56:50 worker.py:267] model weights take 2.91GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.39GiB; the rest of the memory reserved for KV Cache is 66.93GiB.
+INFO 03-24 22:56:50 executor_base.py:110] # CUDA blocks: 156665, # CPU blocks: 9362
+INFO 03-24 22:56:50 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 19.12x
+INFO 03-24 22:56:55 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-24 22:57:09 model_runner.py:1562] Graph capturing finished in 14 secs, took 0.21 GiB
+INFO 03-24 22:57:09 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 19.19 seconds
+set chat template to qwen_think
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 12.8  | 95% CI: (-1.5, 1.2)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.2, 1.1)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.1, 1.4)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.5  | 95% CI: (-1.2, 1.4)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.4  | 95% CI: (-1.2, 1.3)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-1.2, 1.0)  | average #tokens: 0
+add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k_25203_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  6.1  | 95% CI: (-1.1, 1.0)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+文件 /mnt/lingjiejiang/reason/results/arena_hard/model_answer/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234.jsonl 存在，跳过 vllm 服务启动和 gen_answer.py 执行。
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 13.9  | 95% CI: (-1.8, 1.5)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 12.8  | 95% CI: (-1.6, 1.3)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.5, 1.3)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.7, 1.5)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.5  | 95% CI: (-1.2, 1.4)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.4  | 95% CI: (-1.2, 1.5)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-1.1, 1.1)  | average #tokens: 0
+add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k_25203_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  6.1  | 95% CI: (-1.1, 0.9)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-25 00:47:38 __init__.py:190] Automatically detected platform cuda.
+INFO 03-25 00:47:46 config.py:542] This model supports multiple tasks: {'generate', 'reward', 'classify', 'score', 'embed'}. Defaulting to 'generate'.
+WARNING 03-25 00:47:46 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-25 00:47:46 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-25 00:47:46 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-25 00:47:48 cuda.py:230] Using Flash Attention backend.
+INFO 03-25 00:47:49 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B...
+INFO 03-25 00:47:54 model_runner.py:1115] Loading model weights took 3.3460 GB
+INFO 03-25 00:47:54 worker.py:267] Memory profiling takes 0.51 seconds
+INFO 03-25 00:47:54 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-25 00:47:54 worker.py:267] model weights take 3.35GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.39GiB; the rest of the memory reserved for KV Cache is 66.50GiB.
+INFO 03-25 00:47:55 executor_base.py:110] # CUDA blocks: 155646, # CPU blocks: 9362
+INFO 03-25 00:47:55 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 19.00x
+INFO 03-25 00:47:59 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-25 00:48:13 model_runner.py:1562] Graph capturing finished in 14 secs, took 0.21 GiB
+INFO 03-25 00:48:13 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 19.33 seconds
+use original template
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/DeepSeek-R1-Distill-Qwen-1.5B_prompt_default_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 13.9  | 95% CI: (-1.4, 1.8)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 12.8  | 95% CI: (-1.5, 1.6)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.4, 1.3)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.3, 1.7)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.5  | 95% CI: (-1.2, 1.5)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.4  | 95% CI: (-1.5, 1.4)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-1.0, 1.0)  | average #tokens: 0
+DeepSeek-R1-Distill-Qwen-1.5B_prompt_default_t0.6_mt35000_seed1234 | score:  6.2  | 95% CI: (-1.1, 0.9)  | average #tokens: 0
+add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k_25203_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  6.1  | 95% CI: (-0.8, 1.0)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-25 01:51:11 __init__.py:190] Automatically detected platform cuda.
+INFO 03-25 01:51:19 config.py:542] This model supports multiple tasks: {'embed', 'classify', 'reward', 'score', 'generate'}. Defaulting to 'generate'.
+INFO 03-25 01:51:19 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-1.5B-Instruct', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-1.5B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-1.5B-Instruct, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-25 01:51:21 cuda.py:230] Using Flash Attention backend.
+INFO 03-25 01:51:21 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/checkpoints/Qwen2.5-1.5B-Instruct...
+INFO 03-25 01:51:25 model_runner.py:1115] Loading model weights took 2.8875 GB
+INFO 03-25 01:51:27 worker.py:267] Memory profiling takes 0.91 seconds
+INFO 03-25 01:51:27 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-25 01:51:27 worker.py:267] model weights take 2.89GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 2.02GiB; the rest of the memory reserved for KV Cache is 66.32GiB.
+INFO 03-25 01:51:27 executor_base.py:110] # CUDA blocks: 155237, # CPU blocks: 9362
+INFO 03-25 01:51:27 executor_base.py:115] Maximum concurrency for 32768 tokens per request: 75.80x
+INFO 03-25 01:51:32 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-25 01:51:45 model_runner.py:1562] Graph capturing finished in 14 secs, took 0.21 GiB
+INFO 03-25 01:51:45 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 19.97 seconds
+use original template
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/Qwen2.5-1.5B-Instruct_prompt_default_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Error code: 400 - {'error': {'message': "Invalid 'messages[1].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1087056 instead.", 'type': 'invalid_request_error', 'param': 'messages[1].content', 'code': 'string_above_max_length'}}
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 13.9  | 95% CI: (-1.8, 1.5)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 12.8  | 95% CI: (-1.3, 1.5)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.5, 1.4)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.6, 1.4)  | average #tokens: 0
+Qwen2.5-1.5B-Instruct_prompt_default_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.2, 1.6)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.5  | 95% CI: (-1.3, 1.3)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.4  | 95% CI: (-1.1, 1.4)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-1.2, 1.1)  | average #tokens: 0
+DeepSeek-R1-Distill-Qwen-1.5B_prompt_default_t0.6_mt35000_seed1234 | score:  6.2  | 95% CI: (-1.1, 0.9)  | average #tokens: 0
+add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k_25203_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  6.1  | 95% CI: (-0.8, 0.9)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-25 02:52:16 __init__.py:190] Automatically detected platform cuda.
+INFO 03-25 02:52:23 config.py:542] This model supports multiple tasks: {'embed', 'reward', 'classify', 'generate', 'score'}. Defaulting to 'generate'.
+INFO 03-25 02:52:23 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-Math-1.5B-Instruct', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-Math-1.5B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-Math-1.5B-Instruct, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-25 02:52:25 cuda.py:230] Using Flash Attention backend.
+INFO 03-25 02:52:25 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/checkpoints/Qwen2.5-Math-1.5B-Instruct...
+INFO 03-25 02:52:30 model_runner.py:1115] Loading model weights took 2.8797 GB
+INFO 03-25 02:52:31 worker.py:267] Memory profiling takes 0.52 seconds
+INFO 03-25 02:52:31 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-25 02:52:31 worker.py:267] model weights take 2.88GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.40GiB; the rest of the memory reserved for KV Cache is 66.96GiB.
+INFO 03-25 02:52:31 executor_base.py:110] # CUDA blocks: 156723, # CPU blocks: 9362
+INFO 03-25 02:52:31 executor_base.py:115] Maximum concurrency for 4096 tokens per request: 612.20x
+INFO 03-25 02:52:36 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-25 02:52:49 model_runner.py:1562] Graph capturing finished in 13 secs, took 0.21 GiB
+INFO 03-25 02:52:49 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 18.71 seconds
+use original template
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/Qwen2.5-Math-1.5B-Instruct_prompt_default_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 13.9  | 95% CI: (-1.3, 1.4)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 12.8  | 95% CI: (-1.6, 1.4)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.6, 1.2)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.5, 1.3)  | average #tokens: 0
+Qwen2.5-1.5B-Instruct_prompt_default_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.1, 1.5)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.5  | 95% CI: (-1.5, 1.4)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.4  | 95% CI: (-1.2, 1.4)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-1.1, 1.4)  | average #tokens: 0
+DeepSeek-R1-Distill-Qwen-1.5B_prompt_default_t0.6_mt35000_seed1234 | score:  6.2  | 95% CI: (-1.1, 0.9)  | average #tokens: 0
+add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k_25203_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  6.1  | 95% CI: (-1.0, 1.1)  | average #tokens: 0
+Qwen2.5-Math-1.5B-Instruct_prompt_default_t0.6_mt35000_seed1234 | score:  2.1  | 95% CI: (-0.5, 0.5)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-25 03:28:08 __init__.py:190] Automatically detected platform cuda.
+INFO 03-25 03:28:15 config.py:542] This model supports multiple tasks: {'embed', 'generate', 'reward', 'classify', 'score'}. Defaulting to 'generate'.
+WARNING 03-25 03:28:15 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-25 03:28:15 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-25 03:28:15 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-7B', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-7B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-7B, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-25 03:28:17 cuda.py:230] Using Flash Attention backend.
+INFO 03-25 03:28:18 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-7B...
+INFO 03-25 03:28:39 model_runner.py:1115] Loading model weights took 14.2717 GB
+INFO 03-25 03:28:39 worker.py:267] Memory profiling takes 0.57 seconds
+INFO 03-25 03:28:39 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-25 03:28:39 worker.py:267] model weights take 14.27GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.40GiB; the rest of the memory reserved for KV Cache is 55.56GiB.
+INFO 03-25 03:28:40 executor_base.py:110] # CUDA blocks: 65024, # CPU blocks: 4681
+INFO 03-25 03:28:40 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 7.94x
+INFO 03-25 03:28:44 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-25 03:28:58 model_runner.py:1562] Graph capturing finished in 14 secs, took 0.22 GiB
+INFO 03-25 03:28:58 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 19.38 seconds
+use original template
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/DeepSeek-R1-Distill-Qwen-7B_prompt_default_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+DeepSeek-R1-Distill-Qwen-7B_prompt_default_t0.6_mt35000_seed1234 | score: 19.4  | 95% CI: (-1.5, 1.8)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 13.9  | 95% CI: (-1.4, 1.5)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 12.8  | 95% CI: (-1.7, 1.8)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.4, 1.1)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.4, 1.6)  | average #tokens: 0
+Qwen2.5-1.5B-Instruct_prompt_default_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.4, 1.7)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.5  | 95% CI: (-1.4, 0.9)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.4  | 95% CI: (-1.6, 1.6)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-0.9, 1.1)  | average #tokens: 0
+DeepSeek-R1-Distill-Qwen-1.5B_prompt_default_t0.6_mt35000_seed1234 | score:  6.2  | 95% CI: (-1.1, 0.9)  | average #tokens: 0
+add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k_25203_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  6.1  | 95% CI: (-1.0, 1.0)  | average #tokens: 0
+Qwen2.5-Math-1.5B-Instruct_prompt_default_t0.6_mt35000_seed1234 | score:  2.1  | 95% CI: (-0.5, 0.5)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-29 02:11:54 __init__.py:190] Automatically detected platform cuda.
+INFO 03-29 02:12:00 config.py:542] This model supports multiple tasks: {'generate', 'embed', 'score', 'classify', 'reward'}. Defaulting to 'generate'.
+WARNING 03-29 02:12:00 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-29 02:12:00 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-29 02:12:00 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-29 02:12:03 cuda.py:230] Using Flash Attention backend.
+INFO 03-29 02:12:03 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/...
+INFO 03-29 02:12:24 model_runner.py:1115] Loading model weights took 14.9888 GB
+INFO 03-29 02:12:25 worker.py:267] Memory profiling takes 0.50 seconds
+INFO 03-29 02:12:25 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-29 02:12:25 worker.py:267] model weights take 14.99GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.19GiB; the rest of the memory reserved for KV Cache is 55.06GiB.
+INFO 03-29 02:12:25 executor_base.py:110] # CUDA blocks: 28190, # CPU blocks: 2048
+INFO 03-29 02:12:25 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 3.44x
+INFO 03-29 02:12:28 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-29 02:12:41 model_runner.py:1562] Graph capturing finished in 13 secs, took 0.26 GiB
+INFO 03-29 02:12:41 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 16.59 seconds
+set chat template to llama_no_sys
+WARNING 03-29 02:14:54 scheduler.py:1560] Sequence group 255 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1
+WARNING 03-29 02:15:31 scheduler.py:1560] Sequence group 205 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=51
+WARNING 03-29 02:16:26 scheduler.py:1560] Sequence group 155 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=101
+WARNING 03-29 02:18:04 scheduler.py:1560] Sequence group 105 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=151
+WARNING 03-29 02:22:11 scheduler.py:1560] Sequence group 55 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=201
+INFO 03-29 02:32:23 __init__.py:190] Automatically detected platform cuda.
+INFO 03-29 02:32:30 config.py:542] This model supports multiple tasks: {'embed', 'reward', 'score', 'generate', 'classify'}. Defaulting to 'generate'.
+WARNING 03-29 02:32:30 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-29 02:32:30 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-29 02:32:30 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-29 02:32:32 cuda.py:230] Using Flash Attention backend.
+INFO 03-29 02:32:32 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/...
+INFO 03-29 02:33:09 model_runner.py:1115] Loading model weights took 14.9888 GB
+INFO 03-29 02:33:10 worker.py:267] Memory profiling takes 0.52 seconds
+INFO 03-29 02:33:10 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-29 02:33:10 worker.py:267] model weights take 14.99GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.19GiB; the rest of the memory reserved for KV Cache is 55.06GiB.
+INFO 03-29 02:33:10 executor_base.py:110] # CUDA blocks: 28190, # CPU blocks: 2048
+INFO 03-29 02:33:10 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 3.44x
+INFO 03-29 02:33:13 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-29 02:33:27 model_runner.py:1562] Graph capturing finished in 14 secs, took 0.26 GiB
+INFO 03-29 02:33:27 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 17.97 seconds
+set chat template to llama_no_sys
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_llama_no_sys_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+DeepSeek-R1-Distill-Qwen-7B_prompt_default_t0.6_mt35000_seed1234 | score: 19.4  | 95% CI: (-1.4, 1.8)  | average #tokens: 0
+think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_llama_no_sys_t0.6_mt35000_seed1234 | score: 16.6  | 95% CI: (-1.8, 1.7)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 13.9  | 95% CI: (-1.2, 1.2)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 12.8  | 95% CI: (-1.8, 1.6)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.4, 1.3)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.5, 1.4)  | average #tokens: 0
+Qwen2.5-1.5B-Instruct_prompt_default_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.4, 1.6)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.5  | 95% CI: (-1.2, 1.6)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.4  | 95% CI: (-1.5, 1.3)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-0.8, 1.0)  | average #tokens: 0
+DeepSeek-R1-Distill-Qwen-1.5B_prompt_default_t0.6_mt35000_seed1234 | score:  6.2  | 95% CI: (-1.0, 1.0)  | average #tokens: 0
+add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k_25203_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  6.1  | 95% CI: (-1.0, 1.0)  | average #tokens: 0
+Qwen2.5-Math-1.5B-Instruct_prompt_default_t0.6_mt35000_seed1234 | score:  2.1  | 95% CI: (-0.5, 0.5)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-29 04:08:43 __init__.py:190] Automatically detected platform cuda.
+INFO 03-29 04:08:50 config.py:542] This model supports multiple tasks: {'classify', 'generate', 'embed', 'score', 'reward'}. Defaulting to 'generate'.
+WARNING 03-29 04:08:50 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-29 04:08:50 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-29 04:08:50 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-29 04:08:52 cuda.py:230] Using Flash Attention backend.
+INFO 03-29 04:08:52 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/...
+INFO 03-29 04:09:13 model_runner.py:1115] Loading model weights took 14.9888 GB
+INFO 03-29 04:09:14 worker.py:267] Memory profiling takes 0.53 seconds
+INFO 03-29 04:09:14 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-29 04:09:14 worker.py:267] model weights take 14.99GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.19GiB; the rest of the memory reserved for KV Cache is 55.06GiB.
+INFO 03-29 04:09:14 executor_base.py:110] # CUDA blocks: 28190, # CPU blocks: 2048
+INFO 03-29 04:09:14 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 3.44x
+INFO 03-29 04:09:17 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-29 04:09:31 model_runner.py:1562] Graph capturing finished in 14 secs, took 0.26 GiB
+INFO 03-29 04:09:31 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 17.88 seconds
+set chat template to llama_no_think
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_llama_no_think_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+DeepSeek-R1-Distill-Qwen-7B_prompt_default_t0.6_mt35000_seed1234 | score: 19.4  | 95% CI: (-1.5, 1.9)  | average #tokens: 0
+think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_llama_no_think_t0.6_mt35000_seed1234 | score: 18.3  | 95% CI: (-2.0, 1.7)  | average #tokens: 0
+think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_llama_no_sys_t0.6_mt35000_seed1234 | score: 16.6  | 95% CI: (-1.8, 1.8)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 13.9  | 95% CI: (-1.3, 1.4)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 12.8  | 95% CI: (-1.2, 1.4)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.4, 1.1)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.6, 1.2)  | average #tokens: 0
+Qwen2.5-1.5B-Instruct_prompt_default_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.5, 1.6)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.5  | 95% CI: (-1.4, 1.5)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.4  | 95% CI: (-1.4, 1.8)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-0.9, 1.0)  | average #tokens: 0
+DeepSeek-R1-Distill-Qwen-1.5B_prompt_default_t0.6_mt35000_seed1234 | score:  6.2  | 95% CI: (-1.1, 0.9)  | average #tokens: 0
+add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k_25203_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  6.1  | 95% CI: (-1.0, 1.2)  | average #tokens: 0
+Qwen2.5-Math-1.5B-Instruct_prompt_default_t0.6_mt35000_seed1234 | score:  2.1  | 95% CI: (-0.5, 0.5)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
+INFO 03-29 05:34:48 __init__.py:190] Automatically detected platform cuda.
+INFO 03-29 05:34:55 config.py:542] This model supports multiple tasks: {'classify', 'embed', 'generate', 'reward', 'score'}. Defaulting to 'generate'.
+WARNING 03-29 05:34:55 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-29 05:34:55 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-29 05:34:55 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', speculative_config=None, tokenizer='/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-29 05:34:56 cuda.py:230] Using Flash Attention backend.
+INFO 03-29 05:34:57 model_runner.py:1110] Starting to load model /mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/...
+INFO 03-29 05:35:17 model_runner.py:1115] Loading model weights took 14.9888 GB
+INFO 03-29 05:35:18 worker.py:267] Memory profiling takes 0.50 seconds
+INFO 03-29 05:35:18 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 03-29 05:35:18 worker.py:267] model weights take 14.99GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.19GiB; the rest of the memory reserved for KV Cache is 55.06GiB.
+INFO 03-29 05:35:18 executor_base.py:110] # CUDA blocks: 28190, # CPU blocks: 2048
+INFO 03-29 05:35:18 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 3.44x
+INFO 03-29 05:35:21 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-29 05:35:35 model_runner.py:1562] Graph capturing finished in 14 secs, took 0.26 GiB
+INFO 03-29 05:35:35 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 17.81 seconds
+set chat template to llama_think
+WARNING 03-29 06:02:30 scheduler.py:1560] Sequence group 240 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1
+Data saved to: /mnt/lingjiejiang/reason/results/arena_hard/model_answer/think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_llama_think_t0.6_mt35000_seed1234.jsonl
+Namespace(setting_file='config/judge_config.yaml', endpoint_file='config/api_config.yaml')
+judge model: gpt-4o, baseline: True, baseline model: gpt-4-0314, reference: False, reference models: None, temperature: 0, max tokens: 4096, pairwise: True
+Failed to invoke the Azure CLI
+Failed to invoke the Azure CLI
+Failed to invoke the Azure CLI
+Failed to invoke the Azure CLI
+Namespace(bench_name='arena-hard-v0.1', judge_name='gpt-4o', baseline='gpt-4-0314', load_battles=False, load_bootstrap=False, show_elo=False, weight=3, num_rounds=100, output=True, first_game_only=False)
+Turning judgment results into battles...
+gpt-4-0314                     | score: 50.0  | 95% CI:  (0.0, 0.0)  | average #tokens: 423
+think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_llama_think_t0.6_mt35000_seed1234 | score: 23.8  | 95% CI: (-2.2, 1.8)  | average #tokens: 0
+DeepSeek-R1-Distill-Qwen-7B_prompt_default_t0.6_mt35000_seed1234 | score: 19.4  | 95% CI: (-1.5, 1.9)  | average #tokens: 0
+think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_llama_no_think_t0.6_mt35000_seed1234 | score: 18.3  | 95% CI: (-2.0, 1.7)  | average #tokens: 0
+think_hybrid_llama_8b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_llama_no_sys_t0.6_mt35000_seed1234 | score: 16.6  | 95% CI: (-1.8, 1.7)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 13.9  | 95% CI: (-1.5, 1.4)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_think_t0.6_mt35000_seed1234 | score: 12.8  | 95% CI: (-1.5, 1.6)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.9  | 95% CI: (-1.2, 1.3)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.2, 1.6)  | average #tokens: 0
+Qwen2.5-1.5B-Instruct_prompt_default_t0.6_mt35000_seed1234 | score: 11.8  | 95% CI: (-1.6, 1.6)  | average #tokens: 0
+think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.5  | 95% CI: (-1.4, 1.5)  | average #tokens: 0
+think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_40995_prompt_qwen_nothink_t0.6_mt35000_seed1234 | score: 11.4  | 95% CI: (-1.5, 1.4)  | average #tokens: 0
+qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k_25176_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  7.5  | 95% CI: (-0.8, 1.0)  | average #tokens: 0
+DeepSeek-R1-Distill-Qwen-1.5B_prompt_default_t0.6_mt35000_seed1234 | score:  6.2  | 95% CI: (-1.0, 0.9)  | average #tokens: 0
+add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k_25203_prompt_qwen_v1_no_sys_t0.6_mt35000_seed1234 | score:  6.1  | 95% CI: (-1.0, 1.2)  | average #tokens: 0
+Qwen2.5-Math-1.5B-Instruct_prompt_default_t0.6_mt35000_seed1234 | score:  2.1  | 95% CI: (-0.5, 0.5)  | average #tokens: 0
+所有任务已完成，vllm 服务已关闭。
