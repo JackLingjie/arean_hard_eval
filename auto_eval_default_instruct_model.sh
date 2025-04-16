@@ -1,19 +1,24 @@
 #!/bin/bash  
   
 # 设置 CUDA 可见设备  
-export CUDA_VISIBLE_DEVICES=2  
+export CUDA_VISIBLE_DEVICES=1  
   
 echo eval_${CUDA_VISIBLE_DEVICES}.log
 # 传入的多个模型路径（按数组形式传入）  
 MODEL_PATHS=(  
-    "/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Llama-8B"
+    "/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-Math-1.5B"
+    "/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-1.5B"
+    "/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-7B"
+    # "/mnt/lingjiejiang/reason/checkpoints/Llama-3.1-8B"
+    "/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-Math-7B"
+    # "/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Llama-8B"
     # "/mnt/lingjiejiang/reason/checkpoints/Llama-3.1-8B-Instruct"
     # "/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-7B-Instruct"
     # "/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-Math-7B-Instruct"
-    "/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B"
+    # "/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-1.5B"
     # "/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-1.5B-Instruct"
     # "/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-Math-1.5B-Instruct"
-    "/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-7B"
+    # "/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-7B"
     # "/mnt/lingjiejiang/reason/checkpoints/DeepSeek-R1-Distill-Qwen-7B"
     # "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/"
       # "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/"
@@ -26,7 +31,7 @@ MODEL_PATHS=(
 PROMPT_TYPE="default"  
   
 # 设置最大 tokens  
-MAX_TOKENS=35000  
+MAX_TOKENS=2048  
 # MAX_TOKENS=100  
 # 设置温度（根据需要可以修改）  
 TEMPERATURE=0.6  
@@ -47,5 +52,5 @@ for MODEL_NAME_OR_PATH in "${MODEL_PATHS[@]}"; do
     echo "Running eval for model: $MODEL_ID, checkpoint: $MODEL_NAME_OR_PATH, saved at $OUTPUT_DIR"  
   
     # 执行评估脚本  
-    bash eval_script/arean_hard_reason_rerun.sh "$MODEL_ID" "$MODEL_NAME_OR_PATH" "$MAX_TOKENS" "$TEMPERATURE" "$PROMPT_TYPE" | tee -a eval_${CUDA_VISIBLE_DEVICES}.log  
+    bash eval_script/arean_hard_reason_normal.sh "$MODEL_ID" "$MODEL_NAME_OR_PATH" "$MAX_TOKENS" "$TEMPERATURE" "$PROMPT_TYPE" | tee -a eval_${CUDA_VISIBLE_DEVICES}.log  
 done  

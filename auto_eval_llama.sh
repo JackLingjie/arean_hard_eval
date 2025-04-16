@@ -41,7 +41,7 @@ for MODEL_NAME_OR_PATH in "${MODEL_PATHS[@]}"; do
     echo "Running eval for model: $MODEL_ID, checkpoint: $MODEL_NAME_OR_PATH, saved at $OUTPUT_DIR"  
   
     # 执行评估脚本  
-    bash eval_script/arean_hard_reason.sh "$MODEL_ID" "$MODEL_NAME_OR_PATH" "$MAX_TOKENS" "$TEMPERATURE" "$PROMPT_TYPE" | tee -a eval_${CUDA_VISIBLE_DEVICES}.log  
+    bash eval_script/arean_hard_reason_rerun.sh "$MODEL_ID" "$MODEL_NAME_OR_PATH" "$MAX_TOKENS" "$TEMPERATURE" "$PROMPT_TYPE" | tee -a eval_${CUDA_VISIBLE_DEVICES}.log  
 done  
 
 PROMPT_TYPE="llama_no_think"  
@@ -68,7 +68,7 @@ for MODEL_NAME_OR_PATH in "${MODEL_PATHS[@]}"; do
     echo "Running eval for model: $MODEL_ID, checkpoint: $MODEL_NAME_OR_PATH, saved at $OUTPUT_DIR"  
   
     # 执行评估脚本  
-    bash eval_script/arean_hard_reason.sh "$MODEL_ID" "$MODEL_NAME_OR_PATH" "$MAX_TOKENS" "$TEMPERATURE" "$PROMPT_TYPE" | tee -a eval_${CUDA_VISIBLE_DEVICES}.log  
+    bash eval_script/arean_hard_reason_rerun.sh "$MODEL_ID" "$MODEL_NAME_OR_PATH" "$MAX_TOKENS" "$TEMPERATURE" "$PROMPT_TYPE" | tee -a eval_${CUDA_VISIBLE_DEVICES}.log  
 done  
 
 PROMPT_TYPE="llama_think"  
@@ -95,5 +95,5 @@ for MODEL_NAME_OR_PATH in "${MODEL_PATHS[@]}"; do
     echo "Running eval for model: $MODEL_ID, checkpoint: $MODEL_NAME_OR_PATH, saved at $OUTPUT_DIR"  
   
     # 执行评估脚本  
-    bash eval_script/arean_hard_reason.sh "$MODEL_ID" "$MODEL_NAME_OR_PATH" "$MAX_TOKENS" "$TEMPERATURE" "$PROMPT_TYPE" | tee -a eval_${CUDA_VISIBLE_DEVICES}.log  
+    bash eval_script/arean_hard_reason_rerun.sh "$MODEL_ID" "$MODEL_NAME_OR_PATH" "$MAX_TOKENS" "$TEMPERATURE" "$PROMPT_TYPE" | tee -a eval_${CUDA_VISIBLE_DEVICES}.log  
 done  

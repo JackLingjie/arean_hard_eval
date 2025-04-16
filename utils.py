@@ -66,10 +66,15 @@ def load_model_answers(answer_dir: str):
     for filename in filenames:
         model_name = os.path.basename(filename)[:-6]
         answer = {}
-        with open(filename) as fin:
-            for line in fin:
-                line = json.loads(line)
-                answer[line["question_id"]] = line
+        # print(f"Loading {model_name} answers from {filename}")
+        try:
+            with open(filename) as fin:
+                for line in fin:
+                    line = json.loads(line)
+                    answer[line["question_id"]] = line
+        except Exception as e:
+            print(f"Error loading {model_name} from {filename} answers: {e}")
+            raise e
         model_answers[model_name] = answer
 
     return model_answers

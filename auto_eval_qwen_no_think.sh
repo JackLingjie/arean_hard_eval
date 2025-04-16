@@ -1,15 +1,16 @@
 #!/bin/bash  
   
 # 设置 CUDA 可见设备  
-export CUDA_VISIBLE_DEVICES=0  
+export CUDA_VISIBLE_DEVICES=1  
   
 echo eval_${CUDA_VISIBLE_DEVICES}.log
 # 传入的多个模型路径（按数组形式传入）  
 MODEL_PATHS=(  
-      "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/"
-    "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/"
+  "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_math_7b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_no_special_token/checkpoint-40995/"
+    # "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_7b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/"
+    #   "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/"
+    # "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/"
 
-    # "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/"
     # "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/"
     # "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k/checkpoint-25203/"
 )  
@@ -39,5 +40,5 @@ for MODEL_NAME_OR_PATH in "${MODEL_PATHS[@]}"; do
     echo "Running eval for model: $MODEL_ID, checkpoint: $MODEL_NAME_OR_PATH, saved at $OUTPUT_DIR"  
   
     # 执行评估脚本  
-    bash eval_script/arean_hard_reason.sh "$MODEL_ID" "$MODEL_NAME_OR_PATH" "$MAX_TOKENS" "$TEMPERATURE" "$PROMPT_TYPE" | tee -a eval_${CUDA_VISIBLE_DEVICES}.log  
+    bash eval_script/arean_hard_reason_rerun.sh "$MODEL_ID" "$MODEL_NAME_OR_PATH" "$MAX_TOKENS" "$TEMPERATURE" "$PROMPT_TYPE" | tee -a eval_${CUDA_VISIBLE_DEVICES}.log  
 done  
