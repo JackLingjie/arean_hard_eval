@@ -7,6 +7,10 @@ import concurrent.futures
 
 from tqdm import tqdm
 
+# from transformers import AutoTokenizer
+# tokenizer_path = "/mnt/lingjiejiang/reason/checkpoints/Qwen2.5-1.5B-Instruct"
+# tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
+
 from utils import (
     load_questions,
     chat_completion_openai,
@@ -58,10 +62,24 @@ def judgment(**args):
     num_games = 2 if configs["pairwise"] else 1
     # print(f"len answer: {len(answer['choices'][0]['turns'][0]['content'])}")
     # print(f"len baseline: {len(baseline)}")
-    # if len(answer["choices"][0]["turns"][0]["content"]) > 10000:
-    #     print(f"Warning: {question['question_id']} answer is too long, truncating to 8000 tokens.")
-    #     # Truncate the answer to the last 8000 tokens
-    #     answer["choices"][0]["turns"][0]["content"] = answer["choices"][0]["turns"][0]["content"][:10000]
+    # content = answer["choices"][0]["turns"][0]["content"]
+    # tokens = tokenizer.encode(content, add_special_tokens=False)
+
+    content = answer["choices"][0]["turns"][0]["content"]
+    words = content.split()
+
+    if len(words) > 4000:
+        print(f"Warning: {question['question_id']} answer is too long, truncating to first 4000 words.")
+        truncated_text = " ".join(words[:4000])
+        answer["choices"][0]["turns"][0]["content"] = truncated_text
+
+    # if len(tokens) > 5000:
+        # print(f"Warning: {question['question_id']} answer is too long, truncating to last 5000 tokens.")
+        # truncated_tokens = tokens[-5000:]
+        # # 将 tokens 解码成文本
+        # truncated_text = tokenizer.decode(truncated_tokens, skip_special_tokens=True)
+        # answer["choices"][0]["turns"][0]["content"] = truncated_text
+
     output = {
         "question_id": question["question_id"],
         "model": answer["model_id"],
@@ -146,6 +164,7 @@ if __name__ == "__main__":
 
     if configs["regex_pattern"]:
         pattern = re.compile(configs["regex_pattern"])
+
 
     # question_file = os.path.join("data", configs["bench_name"], "question.jsonl")
     question_file = os.path.join("data/arena-hard-v0.1/question.jsonl")
