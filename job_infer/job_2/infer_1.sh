@@ -6,18 +6,12 @@ export CUDA_VISIBLE_DEVICES=1
 echo eval_${CUDA_VISIBLE_DEVICES}.log
 # 传入的多个模型路径（按数组形式传入）  
 MODEL_PATHS=(  
-    "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/mix_qwen-math-1.5B_math835k_x2_5_openmath265k_x3_code845k_x4_science567k_x3_glan2_1752k_x1_packing/checkpoint-11585/"
-    "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/mix_qwen-math-1.5B_math835k_x2_5_openmath265k_x3_code845k_x4_science567k_x3_glan2_1752k_x1_packing/checkpoint-11500/"
-    "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/mix_qwen-math-1.5B_math835k_x2_5_openmath265k_x3_code845k_x4_science567k_x3_glan2_1752k_x1_packing/checkpoint-11000/"
-    "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/mix_qwen-math-1.5B_math835k_x2_5_openmath265k_x3_code845k_x4_science567k_x3_glan2_1752k_x1_packing/checkpoint-10500/"
-    # "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/mix_qwen-math-1.5B_math835k_x2_5_openmath265k_x3_code845k_x4_science567k_x3_glan2_1752k_x1_packing/checkpoint-11000/"
-    # "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/mix_qwen-math-1.5B_math835k_x2_5_openmath265k_x3_code845k_x4_science567k_x3_glan2_1752k_x1_packing/checkpoint-10000/"
-# "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_math_7b_merged_reasoning_1074k_generall_nothink_oasst2_1749k_no_special_token/checkpoint-40995/"
-    # "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_7b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/"
-    # "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_math_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/"
-    #   "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/think_hybrid_qwen_15b_merged_reasoning_1074k_generall_nothink_oasst2_1749k/checkpoint-40995/"
-    # "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/qwen_1.5B_openr1_synthetic_openthought_aime_kodcode_aops_taco_cf_dedup_1074k/checkpoint-25176/"
-    # "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/add_synthetic_openr1_openthought_aime_rej_kodcode_taco_aops_cf_1075k/checkpoint-25203/"
+    "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/model_qwen_math_7b_11500ckpt_sft_selected_math_100k_code_87k_science_90k_ratio0_3/checkpoint-926/"
+    "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/model_qwen_math_7b_11500ckpt_sft_selected_math_100k_code_87k_science_90k_ratio0_3/checkpoint-500/"
+    "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/model_qwen_math_7b_11500ckpt_sft_selected_math_100k_code_87k_science_90k_277k/checkpoint-1000/"
+    "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/model_qwen_math_7b_11500ckpt_sft_selected_math_100k_code_87k_science_90k_277k/checkpoint-500/"
+    "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/mix_qwen-math-7B_math835k_x2_5_openmath265k_x3_code845k_x4_science567k_x3_glan2_1750k_filter_empty_x1_packing_lr2e4/checkpoint-9500/"
+    "/mnt/lingjiejiang/reason/exp/qwen2.5_math1.5b/mix_qwen-math-7B_math835k_x2_5_openmath265k_x3_code845k_x4_science567k_x3_glan2_1750k_filter_empty_x1_packing_lr2e4/checkpoint-9000/"
 )  
   
 # 定义 Prompt 类型（你可以根据需要修改这个变量）  
